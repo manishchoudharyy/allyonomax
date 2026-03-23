@@ -7,7 +7,7 @@ export default function AppCard({ app, index }) {
     <div className="relative">
       {/* Index Number */}
       {typeof index === "number" && (
-        <div className="app-index">{index}</div>
+        <div className="app-index">{index+1}</div>
       )}
 
       <Link href={`/${app.slug}`} className="block app-list-card group">

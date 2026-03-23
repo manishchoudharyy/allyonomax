@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme inline {
+@theme  inline {
   --color-bg: #EBF4FF;
   --color-bg-alt: #ffffff;
   --color-card: #ffffff;
@@ -9,7 +9,7 @@
   --color-primary-light: #F87171;
   --color-primary-dark: #DC2626;
   --color-header-start: #EF4444;
-  --color-header-end: #7C3AED;
+  --color-header-end: #DC2626;
   --color-teal: #0D9488;
   --color-teal-light: #14B8A6;
   --color-teal-dark: #0F766E;
@@ -34,7 +34,7 @@ body {
 
 /* ── Header gradient ─────────────────── */
 .header-gradient {
-  background: linear-gradient(135deg, var(--color-header-start) 0%, #C026D3 50%, var(--color-header-end) 100%);
+  background: linear-gradient(135deg, var(--color-header-start) 0%, #F87171 50%, var(--color-header-end) 100%);
 }
 
 /* ── Secondary Nav ───────────────────── */
@@ -513,4 +513,37 @@ input:focus {
 .btn-accent:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+}
+
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* For Chrome, Edge, Safari, Opera (WebKit/Blink) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;           /* vertical scrollbar width */
+  height: 8px;          /* horizontal scrollbar height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;   /* creates nice padding around thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Optional: even nicer hover effect */
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #444;
 }

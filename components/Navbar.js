@@ -38,7 +38,7 @@ export default function Navbar() {
             unoptimized
           />
           <span className="text-white font-extrabold text-lg tracking-tight">
-            All New Yono Apps – Yono Games
+            All Yono Max – Yono Games
           </span>
         </Link>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
       </nav>
 
       {/* ── SECONDARY NAVIGATION BAR ── */}
-      <div className="secondary-nav">
+      {/* <div className="secondary-nav">
         <div className="flex items-center justify-around max-w-2xl mx-auto">
           {navItems.map((item) => {
             const IconComponent = item.icon;
@@ -74,11 +74,11 @@ export default function Navbar() {
             );
           })}
         </div>
-      </div>
+      </div> */}
 
       {/* ── SIDEBAR OVERLAY ── */}
       {sidebarOpen && (
-        <div className="fixed inset-0 z-[100]">
+        <div className="fixed inset-0 z-100">
           {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black/40 backdrop-blur-sm"
