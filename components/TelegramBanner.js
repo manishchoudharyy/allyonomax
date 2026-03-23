@@ -6,11 +6,11 @@ export default function TelegramBanner() {
       <div className="flex items-center gap-2">
         <Zap className="w-5 h-5 fill-white" />
         <span className="font-bold text-sm sm:text-base">
-          Daily Bonus Codes & Exclusive Updates!
+          Daily Bonus Codes &amp; Exclusive Updates!
         </span>
       </div>
       <a
-        href="https://t.me/YOUR_TELEGRAM_LINK"
+        href="https://t.me/allyonomax"
         target="_blank"
         rel="noopener noreferrer"
         className="px-5 py-1.5 bg-white text-primary font-bold text-sm rounded-xl hover:bg-bg transition-colors shadow-sm"

@@ -1,157 +1,199 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowDown, Sparkles, Trophy, Gift, Users, Shield } from "lucide-react";
+import { Star, Eye, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppCard from "@/components/AppCard";
-import SearchBar from "@/components/SearchBar";
-import TelegramBanner from "@/components/TelegramBanner";
+import FloatingTelegram from "@/components/FloatingTelegram";
 import { WebsiteSchema } from "@/components/SchemaMarkup";
 import { getAllApps } from "@/lib/helpers";
 
 const allApps = getAllApps();
 
 export default function HomePage() {
-  const [filteredApps, setFilteredApps] = useState(allApps);
+  const [activeTab, setActiveTab] = useState("new");
+  const [showAll, setShowAll] = useState(false);
 
-  const handleSearch = (query) => {
-    if (!query.trim()) {
-      setFilteredApps(allApps);
-      return;
-    }
-    const q = query.toLowerCase();
-    setFilteredApps(
-      allApps.filter(
-        (app) =>
-          app.name.toLowerCase().includes(q) ||
-          app.category.toLowerCase().includes(q) ||
-          app.keywords.some((k) => k.includes(q))
-      )
-    );
-  };
+  // Split apps into "new" and "other" categories
+  const newApps = allApps.filter((app) => app.isNew || app.isHot || app.isTrending);
+  const otherApps = allApps.filter((app) => !app.isNew && !app.isHot && !app.isTrending);
+
+  const displayApps = activeTab === "new" ? newApps : otherApps;
+  const visibleApps = showAll ? displayApps : displayApps.slice(0, 6);
 
   return (
     <>
-      <WebsiteSchema />
-      <Navbar />
+      <div className="bg-bg min-h-screen">
+        <WebsiteSchema />
+        <Navbar />
 
-      {/* ── HERO SECTION ── */}
-      <section className="relative overflow-hidden hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center relative z-10">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/15 mb-6">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-primary text-xs font-bold tracking-wide uppercase">
-              India&apos;s #1 Yono Games Hub
-            </span>
-          </div>
-
-          {/* Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary leading-tight mb-6">
-            Download <span className="gradient-text">Top Yono Apps</span>
-            <br />
-            <span className="text-2xl sm:text-3xl md:text-4xl text-text-secondary font-medium">
-              Earn Real Cash with Max Bonus
-            </span>
+        {/* ── HERO SECTION ── */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 py-8 text-center">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-text-primary mb-6">
+            ALL YONO GAMES India
           </h1>
 
-          {/* Stats */}
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 mb-10">
-            <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-2xl shadow-sm border border-card-border">
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Trophy className="w-5 h-5 text-primary" />
-              </div>
-              <div className="text-left">
-                <p className="text-primary font-extrabold text-lg">{allApps.length}+</p>
-                <p className="text-text-muted text-xs">Trusted Apps</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-2xl shadow-sm border border-card-border">
-              <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center">
-                <Gift className="w-5 h-5 text-accent-dark" />
-              </div>
-              <div className="text-left">
-                <p className="text-accent-dark font-extrabold text-lg">₹550</p>
-                <p className="text-text-muted text-xs">Max Bonus</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-2xl shadow-sm border border-card-border">
-              <div className="w-10 h-10 rounded-xl bg-green-accent/10 flex items-center justify-center">
-                <Users className="w-5 h-5 text-green-accent" />
-              </div>
-              <div className="text-left">
-                <p className="text-green-accent font-extrabold text-lg">1M+</p>
-                <p className="text-text-muted text-xs">Downloads</p>
-              </div>
-            </div>
+          {/* Teal Info Card */}
+          <div className="info-card-teal text-left">
+            <p>
+              All Yono Games is a popular platform where players can explore a wide collection of
+              real money gaming apps in one place. From rummy tables to slot spins and bingo games,
+              users can enjoy multiple categories like Rummy, Slots, Bingo, Arcade, and Spin games
+              with daily rewards and exciting bonuses. This collection includes many trending apps
+              such as Yono Rummy, Ok Rummy, Joy Rummy, Spin 777, Bingo 101, Rummy 888, IND Rummy,
+              Jaiho Rummy, Yono 777, Hindi 777, YN 777, IND Club, Jaiho Slots, Rummy 77, and
+              Rummy Ludo — all available for download with sign-up bonuses!
+            </p>
           </div>
+        </section>
 
-          {/* CTA */}
-          <a href="#apps" className="btn-primary text-base px-8 py-3.5 pulse-primary">
-            <ArrowDown className="w-5 h-5" />
-            Explore Apps
-          </a>
-        </div>
-      </section>
-
-      {/* ── TELEGRAM BANNER ── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4 mb-10">
-        <TelegramBanner />
-      </section>
-
-      {/* ── TRUST BAR ── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
-        <div className="flex flex-wrap items-center justify-center gap-6 text-text-muted text-xs font-medium">
-          <div className="flex items-center gap-1.5">
-            <Shield className="w-4 h-4 text-green-accent" />
-            <span>100% Safe & Verified</span>
-          </div>
-          <div className="w-1 h-1 rounded-full bg-card-border hidden sm:block" />
-          <div className="flex items-center gap-1.5">
-            <span>⚡</span>
-            <span>Instant Withdrawal</span>
-          </div>
-          <div className="w-1 h-1 rounded-full bg-card-border hidden sm:block" />
-          <div className="flex items-center gap-1.5">
-            <span>🎁</span>
-            <span>Sign Up Bonus on Every App</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SEARCH + APP GRID ── */}
-      <section id="apps" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        {/* Section Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-text-primary mb-2">
-            All <span className="gradient-text">Yono Games</span> Apps
+        {/* ── DOWNLOAD SECTION ── */}
+        <section id="apps" className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+          {/* Section Header */}
+          <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary text-center mb-6">
+            Download NEW YONO Games
           </h2>
-          <p className="text-text-secondary text-sm">
-            Download karo, register karo, bonus pao — simple!
-          </p>
-        </div>
 
-        {/* Search */}
-        <div className="mb-8">
-          <SearchBar onSearch={handleSearch} />
-        </div>
+          {/* Tab Switcher */}
+          <div className="tab-container mb-8">
+            <button
+              className={`tab-btn ${activeTab === "new" ? "active" : ""}`}
+              onClick={() => { setActiveTab("new"); setShowAll(false); }}
+            >
+              <Star className="w-4 h-4" />
+              New Games
+            </button>
+            <button
+              className={`tab-btn ${activeTab === "other" ? "active" : ""}`}
+              onClick={() => { setActiveTab("other"); setShowAll(false); }}
+            >
+              <Eye className="w-4 h-4" />
+              Other Games
+            </button>
+          </div>
 
-        {/* App Grid */}
-        {filteredApps.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {filteredApps.map((app) => (
-              <AppCard key={app.id} app={app} />
+          {/* App List */}
+          <div className="space-y-5">
+            {visibleApps.map((app, idx) => (
+              <AppCard key={app.id} app={app} index={idx} />
             ))}
           </div>
-        ) : (
-          <div className="text-center py-16">
-            <p className="text-text-secondary text-lg">No apps found. Try a different search.</p>
-          </div>
-        )}
-      </section>
 
-      <Footer />
+          {/* Show More */}
+          {!showAll && displayApps.length > 6 && (
+            <div className="load-more-indicator mt-6" onClick={() => setShowAll(true)}>
+              <ChevronDown className="w-5 h-5" />
+              <span className="text-sm font-medium">Show All ({displayApps.length} apps)</span>
+            </div>
+          )}
+        </section>
+
+        {/* ── WHY CHOOSE US SECTION ── */}
+        <section id="about" className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+          <div className="content-section">
+            <h2>Why Thousands Choose All Yono Max?</h2>
+            <p>
+              When it comes to finding games you can trust and enjoy, AllYonoMax makes the choice
+              easy. We have built our platform with clear goals: keep things simple, reliable, and
+              tailored to what Indian players want most.
+            </p>
+            <ul>
+              <li>
+                <strong>India-Focused Selection:</strong> Every game you see here has been chosen
+                with local preferences in mind — from classic rummy to exciting slot machines.
+              </li>
+              <li>
+                <strong>Instant Play &amp; Download:</strong> We understand your time matters.
+                That is why you can start playing in only a few steps — download, register, and play!
+              </li>
+              <li>
+                <strong>Easy Navigation:</strong> Picking out your next game should not be a hassle.
+                Our clean interface makes browsing effortless.
+              </li>
+              <li>
+                <strong>Trusted Platform:</strong> Safety and trust are at the core of AllYonoMax.
+                All apps are verified and payments are secure.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* ── GAMES FOR EVERY MOOD ── */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+          <div className="content-section">
+            <h2>Games for Every Mood</h2>
+            <p>
+              People play for all sorts of reasons. You might enjoy the rush of competing, or maybe
+              you prefer to unwind with something simple. At AllYonoMax, finding the right game is
+              easy. The categories are set up so you can browse without any hassle.
+            </p>
+            <ul>
+              <li>
+                <strong>Card Classics:</strong> If you enjoy testing your skills and staying sharp,
+                start here. Play favorites like Yono Rummy, Ok Rummy, Joy Rummy and more.
+              </li>
+              <li>
+                <strong>Puzzles &amp; Brain Teasers:</strong> Everyone has their reason for playing.
+                Some enjoy the buzz of competition and strategic thinking.
+              </li>
+              <li>
+                <strong>Fantasy &amp; Sports:</strong> Bring your competitive side to life. Build a
+                winning team, craft your strategy, and compete for prizes.
+              </li>
+              <li>
+                <strong>Casual Fun:</strong> Not every game has to be serious. When you would rather
+                unwind, try our casual gaming apps.
+              </li>
+              <li>
+                <strong>Fast Challenges:</strong> Need a little rush? These time-based games keep
+                you on your toes with quick rounds and instant rewards.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* ── CONTACT SECTION ── */}
+        <section id="contact" className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+          <div className="content-section">
+            <h2>Contact Us</h2>
+            <p>
+              Have questions about any app or need help? Reach out to us through our Telegram
+              channel for the fastest response. We are always happy to help Indian gamers find
+              the best gaming experience.
+            </p>
+            <p>
+              <strong>Telegram:</strong>{" "}
+              <a
+                href="https://t.me/allyonomax"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-bold hover:underline"
+              >
+                @allyonomax
+              </a>
+            </p>
+          </div>
+        </section>
+
+        {/* ── DISCLAIMER SECTION ── */}
+        <section id="disclaimer" className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+          <div className="disclaimer-card">
+            <h2 className="text-lg font-extrabold text-red-accent mb-3">⚠ Disclaimer</h2>
+            <p className="text-text-secondary text-sm leading-relaxed">
+              This website is for informational and entertainment purposes only. We do not promote
+              or encourage gambling in any form. All gaming apps listed on this platform involve
+              real money and carry financial risk. Players must be 18 years or older to participate.
+              Please play responsibly and within your means. AllYonoMax is not responsible for any
+              financial losses incurred through the use of any listed applications. All trademarks
+              and app names belong to their respective owners.
+            </p>
+          </div>
+        </section>
+
+        <Footer />
+        <FloatingTelegram />
+      </div>
     </>
   );
 }

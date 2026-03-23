@@ -1,20 +1,25 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg: #f8f9fc;
+  --color-bg: #EBF4FF;
   --color-bg-alt: #ffffff;
   --color-card: #ffffff;
-  --color-card-border: #e5e7eb;
-  --color-primary: #4f46e5;
-  --color-primary-light: #818cf8;
-  --color-primary-dark: #3730a3;
+  --color-card-border: #d6e4f0;
+  --color-primary: #EF4444;
+  --color-primary-light: #F87171;
+  --color-primary-dark: #DC2626;
+  --color-header-start: #EF4444;
+  --color-header-end: #7C3AED;
+  --color-teal: #0D9488;
+  --color-teal-light: #14B8A6;
+  --color-teal-dark: #0F766E;
   --color-accent: #f59e0b;
   --color-accent-light: #fbbf24;
   --color-accent-dark: #d97706;
   --color-red-accent: #ef4444;
   --color-green-accent: #10b981;
   --color-text-primary: #1e293b;
-  --color-text-secondary: #64748b;
+  --color-text-secondary: #475569;
   --color-text-muted: #94a3b8;
   --font-heading: 'DM Sans', sans-serif;
   --font-body: 'DM Sans', sans-serif;
@@ -27,28 +32,182 @@ body {
   font-family: var(--font-body);
 }
 
-/* ── Subtle grain background ─────────── */
-.bg-texture {
-  background-image:
-    radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.03) 0%, transparent 50%);
+/* ── Header gradient ─────────────────── */
+.header-gradient {
+  background: linear-gradient(135deg, var(--color-header-start) 0%, #C026D3 50%, var(--color-header-end) 100%);
 }
 
-/* ── Shimmer animation ───────────────── */
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+/* ── Secondary Nav ───────────────────── */
+.secondary-nav {
+  background: #ffffff;
+  border-bottom: 2px solid #e5e7eb;
 }
 
-.shimmer {
-  background: linear-gradient(
-    90deg,
-    var(--color-primary) 0%,
-    var(--color-primary-light) 50%,
-    var(--color-primary) 100%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 3s ease-in-out infinite;
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: var(--color-primary);
+}
+
+.nav-item .nav-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* ── Teal Info Card ──────────────────── */
+.info-card-teal {
+  background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-teal-light) 100%);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* ── Tab Buttons ─────────────────────── */
+.tab-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 2px solid #e5e7eb;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: #ffffff;
+  color: var(--color-text-secondary);
+}
+
+.tab-btn.active {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.tab-btn:first-child {
+  border-right: 1px solid #e5e7eb;
+}
+
+/* ── App List Card ───────────────────── */
+.app-list-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.app-list-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.app-index {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.25rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 800;
+  z-index: 5;
+}
+
+.app-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--color-card-border);
+}
+
+.app-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-name {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.app-bonus {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.app-withdraw {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* ── Download Button (Black) ─────────── */
+.btn-download {
+  background: #111827;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  border: none;
+}
+
+.btn-download:hover {
+  background: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* ── Primary CTA button ─────────────── */
@@ -67,60 +226,108 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25);
-}
-
-.btn-primary::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -100%;
-  width: 60%;
-  height: 200%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.25),
-    transparent
-  );
-  transform: skewX(-25deg);
-  transition: left 0.6s ease;
-}
-
-.btn-primary:hover::after {
-  left: 130%;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.35);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.35);
 }
 
-/* ── Accent download button ──────────── */
-.btn-accent {
-  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent), var(--color-accent-light));
+/* ── Floating Telegram Button ────────── */
+.floating-telegram {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #0D9488;
   color: #ffffff;
-  font-weight: 700;
-  border-radius: 0.75rem;
-  padding: 0.625rem 1.5rem;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 4px 20px rgba(13, 148, 136, 0.4);
+  transition: all 0.3s ease;
+  z-index: 50;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn-accent:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+.floating-telegram:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(13, 148, 136, 0.5);
 }
 
-/* ── Card style ──────────────────────── */
+/* ── Featured App Card ───────────────── */
+.featured-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.featured-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+/* ── Content Sections ────────────────── */
+.content-section {
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: 1rem;
+  padding: 1.5rem 1.75rem;
+}
+
+.content-section h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+.content-section h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.content-section p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.content-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section li {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.content-section li strong {
+  color: var(--color-text-primary);
+}
+
+/* ── Disclaimer Card ─────────────────── */
+.disclaimer-card {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+/* ── Card elevated (for slug pages) ──── */
 .card-elevated {
   background: var(--color-card);
   border: 1px solid var(--color-card-border);
@@ -130,8 +337,8 @@ body {
 }
 
 .card-elevated:hover {
-  border-color: rgba(79, 70, 229, 0.3);
-  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  border-color: rgba(239, 68, 68, 0.3);
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
   transform: translateY(-4px);
 }
 
@@ -155,7 +362,7 @@ body {
 
 .badge-new {
   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
-  color: var(--color-primary);
+  color: #4F46E5;
   border: 1px solid rgba(79, 70, 229, 0.2);
 }
 
@@ -171,10 +378,10 @@ body {
   border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
-/* ── Pulse animation for download btn ── */
+/* ── Pulse animation ─────────────────── */
 @keyframes pulse-primary {
-  0%, 100% { box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25), 0 0 0 0 rgba(79, 70, 229, 0.3); }
-  50% { box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25), 0 0 0 10px rgba(79, 70, 229, 0); }
+  0%, 100% { box-shadow: 0 4px 14px rgba(239, 68, 68, 0.25), 0 0 0 0 rgba(239, 68, 68, 0.3); }
+  50% { box-shadow: 0 4px 14px rgba(239, 68, 68, 0.25), 0 0 0 10px rgba(239, 68, 68, 0); }
 }
 
 .pulse-primary {
@@ -189,6 +396,12 @@ body {
 
 .float {
   animation: float 3s ease-in-out infinite;
+}
+
+/* ── Shimmer animation ───────────────── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 /* ── FAQ accordion ───────────────────── */
@@ -230,8 +443,7 @@ body {
 /* ── Hero mesh gradient ──────────────── */
 .hero-gradient {
   background:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(79, 70, 229, 0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(239, 68, 68, 0.08) 0%, transparent 60%),
     var(--color-bg);
 }
 
@@ -239,5 +451,66 @@ body {
 input:focus {
   outline: none;
   border-color: var(--color-primary) !important;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* ── Sidebar slide-in animation ──────── */
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.25s ease-out;
+}
+
+/* ── Show More / Load More Indicator ─── */
+.load-more-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-text-muted);
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+/* ── Responsive adjustments ──────────── */
+@media (max-width: 640px) {
+  .app-list-card {
+    padding: 0.875rem 1rem;
+  }
+  
+  .app-icon-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+    min-width: 3.5rem;
+  }
+  
+  .btn-download {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ── Btn accent (keep for slug pages) ── */
+.btn-accent {
+  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent), var(--color-accent-light));
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  padding: 0.625rem 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+}
+
+.btn-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
 }
