@@ -105,14 +105,14 @@ export default async function AppPage({ params }) {
           {/* Back Link */}
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-text-secondary hover:text-primary transition-colors text-sm mb-8 font-medium"
+            className="inline-flex items-center gap-1.5 text-text-secondary hover:text-primary transition-colors text-sm font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to All Apps
           </Link>
 
           {/* App Header */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+          <div className="hide flex sm:flex-row items-center sm:items-start gap-6">
             {/* Icon */}
             <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-white overflow-hidden border border-card-border flex-shrink-0 flex items-center justify-center shadow-lg">
               <Image
@@ -174,6 +174,56 @@ export default async function AppPage({ params }) {
                 Download {app.name}
               </a>
             </div>
+          </div>
+          <div className="bg-white rounded-xl flex flex-col gap-6 justify-center content-center px-4 py-6">
+            <div className="flex items-center gap-4 sm:gap-12">
+              <div className="sm:w-36 sm:h-36 w-24 h-24 rounded-2xl bg-white overflow-hidden border border-card-border flex-shrink-0 flex items-center justify-center shadow-lg">
+              <Image
+                src={app.icon}
+                alt={`${app.name} app icon`}
+                width={162}
+                height={162}
+                className="w-full h-full object-cover"
+                unoptimized
+                priority
+              />
+            </div>
+            <div className="flex flex-col justify-center ">
+              <h1 className="text-2xl text-nowrap sm:text-3xl md:text-4xl font-extrabold text-text-primary mb-2">
+                {app.name}
+              </h1>
+              <div className="flex justify-start items-center gap-1 mb-3">
+                {Array.from({ length: full }).map((_, i) => (
+                  <Star key={`f-${i}`} className="w-4 h-4 fill-accent text-accent" />
+                ))}
+                {half === 1 && <StarHalf className="w-4 h-4 fill-accent text-accent" />}
+                {Array.from({ length: empty }).map((_, i) => (
+                  <Star key={`e-${i}`} className="w-4 h-4 text-card-border" />
+                ))}
+                <span className="text-text-secondary text-sm ml-1">
+                  {app.rating}
+                </span>
+              </div>
+              {/* Quick Stats */}
+              <div className="flex text-nowrap items-center justify-start sm:justify-start gap-3 text-xs">
+                <span className="px-3 py-1 bg-primary/5 border border-primary/15 rounded-full text-primary font-bold">
+                  Bonus: {app.bonus}
+                </span>
+                {/* <span className="px-3 py-1 bg-white border border-card-border rounded-full text-text-secondary shadow-sm">
+                  Size: {app.appSize}
+                </span> */}
+              </div>
+            </div>
+            </div>
+            <a
+                href={app.referLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-base sm:text-lg px-8 py-3.5 pulse-primary"
+              >
+                <Download className="w-5 h-5" />
+                Download {app.name}
+              </a>
           </div>
         </div>
       </section>
@@ -251,7 +301,7 @@ export default async function AppPage({ params }) {
               className="btn-accent text-base px-8 py-3"
             >
               <Download className="w-5 h-5" />
-              Download Now — Get {app.bonus} Bonus
+              Download & Get Bonus 
             </a>
           </div>
         </div>

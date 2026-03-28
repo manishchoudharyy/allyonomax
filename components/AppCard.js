@@ -28,7 +28,7 @@ export default function AppCard({ app, index }) {
           <h3 className="app-name">{app.name}</h3>
           <div className="app-bonus">
             <Gift className="w-3.5 h-3.5" />
-            <span>Sign Up Bonus {app.bonus}</span>
+            <span>Bonus Upto {app.bonus}</span>
           </div>
           <div className="app-withdraw">
             <Wallet className="w-3.5 h-3.5" />
