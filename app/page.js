@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Star, Eye, ChevronDown } from "lucide-react";
+import { Star, Eye, ChevronDown, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppCard from "@/components/AppCard";
@@ -36,7 +36,7 @@ export default function HomePage() {
           </h1>
 
           {/* Teal Info Card */}
-          <div className="info-card-teal text-left">
+          <div className="info-card-teal text-left text-xs">
             <p>
               All Yono Max is a platform where users can find and download real money gaming apps in one place. It offers popular categories like Rummy, Slots, Bingo, and Spin games, with daily rewards and sign-up bonuses across trending apps.
             </p>
@@ -53,14 +53,14 @@ export default function HomePage() {
           {/* Tab Switcher */}
           <div className="tab-container mb-8">
             <button
-              className={`tab-btn ${activeTab === "new" ? "active" : ""}`}
+              className={`tab-btn whitespace-nowrap   ${activeTab === "new" ? "active" : ""}`}
               onClick={() => { setActiveTab("new"); setShowAll(false); }}
             >
               <Star className="w-4 h-4" />
               New Games
             </button>
             <button
-              className={`tab-btn ${activeTab === "other" ? "active" : ""}`}
+              className={`tab-btn whitespace-nowrap ${activeTab === "other" ? "active" : ""}`}
               onClick={() => { setActiveTab("other"); setShowAll(false); }}
             >
               <Eye className="w-4 h-4" />
@@ -85,7 +85,7 @@ export default function HomePage() {
         </section>
 
             {/* ── FEATURED GAMING APPS ── */}
-        <section className="max-w-4xl mx-auto mt-10 px-4 sm:px-6 pb-8">
+        <section className="hide max-w-4xl mx-auto mt-10 px-4 sm:px-6 pb-8">
           <div className="content-section">
             <h2>Featured Gaming Apps</h2>
             <p>AllYonoMax brings you a curated selection of top-rated gaming apps with secure play, fast withdrawals, and daily rewards.</p>
@@ -116,7 +116,7 @@ export default function HomePage() {
         </section>
 
         {/* ── QUERIES SECTION ── */}
-        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8">
+        <section className="hide max-w-4xl mx-auto px-4 sm:px-6 pb-8">
           <div className="content-section">
             <h4 className="text-lg font-semibold mb-3">Queries</h4>
             <div className="flex flex-row gap-2 max-w-full overflow-auto custom-scrollbar bg-gray-100 rounded-md py-4 px-2">
@@ -128,7 +128,7 @@ export default function HomePage() {
         </section>
 
         {/* ── TIPS FOR NEW PLAYERS ── */}
-        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8">
+        <section className="hide max-w-4xl mx-auto px-4 sm:px-6 pb-8">
           <div className="content-section">
             <h2>Start Smart: Tips for New Players</h2>
             <p>Getting started with AllYonoMax is simple, but a few pointers can help you feel right at home from the first click. Whether you&#39;ve been playing for years or you&#39;re trying something new, these tips can make your experience smoother and more enjoyable.</p>
@@ -158,7 +158,7 @@ export default function HomePage() {
         </section>
 
         {/* ── ALL YONO GAMES ── */}
-        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8">
+        <section className="hide max-w-4xl mx-auto px-4 sm:px-6 pb-8">
           <div className="content-section">
             <h2>All Yono Games</h2>
             <p>AllYonoMax was born in May 2025 with a simple idea: to give every player in India a place to discover, play, and enjoy games that feel both familiar and fresh. We noticed how much people love games that ask for more than just tapping a screen.</p>
@@ -196,15 +196,16 @@ export default function HomePage() {
               the best gaming experience.
             </p>
             <p>
-              <strong>Telegram:</strong>{" "}
+              
               <a
-                href="https://t.me/allyonomax"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 no-underline font-bold hover:text-blue-800"
-              >
-                @allyonomax
-              </a>
+            href="https://t.me/allyonomax"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary w-full text-sm"
+          >
+            <Send className="w-4 h-4" />
+            Contact Here
+          </a>
             </p>
           </div>
         </section>

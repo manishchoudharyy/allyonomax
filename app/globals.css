@@ -8,8 +8,8 @@
   --color-primary: #EF4444;
   --color-primary-light: #F87171;
   --color-primary-dark: #DC2626;
-  --color-header-start: #EF4444;
-  --color-header-end: #DC2626;
+  --color-header-start: #be0000;
+  --color-header-end: #be0000;
   --color-teal: #0D9488;
   --color-teal-light: #14B8A6;
   --color-teal-dark: #0F766E;
@@ -32,9 +32,12 @@ body {
   font-family: var(--font-body);
 }
 
+.hide {
+  display: none;
+}
 /* ── Header gradient ─────────────────── */
 .header-gradient {
-  background: linear-gradient(135deg, var(--color-header-start) 0%, #F87171 50%, var(--color-header-end) 100%);
+  background: linear-gradient(135deg, var(--color-header-start) 0%, #fd0000 50%, var(--color-header-end) 100%);
 }
 
 /* ── Secondary Nav ───────────────────── */
@@ -187,7 +190,8 @@ body {
 
 /* ── Download Button (Black) ─────────── */
 .btn-download {
-  background: #111827;
+  /* background: #111827; */
+  background: var(--color-primary-dark);
   color: #ffffff;
   font-weight: 700;
   border-radius: 0.75rem;

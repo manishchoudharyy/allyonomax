@@ -179,7 +179,7 @@ export default async function AppPage({ params }) {
       </section>
 
       {/* ── APP DETAILS ── */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="card-elevated p-6 sm:p-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
             <div className="w-1 h-6 rounded-full bg-primary" />
@@ -207,7 +207,7 @@ export default async function AppPage({ params }) {
       </section>
 
       {/* ── FEATURES ── */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <div className="card-elevated p-6 sm:p-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
             <div className="w-1 h-6 rounded-full bg-green-accent" />
@@ -258,7 +258,7 @@ export default async function AppPage({ params }) {
       </section>
 
       {/* ── DESCRIPTION ── */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <div className="card-elevated p-6 sm:p-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
             <div className="w-1 h-6 rounded-full bg-primary-light" />
@@ -269,7 +269,7 @@ export default async function AppPage({ params }) {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <div className="card-elevated p-6 sm:p-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
             <div className="w-1 h-6 rounded-full bg-accent-dark" />
@@ -297,7 +297,7 @@ export default async function AppPage({ params }) {
       {related.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
           <h2 className="text-xl font-extrabold text-text-primary mb-6 text-center">
-            Similar <span className="gradient-text">{app.category}</span> Apps
+            Releted <span className="gradient-text">Yono</span> Apps
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {related.map((relApp) => (

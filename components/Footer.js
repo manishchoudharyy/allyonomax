@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MessageCircle, Heart, Shield, AlertTriangle } from "lucide-react";
+import { MessageCircle, Heart, Shield, AlertTriangle, Send } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -50,13 +50,13 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="btn-primary text-sm"
           >
-            <MessageCircle className="w-4 h-4" />
+            <Send className="w-4 h-4" />
             Join Telegram
           </a>
         </div>
 
         {/* Disclaimer */}
-        <div className="disclaimer-card mb-6">
+        <div className="hide disclaimer-card mb-6">
           <div className="flex items-start gap-2 mb-2">
             <AlertTriangle className="w-4 h-4 text-red-accent mt-0.5 flex-shrink-0" />
             <span className="text-red-accent font-bold text-sm">Disclaimer</span>
