@@ -13,6 +13,8 @@ import {
   BarChart3,
   Tag,
   Award,
+  DownloadIcon,
+  Package,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -81,7 +83,7 @@ export default async function AppPage({ params }) {
     );
   }
 
-  const related = getRelatedApps(app.slug, app.category, 4);
+  const related = getRelatedApps(app.slug);
   const { full, half, empty } = renderStars(app.rating);
 
   const detailItems = [
@@ -101,7 +103,7 @@ export default async function AppPage({ params }) {
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden hero-gradient">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 relative z-10">
+        <div className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 py-4 sm:py-16 relative z-10">
           {/* Back Link */}
           <Link
             href="/"
@@ -112,69 +114,7 @@ export default async function AppPage({ params }) {
           </Link>
 
           {/* App Header */}
-          <div className="hide flex sm:flex-row items-center sm:items-start gap-6">
-            {/* Icon */}
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-white overflow-hidden border border-card-border flex-shrink-0 flex items-center justify-center shadow-lg">
-              <Image
-                src={app.icon}
-                alt={`${app.name} app icon`}
-                width={112}
-                height={112}
-                className="w-full h-full object-cover"
-                unoptimized
-                priority
-              />
-            </div>
-
-            {/* Info */}
-            <div className="text-center sm:text-left flex-1">
-              {/* Badges */}
-              <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
-                {app.isNew && <span className="badge badge-new">NEW</span>}
-                {app.isHot && <span className="badge badge-hot">HOT</span>}
-                {app.isTrending && <span className="badge badge-trending">TRENDING</span>}
-              </div>
-
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-text-primary mb-2">
-                {app.name}
-              </h1>
-
-              {/* Rating */}
-              <div className="flex items-center justify-center sm:justify-start gap-1 mb-3">
-                {Array.from({ length: full }).map((_, i) => (
-                  <Star key={`f-${i}`} className="w-4 h-4 fill-accent text-accent" />
-                ))}
-                {half === 1 && <StarHalf className="w-4 h-4 fill-accent text-accent" />}
-                {Array.from({ length: empty }).map((_, i) => (
-                  <Star key={`e-${i}`} className="w-4 h-4 text-card-border" />
-                ))}
-                <span className="text-text-secondary text-sm ml-1">
-                  {app.rating} • {app.totalDownloads} Downloads
-                </span>
-              </div>
-
-              {/* Quick Stats */}
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 mb-5 text-sm">
-                <span className="px-3 py-1 bg-primary/5 border border-primary/15 rounded-full text-primary font-bold">
-                  Bonus: {app.bonus}
-                </span>
-                <span className="px-3 py-1 bg-white border border-card-border rounded-full text-text-secondary shadow-sm">
-                  Size: {app.appSize}
-                </span>
-              </div>
-
-              {/* Big Download Button */}
-              <a
-                href={app.referLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-base sm:text-lg px-8 py-3.5 pulse-primary"
-              >
-                <Download className="w-5 h-5" />
-                Download {app.name}
-              </a>
-            </div>
-          </div>
+         
           <div className="bg-white rounded-xl flex flex-col gap-6 justify-center content-center px-4 py-6">
             <div className="flex items-center gap-4 sm:gap-12">
               <div className="sm:w-36 sm:h-36 w-24 h-24 rounded-2xl bg-white overflow-hidden border border-card-border flex-shrink-0 flex items-center justify-center shadow-lg">
@@ -192,7 +132,7 @@ export default async function AppPage({ params }) {
               <h1 className="text-2xl text-nowrap sm:text-3xl md:text-4xl font-extrabold text-text-primary mb-2">
                 {app.name}
               </h1>
-              <div className="flex justify-start items-center gap-1 mb-3">
+              <div className="flex justify-start items-center gap-1 mb-2">
                 {Array.from({ length: full }).map((_, i) => (
                   <Star key={`f-${i}`} className="w-4 h-4 fill-accent text-accent" />
                 ))}
@@ -207,14 +147,44 @@ export default async function AppPage({ params }) {
               {/* Quick Stats */}
               <div className="flex text-nowrap items-center justify-start sm:justify-start gap-3 text-xs">
                 <span className="px-3 py-1 bg-primary/5 border border-primary/15 rounded-full text-primary font-bold">
-                  Bonus: {app.bonus}
+                  Bonus Upto {app.bonus}
                 </span>
                 {/* <span className="px-3 py-1 bg-white border border-card-border rounded-full text-text-secondary shadow-sm">
                   Size: {app.appSize}
                 </span> */}
               </div>
+              
             </div>
             </div>
+            <div className="flex items-center justify-around gap-2">
+              <div className="flex flex-col justify-center w-fit">
+                <span className=" text-center font-bold">{app.totalDownloads}</span>
+                <div className="flex flex-col ">
+                 <p className="flex items-center gap-0.5 text-xs">
+                   <DownloadIcon height={12} width={12}></DownloadIcon>
+                  Downloads
+                 </p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center text-sm w-fit">
+                <span className=" text-center font-bold">{app.appSize}</span>
+                <div className="flex flex-col ">
+                 <p className="flex items-center gap-0.5 text-xs">
+                   <Package height={12} width={12}></Package>
+                  Size
+                 </p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center w-fit">
+                <span className=" text-center font-bold">{app.bonus}</span>
+                <div className="flex flex-col ">
+                 <p className="flex items-center gap-0.5 text-xs">
+                   <Award height={12} width={12}></Award>
+                  Bonus
+                 </p>
+                </div>
+              </div>
+              </div>
             <a
                 href={app.referLink}
                 target="_blank"
@@ -228,88 +198,9 @@ export default async function AppPage({ params }) {
         </div>
       </section>
 
-      {/* ── APP DETAILS ── */}
-      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="card-elevated p-6 sm:p-8">
-          <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
-            <div className="w-1 h-6 rounded-full bg-primary" />
-            App Details
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {detailItems.map((item) => (
-              <div
-                key={item.label}
-                className="flex items-start gap-3 p-3 rounded-xl bg-bg border border-card-border/50"
-              >
-                <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.highlight ? "bg-primary/10" : "bg-bg"}`}>
-                  <item.icon className={`w-4 h-4 ${item.highlight ? "text-primary" : "text-text-muted"}`} />
-                </div>
-                <div>
-                  <p className="text-text-muted text-xs">{item.label}</p>
-                  <p className={`font-bold text-sm ${item.highlight ? "text-primary" : "text-text-primary"}`}>
-                    {item.value}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── FEATURES ── */}
-      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="card-elevated p-6 sm:p-8">
-          <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
-            <div className="w-1 h-6 rounded-full bg-green-accent" />
-            Features
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {app.features.map((feature) => (
-              <div key={feature} className="flex items-center gap-3 p-2">
-                <CheckCircle2 className="w-5 h-5 text-green-accent flex-shrink-0" />
-                <span className="text-text-primary text-sm">{feature}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── HOW TO DOWNLOAD ── */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="card-elevated p-6 sm:p-8">
-          <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
-            <div className="w-1 h-6 rounded-full bg-accent" />
-            How to Download {app.name}
-          </h2>
-          <div className="space-y-4">
-            {app.howToDownload.map((step, i) => (
-              <div key={i} className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold text-sm">{i + 1}</span>
-                </div>
-                <p className="text-text-primary text-sm pt-1.5">{step}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Download after steps */}
-          <div className="mt-8 text-center">
-            <a
-              href={app.referLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-accent text-base px-8 py-3"
-            >
-              <Download className="w-5 h-5" />
-              Download & Get Bonus 
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ── DESCRIPTION ── */}
-      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-        <div className="card-elevated p-6 sm:p-8">
+{/* ── DESCRIPTION ── */}
+      <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+        <div className="card-elevated p-4 sm:p-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
             <div className="w-1 h-6 rounded-full bg-primary-light" />
             About {app.name}
@@ -317,9 +208,26 @@ export default async function AppPage({ params }) {
           <p className="text-text-secondary text-sm leading-relaxed">{app.description}</p>
         </div>
       </section>
+      
+      {/* ── RELATED APPS ── */}
+      {related.length > 0 && (
+        <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pb-12">
+          <h2 className="text-xl font-extrabold text-text-primary mb-6 text-center">
+            Releted <span className="gradient-text">Yono</span> Apps
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {related.map((relApp, idx) => (
+              <AppCard key={relApp.id} app={relApp} index={idx} />
+            ))}
+          </div>
+        </section>
+      )}
+
+    
+
 
       {/* ── FAQ ── */}
-      <section className="hide max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+      <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
         <div className="card-elevated p-6 sm:p-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
             <div className="w-1 h-6 rounded-full bg-accent-dark" />
@@ -343,19 +251,19 @@ export default async function AppPage({ params }) {
         </div>
       </section>
 
-      {/* ── RELATED APPS ── */}
-      {related.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-          <h2 className="text-xl font-extrabold text-text-primary mb-6 text-center">
-            Releted <span className="gradient-text">Yono</span> Apps
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {related.map((relApp) => (
-              <AppCard key={relApp.id} app={relApp} />
-            ))}
+<section id="disclaimer" className="max-w-4xl mx-auto px-2 sm:px-6 pb-8">
+          <div className="disclaimer-card">
+            <h2 className="text-lg font-extrabold text-red-accent mb-3">⚠ Disclaimer</h2>
+            <p className="text-text-secondary text-sm leading-relaxed">
+              This website is for informational and entertainment purposes only. We do not promote
+              or encourage gambling in any form. All gaming apps listed on this platform involve
+              real money and carry financial risk. Players must be 18 years or older to participate.
+              Please play responsibly and within your means. AllYonoMax is not responsible for any
+              financial losses incurred through the use of any listed applications. All trademarks
+              and app names belong to their respective owners.
+            </p>
           </div>
         </section>
-      )}
 
       <Footer />
     </>

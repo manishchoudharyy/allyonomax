@@ -13,8 +13,8 @@ export default function Footer() {
             </span>
           </Link>
           <p className="text-text-secondary text-sm leading-relaxed max-w-lg mx-auto">
-            India ka sabse trusted platform Yono Games apps download karne ke liye.
-            Sabse zyada bonus, instant withdrawal, aur daily rewards.
+            India's most trusted platform to download Yono Games apps.
+            Get the best bonuses, instant withdrawals, and daily rewards.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function Footer() {
         {/* Telegram CTA */}
         <div className="text-center mb-8">
           <p className="text-text-secondary text-sm mb-3">
-            Daily updates, bonus codes, aur exclusive offers ke liye Telegram join karo.
+            Join our telegram channel to get Daily updates, bonus codes, and exclusive offers.
           </p>
           <a
             href="https://t.me/allyonomax"

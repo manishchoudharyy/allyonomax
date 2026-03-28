@@ -9,7 +9,7 @@ export default function AppCard({ app, index }) {
       {typeof index === "number" && (
         <div className="app-index">{index+1}</div>
       )}
-
+ 
       <Link href={`/${app.slug}`} className="block app-list-card group px-2 py-3">
         {/* App Icon */}
         <div className="app-icon-wrapper">
