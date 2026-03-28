@@ -20,8 +20,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppCard from "@/components/AppCard";
 import { AppSchema, FAQSchema } from "@/components/SchemaMarkup";
-import { getAllApps, getAppBySlug, getRelatedApps, renderStars } from "@/lib/helpers";
+import { getAllApps, getAllQueryKeywords, getAppBySlug, getRelatedApps, renderStars } from "@/lib/helpers";
+import Marquee from "@/components/Marquee";
 
+const keywords = getAllQueryKeywords();
 // ── Static Generation ──
 export async function generateStaticParams() {
   const apps = getAllApps();
@@ -211,11 +213,11 @@ export default async function AppPage({ params }) {
       
       {/* ── RELATED APPS ── */}
       {related.length > 0 && (
-        <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pb-12">
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-12">
           <h2 className="text-xl font-extrabold text-text-primary mb-6 text-center">
             Releted <span className="gradient-text">Yono</span> Apps
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="">
             {related.map((relApp, idx) => (
               <AppCard key={relApp.id} app={relApp} index={idx} />
             ))}
@@ -250,6 +252,19 @@ export default async function AppPage({ params }) {
           </div>
         </div>
       </section>
+      <div className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+            <div className="card-elevated p-6 sm:p-8">
+              <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
+            <div className="w-1 h-6 rounded-full bg-accent-dark" />
+            Tags
+          </h2>
+             <Marquee speed={300} direction="left" className="bg-gray-100 border border-gray-200 rounded-lg  py-4">
+              {keywords.map((keyword, i) => (
+                <span key={i} className="mx-4 bg-accent-dark text-white rounded-lg px-2 py-1">{keyword.replace(/\b\w/g, l => l.toUpperCase())}</span>
+              ))}
+    </Marquee>
+      </div>
+      </div>
 
 <section id="disclaimer" className="max-w-4xl mx-auto px-2 sm:px-6 pb-8">
           <div className="disclaimer-card">

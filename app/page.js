@@ -34,7 +34,7 @@ export default function HomePage() {
           
 
           {/* Teal Info Card */}
-          <div className="info-card-teal text-justify text-[0.50rem]">
+          <div className="info-card-teal text-left text-[9px]">
             <p>
               All Yono Max is a popular platform where players can explore a wide collection of real money gaming apps in one place. From rummy tables to slot spins and bingo games, users can enjoy multiple categories like Rummy, Slots, Bingo, Arcade, and Spin games with daily rewards and exciting. This collection includes many trending apps such as Yono Bonus, Bingo 101, Rumble Rummy, Joy Rummy, DIWA 777, INR Rummy, Boss Rummy, Ever 777, Yono 777, Rummy 888, Rummy 77, Rummy Ludo, 777 Game, OK Rummy, Good Slots, Hindi 777, Club INR, Game Rummy, Yes Spin, Love Rummy, Share Slots, Maha Games, Hi-Rummy, Jaiho Win, IND Club, Jaiho Slots, TOP Rummy, Ind Rummy, Slots Spin, MQM Bet, Saga Slots, Yn777, ABC Rummy, JaiHo Arcade, JaiHo 777, Neta VIP, Rummy 91, JaiHo Rummy, JaiHo Spin, MWM Bet, EN365, 101Z App, Rummy 365, Spin101, Ind Bingo, My777, Bet213, GoGo Rummy, 789 Jackpot, MDM Bet, Spin Gold, Spin Lucky, Spin 777, IND Slots, Spin Crush, MkM Bet, Slots Winner, Spin Winner, MBM Bet, 567 Slots, Yono VIP, Yono Slots, Yono Arcade, Yono Rummy, Yono Game, Yono Games, Rummy App, Yono App, All Yono App, All Yono Games.!</p>
           </div>
