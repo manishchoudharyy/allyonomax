@@ -44,7 +44,7 @@ export default function HomePage() {
         </section>
 
         {/* ── DOWNLOAD SECTION ── */}
-        <section id="apps" className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+        <section id="apps" className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
           {/* Section Header */}
           <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary text-center mb-6">
             Download NEW YONO Games
@@ -69,7 +69,7 @@ export default function HomePage() {
           </div>
 
           {/* App List */}
-          <div className="space-y-5">
+          <div className="space-y-4">
             {visibleApps.map((app, idx) => (
               <AppCard key={app.id} app={app} index={idx} />
             ))}

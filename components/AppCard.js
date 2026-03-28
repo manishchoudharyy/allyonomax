@@ -10,7 +10,7 @@ export default function AppCard({ app, index }) {
         <div className="app-index">{index+1}</div>
       )}
 
-      <Link href={`/${app.slug}`} className="block app-list-card group">
+      <Link href={`/${app.slug}`} className="block app-list-card group px-2 py-3">
         {/* App Icon */}
         <div className="app-icon-wrapper">
           <Image
@@ -39,7 +39,7 @@ export default function AppCard({ app, index }) {
         {/* Download Button */}
         <div className="btn-download">
           <Download className="w-4 h-4" />
-          <span className="hidden sm:inline">Download</span>
+          <span className="inline">Download</span>
         </div>
       </Link>
     </div>
