@@ -10,16 +10,16 @@ export default function Navbar() {
 
   const menuItems = [
     { label: "Home", href: "/", icon: Home },
-    { label: "About", href: "#about", icon: Info },
-    { label: "Contact", href: "#contact", icon: Phone },
-    { label: "Disclaimer", href: "#disclaimer", icon: FileText },
+    { label: "About", href: "/about", icon: Info },
+    { label: "Contact", href: "/contact", icon: Phone },
+    { label: "Disclaimer", href: "/disclaimer", icon: FileText },
   ];
 
   const navItems = [
     { label: "Home", href: "/", icon: Home, active: true },
-    { label: "About", href: "#about", icon: Info, active: false },
-    { label: "Contact", href: "#contact", icon: Phone, active: false },
-    { label: "Disclaimer", href: "#disclaimer", icon: FileText, active: false },
+    { label: "About", href: "/about", icon: Info, active: false },
+    { label: "Contact", href: "/contact", icon: Phone, active: false },
+    { label: "Disclaimer", href: "/disclaimer", icon: FileText, active: false },
     { label: "TG Join", href: "https://t.me/allyonomax", icon: Send, active: false, external: true },
   ];
 
@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* Logo + Name */}
         <Link href="/" className="flex items-center gap-2.5">
           <Image
-            src="/logo.png"
+            src="/logo.webp"
             alt="AllYonoMax Logo"
             width={42}
             height={42}
