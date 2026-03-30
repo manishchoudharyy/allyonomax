@@ -19,11 +19,9 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppCard from "@/components/AppCard";
-import { AppSchema, FAQSchema } from "@/components/SchemaMarkup";
-import { getAllApps, getAllQueryKeywords, getAppBySlug, getRelatedApps, renderStars } from "@/lib/helpers";
-import Marquee from "@/components/Marquee";
+import { AppSchema, FAQSchema, BreadcrumbSchema, WebPageSchema } from "@/components/SchemaMarkup";
+import { getAllApps, getAppBySlug, getRelatedApps, renderStars } from "@/lib/helpers";
 
-const keywords = getAllQueryKeywords();
 // ── Static Generation ──
 export async function generateStaticParams() {
   const apps = getAllApps();
@@ -43,7 +41,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: app.metaTitle,
+    title: { absolute: app.metaTitle },
     description: app.metaDescription,
     keywords: app.keywords,
     openGraph: {
@@ -51,12 +49,21 @@ export async function generateMetadata({ params }) {
       description: app.metaDescription,
       url: `https://allyonomax.com/${app.slug}`,
       siteName: "AllYonoMax",
-      type: "website",
+      type: "article",
+      images: [
+        {
+          url: `https://allyonomax.com${app.icon}`,
+          width: 512,
+          height: 512,
+          alt: `${app.name} app icon`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: app.metaTitle,
       description: app.metaDescription,
+      images: [`https://allyonomax.com${app.icon}`],
     },
     alternates: {
       canonical: `https://allyonomax.com/${app.slug}`,
@@ -99,8 +106,16 @@ export default async function AppPage({ params }) {
 
   return (
     <>
+      <WebPageSchema app={app} />
       <AppSchema app={app} />
       <FAQSchema faq={app.faq} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://allyonomax.com" },
+          { name: app.category, url: `https://allyonomax.com/#apps` },
+          { name: app.name, url: `https://allyonomax.com/${app.slug}` },
+        ]}
+      />
       <Navbar />
 
       {/* ── HERO ── */}
@@ -126,7 +141,6 @@ export default async function AppPage({ params }) {
                 width={162}
                 height={162}
                 className="w-full h-full object-cover"
-                unoptimized
                 priority
               />
             </div>
@@ -190,7 +204,7 @@ export default async function AppPage({ params }) {
             <a
                 href={app.referLink}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow sponsored"
                 className="btn-primary text-base sm:text-lg px-8 py-3.5 pulse-primary"
               >
                 <Download className="w-5 h-5" />
@@ -199,6 +213,7 @@ export default async function AppPage({ params }) {
           </div>
         </div>
       </section>
+      
 
 {/* ── DESCRIPTION ── */}
       <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
@@ -210,23 +225,139 @@ export default async function AppPage({ params }) {
           <p className="text-text-secondary text-sm leading-relaxed">{app.description}</p>
         </div>
       </section>
-      
+
+
       {/* ── RELATED APPS ── */}
       {related.length > 0 && (
-        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-12">
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-6 text-center">
-            Releted <span className="gradient-text">Yono</span> Apps
+            Related <span className="gradient-text">Yono</span> Apps
           </h2>
-          <div className="">
+          <div className="space-y-2">
             {related.map((relApp, idx) => (
               <AppCard key={relApp.id} app={relApp} index={idx} />
             ))}
           </div>
+          <div className="text-center mt-4">
+            <Link href="/#apps" className="text-primary text-sm font-semibold hover:underline">
+              View All Yono Games Apps →
+            </Link>
+          </div>
+        </section>
+      )}
+      {/* ── APP DETAILS TABLE ── */}
+      <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+        <div className="card-elevated p-4 sm:p-8">
+          <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+            <div className="w-1 h-6 rounded-full bg-teal" />
+            {app.name} App Details
+          </h2>
+          <div className="overflow-x-auto rounded-xl border border-card-border">
+            <table className="w-full text-sm">
+              <tbody>
+                {detailItems.map((item, i) => {
+                  const IconComp = item.icon;
+                  return (
+                    <tr key={i} className={i < detailItems.length - 1 ? "border-b border-card-border" : ""}>
+                      <td className="py-3 px-4 font-semibold text-text-primary flex items-center gap-2">
+                        <IconComp className="w-4 h-4 text-primary" />
+                        {item.label}
+                      </td>
+                      <td className={`py-3 px-4 ${item.highlight ? "text-primary font-bold" : "text-text-secondary"}`}>
+                        {item.value}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURES ── */}
+      {app.features && app.features.length > 0 && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-green-accent" />
+              Key Features of {app.name}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {app.features.map((feature, i) => (
+                <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-bg border border-card-border/50">
+                  <CheckCircle2 className="w-5 h-5 text-green-accent flex-shrink-0" />
+                  <span className="text-text-primary text-sm font-medium">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
       )}
 
-    
+      {/* ── HOW TO DOWNLOAD ── */}
+      {app.howToDownload && app.howToDownload.length > 0 && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-accent" />
+              How to Download {app.name}
+            </h2>
+            <div className="space-y-3">
+              {app.howToDownload.map((step, i) => (
+                <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-bg border border-card-border/50">
+                  <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5">
+                    {i + 1}
+                  </div>
+                  <span className="text-text-secondary text-sm leading-relaxed pt-1">{step}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-4">
+              <a
+                href={app.referLink}
+                target="_blank"
+                rel="noopener noreferrer nofollow sponsored"
+                className="btn-primary text-sm"
+              >
+                <Download className="w-4 h-4" />
+                Download {app.name} Now
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
+      {/* ── WHY CHOOSE ── */}
+      <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+        <div className="card-elevated p-4 sm:p-8">
+          <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+            <div className="w-1 h-6 rounded-full bg-primary" />
+            Why Choose {app.name}?
+          </h2>
+          <div className="text-text-secondary text-sm leading-relaxed space-y-3">
+            <p>
+              {app.name} stands out as one of the most popular gaming apps in the Yono Games ecosystem.
+              With a generous sign-up bonus of <strong className="text-primary">{app.bonus}</strong> and
+              a low minimum withdrawal of just <strong>{app.minWithdrawal}</strong>, it is designed to give
+              players the best value from the moment they register.
+            </p>
+            <p>
+              The app is only <strong>{app.appSize}</strong> in size, making it lightweight enough to run
+              smoothly on most Android devices without taking up too much storage. With{" "}
+              <strong>{app.totalDownloads}</strong> downloads and a rating of{" "}
+              <strong>{app.rating}/5</strong>, {app.name} has earned the trust of lakhs of players across India.
+            </p>
+            <p>
+              Whether you enjoy {app.category?.toLowerCase() || "gaming"} or want to explore new game types,
+              {app.name} offers a secure platform with instant UPI withdrawals, 24/7 customer support,
+              and a generous refer-and-earn program. Download it today from{" "}
+              <Link href="/" className="text-primary font-semibold hover:underline">AllYonoMax</Link>{" "}
+              and start earning real money.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* ── FAQ ── */}
       <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
@@ -252,33 +383,39 @@ export default async function AppPage({ params }) {
           </div>
         </div>
       </section>
-      <div className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
-            <div className="card-elevated p-6 sm:p-8">
-              <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
-            <div className="w-1 h-6 rounded-full bg-accent-dark" />
-            Tags
-          </h2>
-             <Marquee speed={300} direction="left" className="bg-gray-100 border border-gray-200 rounded-lg  py-4">
-              {keywords.map((keyword, i) => (
-                <span key={i} className="mx-4 bg-accent-dark text-white rounded-lg px-2 py-1">{keyword.replace(/\b\w/g, l => l.toUpperCase())}</span>
-              ))}
-    </Marquee>
-      </div>
-      </div>
 
-<section id="disclaimer" className="max-w-4xl mx-auto px-2 sm:px-6 pb-8">
-          <div className="disclaimer-card">
-            <h2 className="text-lg font-extrabold text-red-accent mb-3">⚠ Disclaimer</h2>
-            <p className="text-text-secondary text-sm leading-relaxed">
-              This website is for informational and entertainment purposes only. We do not promote
-              or encourage gambling in any form. All gaming apps listed on this platform involve
-              real money and carry financial risk. Players must be 18 years or older to participate.
-              Please play responsibly and within your means. AllYonoMax is not responsible for any
-              financial losses incurred through the use of any listed applications. All trademarks
-              and app names belong to their respective owners.
-            </p>
+
+      {/* ── App Tags ── */}
+      {app.keywords && app.keywords.length > 0 && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-6 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-accent-dark" />
+              Tags
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {app.keywords.map((keyword, i) => (
+                <span key={i} className="bg-accent-dark/10 text-accent-dark rounded-lg px-3 py-1 text-sm font-medium">
+                  {keyword.replace(/\b\w/g, l => l.toUpperCase())}
+                </span>
+              ))}
+            </div>
           </div>
         </section>
+      )}
+
+      {/* ── Cross-links ── */}
+      <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+        <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-text-muted">
+          <Link href="/about" className="hover:text-primary transition-colors">About AllYonoMax</Link>
+          <span>•</span>
+          <Link href="/disclaimer" className="hover:text-primary transition-colors">Disclaimer</Link>
+          <span>•</span>
+          <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <span>•</span>
+          <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
+        </div>
+      </section>
 
       <Footer />
     </>

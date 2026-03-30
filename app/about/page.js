@@ -1,7 +1,11 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingTelegram from "@/components/FloatingTelegram";
-import { Globe, Rocket, Users, Smartphone, Heart, ArrowRight } from "lucide-react";
+import { Globe, Rocket, Users, Smartphone, Heart, ArrowRight, Star } from "lucide-react";
+import { getAllApps } from "@/lib/helpers";
+
+const topApps = getAllApps().slice(0, 3);
 
 export const metadata = {
   title: "About Us",
@@ -34,7 +38,7 @@ export default function AboutPage() {
             <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
               <Rocket className="w-5 h-5 text-primary" />
             </div>
-            <h2 className="!mb-0">Our Mission</h2>
+            <h2 className="mb-0!">Our Mission</h2>
           </div>
           <p>
             Welcome to our platform, a comprehensive hub created on July 27, 2024,
@@ -85,7 +89,7 @@ export default function AboutPage() {
               <h3 className="text-base font-bold text-text-primary mb-1">
                 {item.title}
               </h3>
-              <p className="!text-xs !mb-0">{item.desc}</p>
+              <p className="text-xs! !mb-0">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -147,6 +151,29 @@ export default function AboutPage() {
             in the power of local solutions for local challenges, and our platform is
             a testament to this belief.
           </p>
+        </div>
+      </section>
+
+      {/* ── Popular Apps Cross-Link ── */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-6">
+        <div className="content-section">
+          <h2>Our Most Popular Apps</h2>
+          <p className="mb-4">
+            Explore some of the top-rated apps available on AllYonoMax:
+          </p>
+          <div className="space-y-2">
+            {topApps.map((app) => (
+              <Link
+                key={app.id}
+                href={`/${app.slug}`}
+                className="flex items-center gap-3 p-3 rounded-xl bg-bg border border-card-border/50 hover:border-primary/30 transition-colors"
+              >
+                <Star className="w-4 h-4 text-accent flex-shrink-0" />
+                <span className="text-text-primary text-sm font-medium">{app.name}</span>
+                <span className="text-primary text-xs font-bold ml-auto">{app.bonus} Bonus</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

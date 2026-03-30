@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, MessageCircle, Info, Phone, FileText, Home, Send } from "lucide-react";
+import { Menu, X, MessageCircle, Info, Phone, FileText, Home, Send, Shield } from "lucide-react";
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -13,6 +13,7 @@ export default function Navbar() {
     { label: "About", href: "/about", icon: Info },
     { label: "Contact", href: "/contact", icon: Phone },
     { label: "Disclaimer", href: "/disclaimer", icon: FileText },
+    { label: "Privacy Policy", href: "/privacy-policy", icon: Shield },
   ];
 
   const navItems = [
@@ -20,6 +21,7 @@ export default function Navbar() {
     { label: "About", href: "/about", icon: Info, active: false },
     { label: "Contact", href: "/contact", icon: Phone, active: false },
     { label: "Disclaimer", href: "/disclaimer", icon: FileText, active: false },
+    { label: "Privacy Policy", href: "/privacy-policy", icon: Shield, active: false },
     { label: "TG Join", href: "https://t.me/allyonomax", icon: Send, active: false, external: true },
   ];
 
@@ -30,12 +32,11 @@ export default function Navbar() {
         {/* Logo + Name */}
         <Link href="/" className="flex items-center gap-2.5">
           <Image
-            src="/logo.webp"
+            src="/logo-sm.webp"
             alt="AllYonoMax Logo"
             width={42}
             height={42}
             className="rounded-lg"
-            unoptimized
           />
           <span className="text-white font-extrabold text-lg tracking-tight">
             All Yono Max – Yono Games

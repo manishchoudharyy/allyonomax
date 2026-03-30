@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Joy Rummy",
     "slug": "joy-rummy",
+    "category": "Rummy",
     "icon": "/icons/JoyRummy.webp",
     "bonus": "₹550",
     "minWithdrawal": "₹100",
@@ -11,22 +12,37 @@
     "totalDownloads": "250K+",
     "referLink": "#",
     "description": "Joy Rummy naam se hi pata chalta hai — yeh app gaming mein joy (khushi) laata hai! Joy Rummy mein signup karte hi ₹550 ka maximum bonus milta hai. Yeh app apne premium graphics aur smooth animations ke liye famous hai. Joy Rummy mein aap 10+ different card games khel sakte ho. App mein VIP membership system hai jisme aapko extra rewards aur exclusive tournaments ka access milta hai. Joy Rummy ka referral program bahut generous hai — har referral par ₹100+ ka reward milta hai. Withdrawal instant hai aur minimum sirf ₹100 hai. Joy Rummy daily 1 lakh+ active players ke saath India ke top rummy apps mein se ek hai.",
+    "features": [
+      "10+ Card Games",
+      "VIP Membership",
+      "Premium Graphics",
+      "Instant Withdrawal",
+      "Refer & Earn ₹100+",
+      "Daily Tournaments"
+    ],
+    "howToDownload": [
+      "Niche Download button par click karo",
+      "APK file download hogi — install karo",
+      "Register karo apna mobile number se",
+      "Sign up bonus automatically milega",
+      "Refer link share karo aur extra kamao"
+    ],
     "faq": [
       {
-        "question": "Q.1 What Is The All Yono Games Apk?",
-        "answer": "The All Yono Games APK is an excellent application that offers users a sign-up bonus of ₹500 when they join. This game includes a fantastic bonus program, and you can learn more by reading the complete post. Additionally, All Yono Games is a popular slots game with a minimum withdrawal amount of ₹100 and a minimum deposit of ₹100."
+        "question": "What is Joy Rummy?",
+        "answer": "Joy Rummy is a popular card gaming app offering 10+ games including rummy, poker, and variations. It provides a ₹550 sign-up bonus, VIP membership with exclusive tournaments, and instant UPI withdrawals."
       },
       {
-        "question": "Q.2 How Do I Sign Up For This All Yono Games APK?",
-        "answer": "To sign up, download the All Yono Games APK from the official website, install it on your device, and register using your mobile number. Enter the OTP, complete your profile, and start playing to claim your welcome bonus."
+        "question": "How to sign up on Joy Rummy?",
+        "answer": "Download the APK from the link, install it on your device, and register using your mobile number. Enter the OTP to complete registration and your sign-up bonus will be credited automatically."
       },
       {
-        "question": "Q.3 How Many Games Are Available In The All Yono Games?",
-        "answer": "The All Yono Games app offers multiple games including Rummy, Slots, Spin Wheel, Fishing Games, and various card-based and casual games that allow users to earn rewards and real cash."
+        "question": "What is the minimum withdrawal on Joy Rummy?",
+        "answer": "The minimum withdrawal amount is ₹100. Withdrawals are processed instantly to your linked bank account or UPI."
       },
       {
-        "question": "Q.4 What Is The Minimum Withdrawal Amount In All Yono Games?",
-        "answer": "The minimum withdrawal amount in All Yono Games is ₹100. Once you accumulate ₹100 or more, you can easily withdraw your earnings to your bank account."
+        "question": "How does the Joy Rummy referral program work?",
+        "answer": "Share your unique referral link with friends. When they register and play, you earn ₹100+ per referral. There is no limit on the number of referrals."
       }
     ],
     "isNew": false,
@@ -53,12 +69,12 @@
     "rating": 4.3,
     "totalDownloads": "120K+",
     "referLink": "#",
-    "description": "Spin 777 ek exciting slots aur casino gaming app hai jo Yono Games ne develop kiya hai. Spin 777 mein signup karte hi ₹400 ka bonus milta hai. Yeh app specifically slots lovers ke liye design kiya gaya hai — 30+ different slot machines available hain. Har slot machine unique theme aur bonus rounds ke saath aata hai. Spin 777 mein daily free spins milte hain jo aap real money jeetne mein use kar sakte ho. App ka jackpot system bahut exciting hai — lucky players ne lakho rupaye jeete hain. Withdrawal fast hai aur minimum ₹150 se start hota hai. Spin 777 ka interface colorful aur engaging hai jo aapko ghanton engage rakhta hai.",
+    "description": "Game Rummy ek popular rummy gaming app hai jo players ko real money earn karne ka mauka deti hai. Game Rummy mein signup karte hi ₹400 ka bonus milta hai. Yeh app multiple card game variants offer karti hai — classic rummy, pool rummy, deals rummy, aur points rummy. Game Rummy ka interface user-friendly hai aur naye players ke liye tutorial mode bhi available hai. App mein daily cash tournaments hote hain jisme aap compete karke real money jeet sakte ho. Withdrawal process simple hai — minimum ₹150 se start hota hai aur UPI ke through instant transfer hota hai.",
     "features": [
-      "30+ Slot Machines",
-      "Daily Free Spins",
-      "Jackpot System",
-      "Instant Withdrawal",
+      "Multiple Rummy Variants",
+      "Daily Cash Tournaments",
+      "Tutorial Mode for Beginners",
+      "Instant UPI Withdrawal",
       "Refer & Earn",
       "Bonus Rounds"
     ],
@@ -71,29 +87,29 @@
     ],
     "faq": [
       {
-        "question": "Spin 777 mein kitni slot machines hain?",
-        "answer": "Spin 777 mein 30+ different slot machines available hain har ek unique theme ke saath."
+        "question": "What is Game Rummy?",
+        "answer": "Game Rummy is a real money card gaming app featuring multiple rummy variants including classic, pool, deals, and points rummy. New users get a ₹400 sign-up bonus."
       },
       {
-        "question": "Spin 777 mein free spins milte hain kya?",
-        "answer": "Haan, Spin 777 mein daily free spins milte hain jo aap real money games mein use kar sakte ho."
+        "question": "Is Game Rummy safe to play?",
+        "answer": "Game Rummy uses secure payment gateways and verified UPI withdrawals. The app has 120K+ downloads and is trusted by players across India."
       },
       {
-        "question": "Spin 777 jackpot kya hai?",
-        "answer": "Spin 777 mein exciting jackpot system hai jisme lucky players lakho rupaye jeet sakte hain."
+        "question": "What is the minimum withdrawal in Game Rummy?",
+        "answer": "The minimum withdrawal amount in Game Rummy is ₹150. Withdrawals are processed via UPI and are usually instant."
       }
     ],
     "isNew": true,
     "isHot": false,
     "isTrending": false,
-    "metaTitle": "Spin 777 APK Download — ₹400 Sign Up Bonus | AllYonoMax",
-    "metaDescription": "Spin 777 APK download karo aur pao ₹400 sign up bonus. 30+ slot machines with daily free spins. Trusted Yono Games app.",
+    "metaTitle": "Game Rummy APK Download — ₹400 Sign Up Bonus | AllYonoMax",
+    "metaDescription": "Game Rummy APK download karo aur pao ₹400 sign up bonus. Multiple rummy variants with daily tournaments. Trusted Yono Games app.",
     "keywords": [
-      "spin 777 apk",
-      "spin 777 download",
-      "spin 777 refer link",
-      "spin 777 sign up bonus",
-      "spin 777 slots"
+      "game rummy apk",
+      "game rummy download",
+      "game rummy refer link",
+      "game rummy sign up bonus",
+      "game rummy real money"
     ]
   },
   {
@@ -108,12 +124,12 @@
     "rating": 4.1,
     "totalDownloads": "70K+",
     "referLink": "#",
-    "description": "Bingo 101 ek fun-filled bingo gaming app hai jo Yono Games ne casual gamers ke liye banaya hai. Bingo 101 mein signup karte hi ₹350 ka bonus milta hai. Yeh app classic bingo game ko modern twist ke saath present karta hai. Bingo 101 mein aap solo ya multiplayer mode mein khel sakte ho. App mein special power-ups available hain jo game ko aur exciting banate hain. Bingo 101 bahut lightweight hai — sirf 40 MB ka hai. Yeh app un logon ke liye perfect hai jo casual gaming pasand karte hain. Withdrawal minimum ₹100 hai aur process fast hai.",
+    "description": "Rumble Rummy ek exciting rummy gaming app hai jo fast-paced card games aur real money rewards offer karti hai. Rumble Rummy mein signup karte hi ₹350 ka bonus milta hai. Yeh app lightweight hai — sirf 40-45 MB ka hai — aur low-end phones par bhi smoothly run karta hai. Rumble Rummy mein classic rummy ke saath special rumble mode available hai jisme quick matches aur higher rewards milte hain. App mein daily bonus aur login rewards bhi milte hain. Withdrawal minimum ₹100 hai aur process fast hai. Rumble Rummy ka referral program generous hai — har friend ko invite karne par bonus milta hai.",
     "features": [
-      "Classic Bingo",
-      "Multiplayer Mode",
-      "Power-Ups",
-      "Lightweight",
+      "Classic Rummy + Rumble Mode",
+      "Quick Matches",
+      "Login Rewards",
+      "Lightweight (40 MB)",
       "Instant Withdrawal",
       "Refer & Earn"
     ],
@@ -126,81 +142,198 @@
     ],
     "faq": [
       {
-        "question": "Bingo 101 kya hai?",
-        "answer": "Bingo 101 ek modern bingo gaming app hai jisme aap real money jeet sakte ho classic bingo game khel ke."
+        "question": "What is Rumble Rummy?",
+        "answer": "Rumble Rummy is a fast-paced rummy app with classic rummy and a special rumble mode for quick matches with higher rewards. New users get a ₹350 sign-up bonus."
       },
       {
-        "question": "Bingo 101 mein multiplayer hai kya?",
-        "answer": "Haan, Bingo 101 mein solo aur multiplayer dono modes available hain."
+        "question": "Does Rumble Rummy work on low-end phones?",
+        "answer": "Yes, Rumble Rummy is only 40-45 MB and is optimized to run smoothly on low-end Android phones."
       },
       {
-        "question": "Bingo 101 lightweight hai?",
-        "answer": "Haan, Bingo 101 sirf 40-45 MB ka hai — bahut lightweight aur fast app hai."
+        "question": "What is the minimum withdrawal on Rumble Rummy?",
+        "answer": "The minimum withdrawal amount is ₹100. Withdrawals are processed quickly via UPI."
       }
     ],
     "isNew": true,
     "isHot": false,
     "isTrending": false,
-    "metaTitle": "Bingo 101 APK Download — ₹350 Sign Up Bonus | AllYonoMax",
-    "metaDescription": "Bingo 101 APK download karo aur pao ₹350 sign up bonus. Classic bingo with multiplayer mode. Trusted Yono Games app.",
+    "metaTitle": "Rumble Rummy APK Download — ₹350 Sign Up Bonus | AllYonoMax",
+    "metaDescription": "Rumble Rummy APK download karo aur pao ₹350 sign up bonus. Lightweight app with fast-paced rummy and instant withdrawal.",
     "keywords": [
-      "bingo 101 apk",
-      "bingo 101 download",
-      "bingo 101 refer link",
-      "bingo 101 sign up bonus",
-      "bingo 101 game"
+      "rumble rummy apk",
+      "rumble rummy download",
+      "rumble rummy refer link",
+      "rumble rummy sign up bonus",
+      "rumble rummy real money"
     ]
   },
   {
+    "id": 4,
     "name": "Rummy 888",
-    "category": "rummy",
-    "referLink": "https://rummy888vip32.com/?code=TPU8WUNKC21&t=1774208673",
-    "bonus": " ₹500",
-    "minWithdrawal": " ₹100",
+    "slug": "rummy-888",
+    "category": "Rummy",
+    "icon": "/icons/rummy-888.webp",
+    "bonus": "₹500",
+    "minWithdrawal": "₹100",
     "appSize": "70MB",
-    "rating": "4.5",
-    "totalDownloads": "100K",
-    "description": "Quia nesciunt proid",
+    "rating": 4.5,
+    "totalDownloads": "100K+",
+    "referLink": "https://rummy888vip32.com/?code=TPU8WUNKC21&t=1774208673",
+    "description": "Rummy 888 ek premium rummy gaming app hai jo high-quality gameplay aur generous bonuses ke liye jaani jaati hai. Rummy 888 mein signup karte hi ₹500 ka welcome bonus milta hai. App mein 8+ rummy game variants available hain — classic, pool, deals, aur points rummy. Rummy 888 ka lucky 8 jackpot system unique feature hai jisme players special rewards jeet sakte hain. App ka interface clean aur premium feel deta hai. Daily tournaments aur weekly leaderboard competitions se aap extra money earn kar sakte ho. Withdrawal minimum ₹100 hai aur instant UPI se hota hai.",
+    "features": [
+      "8+ Rummy Variants",
+      "Lucky 8 Jackpot",
+      "Daily Tournaments",
+      "Weekly Leaderboards",
+      "Instant UPI Withdrawal",
+      "Refer & Earn"
+    ],
+    "howToDownload": [
+      "Niche Download button par click karo",
+      "APK file download hogi — install karo",
+      "Register karo apna mobile number se",
+      "Sign up bonus automatically milega",
+      "Refer link share karo aur extra kamao"
+    ],
+    "faq": [
+      {
+        "question": "What is Rummy 888?",
+        "answer": "Rummy 888 is a premium rummy app with 8+ game variants and a unique Lucky 8 jackpot system. New users get a ₹500 welcome bonus."
+      },
+      {
+        "question": "How to withdraw money from Rummy 888?",
+        "answer": "Open the app, go to Withdraw section, enter the amount (minimum ₹100), and select UPI. Withdrawals are processed instantly."
+      },
+      {
+        "question": "Is Rummy 888 safe?",
+        "answer": "Yes, Rummy 888 is a verified platform with 100K+ downloads. It uses secure payment gateways and certified random number generators for fair gameplay."
+      }
+    ],
     "isNew": false,
     "isTrending": true,
-    "faq": [
-      {
-        "question": "Duis asperiores labo",
-        "answer": "Aperiam quo explicab"
-      }
-    ],
-    "metaTitle": "Aut aliquam aliquam ",
-    "metaDescription": "Voluptas pariatur F",
+    "metaTitle": "Rummy 888 APK Download — ₹500 Sign Up Bonus | AllYonoMax",
+    "metaDescription": "Download Rummy 888 APK and get ₹500 sign up bonus. Premium rummy with 8+ variants and Lucky 8 jackpot. Instant UPI withdrawal.",
     "keywords": [
-      "Animi reprehenderit"
-    ],
-    "slug": "rummy-888",
-    "id": 4,
-    "icon": "/icons/rummy-888.webp"
+      "rummy 888 apk",
+      "rummy 888 download",
+      "rummy 888 refer link",
+      "rummy 888 sign up bonus",
+      "rummy 888 real money"
+    ]
   },
   {
+    "id": 5,
     "name": "Rani Slots",
-    "category": "rummy",
-    "referLink": "https://www.jaihoslots27.com/?code=EGPESXYXXKG&t=1773219661",
-    "bonus": " ₹500",
+    "slug": "rani-slots",
+    "category": "Slots",
+    "icon": "/icons/rani-slots.webp",
+    "bonus": "₹500",
     "minWithdrawal": "₹100",
     "appSize": "65MB",
-    "rating": "4.2",
-    "totalDownloads": "140K",
-    "description": "Rani Slots APK Download and claim an instant ₹48 welcome bonus after registration. The new Yono Rani Slots app is a popular platform where users can enjoy exciting slot games and earn real rewards. With a quick signup process and smooth interface, players can start playing within minutes.\n\nDownload the Rani Slots APK to enjoy slot games, daily rewards, and referral bonuses. Register quickly and start playing with a welcome bonus and fast withdrawals.",
-    "isNew": true,
-    "isTrending": false,
+    "rating": 4.2,
+    "totalDownloads": "140K+",
+    "referLink": "https://www.jaihoslots27.com/?code=EGPESXYXXKG&t=1773219661",
+    "description": "Rani Slots ek exciting slots gaming app hai jo Yono Games lovers ke liye specially design ki gayi hai. Rani Slots mein signup karte hi ₹500 ka welcome bonus milta hai. App mein 20+ different slot machines available hain — har ek unique theme aur bonus rounds ke saath. Rani Slots mein daily free spins milte hain jo real money jeetne mein use kar sakte ho. App ka jackpot system bahut exciting hai — lucky players ne lakho rupaye jeete hain. Withdrawal fast hai aur minimum ₹100 se start hota hai. Rani Slots ka interface colorful aur engaging hai aur app mein regular events aur promotions chalte rehte hain.",
+    "features": [
+      "20+ Slot Machines",
+      "Daily Free Spins",
+      "Jackpot System",
+      "Regular Events & Promotions",
+      "Instant Withdrawal",
+      "Refer & Earn"
+    ],
+    "howToDownload": [
+      "Niche Download button par click karo",
+      "APK file download hogi — install karo",
+      "Register karo apna mobile number se",
+      "Sign up bonus automatically milega",
+      "Refer link share karo aur extra kamao"
+    ],
     "faq": [
       {
-        "question": "What Is The Rani Slots Apk?",
-        "answer": "The Rani Slots APK is an excellent application that offers users a sign-up bonus of ₹500 when they join. This game includes a fantastic bonus program, and you can learn more by reading the complete post. Additionally, All Yono Games is a popular slots game with a minimum withdrawal amount of ₹100 and a minimum deposit of ₹100."
+        "question": "What is Rani Slots?",
+        "answer": "Rani Slots is a popular slots gaming app with 20+ slot machines, daily free spins, and an exciting jackpot system. New users get a ₹500 welcome bonus."
+      },
+      {
+        "question": "How to get free spins on Rani Slots?",
+        "answer": "Rani Slots gives daily free spins to all users. Log in every day to collect your free spins and use them in any slot machine to win real money."
+      },
+      {
+        "question": "What is the minimum withdrawal on Rani Slots?",
+        "answer": "The minimum withdrawal amount on Rani Slots is ₹100. Use UPI for instant withdrawals to your bank account."
       }
     ],
-    "metaTitle": "Rani Slots APK Download —  ₹500 Bonus | AllYonoMax",
-    "metaDescription": "Download Rani Slots APK and get  ₹500 sign up bonus. 65MB size, ₹100 minimum withdrawal. Instant UPI withdrawal.",
-    "keywords": [],
-    "slug": "rani-slots",
-    "id": 5,
-    "icon": "/icons/rani-slots.webp"
+    "isNew": true,
+    "isTrending": false,
+    "metaTitle": "Rani Slots APK Download — ₹500 Bonus | AllYonoMax",
+    "metaDescription": "Download Rani Slots APK and get ₹500 sign up bonus. 20+ slot machines with daily free spins. ₹100 minimum withdrawal, instant UPI.",
+    "keywords": [
+      "rani slots apk",
+      "rani slots download",
+      "rani slots refer link",
+      "rani slots sign up bonus",
+      "rani slots real money"
+    ]
+  },
+  {
+    "name": "Boss Rummy",
+    "category": "rummy",
+    "referLink": "https://www.bossrummya.com/?code=9HFCH2TQ8CW&t=1766370173",
+    "bonus": "₹200",
+    "minWithdrawal": "₹100",
+    "appSize": "40MB",
+    "rating": "4.5",
+    "totalDownloads": "500K+",
+    "description": "Boss Rummy ek popular gaming app hai jo rummy, poker, and card games offer karti hai. Boss Rummy mein signup karte hi generous welcome bonus milta hai. App mein multiple game modes available hain aur instant UPI withdrawal ka feature hai. Boss Rummy ka referral program bahut generous hai — har friend ko invite karne par bonus milta hai. Minimum withdrawal sirf ₹100 hai aur process fast hai. Boss Rummy secure payment gateways use karta hai aur daily tournaments organize karta hai.",
+    "isNew": false,
+    "isTrending": true,
+    "features": [
+      "Multiple Rummy Variants",
+      "Daily Tournaments",
+      "Instant UPI Withdrawal",
+      "Refer & Earn",
+      "VIP Rewards",
+      "Smooth Gameplay"
+    ],
+    "howToDownload": [
+      "Niche Download button par click karo",
+      "APK file download hogi — install karo",
+      "Register karo apna mobile number se",
+      "Sign up bonus automatically milega",
+      "Refer link share karo aur extra kamao"
+    ],
+    "faq": [
+      {
+        "question": "What is Boss Rummy?",
+        "answer": "Boss Rummy is a popular gaming app that offers users a generous sign-up bonus when they join. The app features multiple game modes, instant UPI withdrawals, and a rewarding referral program. Download Boss Rummy from AllYonoMax to start earning real cash."
+      },
+      {
+        "question": "How to sign up on Boss Rummy?",
+        "answer": "Download the Boss Rummy APK from the download link on this page. Install it on your Android device, register using your mobile number, enter the OTP, and your sign-up bonus will be credited automatically."
+      },
+      {
+        "question": "What is the minimum withdrawal on Boss Rummy?",
+        "answer": "The minimum withdrawal amount on Boss Rummy is ₹100. Withdrawals are processed instantly to your linked UPI or bank account."
+      },
+      {
+        "question": "How does the Boss Rummy referral program work?",
+        "answer": "Share your unique referral link with friends. When they register and play, you earn bonus rewards per referral. There is no limit on the number of referrals you can make."
+      }
+    ],
+    "metaTitle": "Boss Rummy APK Download — ₹200 Sign Up Bonus | AllYonoMax",
+    "metaDescription": "Download Boss Rummy APK and get ₹200 sign up bonus. Play rummy games with instant UPI withdrawal. Minimum withdrawal ₹100. Trusted app on AllYonoMax.",
+    "keywords": [
+      "boss-rummy apk",
+      "boss-rummy download",
+      "boss-rummy refer link",
+      "boss-rummy sign up bonus",
+      "boss rummy real money",
+      "yono games",
+      "rummy app download",
+      "real money games"
+    ],
+    "slug": "boss-rummy",
+    "id": 6,
+    "icon": "/icons/boss-rummy.webp"
   }
 ]

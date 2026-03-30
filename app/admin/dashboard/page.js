@@ -2,17 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
-/* ── SVG Icons ── */
-const I = {
-  phone: <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>,
-  fire: <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" /></svg>,
-  trend: <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" /></svg>,
-  folder: <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" /></svg>,
-  plus: <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>,
-  arrow: <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>,
-  globe: <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>,
-};
+import { Smartphone, Flame, TrendingUp, FolderOpen, Plus, ArrowRight, Globe } from 'lucide-react';
 
 export default function AdminDashboard() {
   const [apps, setApps] = useState([]);
@@ -31,10 +21,10 @@ export default function AdminDashboard() {
   const categories = [...new Set(apps.map(a => (a.category || 'Uncategorized').toLowerCase()))];
 
   const stats = [
-    { label: 'Total Apps', value: totalApps, icon: I.phone, gradient: 'from-blue-500/15 to-cyan-500/5', border: 'border-blue-500/15', text: 'text-blue-400', iconBg: 'bg-blue-500/10 text-blue-400' },
-    { label: 'New Apps', value: newApps, icon: I.fire, gradient: 'from-orange-500/15 to-amber-500/5', border: 'border-orange-500/15', text: 'text-orange-400', iconBg: 'bg-orange-500/10 text-orange-400' },
-    { label: 'Trending', value: trendingApps, icon: I.trend, gradient: 'from-emerald-500/15 to-green-500/5', border: 'border-emerald-500/15', text: 'text-emerald-400', iconBg: 'bg-emerald-500/10 text-emerald-400' },
-    { label: 'Categories', value: categories.length, icon: I.folder, gradient: 'from-violet-500/15 to-purple-500/5', border: 'border-violet-500/15', text: 'text-violet-400', iconBg: 'bg-violet-500/10 text-violet-400' },
+    { label: 'Total Apps', value: totalApps, icon: Smartphone, gradient: 'from-blue-500/15 to-cyan-500/5', border: 'border-blue-500/15', text: 'text-blue-400', iconBg: 'bg-blue-500/10 text-blue-400' },
+    { label: 'New Apps', value: newApps, icon: Flame, gradient: 'from-orange-500/15 to-amber-500/5', border: 'border-orange-500/15', text: 'text-orange-400', iconBg: 'bg-orange-500/10 text-orange-400' },
+    { label: 'Trending', value: trendingApps, icon: TrendingUp, gradient: 'from-emerald-500/15 to-green-500/5', border: 'border-emerald-500/15', text: 'text-emerald-400', iconBg: 'bg-emerald-500/10 text-emerald-400' },
+    { label: 'Categories', value: categories.length, icon: FolderOpen, gradient: 'from-violet-500/15 to-purple-500/5', border: 'border-violet-500/15', text: 'text-violet-400', iconBg: 'bg-violet-500/10 text-violet-400' },
   ];
 
   if (loading) {
@@ -56,13 +46,16 @@ export default function AdminDashboard() {
 
       {/* Stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        {stats.map(s => (
-          <div key={s.label} className={`rounded-2xl p-5 bg-gradient-to-br ${s.gradient} border ${s.border}`}>
-            <div className={`w-9 h-9 rounded-xl ${s.iconBg} flex items-center justify-center mb-3`}>{s.icon}</div>
-            <p className="text-2xl font-bold text-white">{s.value}</p>
-            <p className={`text-xs font-medium ${s.text} mt-0.5`}>{s.label}</p>
-          </div>
-        ))}
+        {stats.map(s => {
+          const Icon = s.icon;
+          return (
+            <div key={s.label} className={`rounded-2xl p-5 bg-gradient-to-br ${s.gradient} border ${s.border}`}>
+              <div className={`w-9 h-9 rounded-xl ${s.iconBg} flex items-center justify-center mb-3`}><Icon className="w-5 h-5" /></div>
+              <p className="text-2xl font-bold text-white">{s.value}</p>
+              <p className={`text-xs font-medium ${s.text} mt-0.5`}>{s.label}</p>
+            </div>
+          );
+        })}
       </div>
 
       {/* Quick Actions */}
@@ -71,15 +64,15 @@ export default function AdminDashboard() {
         <div className="flex flex-wrap gap-3">
           <Link href="/admin/add-app"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500 text-white text-sm font-semibold shadow-lg shadow-red-900/30 transition-all duration-200">
-            {I.plus} Add New App
+            <Plus className="w-4 h-4" /> Add New App
           </Link>
           <Link href="/admin/apps"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.04] border border-white/10 text-slate-300 text-sm font-medium hover:bg-white/[0.08] hover:border-white/15 hover:text-white transition-all">
-            {I.phone} Manage Apps
+            <Smartphone className="w-4 h-4" /> Manage Apps
           </Link>
           <Link href="/"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.04] border border-white/10 text-slate-300 text-sm font-medium hover:bg-white/[0.08] hover:border-white/15 hover:text-white transition-all">
-            {I.globe} View Site
+            <Globe className="w-4 h-4" /> View Site
           </Link>
         </div>
       </div>
@@ -89,7 +82,7 @@ export default function AdminDashboard() {
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-sm font-bold text-white">Recent Apps</h3>
           <Link href="/admin/apps" className="text-xs font-medium text-red-400 hover:text-red-300 transition-colors flex items-center gap-1">
-            View All {I.arrow}
+            View All <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
         <div className="space-y-2">

@@ -28,6 +28,26 @@ export default function Footer() {
             All Apps
           </Link>
           <span className="text-card-border">•</span>
+          <Link href="/about" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+            About
+          </Link>
+          <span className="text-card-border">•</span>
+          <Link href="/contact" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+            Contact
+          </Link>
+          <span className="text-card-border">•</span>
+          <Link href="/disclaimer" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+            Disclaimer
+          </Link>
+          <span className="text-card-border">•</span>
+          <Link href="/privacy-policy" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+            Privacy Policy
+          </Link>
+          <span className="text-card-border">•</span>
+          <Link href="/terms-and-conditions" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+            Terms & Conditions
+          </Link>
+          <span className="text-card-border">•</span>
           <a
             href="https://t.me/allyonomax"
             target="_blank"
@@ -55,18 +75,7 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Disclaimer */}
-        <div className="hide disclaimer-card mb-6">
-          <div className="flex items-start gap-2 mb-2">
-            <AlertTriangle className="w-4 h-4 text-red-accent mt-0.5 flex-shrink-0" />
-            <span className="text-red-accent font-bold text-sm">Disclaimer</span>
-          </div>
-          <p className="text-text-secondary text-xs leading-relaxed">
-            This website is for entertainment purposes only.
-            Gambling involves risk. Please play responsibly. You must be 18+ to use these apps.
-            We do not promote or encourage gambling. All trademarks belong to their respective owners.
-          </p>
-        </div>
+
 
         {/* Bottom Bar */}
         <div className="pt-4 border-t border-card-border">

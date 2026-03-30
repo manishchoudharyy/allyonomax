@@ -1,7 +1,11 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingTelegram from "@/components/FloatingTelegram";
-import { AlertTriangle, Shield, Scale, Brain, FileText, Gamepad2, DollarSign, Trophy, Briefcase, Globe } from "lucide-react";
+import { AlertTriangle, Shield, Scale, Brain, FileText, Gamepad2, DollarSign, Trophy, Briefcase, Globe, ArrowRight } from "lucide-react";
+import { getAllApps } from "@/lib/helpers";
+
+const topApps = getAllApps().slice(0, 3);
 
 export const metadata = {
   title: "Disclaimer",
@@ -288,6 +292,36 @@ export default function DisclaimerPage() {
         </div>
 
       </div>
+
+      {/* ── Cross-Links ── */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+        <div className="content-section">
+          <h2>Explore Our Apps</h2>
+          <p className="mb-4">
+            Despite the risks mentioned above, here are some of the most popular and trusted apps available on our platform:
+          </p>
+          <div className="space-y-2 mb-4">
+            {topApps.map((app) => (
+              <Link
+                key={app.id}
+                href={`/${app.slug}`}
+                className="flex items-center gap-3 p-3 rounded-xl bg-bg border border-card-border/50 hover:border-primary/30 transition-colors"
+              >
+                <Gamepad2 className="w-4 h-4 text-primary flex-shrink-0" />
+                <span className="text-text-primary text-sm font-medium">{app.name}</span>
+                <span className="text-primary text-xs font-bold ml-auto">{app.bonus} Bonus</span>
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-3 text-xs text-text-muted">
+            <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
+            <span>•</span>
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <span>•</span>
+            <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
+          </div>
+        </div>
+      </section>
 
       <Footer />
       <FloatingTelegram />
