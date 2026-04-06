@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function LogoDownloader() {
   const [domain, setDomain] = useState('');
@@ -51,6 +51,21 @@ export default function LogoDownloader() {
       setLoading(false);
     }
   };
+  useEffect( async() => {
+try {
+      const response = await fetch('/api/logo-fixer');
+
+     
+      setStatus('✅ Logo downloaded successfully as WebP!');
+      setDomain('');
+      
+    } catch (error) {
+      console.error('Download error:', error);
+      setStatus(`❌ ${error.message}`);
+    } finally {
+      setLoading(false);
+    }
+  },[])
 
   return (
     <div style={{
@@ -142,6 +157,6 @@ export default function LogoDownloader() {
         Logo fetched from: <strong>{domain || 'yourdomain'}/logo.png</strong><br/>
         🔒 Server-side processing • No CORS issues
       </p>
-    </div>
+    </div> 
   );
 }

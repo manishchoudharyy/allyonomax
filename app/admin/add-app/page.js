@@ -7,8 +7,7 @@ import {
   ChevronUp, ChevronDown, ListPlus, Download, HelpCircle,
   Search as SearchIcon, Star, FileText, Tag, Layers
 } from 'lucide-react';
-
-/* ── Alert Modal ── */
+ /* ── Alert Modal ── */
 function AlertModal({ show, type, title, message, onClose }) {
   if (!show) return null;
   return (
@@ -63,12 +62,12 @@ const getDefaultDescription = (name, category) => {
   const n = name || 'This App';
   const cat = (category || 'rummy').toLowerCase();
   const gameTypes = {
-    rummy: 'rummy, poker, and card games', slots: 'slot machines, spin wheels, and jackpot games',
+    rummy: 'rummy, teen patti, poker', slots: 'slot machines, spin wheels, and jackpot games',
     casino: 'casino games, cards, and table games', 'teen-patti': 'Teen Patti, Poker, and card games',
     bingo: 'Bingo, lottery, and number games', arcade: 'arcade and casual games', spin: 'spin wheel and luck-based games',
   };
   const games = gameTypes[cat] || 'rummy, slots, and casino games';
-  return `${n} ek popular gaming app hai jo ${games} offer karti hai. ${n} mein signup karte hi generous welcome bonus milta hai. App mein multiple game modes available hain aur instant UPI withdrawal ka feature hai. ${n} ka referral program bahut generous hai — har friend ko invite karne par bonus milta hai. Minimum withdrawal sirf ₹100 hai aur process fast hai. ${n} secure payment gateways use karta hai aur daily tournaments organize karta hai.`;
+  return `${n} is one of the most popular gaming applications in India, offering users an exciting opportunity to earn real money while playing their favorite games. With a user-friendly interface and secure payment system, this app has gained the trust of thousands of players across the country. The app features a wide variety of games including ${games} and many other skill-based games that not only provide entertainment but also offer substantial earning opportunities for skilled players.`;
 };
 
 const getDefaultFeatures = (category) => {
@@ -101,7 +100,7 @@ const getDefaultSeo = (name, bonus, category) => {
   return {
     metaTitle: `${n} APK Download — ${b} Sign Up Bonus | AllYonoMax - Yono Games`,
     metaDescription: `Download ${n} APK and get ${b} sign up bonus. Play ${cat} games with instant UPI withdrawal. Minimum withdrawal ₹100. Trusted app on AllYonoMax.`,
-    keywords: [`${slug} apk`, `${slug} download`, `${slug} refer link`, `${slug} sign up bonus`, `${n.toLowerCase()} real money`, 'yono games', `${cat} app download`, 'real money games'],
+    keywords: [`${n} apk`, `${n} download`, `${n} refer link`, `${n} sign up bonus`, `${n.toLowerCase()} real money`, 'yono games', `${cat} app download`, 'real money games'],
   };
 };
 

@@ -15,6 +15,8 @@ import {
   Award,
   DownloadIcon,
   Package,
+  AlertCircle,
+  Info
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -403,7 +405,36 @@ export default async function AppPage({ params }) {
           </div>
         </section>
       )}
+      {/* Important Notice */}
+      <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+        <div className="card-elevated p-6 sm:p-8">
+          <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
+            <div className="w-1 h-6 rounded-full bg-accent-dark" />
+            Important Notice
+          </h2>
+          <div className="space-y-4">
+            {/* Warning Card 1: General Disclaimer */}
+            <div className="flex gap-4 items-start bg-bg border-l-4 border-l-[#f59e0b] border-y border-r border-card-border/50 rounded-xl p-5 shadow-sm transition-all hover:shadow-md">
+              <Info className="w-6 h-6 text-[#f59e0b] flex-shrink-0 mt-0.5" />
+              <div className="text-sm leading-relaxed text-text-secondary font-medium">
+                <strong className="text-text-primary text-sm tracking-wide block mb-1">Disclaimer</strong>
+                <p>allyonomax.com does not run these apps. Gaming apps can be addictive and risky financially. Only for 18+ users. Please read our Disclaimer page and the app-specific disclaimer before playing.</p>
+              </div>
+            </div>
 
+            {/* Warning Card 2: Geo-block / Region Ban */}
+            <div className="flex gap-4 items-start bg-bg border-l-4 border-l-[#ef4444] border-y border-r border-card-border/50 rounded-xl p-5 shadow-sm transition-all hover:shadow-md">
+              <AlertCircle className="w-6 h-6 text-[#ef4444] flex-shrink-0 mt-0.5" />
+              <div className="text-sm leading-relaxed text-text-secondary font-medium">
+                <strong className="text-text-primary text-sm uppercase tracking-wider block mb-1 flex items-center gap-2">
+                  Alert
+                </strong>
+                <p>Rummy (skill-based) is banned in <span className="text-text-primary">Andhra Pradesh, Sikkim, Nagaland, Assam, Arunachal Pradesh, Tamil Nadu, Odisha, and Telangana.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* ── Cross-links ── */}
       <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-text-muted">

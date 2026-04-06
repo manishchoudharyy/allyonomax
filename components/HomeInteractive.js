@@ -6,10 +6,10 @@ import AppCard from "@/components/AppCard";
 
 export default function HomeInteractive({ newApps, otherApps }) {
   const [activeTab, setActiveTab] = useState("new");
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(true);
 
   const displayApps = activeTab === "new" ? newApps : otherApps;
-  const visibleApps = showAll ? displayApps : displayApps.slice(0, 6);
+  const visibleApps = showAll ? displayApps : displayApps;
 
   return (
     <section id="apps" className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
