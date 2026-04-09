@@ -1,4 +1,5 @@
 export const dynamic = 'force-dynamic';
+export const fetchCache = 'force-no-store';
 export const revalidate = 0;
 import { Star, Eye, ChevronDown, Send, ChevronUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
