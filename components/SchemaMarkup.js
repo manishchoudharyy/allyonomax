@@ -109,7 +109,7 @@ export function WebsiteSchema() {
         availableLanguage: ["English", "Hindi"],
       },
       sameAs: [
-        "https://t.me/allyonomax",
+        "https://t.me/+nS6ouVo-aeVmNzNl",
       ],
     },
   ];

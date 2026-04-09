@@ -18,6 +18,7 @@ const allApps = getAllApps();
 const newApps = allApps;
 const otherApps = allApps.filter((app) => !app.isNew && !app.isHot && !app.isTrending);
 
+
 export default function HomePage() {
   return (
     <>
@@ -50,7 +51,7 @@ export default function HomePage() {
             <p>
 
               <a
-                href="https://t.me/allyonomax"
+                href="https://t.me/+nS6ouVo-aeVmNzNl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full text-sm"

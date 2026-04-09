@@ -111,7 +111,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-IN" className={`${dmSans.variable} ${inter.variable}`}>
+    <html lang="en-IN" className={`${dmSans.variable} ${inter.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-bg text-text-primary font-body bg-texture antialiased">
         {children}
       </body>

@@ -1,0 +1,31 @@
+﻿=== ALLYONOMAX APPS.JSON SEO AUDIT ===
+Total Apps: 15
+
+[ISSUES (1)] ID=1 | Bet 213 | Cat=Rummy | Rate=4.2 | Desc=1182 | FAQ=6 | Feat=6 | Steps=8 | KW=6 | MetaD=161 | MetaT=64
+   -> META DESC TOO LONG (161 chars)
+[ISSUES (2)] ID=2 | Yono 777 | Cat=Slots | Rate=4.9 | Desc=1195 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=168 | MetaT=62
+   -> HIGH RATING (4.9) - may seem unrealistic
+   -> META DESC TOO LONG (168 chars)
+[PASS] ID=3 | 101z | Cat=Rummy | Rate=4.3 | Desc=1182 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=151 | MetaT=61
+[PASS] ID=4 | Bingo 101 | Cat=Bingo | Rate=4.6 | Desc=1145 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=156 | MetaT=62
+[ISSUES (1)] ID=5 | Spin 777 | Cat=Slots | Rate=4.8 | Desc=1077 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=151 | MetaT=66
+   -> META TITLE TOO LONG (66 chars)
+[PASS] ID=6 | YN 777 | Cat=Rummy | Rate=4.2 | Desc=1053 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=150 | MetaT=59
+[PASS] ID=7 | Slots Winner | Cat=Slots | Rate=4.7 | Desc=1170 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=143 | MetaT=63
+[ISSUES (1)] ID=8 | Spin Gold | Cat=Slots | Rate=4.5 | Desc=1191 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=151 | MetaT=68
+   -> META TITLE TOO LONG (68 chars)
+[PASS] ID=9 | 567 Slots | Cat=Slots | Rate=4.4 | Desc=1190 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=154 | MetaT=59
+[PASS] ID=10 | Uono Refer | Cat=Rummy | Rate=4.3 | Desc=1197 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=154 | MetaT=63
+[PASS] ID=11 | Jaiho Slots | Cat=Slots | Rate=4.8 | Desc=1200 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=153 | MetaT=61
+[ISSUES (1)] ID=12 | Spin 101 | Cat=Slots | Rate=4.6 | Desc=1090 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=150 | MetaT=70
+   -> META TITLE TOO LONG (70 chars)
+[PASS] ID=13 | Mbm Bet | Cat=Slots | Rate=4.5 | Desc=1122 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=157 | MetaT=61
+[ISSUES (1)] ID=14 | Ind Slots | Cat=Slots | Rate=4.7 | Desc=1052 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=156 | MetaT=71
+   -> META TITLE TOO LONG (71 chars)
+[ISSUES (2)] ID=15 | 789 Jackpots | Cat=Slots | Rate=4.9 | Desc=1011 | FAQ=6 | Feat=6 | Steps=9 | KW=6 | MetaD=164 | MetaT=57
+   -> HIGH RATING (4.9) - may seem unrealistic
+   -> META DESC TOO LONG (164 chars)
+
+=== AUDIT SUMMARY ===
+PASSED: 8 / 15
+WITH ISSUES: 7 / 15

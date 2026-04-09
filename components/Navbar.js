@@ -22,7 +22,7 @@ export default function Navbar() {
     { label: "Contact", href: "/contact", icon: Phone, active: false },
     { label: "Disclaimer", href: "/disclaimer", icon: FileText, active: false },
     { label: "Privacy Policy", href: "/privacy-policy", icon: Shield, active: false },
-    { label: "TG Join", href: "https://t.me/allyonomax", icon: Send, active: false, external: true },
+    { label: "TG Join", href: "https://t.me/+nS6ouVo-aeVmNzNl", icon: Send, active: false, external: true },
   ];
 
   return (
@@ -118,7 +118,7 @@ export default function Navbar() {
             {/* Telegram CTA at Bottom */}
             <div className="p-4 border-t border-card-border">
               <a
-                href="https://t.me/allyonomax"
+                href="https://t.me/+nS6ouVo-aeVmNzNl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-[#0088cc] hover:bg-[#0077b5] text-white text-sm font-bold rounded-xl transition-colors shadow-md"

@@ -5,7 +5,7 @@ import { Send } from "lucide-react";
 export default function FloatingTelegram() {
   return (
     <a
-      href="https://t.me/allyonomax"
+      href="https://t.me/+nS6ouVo-aeVmNzNl"
       target="_blank"
       rel="noopener noreferrer"
       className="floating-telegram"

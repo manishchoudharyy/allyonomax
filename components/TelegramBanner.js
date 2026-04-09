@@ -10,7 +10,7 @@ export default function TelegramBanner() {
         </span>
       </div>
       <a
-        href="https://t.me/allyonomax"
+        href="https://t.me/+nS6ouVo-aeVmNzNl"
         target="_blank"
         rel="noopener noreferrer"
         className="px-5 py-1.5 bg-white text-primary font-bold text-sm rounded-xl hover:bg-bg transition-colors shadow-sm"

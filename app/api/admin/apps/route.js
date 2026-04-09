@@ -4,7 +4,9 @@ import { NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
 import sharp from 'sharp';
 
-const APPS_FILE = path.join(process.cwd(), 'lib/apps.json');
+// Absolute paths for VPS
+const APPS_FILE = '/root/allyonomax/lib/apps.json';
+const PUBLIC_ROOT = '/root/allyonomax/public';
 
 function readApps() {
   const data = fs.readFileSync(APPS_FILE, 'utf8');
@@ -80,8 +82,11 @@ export async function POST(request) {
 
       if (logoBuffer) {
         const webp = await sharp(Buffer.from(logoBuffer)).resize(200, 200, { fit: 'inside' }).webp({ quality: 85 }).toBuffer();
-        const iconsDir = path.join(process.cwd(), 'public', 'icons');
+        
+        // Path changed to absolute root
+        const iconsDir = path.join(PUBLIC_ROOT, 'icons');
         if (!fs.existsSync(iconsDir)) fs.mkdirSync(iconsDir, { recursive: true });
+        
         const imgName = `${newApp.slug}.webp`;
         fs.writeFileSync(path.join(iconsDir, imgName), webp);
         newApp.icon = `/icons/${imgName}`;
@@ -146,7 +151,8 @@ export async function DELETE(request) {
     // Delete icon file if exists
     const app = apps[index];
     if (app.icon) {
-      const iconPath = path.join(process.cwd(), 'public', app.icon);
+      // Path changed to absolute root
+      const iconPath = path.join(PUBLIC_ROOT, app.icon);
       if (fs.existsSync(iconPath)) {
         fs.unlinkSync(iconPath);
       }

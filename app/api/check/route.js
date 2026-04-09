@@ -8,7 +8,8 @@ export async function POST(request) {
     const newApp = await request.json();
     
     // Apps.json ka path
-    const filePath = path.join(process.cwd(), 'lib/apps.json');
+    const filePath = '/root/allyonomax/lib/apps.json'; 
+const iconsDir = '/root/allyonomax/public/icons';
     const fileData = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(fileData);
     

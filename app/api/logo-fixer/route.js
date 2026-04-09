@@ -5,7 +5,7 @@ import sharp from 'sharp';
 
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), 'lib/apps.json');
+    const filePath = path.join(process.cwd(), 'lib/gemini.json');
     const iconsDir = path.join(process.cwd(), 'public', 'icons');
     
     // Ensure icons directory exists
