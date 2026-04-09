@@ -3,6 +3,7 @@ import path from 'path';
 import { NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
 import sharp from 'sharp';
+import { revalidatePath } from 'next/cache'; // 👈 Ye add kiya cache clear karne ke liye
 
 // Absolute paths for VPS
 const APPS_FILE = '/root/allyonomax/lib/apps.json';
@@ -44,16 +45,13 @@ export async function POST(request) {
     const newApp = await request.json();
     const apps = readApps();
 
-    // New ID
     const newId = apps.length > 0 ? Math.max(...apps.map(a => a.id || 0)) + 1 : 1;
     newApp.id = newId;
 
-    // Slug
     if (!newApp.slug) {
       newApp.slug = newApp.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '');
     }
 
-    // ─── Auto-download icon from referLink domain ───
     let domain = '';
     if (newApp.referLink && newApp.referLink.trim()) {
       try {
@@ -82,11 +80,8 @@ export async function POST(request) {
 
       if (logoBuffer) {
         const webp = await sharp(Buffer.from(logoBuffer)).resize(200, 200, { fit: 'inside' }).webp({ quality: 85 }).toBuffer();
-        
-        // Path changed to absolute root
         const iconsDir = path.join(PUBLIC_ROOT, 'icons');
         if (!fs.existsSync(iconsDir)) fs.mkdirSync(iconsDir, { recursive: true });
-        
         const imgName = `${newApp.slug}.webp`;
         fs.writeFileSync(path.join(iconsDir, imgName), webp);
         newApp.icon = `/icons/${imgName}`;
@@ -99,6 +94,10 @@ export async function POST(request) {
 
     apps.push(newApp);
     writeApps(apps);
+
+    // 🔥 Force refresh both pages
+    revalidatePath('/'); 
+    revalidatePath('/[slug]');
 
     return NextResponse.json({ success: true, id: newId, icon: newApp.icon });
   } catch (error) {
@@ -120,13 +119,16 @@ export async function PUT(request) {
       return NextResponse.json({ success: false, error: 'App not found' }, { status: 404 });
     }
 
-    // Keep existing icon if not changed
     if (!updatedApp.icon) {
       updatedApp.icon = apps[index].icon || '';
     }
 
     apps[index] = { ...apps[index], ...updatedApp };
     writeApps(apps);
+
+    // 🔥 Force refresh both pages after update
+    revalidatePath('/'); 
+    revalidatePath('/[slug]');
 
     return NextResponse.json({ success: true, app: apps[index] });
   } catch (error) {
@@ -148,10 +150,8 @@ export async function DELETE(request) {
       return NextResponse.json({ success: false, error: 'App not found' }, { status: 404 });
     }
 
-    // Delete icon file if exists
     const app = apps[index];
     if (app.icon) {
-      // Path changed to absolute root
       const iconPath = path.join(PUBLIC_ROOT, app.icon);
       if (fs.existsSync(iconPath)) {
         fs.unlinkSync(iconPath);
@@ -160,6 +160,10 @@ export async function DELETE(request) {
 
     apps.splice(index, 1);
     writeApps(apps);
+
+    // 🔥 Force refresh after deletion
+    revalidatePath('/'); 
+    revalidatePath('/[slug]');
 
     return NextResponse.json({ success: true });
   } catch (error) {
