@@ -150,13 +150,13 @@ export async function DELETE(request) {
       return NextResponse.json({ success: false, error: 'App not found' }, { status: 404 });
     }
 
-    const app = apps[index];
-    if (app.icon) {
-      const iconPath = path.join(PUBLIC_ROOT, app.icon);
-      if (fs.existsSync(iconPath)) {
-        fs.unlinkSync(iconPath);
-      }
-    }
+    // const app = apps[index];
+    // if (app.icon) {
+    //   const iconPath = path.join(PUBLIC_ROOT, app.icon);
+    //   if (fs.existsSync(iconPath)) {
+    //     fs.unlinkSync(iconPath);
+    //   }
+    // }
 
     apps.splice(index, 1);
     writeApps(apps);
