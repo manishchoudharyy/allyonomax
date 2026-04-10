@@ -15,14 +15,15 @@ import { getAllApps } from "@/lib/helpers";
 import HomeInteractive from "@/components/HomeInteractive";
 import HeroTextCard from "@/components/HeroTextCard";
 
-const allApps = getAllApps();
+
+
+
+export default function HomePage() {
+  const allApps = getAllApps();
 
 // Split apps into "new" and "other" categories
 const newApps = allApps;
 const otherApps = allApps.filter((app) => !app.isNew && !app.isHot && !app.isTrending);
-
-
-export default function HomePage() {
   return (
     <>
       <div className="bg-bg min-h-screen">
