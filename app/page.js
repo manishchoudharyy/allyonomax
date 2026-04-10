@@ -1,6 +1,3 @@
-export const dynamic = 'force-dynamic';
-export const fetchCache = 'force-no-store';
-export const revalidate = 0;
 import { Star, Eye, ChevronDown, Send, ChevronUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,14 +12,11 @@ import { getAllApps } from "@/lib/helpers";
 import HomeInteractive from "@/components/HomeInteractive";
 import HeroTextCard from "@/components/HeroTextCard";
 
-
-
-
 export default function HomePage() {
   const allApps = getAllApps();
 
 // Split apps into "new" and "other" categories
-const newApps = allApps;
+const newApps = allApps.filter((app) => app.isNew || app.isHot || app.isTrending);
 const otherApps = allApps.filter((app) => !app.isNew && !app.isHot && !app.isTrending);
   return (
     <>
