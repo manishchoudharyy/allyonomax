@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+  <meta name="theme-color" content="#be0000" />
+  <!-- Dynamic meta injected by JS -->
+  <title>App Page | AllYonoMax</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['DM Sans', 'sans-serif'] },
+          colors: {
+            bg:       '#EBF4FF',
+            card:     '#ffffff',
+            border:   '#d6e4f0',
+            primary:  { DEFAULT: '#EF4444', light: '#F87171', dark: '#DC2626' },
+            teal:     { DEFAULT: '#0D9488', light: '#14B8A6' },
+            accent:   { DEFAULT: '#f59e0b', dark: '#d97706' },
+            'green-acc': '#10b981',
+            txt: {
+              primary:   '#1e293b',
+              secondary: '#475569',
+              muted:     '#94a3b8',
+            },
+          },
+          keyframes: {
+            'slide-in':   { from: { transform: 'translateX(100%)' }, to: { transform: 'translateX(0)' } },
+            'pulse-ring': {
+              '0%,100%': { boxShadow: '0 4px 14px rgba(239,68,68,.25),0 0 0 0 rgba(239,68,68,.3)' },
+              '50%':      { boxShadow: '0 4px 14px rgba(239,68,68,.25),0 0 0 10px rgba(239,68,68,0)' },
+            },
+            'rotate-chev': { from: { transform: 'rotate(0deg)' }, to: { transform: 'rotate(180deg)' } },
+          },
+          animation: {
+            'slide-in':   'slide-in .25s ease-out',
+            'pulse-ring': 'pulse-ring 2s ease-in-out infinite',
+          },
+          boxShadow: {
+            card: '0 1px 3px rgba(0,0,0,.04)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #EF4444, #F87171);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-gradient {
+      background: linear-gradient(135deg, #be0000 0%, #fd0000 50%, #be0000 100%);
+    }
+    .hero-gradient {
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(239,68,68,.08) 0%, transparent 60%),
+        #EBF4FF;
+    }
+    /* Card elevated */
+    .card-elevated {
+      background: #fff;
+      border: 1px solid #d6e4f0;
+      border-radius: 1rem;
+      transition: all .3s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,.04);
+    }
+    .card-elevated:hover {
+      border-color: rgba(239,68,68,.3);
+      box-shadow: 0 10px 30px rgba(239,68,68,.08), 0 4px 12px rgba(0,0,0,.04);
+      transform: translateY(-4px);
+    }
+    /* App list row hover */
+    .app-row-hover:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,.08);
+      transform: translateY(-2px);
+    }
+    /* Download btn */
+    .dl-btn:hover  { background: #000; transform: translateY(-1px); box-shadow: 0 4px 15px rgba(0,0,0,.3); }
+    /* Primary btn */
+    .btn-primary-glow { box-shadow: 0 4px 14px rgba(239,68,68,.25); }
+    .btn-primary-glow:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(239,68,68,.35); }
+    /* Pulse animation on download CTA */
+    @keyframes pulse-ring {
+      0%,100% { box-shadow: 0 4px 14px rgba(239,68,68,.25), 0 0 0 0 rgba(239,68,68,.3); }
+      50%      { box-shadow: 0 4px 14px rgba(239,68,68,.25), 0 0 0 10px rgba(239,68,68,0); }
+    }
+    .pulse-download { animation: pulse-ring 2s ease-in-out infinite; }
+    /* Sidebar */
+    @keyframes slide-in { from { transform: translateX(100%); } to { transform: translateX(0); } }
+    .sidebar-panel { animation: slide-in .25s ease-out; }
+    /* FAQ chevron rotation */
+    details[open] .faq-chevron { transform: rotate(180deg); }
+    .faq-chevron { transition: transform .25s ease; }
+    /* FAQ summary reset */
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+    /* Stars */
+    .star-full  { color: #f59e0b; fill: #f59e0b; }
+    .star-half  { color: #f59e0b; fill: #f59e0b; }
+    .star-empty { color: #d6e4f0; fill: none; }
+    /* Floating TG */
+    .float-tg:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(13,148,136,.5); }
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #EBF4FF; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+    /* Not-found page hidden by default */
+    #notFound { display: none; }
+  </style>
+</head>
+<body class="bg-bg text-txt-primary antialiased min-h-screen">
+
+<!-- ════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════ -->
+<nav class="header-gradient px-4 py-3 flex items-center justify-between shadow-md sticky top-0 z-40">
+  <a href="/" class="flex items-center gap-2.5">
+    <img src="https://allyonomax.com/logo-sm.webp" alt="AllYonoMax Logo"
+         class="w-10 h-10 rounded-xl object-cover"
+         onerror="this.style.display='none'" />
+    <span class="text-white font-extrabold text-lg tracking-tight leading-tight">
+      All Yono Max – Yono Games
+    </span>
+  </a>
+  <button id="openSidebar" aria-label="Open menu" class="p-2 text-white active:opacity-70 transition-opacity">
+    <i data-lucide="menu" class="w-6 h-6"></i>
+  </button>
+</nav>
+
+<!-- ════════════════════════════════════════
+     SIDEBAR
+════════════════════════════════════════ -->
+<div id="sidebarOverlay" class="hidden fixed inset-0 z-[100]">
+  <div id="sidebarBackdrop" class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+  <div class="sidebar-panel absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-border">
+      <span class="text-txt-primary font-bold text-sm">Menu</span>
+      <button id="closeSidebar" class="p-1.5 text-txt-secondary hover:text-primary rounded-lg transition-colors hover:bg-bg">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+    <div class="flex-1 py-3 px-3 overflow-y-auto">
+      <a href="/"               class="flex items-center gap-3 px-4 py-3 rounded-xl text-txt-primary hover:bg-bg transition-colors text-sm font-medium"><i data-lucide="home"      class="w-5 h-5 text-txt-muted"></i>Home</a>
+      <a href="/about"          class="flex items-center gap-3 px-4 py-3 rounded-xl text-txt-primary hover:bg-bg transition-colors text-sm font-medium"><i data-lucide="info"      class="w-5 h-5 text-txt-muted"></i>About</a>
+      <a href="/contact"        class="flex items-center gap-3 px-4 py-3 rounded-xl text-txt-primary hover:bg-bg transition-colors text-sm font-medium"><i data-lucide="phone"     class="w-5 h-5 text-txt-muted"></i>Contact</a>
+      <a href="/disclaimer"     class="flex items-center gap-3 px-4 py-3 rounded-xl text-txt-primary hover:bg-bg transition-colors text-sm font-medium"><i data-lucide="file-text" class="w-5 h-5 text-txt-muted"></i>Disclaimer</a>
+      <a href="/privacy-policy" class="flex items-center gap-3 px-4 py-3 rounded-xl text-txt-primary hover:bg-bg transition-colors text-sm font-medium"><i data-lucide="shield"    class="w-5 h-5 text-txt-muted"></i>Privacy Policy</a>
+    </div>
+    <div class="p-4 border-t border-border">
+      <a href="https://t.me/+nS6ouVo-aeVmNzNl" target="_blank" rel="noopener noreferrer"
+         class="flex items-center justify-center gap-2 w-full px-4 py-3 bg-[#0088cc] hover:bg-[#0077b5] text-white text-sm font-bold rounded-xl transition-colors shadow-md">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> Join Telegram
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     NOT FOUND STATE
+════════════════════════════════════════ -->
+<div id="notFound" class="max-w-7xl mx-auto px-4 py-32 text-center">
+  <h1 class="text-3xl font-extrabold text-txt-primary mb-4">App Not Found</h1>
+  <p class="text-txt-secondary mb-6">The app you are looking for does not exist.</p>
+  <a href="/" class="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary-light
+     text-white font-bold rounded-xl px-6 py-3 transition-all duration-300
+     btn-primary-glow">← Go Home</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     MAIN APP PAGE CONTENT
+════════════════════════════════════════ -->
+<div id="appPage" class="hidden">
+
+  <!-- ── HERO ── -->
+  <section class="hero-gradient">
+    <div class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 py-4 sm:py-10">
+
+      <!-- Back link -->
+      <a href="/" class="inline-flex items-center gap-1.5 text-txt-secondary hover:text-primary transition-colors text-sm font-medium mb-4">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        Back to All Apps
+      </a>
+
+      <!-- App header card -->
+      <div class="bg-white rounded-xl flex flex-col gap-5 px-4 py-6 shadow-sm border border-border">
+
+        <!-- Icon + Name + Stars + Bonus -->
+        <div class="flex items-center gap-4 sm:gap-10">
+          <div id="heroIcon"
+               class="w-24 h-24 sm:w-36 sm:h-36 min-w-[6rem] sm:min-w-[9rem]
+                      rounded-2xl overflow-hidden border border-border
+                      flex-shrink-0 shadow-lg flex items-center justify-center
+                      bg-red-50 text-5xl">
+          </div>
+          <div class="flex flex-col justify-center gap-1">
+            <h1 id="heroName" class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-txt-primary leading-tight"></h1>
+            <!-- Stars -->
+            <div id="heroStars" class="flex items-center gap-1 mb-1"></div>
+            <!-- Bonus badge -->
+            <span id="heroBonusBadge"
+                  class="w-fit px-3 py-1 bg-primary/5 border border-primary/15
+                         rounded-full text-primary font-bold text-xs">
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick stats bar -->
+        <div class="flex items-center justify-around gap-2 border-t border-border pt-4">
+          <div class="flex flex-col items-center">
+            <span id="statDownloads" class="font-bold text-txt-primary text-center"></span>
+            <p class="flex items-center gap-0.5 text-xs text-txt-secondary mt-0.5">
+              <i data-lucide="download" class="w-3 h-3"></i> Downloads
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span id="statSize" class="font-bold text-txt-primary text-center"></span>
+            <p class="flex items-center gap-0.5 text-xs text-txt-secondary mt-0.5">
+              <i data-lucide="package" class="w-3 h-3"></i> Size
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span id="statBonus" class="font-bold text-txt-primary text-center"></span>
+            <p class="flex items-center gap-0.5 text-xs text-txt-secondary mt-0.5">
+              <i data-lucide="award" class="w-3 h-3"></i> Bonus
+            </p>
+          </div>
+        </div>
+
+        <!-- Download CTA -->
+        <a id="heroDlBtn" href="#" target="_blank" rel="noopener noreferrer nofollow sponsored"
+           class="pulse-download flex items-center justify-center gap-2 w-full
+                  bg-gradient-to-r from-primary to-primary-light
+                  text-white font-bold rounded-xl text-base sm:text-lg py-3.5
+                  transition-all duration-300">
+          <i data-lucide="download" class="w-5 h-5"></i>
+          <span id="heroDlText">Download App</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DESCRIPTION ── -->
+  <section class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6 pt-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-4 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-primary-light shrink-0"></div>
+        <span id="descTitle">About the App</span>
+      </h2>
+      <p id="descText" class="text-txt-secondary text-sm leading-relaxed"></p>
+    </div>
+  </section>
+
+  <!-- ── RELATED APPS ── -->
+  <section id="relatedSection" class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <h2 class="text-xl font-extrabold text-txt-primary mb-4 text-center">
+      Related <span class="gradient-text">Yono</span> Apps
+    </h2>
+    <div id="relatedList" class="space-y-2"></div>
+    <div class="text-center mt-4">
+      <a href="/#apps" class="text-primary text-sm font-semibold hover:underline">
+        View All Yono Games Apps →
+      </a>
+    </div>
+  </section>
+
+  <!-- ── APP DETAILS TABLE ── -->
+  <section class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-4 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-teal shrink-0"></div>
+        <span id="detailsTitle">App Details</span>
+      </h2>
+      <div class="overflow-x-auto rounded-xl border border-border">
+        <table class="w-full text-sm" id="detailsTable">
+          <tbody id="detailsTbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section id="featuresSection" class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-4 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-green-acc shrink-0"></div>
+        <span id="featuresTitle">Key Features</span>
+      </h2>
+      <div id="featuresList" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+    </div>
+  </section>
+
+  <!-- ── HOW TO DOWNLOAD ── -->
+  <section id="howToSection" class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-4 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-accent shrink-0"></div>
+        <span id="howToTitle">How to Download</span>
+      </h2>
+      <div id="howToList" class="space-y-3 mb-4"></div>
+      <a id="howToDlBtn" href="#" target="_blank" rel="noopener noreferrer nofollow sponsored"
+         class="btn-primary-glow inline-flex items-center gap-2
+                bg-gradient-to-r from-primary to-primary-light
+                text-white font-bold rounded-xl px-6 py-2.5 text-sm
+                transition-all duration-300">
+        <i data-lucide="download" class="w-4 h-4"></i>
+        <span id="howToDlText">Download Now</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── WHY CHOOSE ── -->
+  <section class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-4 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-primary shrink-0"></div>
+        <span id="whyTitle">Why Choose This App?</span>
+      </h2>
+      <div id="whyText" class="text-txt-secondary text-sm leading-relaxed space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-6 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-accent-dark shrink-0"></div>
+        Frequently Asked Questions
+      </h2>
+      <div id="faqList" class="space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- ── TAGS ── -->
+  <section id="tagsSection" class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-4 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-accent-dark shrink-0"></div>
+        Tags
+      </h2>
+      <div id="tagsList" class="flex flex-wrap gap-2"></div>
+    </div>
+  </section>
+
+  <!-- ── IMPORTANT NOTICE ── -->
+  <section class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-6">
+    <div class="card-elevated p-4 sm:p-8">
+      <h2 class="text-xl font-extrabold text-txt-primary mb-6 flex items-center gap-2">
+        <div class="w-1 h-6 rounded-full bg-accent-dark shrink-0"></div>
+        Important Notice
+      </h2>
+      <div class="space-y-4">
+        <!-- Disclaimer card -->
+        <div class="flex gap-4 items-start bg-bg border-l-4 border-l-amber-400 border border-border/50 rounded-xl p-5 shadow-sm">
+          <i data-lucide="info" class="w-6 h-6 text-amber-400 shrink-0 mt-0.5"></i>
+          <div class="text-sm leading-relaxed text-txt-secondary font-medium">
+            <strong class="text-txt-primary text-sm tracking-wide block mb-1">Disclaimer</strong>
+            <p>allyonomax.com does not run these apps. Gaming apps can be addictive and risky financially. Only for 18+ users. Please read our <a href="/disclaimer" class="text-primary hover:underline">Disclaimer page</a> and the app-specific disclaimer before playing.</p>
+          </div>
+        </div>
+        <!-- Alert card -->
+        <div class="flex gap-4 items-start bg-bg border-l-4 border-l-red-500 border border-border/50 rounded-xl p-5 shadow-sm">
+          <i data-lucide="alert-circle" class="w-6 h-6 text-red-500 shrink-0 mt-0.5"></i>
+          <div class="text-sm leading-relaxed text-txt-secondary font-medium">
+            <strong class="text-txt-primary text-sm uppercase tracking-wider block mb-1">Alert</strong>
+            <p>Rummy (skill-based) is banned in <span class="text-txt-primary">Andhra Pradesh, Sikkim, Nagaland, Assam, Arunachal Pradesh, Tamil Nadu, Odisha, and Telangana.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CROSS LINKS ── -->
+  <section class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+    <div class="flex flex-wrap items-center justify-center gap-3 text-xs text-txt-muted">
+      <a href="/about"          class="hover:text-primary transition-colors">About AllYonoMax</a>
+      <span>•</span>
+      <a href="/disclaimer"     class="hover:text-primary transition-colors">Disclaimer</a>
+      <span>•</span>
+      <a href="/privacy-policy" class="hover:text-primary transition-colors">Privacy Policy</a>
+      <span>•</span>
+      <a href="/contact"        class="hover:text-primary transition-colors">Contact Us</a>
+    </div>
+  </section>
+
+</div><!-- /#appPage -->
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="bg-white border-t border-border mt-8">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+    <div class="text-center mb-8">
+      <a href="/" class="inline-flex items-center gap-2.5 mb-4">
+        <span class="text-txt-primary text-xl font-extrabold tracking-tight">
+          All<span class="gradient-text">Yono</span>Max
+        </span>
+      </a>
+      <p class="text-txt-secondary text-sm leading-relaxed max-w-lg mx-auto">
+        India's most trusted platform to download Yono Games apps.<br />
+        Get the best bonuses, instant withdrawals, and daily rewards.
+      </p>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-4 mb-8 text-sm">
+      <a href="/"                     class="text-txt-secondary hover:text-primary transition-colors font-medium">Home</a>
+      <span class="text-border">•</span>
+      <a href="/#apps"                class="text-txt-secondary hover:text-primary transition-colors font-medium">All Apps</a>
+      <span class="text-border">•</span>
+      <a href="/about"                class="text-txt-secondary hover:text-primary transition-colors font-medium">About</a>
+      <span class="text-border">•</span>
+      <a href="/contact"              class="text-txt-secondary hover:text-primary transition-colors font-medium">Contact</a>
+      <span class="text-border">•</span>
+      <a href="/disclaimer"           class="text-txt-secondary hover:text-primary transition-colors font-medium">Disclaimer</a>
+      <span class="text-border">•</span>
+      <a href="/privacy-policy"       class="text-txt-secondary hover:text-primary transition-colors font-medium">Privacy Policy</a>
+      <span class="text-border">•</span>
+      <a href="/terms-and-conditions" class="text-txt-secondary hover:text-primary transition-colors font-medium">Terms &amp; Conditions</a>
+      <span class="text-border">•</span>
+      <a href="https://t.me/+nS6ouVo-aeVmNzNl" target="_blank" rel="noopener noreferrer"
+         class="text-txt-secondary hover:text-primary transition-colors font-medium inline-flex items-center gap-1.5">
+        <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+        Telegram Channel
+      </a>
+    </div>
+    <div class="text-center mb-8">
+      <p class="text-txt-secondary text-sm mb-3">Join our telegram channel to get Daily updates, bonus codes, and exclusive offers.</p>
+      <a href="https://t.me/+nS6ouVo-aeVmNzNl" target="_blank" rel="noopener noreferrer"
+         class="btn-primary-glow inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary-light
+                text-white font-bold rounded-xl px-6 py-2.5 text-sm transition-all duration-300">
+        <i data-lucide="send" class="w-4 h-4"></i> Join Telegram
+      </a>
+    </div>
+    <div class="pt-4 border-t border-border">
+      <p class="text-txt-muted/60 text-xs text-center flex items-center justify-center gap-1">
+        © <span id="footerYear"></span> AllYonoMax. Made with
+        <i data-lucide="heart" class="w-3 h-3 text-red-500 fill-red-500"></i> in India
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Telegram -->
+<a href="https://t.me/+nS6ouVo-aeVmNzNl" target="_blank" rel="noopener noreferrer"
+   class="float-tg fixed bottom-6 right-6 w-14 h-14 rounded-full bg-teal
+          flex items-center justify-center shadow-[0_4px_20px_rgba(13,148,136,0.4)]
+          transition-all duration-300 z-50">
+  <i data-lucide="send" class="w-5 h-5 text-white"></i>
+</a>
+
+<!-- ════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════ -->
+<script>
+// ── Init Lucide ──────────────────────────
+lucide.createIcons();
+
+// ── Footer year ─────────────────────────
+document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+// ── Sidebar ──────────────────────────────
+const overlay = document.getElementById('sidebarOverlay');
+document.getElementById('openSidebar').addEventListener('click',       () => overlay.classList.remove('hidden'));
+document.getElementById('closeSidebar').addEventListener('click',      () => overlay.classList.add('hidden'));
+document.getElementById('sidebarBackdrop').addEventListener('click',   () => overlay.classList.add('hidden'));
+
+// ════════════════════════════════════════
+// APP DATA  –  mirrors apps.json structure
+// Swap with fetch('/api/apps') for live data
+// ════════════════════════════════════════
+const APPS = [
+  {
+    id: 1,
+    slug: 'yono-777',
+    name: 'Yono 777',
+    category: 'Slots',
+    emoji: '🎯',
+    icon: '/icons/yono-777.webp',
+    referLink: 'https://t.me/+nS6ouVo-aeVmNzNl',
+    bonus: '₹777',
+    minWithdrawal: '₹100',
+    appSize: '45 MB',
+    totalDownloads: '2L+',
+    rating: 4.5,
+    isNew: true, isHot: false, isTrending: false,
+    metaTitle: 'Yono 777 – Download & Get ₹777 Bonus | AllYonoMax',
+    metaDescription: 'Download Yono 777 and get ₹777 sign-up bonus. Min withdrawal ₹100. Instant UPI. India\'s top slots app.',
+    description: 'Yono 777 is one of the most exciting real-money slot games in India. With a massive sign-up bonus and instant UPI withdrawals, it lets players spin and win from the comfort of their phone. The app is available for Android and is loved by millions across India for its smooth gameplay, daily bonuses, and transparent payout system.',
+    features: [
+      '₹777 instant sign-up bonus',
+      'Instant UPI withdrawals in 60 seconds',
+      'Min. withdrawal only ₹100',
+      'Daily login bonus rewards',
+      'Refer & earn unlimited commission',
+      'Safe & secure payments',
+      '24×7 customer support',
+      'Lightweight 45 MB app',
+    ],
+    howToDownload: [
+      'Click the Download button on this page.',
+      'Allow "Install Unknown Sources" in phone settings.',
+      'Open the downloaded APK file and tap Install.',
+      'Register with your mobile number and claim ₹777 bonus instantly.',
+      'Add your UPI ID and start withdrawing when you win!',
+    ],
+    faq: [
+      { question: 'What is Yono 777?',               answer: 'Yono 777 is a real-money slot game app where users can play and win cash prizes with a starting bonus of ₹777.' },
+      { question: 'What is the sign-up bonus?',       answer: 'New users get an instant ₹777 sign-up bonus on registration. No deposit needed to claim.' },
+      { question: 'What is the minimum withdrawal?',  answer: 'The minimum withdrawal amount is ₹100, paid directly to your UPI/bank account.' },
+      { question: 'Is Yono 777 safe to play?',        answer: 'Yes, Yono 777 uses secure payment gateways and encrypted transactions to protect user data and funds.' },
+      { question: 'How do I refer friends?',          answer: 'Share your referral link from the app dashboard. You earn a commission every time your friend deposits or plays.' },
+    ],
+    keywords: ['yono 777', 'yono 777 apk', 'yono slots', 'yono 777 download', 'real money slots india', 'yono 777 bonus'],
+  },
+  {
+    id: 2,
+    slug: 'yono-rummy',
+    name: 'Yono Rummy',
+    category: 'Rummy',
+    emoji: '🃏',
+    icon: '/icons/yono-rummy.webp',
+    referLink: 'https://t.me/+nS6ouVo-aeVmNzNl',
+    bonus: '₹500',
+    minWithdrawal: '₹100',
+    appSize: '38 MB',
+    totalDownloads: '5L+',
+    rating: 4.7,
+    isNew: true, isHot: true, isTrending: false,
+    metaTitle: 'Yono Rummy – Download & Get ₹500 Bonus | AllYonoMax',
+    metaDescription: 'Download Yono Rummy and get ₹500 bonus. Play 13-card Indian Rummy and win real cash. Instant UPI withdrawal.',
+    description: 'Yono Rummy brings the classic 13-card Indian Rummy game to your smartphone. With over 5 lakh downloads and a 4.7-star rating, it is one of the most trusted rummy platforms in India. Players can join cash tables, compete in tournaments, and withdraw winnings instantly via UPI. The app supports multiple Rummy variants including Points, Deals, and Pool Rummy.',
+    features: [
+      '₹500 instant sign-up bonus',
+      'Multiple Rummy variants – Points, Deals, Pool',
+      'Instant UPI withdrawals',
+      'Daily & weekly tournaments',
+      'Fair play certified with anti-cheat system',
+      'Refer & earn up to ₹5000/month',
+      '24×7 in-app support',
+      'Smooth gameplay on all Android devices',
+    ],
+    howToDownload: [
+      'Tap the Download APK button above.',
+      'Go to Settings → Security → Enable Unknown Sources.',
+      'Install the APK and open the app.',
+      'Register using your mobile number.',
+      'Claim ₹500 welcome bonus and start playing!',
+    ],
+    faq: [
+      { question: 'Is Yono Rummy free to play?',      answer: 'Yes, registration is free. You get ₹500 bonus on sign-up to play cash games without any initial deposit.' },
+      { question: 'Which Rummy variants are available?', answer: 'Points Rummy, Deals Rummy, and Pool Rummy (101/201) are all available.' },
+      { question: 'How fast are withdrawals?',        answer: 'Withdrawals are processed within 60 seconds to your UPI or bank account.' },
+      { question: 'Is it available on iOS?',          answer: 'Currently Yono Rummy is available only for Android. iOS support is coming soon.' },
+      { question: 'What is the minimum withdrawal?',  answer: 'The minimum withdrawal amount is ₹100.' },
+    ],
+    keywords: ['yono rummy', 'yono rummy apk', 'yono rummy download', 'rummy app india', 'real money rummy', 'yono rummy bonus'],
+  },
+  {
+    id: 3,
+    slug: 'jaiho-777',
+    name: 'JaiHo 777',
+    category: 'Slots',
+    emoji: '💎',
+    icon: '/icons/jaiho-777.webp',
+    referLink: 'https://t.me/+nS6ouVo-aeVmNzNl',
+    bonus: '₹551',
+    minWithdrawal: '₹100',
+    appSize: '42 MB',
+    totalDownloads: '1.5L+',
+    rating: 4.3,
+    isNew: true, isHot: false, isTrending: false,
+    metaTitle: 'JaiHo 777 – Download & Get ₹551 Bonus | AllYonoMax',
+    metaDescription: 'Download JaiHo 777 and claim ₹551 sign-up bonus. Play slots & win real cash. Min withdrawal ₹100.',
+    description: 'JaiHo 777 is a premium slots gaming app offering colorful and engaging slot machines with real cash rewards. The ₹551 sign-up bonus and ₹100 minimum withdrawal make it accessible to all types of players. With a lightweight 42 MB apk, it runs smoothly even on low-end Android devices.',
+    features: [
+      '₹551 instant sign-up bonus',
+      'Multiple slot machine themes',
+      'Daily spin & reward wheel',
+      'Instant UPI withdrawals',
+      'Refer & earn bonuses',
+      'VIP loyalty program',
+    ],
+    howToDownload: [
+      'Click the Download button on this page.',
+      'Enable Unknown Sources in phone settings.',
+      'Install the downloaded APK.',
+      'Sign up and claim ₹551 sign-up bonus.',
+    ],
+    faq: [
+      { question: 'What bonus do I get on signing up?', answer: 'You get an instant ₹551 bonus added to your wallet on successful registration.' },
+      { question: 'What is the minimum withdrawal?',    answer: 'Minimum withdrawal is ₹100 via UPI or bank transfer.' },
+      { question: 'Is JaiHo 777 legal in India?',      answer: 'JaiHo 777 is available in states where online skill-based gaming is permitted.' },
+    ],
+    keywords: ['jaiho 777', 'jaiho 777 download', 'jaiho slots', 'jaiho 777 apk', 'jaiho 777 bonus'],
+  },
+  {
+    id: 4,
+    slug: 'yono-vip',
+    name: 'Yono VIP',
+    category: 'Slots',
+    emoji: '👑',
+    icon: '/icons/yono-vip.webp',
+    referLink: 'https://t.me/+nS6ouVo-aeVmNzNl',
+    bonus: '₹999',
+    minWithdrawal: '₹200',
+    appSize: '50 MB',
+    totalDownloads: '3L+',
+    rating: 4.6,
+    isNew: false, isHot: true, isTrending: false,
+    metaTitle: 'Yono VIP – Download & Get ₹999 Bonus | AllYonoMax',
+    metaDescription: 'Download Yono VIP and claim ₹999 sign-up bonus. Premium real-money gaming. Min withdrawal ₹200.',
+    description: 'Yono VIP is the premium tier of the Yono Games ecosystem, offering exclusive slot games, higher payout rates, and a massive ₹999 sign-up bonus. VIP members enjoy priority withdrawals, dedicated support, and special daily missions with extra rewards.',
+    features: [
+      '₹999 VIP welcome bonus',
+      'Exclusive premium slot games',
+      'Higher payout rates for VIP players',
+      'Priority customer support',
+      'Daily VIP missions & rewards',
+      'Instant UPI withdrawal',
+    ],
+    howToDownload: [
+      'Click the Download Yono VIP button.',
+      'Allow installation from Unknown Sources.',
+      'Install and register with your mobile number.',
+      'Claim your ₹999 VIP bonus and start playing.',
+    ],
+    faq: [
+      { question: 'What makes Yono VIP different?',    answer: 'Yono VIP offers premium slot games, higher RTPs, a ₹999 sign-up bonus, and priority support for all members.' },
+      { question: 'What is the minimum withdrawal?',   answer: 'The minimum withdrawal for Yono VIP is ₹200 via UPI or bank.' },
+      { question: 'Can I become a VIP from day one?',  answer: 'Yes! All new users who register through AllYonoMax get instant VIP status and the ₹999 bonus.' },
+    ],
+    keywords: ['yono vip', 'yono vip apk', 'yono vip download', 'yono vip bonus', 'yono premium slots'],
+  },
+];
+
+// ════════════════════════════════════════
+// HELPERS
+// ════════════════════════════════════════
+
+function getSlugFromURL() {
+  // Expects URL like /slug.html?app=yono-777  OR  file:///path/slug.html?app=yono-777
+  // For real routing use URL path segment parsing
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('app')) return params.get('app');
+  // Also try path: last segment before potential .html
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  const last  = parts[parts.length - 1] || '';
+  return last.replace('.html', '') || null;
+}
+
+function getAppBySlug(slug) {
+  return APPS.find(a => a.slug === slug) || null;
+}
+
+function getRelatedApps(slug) {
+  const current = getAppBySlug(slug);
+  if (!current) return [];
+  const same  = APPS.filter(a => a.slug !== slug && a.category === current.category);
+  const other = APPS.filter(a => a.slug !== slug && a.category !== current.category);
+  return [...same, ...other].slice(0, 5);
+}
+
+function renderStars(rating) {
+  const full  = Math.floor(rating);
+  const half  = rating % 1 >= 0.5 ? 1 : 0;
+  const empty = 5 - full - half;
+  let html = '';
+  const starFull = `<svg class="w-4 h-4 star-full" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+  const starHalf = `<svg class="w-4 h-4 star-half" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><defs><linearGradient id="half"><stop offset="50%" stop-color="#f59e0b"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#half)"/></svg>`;
+  const starEmpty= `<svg class="w-4 h-4 star-empty" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+  for (let i = 0; i < full;  i++) html += starFull;
+  if (half)                        html += starHalf;
+  for (let i = 0; i < empty; i++) html += starEmpty;
+  html += `<span class="text-txt-secondary text-sm ml-1">${rating}</span>`;
+  return html;
+}
+
+function capWords(str) {
+  return str.replace(/\b\w/g, l => l.toUpperCase());
+}
+
+// ════════════════════════════════════════
+// RENDER PAGE
+// ════════════════════════════════════════
+function renderSlugPage() {
+  const slug = getSlugFromURL();
+  const app  = getAppBySlug(slug);
+
+  if (!app) {
+    document.getElementById('notFound').style.display = 'block';
+    lucide.createIcons();
+    return;
+  }
+
+  // show main content
+  document.getElementById('appPage').classList.remove('hidden');
+
+  // ── Meta (best-effort for standalone HTML) ──
+  document.title = app.metaTitle;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', app.metaDescription);
+
+  // ── Hero icon ──
+  const iconEl = document.getElementById('heroIcon');
+  iconEl.innerHTML = app.emoji
+    ? app.emoji
+    : `<img src="https://allyonomax.com${app.icon}" alt="${app.name}"
+            class="w-full h-full object-cover"
+            onerror="this.parentNode.textContent='🎮'" />`;
+
+  // ── Hero name & stars ──
+  document.getElementById('heroName').textContent    = app.name;
+  document.getElementById('heroStars').innerHTML     = renderStars(app.rating);
+  document.getElementById('heroBonusBadge').textContent = `Bonus Upto ${app.bonus}`;
+
+  // ── Stats ──
+  document.getElementById('statDownloads').textContent = app.totalDownloads;
+  document.getElementById('statSize').textContent      = app.appSize;
+  document.getElementById('statBonus').textContent     = app.bonus;
+
+  // ── Download buttons ──
+  document.getElementById('heroDlBtn').href    = app.referLink;
+  document.getElementById('heroDlText').textContent   = `Download ${app.name}`;
+  document.getElementById('howToDlBtn').href   = app.referLink;
+  document.getElementById('howToDlText').textContent  = `Download ${app.name} Now`;
+
+  // ── Description ──
+  document.getElementById('descTitle').textContent = `About ${app.name}`;
+  document.getElementById('descText').textContent  = app.description;
+
+  // ── Related Apps ──
+  const related = getRelatedApps(app.slug);
+  const relList = document.getElementById('relatedList');
+  if (related.length === 0) {
+    document.getElementById('relatedSection').style.display = 'none';
+  } else {
+    relList.innerHTML = related.map((a, idx) => `
+      <div class="relative">
+        <div class="absolute -top-2 -left-1 bg-primary text-white w-6 h-6 rounded-full
+                    flex items-center justify-center text-[0.65rem] font-extrabold z-10">
+          ${idx + 1}
+        </div>
+        <a href="/slug.html?app=${a.slug}"
+           class="app-row-hover flex items-center gap-3 px-2 py-3
+                  bg-card border border-border rounded-2xl transition-all duration-300">
+          <div class="w-16 h-16 min-w-[4rem] rounded-2xl border border-border
+                      flex items-center justify-center bg-red-50 text-2xl overflow-hidden">
+            ${a.emoji || '🎮'}
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="font-extrabold text-txt-primary text-base truncate mb-0.5">${a.name}</div>
+            <div class="flex items-center gap-1.5 text-primary text-[0.8rem] font-semibold mb-0.5">
+              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+              Bonus Upto ${a.bonus}
+            </div>
+            <div class="flex items-center gap-1.5 text-txt-secondary text-[0.8rem] font-medium">
+              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              Min. Withdraw ${a.minWithdrawal}
+            </div>
+          </div>
+          <div class="dl-btn bg-primary-dark text-white font-bold rounded-xl px-2 py-2.5
+                      flex items-center gap-1 text-[0.85rem] whitespace-nowrap transition-all duration-300">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </div>
+        </a>
+      </div>`).join('');
+  }
+
+  // ── Details table ──
+  document.getElementById('detailsTitle').textContent = `${app.name} App Details`;
+  const rows = [
+    { icon: 'coins',      label: 'Sign Up Bonus',    value: app.bonus,          highlight: true  },
+    { icon: 'smartphone', label: 'Min. Withdrawal',  value: app.minWithdrawal,  highlight: false },
+    { icon: 'hard-drive', label: 'App Size',          value: app.appSize,        highlight: false },
+    { icon: 'bar-chart-3',label: 'Total Downloads',  value: app.totalDownloads, highlight: false },
+    { icon: 'tag',        label: 'Category',          value: app.category,       highlight: false },
+    { icon: 'award',      label: 'Rating',            value: `${app.rating} / 5`,highlight: false },
+  ];
+  document.getElementById('detailsTbody').innerHTML = rows.map((r, i) => `
+    <tr class="${i < rows.length - 1 ? 'border-b border-border' : ''}">
+      <td class="py-3 px-4 font-semibold text-txt-primary flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="${r.icon}" class="w-4 h-4 text-primary"></i>
+        ${r.label}
+      </td>
+      <td class="py-3 px-4 ${r.highlight ? 'text-primary font-bold' : 'text-txt-secondary'}">
+        ${r.value}
+      </td>
+    </tr>`).join('');
+
+  // ── Features ──
+  if (app.features && app.features.length > 0) {
+    document.getElementById('featuresTitle').textContent = `Key Features of ${app.name}`;
+    document.getElementById('featuresList').innerHTML = app.features.map(f => `
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-bg border border-border/50">
+        <i data-lucide="check-circle-2" class="w-5 h-5 text-green-acc shrink-0"></i>
+        <span class="text-txt-primary text-sm font-medium">${f}</span>
+      </div>`).join('');
+  } else {
+    document.getElementById('featuresSection').style.display = 'none';
+  }
+
+  // ── How to Download ──
+  if (app.howToDownload && app.howToDownload.length > 0) {
+    document.getElementById('howToTitle').textContent = `How to Download ${app.name}`;
+    document.getElementById('howToList').innerHTML = app.howToDownload.map((step, i) => `
+      <div class="flex items-start gap-3 p-3 rounded-xl bg-bg border border-border/50">
+        <div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center
+                    text-white text-xs font-bold shrink-0 mt-0.5">${i + 1}</div>
+        <span class="text-txt-secondary text-sm leading-relaxed pt-1">${step}</span>
+      </div>`).join('');
+  } else {
+    document.getElementById('howToSection').style.display = 'none';
+  }
+
+  // ── Why Choose ──
+  document.getElementById('whyTitle').textContent = `Why Choose ${app.name}?`;
+  document.getElementById('whyText').innerHTML = `
+    <p>${app.name} stands out as one of the most popular gaming apps in the Yono Games ecosystem.
+       With a generous sign-up bonus of <strong class="text-primary">${app.bonus}</strong> and
+       a low minimum withdrawal of just <strong>${app.minWithdrawal}</strong>, it is designed to give
+       players the best value from the moment they register.</p>
+    <p>The app is only <strong>${app.appSize}</strong> in size, making it lightweight enough to run
+       smoothly on most Android devices. With <strong>${app.totalDownloads}</strong> downloads and a rating of
+       <strong>${app.rating}/5</strong>, ${app.name} has earned the trust of lakhs of players across India.</p>
+    <p>Whether you enjoy ${(app.category || 'gaming').toLowerCase()} or want to explore new game types,
+       ${app.name} offers a secure platform with instant UPI withdrawals, 24/7 customer support,
+       and a generous refer-and-earn program. Download it today from
+       <a href="/" class="text-primary font-semibold hover:underline">AllYonoMax</a> and start earning real money.</p>`;
+
+  // ── FAQ ──
+  document.getElementById('faqList').innerHTML = app.faq.map((item, i) => `
+    <details class="group">
+      <summary class="flex items-center justify-between p-4 rounded-xl bg-bg
+                      border border-border/50 hover:border-primary/30 transition-colors">
+        <span class="text-txt-primary text-sm font-medium pr-4">${item.question}</span>
+        <svg class="faq-chevron w-4 h-4 text-txt-muted shrink-0"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </summary>
+      <div class="px-4 pb-4 pt-2">
+        <p class="text-txt-secondary text-sm leading-relaxed">${item.answer}</p>
+      </div>
+    </details>`).join('');
+
+  // ── Tags ──
+  if (app.keywords && app.keywords.length > 0) {
+    document.getElementById('tagsList').innerHTML = app.keywords.map(k => `
+      <span class="bg-amber-600/10 text-amber-700 rounded-lg px-3 py-1 text-sm font-medium">
+        ${capWords(k)}
+      </span>`).join('');
+  } else {
+    document.getElementById('tagsSection').style.display = 'none';
+  }
+
+  // ── Re-init Lucide after DOM inject ──
+  lucide.createIcons();
+}
+
+// Run
+renderSlugPage();
+</script>
+</body>
+</html>

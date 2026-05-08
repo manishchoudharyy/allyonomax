@@ -1,16 +1,17 @@
 import { getAllApps } from "@/lib/helpers";
 
+// ISR: Sitemap regenerates when revalidatePath('/sitemap.xml') is called from admin API
+export const revalidate = 86400;
+
 export default function sitemap() {
   const apps = getAllApps();
 
-  // Use a realistic "last content update" date instead of new Date()
-  // which would mark ALL pages as freshly modified on every build
-  const lastContentUpdate = new Date("2026-03-29");
   const staticPageDate = new Date("2026-03-15");
 
   const appPages = apps.map((app) => ({
     url: `https://allyonomax.com/${app.slug}`,
-    lastModified: lastContentUpdate,
+    // Use app-specific date if stored, else fall back to today so new apps are marked fresh
+    lastModified: app.lastModified ? new Date(app.lastModified) : new Date(),
     changeFrequency: "weekly",
     priority: 0.8,
   }));

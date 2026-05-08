@@ -1,3 +1,6 @@
+// ISR: Home page regenerates on-demand when admin adds/edits an app
+export const revalidate = 86400;
+
 import { Star, Eye, ChevronDown, Send, ChevronUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

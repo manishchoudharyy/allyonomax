@@ -1,3 +1,8 @@
+// ISR: Regenerate pages on-demand (via revalidatePath from admin API).
+// dynamicParams=true means slugs NOT in the build are SSR-rendered on first hit, then cached.
+export const dynamicParams = true;
+export const revalidate = 86400; // 24h fallback — on-demand revalidation fires before this
+
 import Image from "next/image";
 import Link from "next/link";
 import {

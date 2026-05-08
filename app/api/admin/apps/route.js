@@ -47,6 +47,7 @@ export async function POST(request) {
 
     const newId = apps.length > 0 ? Math.max(...apps.map(a => a.id || 0)) + 1 : 1;
     newApp.id = newId;
+    newApp.lastModified = new Date().toISOString(); // for sitemap freshness signal
 
     if (!newApp.slug) {
       newApp.slug = newApp.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '');
@@ -95,9 +96,11 @@ export async function POST(request) {
     apps.push(newApp);
     writeApps(apps);
 
-    // 🔥 Force refresh both pages
-    revalidatePath('/'); 
-    revalidatePath('/[slug]');
+    // ISR: revalidate home page + the new app's specific page
+    revalidatePath('/', 'page');
+    revalidatePath(`/${newApp.slug}`, 'page');
+    // Also revalidate sitemap so new app appears in Google index submission
+    revalidatePath('/sitemap.xml');
 
     return NextResponse.json({ success: true, id: newId, icon: newApp.icon });
   } catch (error) {
@@ -123,12 +126,12 @@ export async function PUT(request) {
       updatedApp.icon = apps[index].icon || '';
     }
 
-    apps[index] = { ...apps[index], ...updatedApp };
+    apps[index] = { ...apps[index], ...updatedApp, lastModified: new Date().toISOString() };
     writeApps(apps);
 
-    // 🔥 Force refresh both pages after update
-    revalidatePath('/'); 
-    revalidatePath('/[slug]');
+    // ISR: revalidate home + the specific app page that was edited
+    revalidatePath('/', 'page');
+    revalidatePath(`/${apps[index].slug}`, 'page');
 
     return NextResponse.json({ success: true, app: apps[index] });
   } catch (error) {
@@ -158,12 +161,14 @@ export async function DELETE(request) {
     //   }
     // }
 
+    const deletedSlug = apps[index].slug;
     apps.splice(index, 1);
     writeApps(apps);
 
-    // 🔥 Force refresh after deletion
-    revalidatePath('/'); 
-    revalidatePath('/[slug]');
+    // ISR: revalidate home + the deleted page (will serve 404 now)
+    revalidatePath('/', 'page');
+    revalidatePath(`/${deletedSlug}`, 'page');
+    revalidatePath('/sitemap.xml');
 
     return NextResponse.json({ success: true });
   } catch (error) {
