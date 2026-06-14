@@ -6,9 +6,17 @@ import sharp from 'sharp';
 import { revalidatePath } from 'next/cache'; // 👈 Ye add kiya cache clear karne ke liye
 
 // Absolute paths for VPS
-const APPS_FILE = '/root/allyonomax/lib/apps.json';
-const PUBLIC_ROOT = '/root/allyonomax/public';
+let APPS_FILE = '/root/allyonomax/lib/apps.json';
+let PUBLIC_ROOT = '/root/allyonomax/public'; 
 
+ if (!fs.existsSync(APPS_FILE)) {
+      APPS_FILE = path.join(process.cwd(), 'lib/apps.json');
+    }
+    if(!fs.existsSync(PUBLIC_ROOT)){
+        PUBLIC_ROOT = path.join(process.cwd(), 'public');
+    }
+// const APPS_FILE = path.join(process.cwd(), 'lib/apps.json');
+// const PUBLIC_ROOT = path.join(process.cwd(), 'public');
 function readApps() {
   const data = fs.readFileSync(APPS_FILE, 'utf8');
   return JSON.parse(data);
