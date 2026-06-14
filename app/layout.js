@@ -26,11 +26,11 @@ export const metadata = {
   metadataBase: new URL("https://allyonomax.com"),
   title: {
     default:
-      "AllYonoMax – Download All Yono Games & Rummy Apps | Get ₹51 to ₹550 Bonus",
+      "All Yono Games – Download All New Yono Apps & Get ₹550 Bonus | AllYonoMax",
     template: "%s | AllYonoMax",
   },
   description:
-    "AllYonoMax – Download All New Yono Games, Rummy & Slots Apps. Get ₹51 to ₹550 Sign-Up Bonus with ₹100 Min Withdrawal. Yono 777 | Yono Rummy | Yono Slots | Yono VIP | Jaiho 777. India's trusted Yono Games hub.",
+    "All Yono Games download karo aur pao ₹51 to ₹550 sign-up bonus. Yono Game Download list: Yono Rummy, Yono 777, Yono Slots, Goa Spin, MWM Bet, Club INR. New Yono Apps daily update. ₹100 min withdrawal.",
   keywords: [
     "all yono games",
     "yono games",
@@ -65,9 +65,9 @@ export const metadata = {
   ],
   openGraph: {
     title:
-      "AllYonoMax – Download All Yono Games & Rummy Apps | Get ₹51 to ₹550 Bonus",
+      "All Yono Games – Download All New Yono Apps & Get ₹550 Bonus | AllYonoMax",
     description:
-      "Download All New Yono Games, Rummy & Slots Apps. Get ₹51 to ₹550 Sign-Up Bonus with ₹100 Min Withdrawal. Yono 777 | Yono Rummy | Yono Slots | Yono VIP. India's trusted Yono Games hub.",
+      "All Yono Games download karo aur pao ₹51 to ₹550 sign-up bonus. Yono Game Download list: Yono Rummy, Yono 777, Yono Slots, Goa Spin, MWM Bet, Club INR. New Yono Apps daily update. ₹100 min withdrawal.",
     url: "https://allyonomax.com",
     siteName: "AllYonoMax",
     type: "website",
@@ -85,9 +85,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "AllYonoMax – Download All Yono Games & Rummy Apps | Get ₹51 to ₹550 Bonus",
+      "All Yono Games – Download All New Yono Apps & Get ₹550 Bonus | AllYonoMax",
     description:
-      "Download All New Yono Games, Rummy & Slots Apps. Get ₹51 to ₹550 Sign-Up Bonus with ₹100 Min Withdrawal. India's trusted Yono Games hub.",
+      "All Yono Games download karo aur pao ₹51 to ₹550 sign-up bonus. Yono Game Download list: Yono Rummy, Yono 777, Yono Slots, Goa Spin, MWM Bet, Club INR. New Yono Apps daily update. ₹100 min withdrawal.",
     images: ["https://allyonomax.com/logo.webp"],
   },
   robots: {

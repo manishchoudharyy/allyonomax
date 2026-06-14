@@ -90,7 +90,7 @@ export default function ContactPage() {
                   <td className="py-3 px-4 font-semibold text-text-primary">Telegram</td>
                   <td className="py-3 px-4">
                     <a
-                      href="https://t.me/+nS6ouVo-aeVmNzNl"
+                      href="https://telegram.me/AllYonoMaxdotCom"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-teal font-semibold hover:underline"
@@ -117,7 +117,7 @@ export default function ContactPage() {
             For the fastest response, reach out to us on Telegram.
           </p>
           <a
-            href="https://t.me/+nS6ouVo-aeVmNzNl"
+            href="https://telegram.me/AllYonoMaxdotCom"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-teal font-bold text-sm px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"

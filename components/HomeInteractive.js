@@ -40,7 +40,7 @@ export default function HomeInteractive({ newApps, otherApps }) {
       <div className="space-y-2">
         <div className="relative">
       
-      <a href={`https://t.me/+nS6ouVo-aeVmNzNl`} target="_blank" className="block app-list-card group px-2 py-3">
+      <a href={`https://telegram.me/AllYonoMaxdotCom`} target="_blank" className="block app-list-card group px-2 py-3">
         {/* App Icon */}
         <div className="app-icon-wrapper">
           <Image
