@@ -7,14 +7,43 @@ export default function sitemap() {
   const apps = getAllApps();
 
   const staticPageDate = new Date("2026-03-15");
+  const today = new Date();
 
   const appPages = apps.map((app) => ({
     url: `https://allyonomax.com/${app.slug}`,
     // Use app-specific date if stored, else fall back to today so new apps are marked fresh
-    lastModified: app.lastModified ? new Date(app.lastModified) : new Date(),
+    lastModified: app.lastModified ? new Date(app.lastModified) : today,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
+
+  // Category hub pages — high priority, crawled daily
+  const categoryPages = [
+    {
+      url: "https://allyonomax.com/all-yono-games",
+      lastModified: today,
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
+      url: "https://allyonomax.com/new-yono-games",
+      lastModified: today,
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
+      url: "https://allyonomax.com/yono-rummy",
+      lastModified: today,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: "https://allyonomax.com/yono-slots",
+      lastModified: today,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+  ];
 
   const staticPages = [
     {
@@ -56,6 +85,7 @@ export default function sitemap() {
       changeFrequency: "daily",
       priority: 1.0,
     },
+    ...categoryPages,
     ...appPages,
     ...staticPages,
   ];

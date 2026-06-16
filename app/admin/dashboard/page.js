@@ -18,7 +18,7 @@ export default function AdminDashboard() {
   const totalApps = apps.length;
   const newApps = apps.filter(a => a.isNew).length;
   const trendingApps = apps.filter(a => a.isTrending).length;
-  const categories = [...new Set(apps.map(a => (a.category || 'Uncategorized').toLowerCase()))];
+  const categories = [...new Set(apps.flatMap(a => a.categories || []).map(c => (c || 'Uncategorized').toLowerCase()))];
 
   const stats = [
     { label: 'Total Apps', value: totalApps, icon: Smartphone, gradient: 'from-blue-500/15 to-cyan-500/5', border: 'border-blue-500/15', text: 'text-blue-400', iconBg: 'bg-blue-500/10 text-blue-400' },
@@ -95,7 +95,7 @@ export default function AdminDashboard() {
               )}
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-semibold text-white truncate">{app.name}</p>
-                <p className="text-xs text-slate-500">{app.bonus || '—'} bonus · {app.category || 'N/A'}</p>
+                <p className="text-xs text-slate-500">{app.bonus || '—'} bonus · {app.categories?.join(', ') || 'N/A'}</p>
               </div>
               <div className="flex gap-1.5">
                 {app.isNew && <span className="px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 text-[10px] font-bold border border-orange-500/20">NEW</span>}
@@ -112,7 +112,7 @@ export default function AdminDashboard() {
         <h3 className="text-sm font-bold text-white mb-4">Category Breakdown</h3>
         <div className="flex flex-wrap gap-2">
           {categories.map(cat => {
-            const count = apps.filter(a => (a.category || '').toLowerCase() === cat).length;
+            const count = apps.filter(a => a.categories?.some(c => (c || '').toLowerCase() === cat)).length;
             return (
               <span key={cat} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-slate-300 text-xs font-semibold">
                 {cat.charAt(0).toUpperCase() + cat.slice(1)}

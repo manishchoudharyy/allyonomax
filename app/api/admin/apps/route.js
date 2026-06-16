@@ -101,7 +101,18 @@ export async function POST(request) {
       newApp.icon = '';
     }
 
-    apps.push(newApp);
+    const pos = newApp.position;
+    delete newApp.position;
+
+    if (pos && !isNaN(parseInt(pos, 10))) {
+      let insertIndex = parseInt(pos, 10) - 1;
+      if (insertIndex < 0) insertIndex = 0;
+      if (insertIndex > apps.length) insertIndex = apps.length;
+      apps.splice(insertIndex, 0, newApp);
+    } else {
+      apps.push(newApp);
+    }
+
     writeApps(apps);
 
     // ISR: revalidate home page + the new app's specific page
@@ -122,8 +133,33 @@ export async function PUT(request) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
   try {
-    const updatedApp = await request.json();
+    const data = await request.json();
     const apps = readApps();
+
+    if (data.action === 'reorder') {
+      const { id, newPosition } = data;
+      const index = apps.findIndex(a => a.id === id);
+      if (index === -1) {
+        return NextResponse.json({ success: false, error: 'App not found' }, { status: 404 });
+      }
+      
+      const appToMove = apps[index];
+      apps.splice(index, 1);
+      
+      let newIndex = parseInt(newPosition, 10) - 1;
+      if (isNaN(newIndex) || newIndex < 0) newIndex = 0;
+      if (newIndex > apps.length) newIndex = apps.length;
+      
+      apps.splice(newIndex, 0, appToMove);
+      writeApps(apps);
+      
+      revalidatePath('/', 'page');
+      revalidatePath('/all-yono-games', 'page');
+      revalidatePath(`/${appToMove.slug}`, 'page');
+      return NextResponse.json({ success: true, app: appToMove });
+    }
+
+    const updatedApp = data;
     const index = apps.findIndex(a => a.id === updatedApp.id);
 
     if (index === -1) {

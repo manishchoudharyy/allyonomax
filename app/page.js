@@ -34,10 +34,10 @@ export default function HomePage() {
   const otherApps = allApps.filter((app) => !app.isNew && !app.isHot && !app.isTrending);
 
   // Compute category counts for BrowseByCategory & WhatAreYonoGames
-  const rummyCount = allApps.filter((app) => app.category === "rummy").length;
-  const slotsCount = allApps.filter((app) => app.category === "slots").length;
-  const casinoCount = allApps.filter((app) => app.category === "casino").length;
-  const bingoCount = allApps.filter((app) => app.category === "bingo").length;
+  const rummyCount = allApps.filter((app) => app.categories?.includes("rummy")).length;
+  const slotsCount = allApps.filter((app) => app.categories?.includes("slots")).length;
+  const casinoCount = allApps.filter((app) => app.categories?.includes("casino")).length;
+  const bingoCount = allApps.filter((app) => app.categories?.includes("bingo")).length;
   const newCount = newApps.length;
 
   const categoryCounts = {
@@ -72,7 +72,7 @@ export default function HomePage() {
         </section>
 
         {/* ── DOWNLOAD SECTION (Interactive Tabs - Client Component) ── */}
-        <HomeInteractive newApps={newApps} otherApps={otherApps} />
+        <HomeInteractive newApps={allApps} otherApps={allApps} />
 
         {/* ── LATEST YONO APPS STRIP ── */}
         <LatestAppsStrip apps={allApps} />

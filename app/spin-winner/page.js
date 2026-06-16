@@ -107,7 +107,7 @@ export default async function SpinWinner({ params }) {
     { icon: Smartphone, label: "Min. Withdrawal", value: app.minWithdrawal },
     { icon: HardDrive, label: "App Size", value: app.appSize },
     { icon: BarChart3, label: "Total Downloads", value: app.totalDownloads },
-    { icon: Tag, label: "Category", value: app.category },
+    { icon: Tag, label: "Category", value: app.categories?.join(', ') || 'Game' },
     { icon: Award, label: "Rating", value: `${app.rating} / 5` },
   ];
 
@@ -119,7 +119,7 @@ export default async function SpinWinner({ params }) {
       <BreadcrumbSchema
         items={[
           { name: "Home", url: "https://allyonomax.com" },
-          { name: app.category, url: `https://allyonomax.com/#apps` },
+          { name: app.categories?.[0] || 'Game', url: `https://allyonomax.com/#apps` },
           { name: app.name, url: `https://allyonomax.com/${app.slug}` },
         ]}
       />
@@ -356,7 +356,7 @@ export default async function SpinWinner({ params }) {
               <strong>{app.rating}/5</strong>, {app.name} has earned the trust of lakhs of players across India.
             </p>
             <p>
-              Whether you enjoy {app.category?.toLowerCase() || "gaming"} or want to explore new game types,
+              Whether you enjoy {app.categories?.[0]?.toLowerCase() || "gaming"} or want to explore new game types,
               {app.name} offers a secure platform with instant UPI withdrawals, 24/7 customer support,
               and a generous refer-and-earn program. Download it today from{" "}
               <Link href="/" className="text-primary font-semibold hover:underline">AllYonoMax</Link>{" "}

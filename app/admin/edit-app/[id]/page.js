@@ -147,6 +147,8 @@ export default function EditApp({ params }) {
               app.features = [];
             if (!app.howToDownload || !Array.isArray(app.howToDownload))
               app.howToDownload = [];
+            if (!app.categories || !Array.isArray(app.categories))
+              app.categories = app.category ? [app.category] : ['rummy'];
             setFormData(app);
           } else
             setAlert({
@@ -175,6 +177,16 @@ export default function EditApp({ params }) {
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
+  };
+
+  const handleCategoryToggle = (cat) => {
+    setFormData(prev => {
+      const isSelected = prev.categories.includes(cat);
+      const newCats = isSelected 
+        ? prev.categories.filter(c => c !== cat) 
+        : [...prev.categories, cat];
+      return { ...prev, categories: newCats };
+    });
   };
 
   const handleFaqChange = (i, field, val) => {
@@ -400,33 +412,38 @@ export default function EditApp({ params }) {
                 className={inputCls}
               />
             </div>
-            <div>
+            <div className="md:col-span-2">
               <label className="block text-xs font-medium text-slate-400 mb-1.5">
-                Category
+                Categories (Multiple)
               </label>
-              <select
-                name="category"
-                value={formData.category || ""}
-                onChange={handleChange}
-                className={inputCls}
-              >
+              <div className="flex flex-wrap gap-2">
                 {[
                   "rummy",
                   "slots",
-                  "spin",
-                  "vip",
+                  "teen-patti",
+                  "casino",
                   "bingo",
-                  "777",
                   "arcade",
-                  "bet",
-                  "jackpot",
-                  "jaiho",
-                ].map((c) => (
-                  <option key={c} value={c} className="bg-[#12121a]">
-                    {c}
-                  </option>
-                ))}
-              </select>
+                  "spin",
+                  "all",
+                ].map((c) => {
+                  const isSelected = formData.categories.includes(c);
+                  return (
+                    <button
+                      key={c}
+                      type="button"
+                      onClick={() => handleCategoryToggle(c)}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition ${
+                        isSelected 
+                          ? 'bg-red-500/20 border-red-500/50 text-red-400' 
+                          : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10'
+                      }`}
+                    >
+                      {c.charAt(0).toUpperCase() + c.slice(1).replace('-', ' ')}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
             <div>
               <label className="block text-xs font-medium text-slate-400 mb-1.5">

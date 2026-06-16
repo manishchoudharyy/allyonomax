@@ -11,47 +11,59 @@ import {
   Zap,
   Users,
   Star,
-  IndianRupee,
   Smartphone,
   Gift,
   Trophy,
   Layers,
   ArrowRight,
-  CircleCheck,
+  RefreshCw,
+  Wallet,
+  BadgeCheck,
+  Clock,
+  TrendingUp,
+  CircleDollarSign,
 } from "lucide-react";
 
 /* ─────────────────────────────────────────────
-   WHAT ARE YONO GAMES?
+   WHAT ARE YONO GAMES? — "Earn money with yono games"
 ───────────────────────────────────────────── */
 export function WhatAreYonoGames({ categoryCounts }) {
   const categories = [
     {
-      emoji: "🃏",
-      name: "Rummy Games",
+      Icon: Trophy,
+      name: "Yono Rummy",
       count: categoryCounts.rummy,
-      desc: "Classic Indian rummy with real cash prizes",
-      href: "/yono-rummy-games",
+      desc: "Classic 13-card rummy with real cash prizes",
+      href: "/yono-rummy",
+      color: "text-primary",
+      bg: "bg-primary/10",
     },
     {
-      emoji: "🎰",
-      name: "Slots & 777",
+      Icon: Star,
+      name: "Yono Slots",
       count: categoryCounts.slots,
-      desc: "Spin karo, jito — daily jackpots available",
-      href: "/yono-slots-777-games",
+      desc: "Spin reels, hit jackpots, withdraw daily",
+      href: "/yono-slots",
+      color: "text-accent",
+      bg: "bg-accent/10",
     },
     {
-      emoji: "⭐",
-      name: "New & Trending",
+      Icon: TrendingUp,
+      name: "New Yono Apps",
       count: categoryCounts.new,
-      desc: "Latest launches with highest signup bonuses",
+      desc: "Freshly launched — highest sign-up bonuses",
       href: "/#apps",
+      color: "text-teal",
+      bg: "bg-teal/10",
     },
     {
-      emoji: "🎲",
+      Icon: Layers,
       name: "Bingo & Casino",
       count: categoryCounts.casino + categoryCounts.bingo,
-      desc: "Bingo, arcade aur casual earning games",
+      desc: "Bingo, arcade, and casual earning games",
       href: "/#apps",
+      color: "text-green-accent",
+      bg: "bg-green-accent/10",
     },
   ];
 
@@ -59,58 +71,66 @@ export function WhatAreYonoGames({ categoryCounts }) {
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          Yono Games Kya Hai?{" "}
-          <span className="gradient-text">— Platform Overview</span>
+          What Are <span className="gradient-text">Yono Games?</span>
         </h2>
-        <p className="text-xs text-text-muted mb-4 font-medium">
-          India ka sabse bada real money gaming ecosystem
+        <p className="text-xs text-text-muted mb-5 font-medium">
+          India's largest real-money mobile gaming platform — explained simply
         </p>
 
-        <div className="space-y-3 text-text-secondary text-sm leading-relaxed">
+        <div className="space-y-4 text-text-secondary text-sm leading-relaxed">
           <p>
-            <strong className="text-text-primary">Yono Games</strong> ek Indian gaming
-            company hai jo real money earning apps banati hai — mainly rummy, slots,
-            777, bingo aur arcade format mein. Ye apps sirf Android pe APK format mein
-            available hain kyunki Google Play Store pe real money gaming apps allow nahi
-            hain India mein. Yahi wajah hai ki aapko direct download link chahiye hoti hai.
+            <strong className="text-text-primary">Yono Games</strong> is a
+            family of Android-based real-money gaming apps that lets you play
+            card games, slots, and arcade titles and withdraw your winnings
+            directly to your UPI account. Unlike Play Store games, all Yono apps
+            are distributed as APK files — which is why millions of Indian
+            players search for direct download links every single day.
           </p>
           <p>
-            Is ecosystem mein abhi{" "}
-            <strong className="text-text-primary">61 se zyada active apps</strong> hain, aur
-            naye apps almost har hafte launch hote hain. Sab apps ek hi backend platform pe
-            run karte hain — agar ek app use kar chuke ho toh interface dusre mein bhi
-            familiar lagta hai. Signup bonus direct wallet mein aata hai, aur UPI se
-            withdrawal karna kuch minutes ka kaam hai.
+            The platform runs{" "}
+            <strong className="text-text-primary">60+ active apps</strong> under
+            a single shared backend, so the moment you learn one Yono app, you
+            can pick up any other in minutes. Every app in the ecosystem gives
+            you a sign-up bonus the second you register — no deposit needed, no
+            tricks. You play with the bonus, win real money, and withdraw from
+            as low as ₹100.
           </p>
           <p>
-            <strong className="text-text-primary">AllYonoMax</strong> pe hum saare Yono
-            Games apps ek jagah track karte hain — bonuses, ratings, refer links sab
-            updated. Aapko alag alag websites pe search nahi karna padega. Yahan se direct
-            refer link use karo aur signup bonus automatically milta hai — koi extra steps
-            nahi.
+            <strong className="text-text-primary">AllYonoMax</strong> is India's
+            most up-to-date directory for all Yono Games and Yono apps. We track
+            every launch, update every bonus amount the moment it changes, and
+            give you a direct referral link so your sign-up bonus lands
+            automatically — no manual code entry required.
           </p>
         </div>
 
         {/* Category Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
-          {categories.map((cat) => (
-            <Link
-              key={cat.name}
-              href={cat.href}
-              className="flex flex-col items-center text-center p-3 rounded-xl bg-bg border border-card-border hover:border-primary/40 hover:shadow-md transition-all group"
-            >
-              <span className="text-2xl mb-1">{cat.emoji}</span>
-              <span className="text-xs font-bold text-text-primary group-hover:text-primary transition-colors">
-                {cat.name}
-              </span>
-              <span className="text-xs text-primary font-semibold mt-0.5">
-                {cat.count} Apps
-              </span>
-              <span className="text-[10px] text-text-muted mt-1 hidden sm:block">
-                {cat.desc}
-              </span>
-            </Link>
-          ))}
+          {categories.map((cat) => {
+            const Icon = cat.Icon;
+            return (
+              <Link
+                key={cat.name}
+                href={cat.href}
+                className="flex flex-col items-start gap-2 p-3 rounded-xl bg-bg border border-card-border hover:border-primary/40 hover:shadow-md transition-all group"
+              >
+                <span
+                  className={`w-8 h-8 rounded-lg ${cat.bg} flex items-center justify-center`}
+                >
+                  <Icon className={`w-4 h-4 ${cat.color}`} />
+                </span>
+                <span className="text-xs font-bold text-text-primary group-hover:text-primary transition-colors leading-tight">
+                  {cat.name}
+                </span>
+                <span className="text-[11px] text-primary font-semibold">
+                  {cat.count} Apps
+                </span>
+                <span className="text-[10px] text-text-muted leading-tight hidden sm:block">
+                  {cat.desc}
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -118,7 +138,7 @@ export function WhatAreYonoGames({ categoryCounts }) {
 }
 
 /* ─────────────────────────────────────────────
-   BEST YONO APPS TABLE
+   BEST YONO APPS TABLE — targeting "best yono apps", "top yono games"
 ───────────────────────────────────────────── */
 export function BestAppsTable({ apps }) {
   const topApps = apps
@@ -131,23 +151,31 @@ export function BestAppsTable({ apps }) {
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
           Best Yono Apps{" "}
-          <span className="gradient-text">Available Today</span>
+          <span className="gradient-text">Available Right Now</span>
         </h2>
-        <p className="text-sm text-text-secondary mb-4">
-          Rating aur bonus ke hisaab se top-ranked Yono Games apps — sabse zyada
-          trusted aur downloaded apps ki list.
+        <p className="text-sm text-text-secondary mb-5">
+          Ranked by player rating. Every bonus amount is verified and updated
+          daily so you never walk into an outdated offer.
         </p>
 
         <div className="overflow-x-auto rounded-xl border border-card-border -mx-1">
-          <table className="w-full text-sm min-w-[500px]">
+          <table className="w-full text-sm min-w-[520px]">
             <thead>
               <tr className="bg-primary text-white">
-                <th className="text-left px-3 py-2.5 font-bold rounded-tl-xl">#</th>
+                <th className="text-left px-3 py-2.5 font-bold rounded-tl-xl">
+                  #
+                </th>
                 <th className="text-left px-3 py-2.5 font-bold">App Name</th>
                 <th className="text-left px-3 py-2.5 font-bold">Category</th>
-                <th className="text-left px-3 py-2.5 font-bold">Signup Bonus</th>
-                <th className="text-left px-3 py-2.5 font-bold">Min Withdrawal</th>
-                <th className="text-left px-3 py-2.5 font-bold rounded-tr-xl">Rating</th>
+                <th className="text-left px-3 py-2.5 font-bold">
+                  Sign-Up Bonus
+                </th>
+                <th className="text-left px-3 py-2.5 font-bold">
+                  Min Withdrawal
+                </th>
+                <th className="text-left px-3 py-2.5 font-bold rounded-tr-xl">
+                  Rating
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -162,7 +190,9 @@ export function BestAppsTable({ apps }) {
                     {i === 0 ? (
                       <Trophy className="w-4 h-4 text-accent" />
                     ) : (
-                      <span className="text-text-muted font-semibold">{i + 1}</span>
+                      <span className="text-text-muted font-semibold">
+                        {i + 1}
+                      </span>
                     )}
                   </td>
                   <td className="px-3 py-2.5">
@@ -175,13 +205,15 @@ export function BestAppsTable({ apps }) {
                   </td>
                   <td className="px-3 py-2.5">
                     <span className="capitalize text-text-secondary text-xs font-medium bg-bg border border-card-border rounded-full px-2 py-0.5">
-                      {app.category}
+                      {app.categories?.join(', ') || 'Game'}
                     </span>
                   </td>
                   <td className="px-3 py-2.5 font-bold text-primary">
                     {app.bonus}
                   </td>
-                  <td className="px-3 py-2.5 text-text-secondary">{app.minWithdrawal}</td>
+                  <td className="px-3 py-2.5 text-text-secondary">
+                    {app.minWithdrawal}
+                  </td>
                   <td className="px-3 py-2.5">
                     <div className="flex items-center gap-1">
                       <Star className="w-3.5 h-3.5 fill-accent text-accent" />
@@ -197,8 +229,8 @@ export function BestAppsTable({ apps }) {
         </div>
 
         <p className="text-xs text-text-muted mt-3 text-center">
-          * Ratings aur bonuses daily update hote hain. Download se pehle app page
-          check karo.
+          Ratings and bonus amounts are updated daily. Check the app page before
+          downloading for the latest figures.
         </p>
       </div>
     </section>
@@ -206,34 +238,34 @@ export function BestAppsTable({ apps }) {
 }
 
 /* ─────────────────────────────────────────────
-   HOW TO DOWNLOAD YONO GAMES
+   HOW TO DOWNLOAD YONO GAMES — targets "yono games download", "yono game apk"
 ───────────────────────────────────────────── */
 export function HowToDownload() {
   const steps = [
     {
       num: "01",
-      title: "App Choose Karo",
-      desc: 'Upar di gayi list mein se koi bhi Yono Game select karo. Bonus amount aur category dekho apni preference ke hisaab se. Rummy pasand hai toh rummy wala choose karo — slots chahiye toh slots.',
+      title: "Pick a Yono Game",
+      desc: "Browse the list above or use the category tabs to find the Yono app you want. Check the sign-up bonus and minimum withdrawal before you decide — both are shown on every card.",
     },
     {
       num: "02",
-      title: "App Page Pe Jao",
-      desc: "App card pe click karo. Wahan aapko full details milenge — bonus, withdrawal limit, app size, aur user ratings. Download button tak scroll karo.",
+      title: "Open the App Page",
+      desc: "Tap the app card to land on its dedicated page. You'll see the full bonus breakdown, user ratings, APK size, and a direct download button.",
     },
     {
       num: "03",
-      title: "APK Download Karo",
-      desc: 'Blue "Download" button pe click karo. APK file automatically download shuru ho jaegi. Agar browser ne warning di toh "Download Anyway" select karo — ye normal hai APK files ke liye.',
+      title: "Download the Yono APK",
+      desc: 'Tap the Download button. The APK file starts downloading immediately. If your browser shows an "Unknown file" warning, tap Download Anyway — this is standard behaviour for APK files.',
     },
     {
       num: "04",
-      title: "Install Karo",
-      desc: 'APK install karne ke liye pehle phone settings mein "Unknown Sources" ya "Install Unknown Apps" enable karna padega. One-time step hai — ek baar karne ke baad sab apps install ho jaate hain.',
+      title: "Enable Unknown Sources",
+      desc: "Go to Settings → Security → Install Unknown Apps, and allow installation from your browser. This is a one-time step and does not affect your other apps.",
     },
     {
       num: "05",
-      title: "Register Karo — Bonus Lo",
-      desc: "App open karo, mobile number se register karo. Signup bonus automatically aapke wallet mein aata hai. Ab khelo aur jab chaaho UPI pe withdraw karo — minimum sirf ₹100.",
+      title: "Register & Claim Your Bonus",
+      desc: "Open the app, register with your mobile number, and your sign-up bonus lands in your wallet immediately. When you're ready to cash out, request a UPI withdrawal — minimum ₹100.",
     },
   ];
 
@@ -241,12 +273,11 @@ export function HowToDownload() {
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          Yono Games{" "}
-          <span className="gradient-text">Download Kaise Kare?</span>
+          How to Download <span className="gradient-text">Yono Games</span>
         </h2>
         <p className="text-sm text-text-secondary mb-5">
-          5 simple steps mein koi bhi Yono App download aur install kar sakte ho —
-          mobile number ke alawa kuch nahi chahiye.
+          Five steps from zero to playing — works on any Android phone, no Play
+          Store required.
         </p>
 
         <div className="space-y-3">
@@ -273,10 +304,10 @@ export function HowToDownload() {
         <div className="mt-5 p-3 bg-teal/10 border border-teal/20 rounded-xl flex items-start gap-3">
           <ShieldCheck className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" />
           <p className="text-xs text-text-secondary leading-relaxed">
-            <strong className="text-text-primary">Security Note:</strong> Saare Yono
-            Games apps pe AllYonoMax ke refer links directly Yono company ke official
-            servers pe redirect karte hain. Hum kisi bhi app ko host nahi karte —
-            sirf refer links provide karte hain.
+            <strong className="text-text-primary">Safety note:</strong>{" "}
+            AllYonoMax links go directly to the official Yono Games servers. We
+            do not host any APK files — we only provide the official referral
+            links so your bonus is applied automatically.
           </p>
         </div>
       </div>
@@ -285,49 +316,49 @@ export function HowToDownload() {
 }
 
 /* ─────────────────────────────────────────────
-   WHY USERS CHOOSE YONO GAMES
+   WHY CHOOSE YONO GAMES — "yono gaming app", "all yono apps"
 ───────────────────────────────────────────── */
 export function WhyChooseYono() {
   const reasons = [
     {
-      icon: Gift,
-      title: "Instant Signup Bonus",
-      desc: "Register karte hi ₹51 se ₹550 tak bonus direct wallet mein. Koi deposit ki zarurat nahi — seedha bonus se khelna shuru karo.",
+      Icon: Gift,
+      title: "Instant Sign-Up Bonus",
+      desc: "Every new Yono app puts ₹51 to ₹550 in your wallet the moment you register. No deposit required — the bonus is yours to play with from minute one.",
       color: "text-primary",
       bg: "bg-primary/10",
     },
     {
-      icon: Zap,
-      title: "Fast UPI Withdrawal",
-      desc: "Jeetne ke baad UPI pe withdraw request daal do — zyada cases mein 5–15 minute mein paise aa jaate hain. Minimum sirf ₹100.",
+      Icon: Zap,
+      title: "Fast UPI Withdrawals",
+      desc: "Most withdrawal requests clear within 5 to 15 minutes. The minimum cash-out is just ₹100, so you are never waiting around for a big sum to accumulate.",
       color: "text-accent",
       bg: "bg-accent/10",
     },
     {
-      icon: Layers,
-      title: "61+ Apps, Ek Jagah",
-      desc: "Alag-alag apps ke liye alag websites pe nahi jaana. AllYonoMax pe sab updated refer links aur bonuses ek hi jagah milte hain.",
+      Icon: Layers,
+      title: "60+ Apps, One Directory",
+      desc: "Instead of hunting across dozens of unverified websites, AllYonoMax lists every active Yono game with its current bonus, rating, and a safe direct download link.",
       color: "text-teal",
       bg: "bg-teal/10",
     },
     {
-      icon: Users,
-      title: "Refer & Earn Program",
-      desc: "Dosto ko invite karo aur unke har download pe commission lo. Kuch popular apps mein refer earnings ₹200 se ₹500 per person tak hain.",
+      Icon: Users,
+      title: "Refer & Earn Commission",
+      desc: "Share your referral link with friends. Each time someone registers through your link you earn a commission — some apps pay ₹200 to ₹500 per successful referral.",
       color: "text-green-accent",
       bg: "bg-green-accent/10",
     },
     {
-      icon: Smartphone,
-      title: "Lightweight APKs",
-      desc: "Zyaadatar Yono apps sirf 30–70 MB ki hain. Purana phone bhi smoothly chalata hai. 2G/3G pe bhi install ho jaati hain.",
+      Icon: Smartphone,
+      title: "Works on Any Android Phone",
+      desc: "Yono APKs are compact — most are under 60 MB. They run smoothly on entry-level Android phones and install quickly even on slower mobile data connections.",
       color: "text-primary",
       bg: "bg-primary/10",
     },
     {
-      icon: ShieldCheck,
-      title: "Daily Updates",
-      desc: "AllYonoMax pe naye apps launch hote hi add ho jaate hain. Purane apps band ho jaayein toh hum immediately notify karte hain Telegram channel pe.",
+      Icon: RefreshCw,
+      title: "New Yono Apps Every Week",
+      desc: "The Yono ecosystem adds fresh apps regularly. AllYonoMax updates the moment a new Yono game launches so you catch the highest launch bonuses before they drop.",
       color: "text-teal",
       bg: "bg-teal/10",
     },
@@ -337,17 +368,16 @@ export function WhyChooseYono() {
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          Log Yono Games{" "}
-          <span className="gradient-text">Kyun Choose Karte Hain?</span>
+          Why Millions Choose <span className="gradient-text">Yono Games</span>
         </h2>
         <p className="text-sm text-text-secondary mb-5">
-          10 lakh se zyada Indian users daily Yono Games apps use karte hain — yahan
-          wajah samjho.
+          Here is what keeps over 10 million Indian players coming back to Yono
+          apps every day.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {reasons.map((r, i) => {
-            const Icon = r.icon;
+            const Icon = r.Icon;
             return (
               <div
                 key={i}
@@ -376,32 +406,32 @@ export function WhyChooseYono() {
 }
 
 /* ─────────────────────────────────────────────
-   BROWSE BY CATEGORY (Internal Linking)
+   BROWSE BY CATEGORY — internal linking hubs
 ───────────────────────────────────────────── */
 export function BrowseByCategory({ counts }) {
   const cats = [
     {
-      emoji: "🃏",
-      label: "Yono Rummy Games",
-      sub: `${counts.rummy} apps — Club INR, Love Rummy, Boss Rummy...`,
-      href: "/yono-rummy-games",
+      Icon: Trophy,
+      label: "Yono Rummy",
+      sub: `${counts.rummy} apps — Club INR, Love Rummy, Boss Rummy & more`,
+      href: "/yono-rummy",
       color: "border-primary/30 hover:border-primary",
       badge: "Most Popular",
       badgeColor: "bg-primary text-white",
     },
     {
-      emoji: "🎰",
-      label: "Yono Slots & 777",
-      sub: `${counts.slots} apps — Goa Spin, Diwa 777, MWM Bet...`,
-      href: "/yono-slots-777-games",
+      Icon: CircleDollarSign,
+      label: "Yono Slots",
+      sub: `${counts.slots} apps — Goa Spin, Diwa 777, MWM Bet & more`,
+      href: "/yono-slots",
       color: "border-accent/30 hover:border-accent",
       badge: "High Bonus",
       badgeColor: "bg-accent text-white",
     },
     {
-      emoji: "🆕",
+      Icon: TrendingUp,
       label: "New Yono Games",
-      sub: `Latest launches — highest signup bonuses`,
+      sub: "Latest launches — the highest sign-up bonuses always here first",
       href: "/new-yono-games",
       color: "border-teal/30 hover:border-teal",
       badge: "Updated Daily",
@@ -413,35 +443,41 @@ export function BrowseByCategory({ counts }) {
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          Category Se{" "}
-          <span className="gradient-text">Browse Karo</span>
+          Browse All Yono Games{" "}
+          <span className="gradient-text">by Category</span>
         </h2>
         <p className="text-sm text-text-secondary mb-4">
-          Apni pasand ke hisaab se Yono Games category choose karo.
+          Not sure where to start? Pick a category and we'll show you every Yono
+          app that fits.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          {cats.map((c) => (
-            <Link
-              key={c.href}
-              href={c.href}
-              className={`relative flex flex-col gap-2 p-4 rounded-xl bg-bg border-2 ${c.color} transition-all group`}
-            >
-              <span
-                className={`absolute top-3 right-3 text-[10px] font-bold px-2 py-0.5 rounded-full ${c.badgeColor}`}
+          {cats.map((c) => {
+            const Icon = c.Icon;
+            return (
+              <Link
+                key={c.href}
+                href={c.href}
+                className={`relative flex flex-col gap-2 p-4 rounded-xl bg-bg border-2 ${c.color} transition-all group`}
               >
-                {c.badge}
-              </span>
-              <span className="text-3xl">{c.emoji}</span>
-              <span className="font-extrabold text-text-primary text-sm group-hover:text-primary transition-colors pr-16">
-                {c.label}
-              </span>
-              <span className="text-text-muted text-xs">{c.sub}</span>
-              <span className="flex items-center gap-1 text-xs font-semibold text-primary mt-1">
-                Explore <ArrowRight className="w-3 h-3" />
-              </span>
-            </Link>
-          ))}
+                <span
+                  className={`absolute top-3 right-3 text-[10px] font-bold px-2 py-0.5 rounded-full ${c.badgeColor}`}
+                >
+                  {c.badge}
+                </span>
+                <Icon className="w-6 h-6 text-primary" />
+                <span className="font-extrabold text-text-primary text-sm group-hover:text-primary transition-colors pr-16 leading-tight">
+                  {c.label}
+                </span>
+                <span className="text-text-muted text-xs leading-tight">
+                  {c.sub}
+                </span>
+                <span className="flex items-center gap-1 text-xs font-semibold text-primary mt-1">
+                  Explore <ArrowRight className="w-3 h-3" />
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -449,12 +485,12 @@ export function BrowseByCategory({ counts }) {
 }
 
 /* ─────────────────────────────────────────────
-   LATEST YONO APPS STRIP
+   LATEST YONO APPS STRIP — "new yono apps", "latest yono games"
 ───────────────────────────────────────────── */
 export function LatestAppsStrip({ apps }) {
   const latest = apps
     .filter((a) => a.isNew || a.isHot || a.isTrending)
-    .slice(0, 5);
+    .slice(0, 6);
 
   return (
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-6">
@@ -462,18 +498,18 @@ export function LatestAppsStrip({ apps }) {
         <div className="flex items-center justify-between mb-4">
           <div>
             <h2 className="text-xl font-extrabold text-text-primary">
-              Latest Yono Apps{" "}
-              <span className="gradient-text">2026</span>
+              New Yono Apps <span className="gradient-text">Just Added</span>
             </h2>
             <p className="text-xs text-text-muted mt-0.5">
-              Abhi launch hue naye Yono Games — sabse high bonuses
+              Freshly launched Yono games — grab the highest sign-up bonuses
+              before they reset
             </p>
           </div>
           <Link
             href="/new-yono-games"
             className="text-xs font-bold text-primary hover:underline flex items-center gap-1 whitespace-nowrap"
           >
-            Sab Dekho <ArrowRight className="w-3 h-3" />
+            See All <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
 
@@ -487,7 +523,7 @@ export function LatestAppsStrip({ apps }) {
               <div className="w-14 h-14 rounded-xl overflow-hidden border border-card-border">
                 <Image
                   src={app.icon}
-                  alt={`${app.name} yono app`}
+                  alt={`${app.name} yono app download`}
                   width={56}
                   height={56}
                   className="w-full h-full object-cover"
@@ -508,7 +544,7 @@ export function LatestAppsStrip({ apps }) {
 }
 
 /* ─────────────────────────────────────────────
-   FAQ SECTION (with JSON-LD schema via parent)
+   FAQ SECTION
 ───────────────────────────────────────────── */
 import { homeFaqData } from "@/lib/faqData";
 
@@ -519,11 +555,11 @@ export function HomeFAQ() {
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          Frequently Asked{" "}
-          <span className="gradient-text">Questions</span>
+          Frequently Asked <span className="gradient-text">Questions</span>
         </h2>
         <p className="text-sm text-text-secondary mb-5">
-          Yono Games ke baare mein sabse zyada pooche jaane wale sawaal.
+          Everything you need to know about Yono Games, downloading APKs, and
+          cashing out.
         </p>
 
         <div className="space-y-2">
@@ -534,7 +570,7 @@ export function HomeFAQ() {
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between p-4 bg-bg hover:bg-card hover:border-primary/20 transition-all text-left gap-3"
+                className="w-full flex items-center justify-between p-4 bg-bg hover:bg-card transition-all text-left gap-3"
               >
                 <span className="text-sm font-semibold text-text-primary">
                   {faq.q}
@@ -560,5 +596,5 @@ export function HomeFAQ() {
   );
 }
 
-/* Export FAQ data for JSON-LD schema (used in page.js) */
+/* Re-export homeFaqData so page.js can import it for JSON-LD */
 export { homeFaqData };

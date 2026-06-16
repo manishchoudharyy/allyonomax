@@ -133,14 +133,15 @@ export function WebsiteSchema() {
  * ItemList Schema — Lists all apps on the homepage.
  * Google can use this to show rich results for app collections.
  */
-export function ItemListSchema({ apps }) {
+export function ItemListSchema({ apps, pageUrl }) {
+  const listUrl = pageUrl || "https://allyonomax.com";
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "AllYonoMax App List",
     description:
       "Download all Yono Games, Rummy & Slots apps with sign-up bonuses from ₹51 to ₹550.",
-    url: "https://allyonomax.com",
+    url: listUrl,
     numberOfItems: apps.length,
     itemListElement: apps.map((app, index) => ({
       "@type": "ListItem",
@@ -181,15 +182,17 @@ export function ItemListSchema({ apps }) {
  * CollectionPage Schema — Tells Google this page is an aggregator/collection.
  * Incorporates publisher info so we don't need a conflicting separate WebPage schema.
  */
-export function CollectionPageSchema() {
+export function CollectionPageSchema({ pageUrl, pageName, pageDescription }) {
+  const url = pageUrl || "https://allyonomax.com";
+  const id = `${url}#webpage`;
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "@id": "https://allyonomax.com/#webpage",
-    name: "AllYonoMax – All Yono Games Download",
-    description:
+    "@id": id,
+    name: pageName || "AllYonoMax – All Yono Games Download",
+    description: pageDescription ||
       "Download All New Yono Games, Rummy & Slots Apps. Get ₹51 to ₹550 Sign-Up Bonus with ₹100 Min Withdrawal.",
-    url: "https://allyonomax.com",
+    url: url,
     isPartOf: {
       "@id": "https://allyonomax.com/#website"
     },

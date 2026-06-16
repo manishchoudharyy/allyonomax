@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { MessageCircle, Heart, Shield, AlertTriangle, Send } from "lucide-react";
+import {
+  MessageCircle,
+  Heart,
+  Shield,
+  AlertTriangle,
+  Send,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,38 +19,80 @@ export default function Footer() {
             </span>
           </Link>
           <p className="text-text-secondary text-sm leading-relaxed max-w-lg mx-auto">
-            India's most trusted platform to download Yono Games apps.
-            Get the best bonuses, instant withdrawals, and daily rewards.
+            India's most trusted platform to download Yono Games apps. Get the
+            best bonuses, instant withdrawals, and daily rewards.
           </p>
         </div>
 
         {/* Quick Links */}
         <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-          <Link href="/" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+          <Link
+            href="/"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
             Home
           </Link>
           <span className="text-card-border">•</span>
-          <Link href="/#apps" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
-            All Apps
+          <Link
+            href="/all-yono-games"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
+            All Yono Games
           </Link>
           <span className="text-card-border">•</span>
-          <Link href="/about" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+          <Link
+            href="/new-yono-games"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
+            New Yono Games
+          </Link>
+          <span className="text-card-border">•</span>
+          <Link
+            href="/yono-rummy"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
+            Yono Rummy
+          </Link>
+          <span className="text-card-border">•</span>
+          <Link
+            href="/yono-slots"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
+            Yono Slots & 777
+          </Link>
+          <span className="text-card-border">•</span>
+          <Link
+            href="/about"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
             About
           </Link>
           <span className="text-card-border">•</span>
-          <Link href="/contact" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+          <Link
+            href="/contact"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
             Contact
           </Link>
           <span className="text-card-border">•</span>
-          <Link href="/disclaimer" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+          <Link
+            href="/disclaimer"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
             Disclaimer
           </Link>
           <span className="text-card-border">•</span>
-          <Link href="/privacy-policy" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+          <Link
+            href="/privacy-policy"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
             Privacy Policy
           </Link>
           <span className="text-card-border">•</span>
-          <Link href="/terms-and-conditions" className="text-text-secondary hover:text-primary transition-colors text-sm font-medium">
+          <Link
+            href="/terms-and-conditions"
+            className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+          >
             Terms & Conditions
           </Link>
           <span className="text-card-border">•</span>
@@ -62,7 +110,8 @@ export default function Footer() {
         {/* Telegram CTA */}
         <div className="text-center mb-8">
           <p className="text-text-secondary text-sm mb-3">
-            Join our telegram channel to get Daily updates, bonus codes, and exclusive offers.
+            Join our telegram channel to get Daily updates, bonus codes, and
+            exclusive offers.
           </p>
           <a
             href="https://telegram.me/AllYonoMaxdotCom"
@@ -75,12 +124,12 @@ export default function Footer() {
           </a>
         </div>
 
-
-
         {/* Bottom Bar */}
         <div className="pt-4 border-t border-card-border">
           <p className="text-text-muted/60 text-xs text-center flex items-center justify-center gap-1">
-            © {new Date().getFullYear()} AllYonoMax. Made with <Heart className="w-3 h-3 text-red-accent fill-red-accent" /> in India
+            © {new Date().getFullYear()} AllYonoMax. Made with{" "}
+            <Heart className="w-3 h-3 text-red-accent fill-red-accent" /> in
+            India
           </p>
         </div>
       </div>

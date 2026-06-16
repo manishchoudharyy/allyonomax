@@ -395,7 +395,7 @@ const getDefaultSeo = (name, bonus, category) => {
 };
 
 const initialFormData = {
-  name: '', category: 'rummy', referLink: '', bonus: `₹${getRandomNumber(51, 201)}`, minWithdrawal: '₹100',
+  name: '', categories: ['rummy'], referLink: '', bonus: `₹${getRandomNumber(51, 201)}`, minWithdrawal: '₹100',
   appSize: `${getRandomNumber(40, 70)}MB`, rating: `4.${getRandomNumber(0, 7)}`, totalDownloads: `${getRandomNumber(200, 990)}K+`, description: '',
   isNew: true, isTrending: false, features: [], howToDownload: [],
   faq: [{ question: '', answer: '' }], metaTitle: '', metaDescription: '', keywords: [],
@@ -429,36 +429,46 @@ export default function AddApp() {
   const toggle = (key) => setCollapsed(p => ({ ...p, [key]: !p[key] }));
 
   const handleNameChange = (value) => {
-    const seo = getDefaultSeo(value, formData.bonus, formData.category);
+    const primaryCat = formData.categories[0] || 'rummy';
+    const seo = getDefaultSeo(value, formData.bonus, primaryCat);
 
     setFormData(prev => ({
       ...prev,
       name: value,
-      description: getDefaultDescription(value, prev.category, prev.bonus),
+      description: getDefaultDescription(value, primaryCat, prev.bonus),
       faq: getDefaultFaqs(value, prev.bonus, prev.minWithdrawal),
-      features: getDefaultFeatures(prev.category),
+      features: getDefaultFeatures(primaryCat),
       howToDownload: getDefaultHowToDownload(value, prev.bonus),
       ...seo,
     }));
   };
 
-  const handleCategoryChange = (value) => {
-    const seo = getDefaultSeo(formData.name, formData.bonus, value);
-    setFormData(prev => ({
-      ...prev,
-      category: value,
-      features: getDefaultFeatures(value),
-      description: getDefaultDescription(prev.name, value, prev.bonus),
-      ...seo,
-    }));
+  const handleCategoryToggle = (cat) => {
+    setFormData(prev => {
+      const isSelected = prev.categories.includes(cat);
+      const newCats = isSelected 
+        ? prev.categories.filter(c => c !== cat) 
+        : [...prev.categories, cat];
+      
+      const primaryCat = newCats[0] || 'rummy';
+      const seo = getDefaultSeo(prev.name, prev.bonus, primaryCat);
+      
+      return {
+        ...prev,
+        categories: newCats,
+        features: getDefaultFeatures(primaryCat),
+        description: getDefaultDescription(prev.name, primaryCat, prev.bonus),
+        ...seo,
+      };
+    });
   };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     if (name === 'name') { handleNameChange(value); return; }
-    if (name === 'category') { handleCategoryChange(value); return; }
     if (name === 'bonus') {
-      const seo = getDefaultSeo(formData.name, value, formData.category);
+      const primaryCat = formData.categories[0] || 'rummy';
+      const seo = getDefaultSeo(formData.name, value, primaryCat);
       setFormData(prev => ({ ...prev, bonus: value, ...seo })); return;
     }
     setFormData(prev => ({ ...prev, [name]: type === 'checkbox' ? checked : value }));
@@ -517,12 +527,31 @@ export default function AddApp() {
               {formData.name && <p className="text-[11px] text-slate-500 mt-1">Slug: /{formData.name.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}</p>}
             </div>
             <div>
-              <label className="block text-xs font-medium text-slate-400 mb-1.5">Category</label>
-              <select name="category" value={formData.category} onChange={handleChange} className={inputCls}>
-                {['rummy', 'slots', 'teen-patti', 'casino', 'bingo', 'arcade', 'spin', 'all'].map(c => (
-                  <option key={c} value={c} className="bg-[#12121a]">{c.charAt(0).toUpperCase() + c.slice(1).replace('-', ' ')}</option>
-                ))}
-              </select>
+              <label className="block text-xs font-medium text-slate-400 mb-1.5">Categories (Multiple)</label>
+              <div className="flex flex-wrap gap-2">
+                {['rummy', 'slots', 'teen-patti', 'casino', 'bingo', 'arcade', 'spin', 'all'].map(c => {
+                  const isSelected = formData.categories.includes(c);
+                  return (
+                    <button
+                      key={c}
+                      type="button"
+                      onClick={() => handleCategoryToggle(c)}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition ${
+                        isSelected 
+                          ? 'bg-red-500/20 border-red-500/50 text-red-400' 
+                          : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10'
+                      }`}
+                    >
+                      {c.charAt(0).toUpperCase() + c.slice(1).replace('-', ' ')}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="md:col-span-2">
+              <label className="block text-xs font-medium text-slate-400 mb-1.5">Position (Index)</label>
+              <input type="number" name="position" value={formData.position || ""} onChange={handleChange} placeholder="Leave blank to add at the bottom. E.g., 1 for top." className={inputCls} />
+              <p className="text-[11px] text-slate-500 mt-1">1-based index (1 = first app, 2 = second app, etc.)</p>
             </div>
           </div>
         </div>

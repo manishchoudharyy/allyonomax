@@ -108,10 +108,10 @@ export default function AllApps() {
     setConfirmDelete({ show: false, id: null, name: '' });
   };
 
-  const categories = ['all', ...new Set(apps.map(a => (a.category || 'uncategorized').toLowerCase()))];
+  const categories = ['all', ...new Set(apps.flatMap(a => a.categories || []).map(c => (c || 'uncategorized').toLowerCase()))];
   const filtered = apps.filter(app => {
     const matchSearch = app.name?.toLowerCase().includes(search.toLowerCase());
-    const matchCat = filterCat === 'all' || (app.category || '').toLowerCase() === filterCat;
+    const matchCat = filterCat === 'all' || app.categories?.some(c => (c || '').toLowerCase() === filterCat);
     return matchSearch && matchCat;
   });
 
@@ -191,7 +191,7 @@ export default function AllApps() {
                       </div>
                     </td>
                     <td className="px-5 py-3.5">
-                      <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-slate-300 text-xs font-medium">{app.category || 'N/A'}</span>
+                      <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-slate-300 text-xs font-medium">{app.categories?.join(', ') || 'N/A'}</span>
                     </td>
                     <td className="px-5 py-3.5 font-medium text-white">{app.bonus || '—'}</td>
                     <td className="px-5 py-3.5 text-amber-400">{app.rating || '—'} ★</td>
@@ -212,6 +212,22 @@ export default function AllApps() {
                           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-sky-500/10 text-sky-400 text-xs font-medium hover:bg-sky-500/20 border border-sky-500/20 transition">
                           <Pencil className="w-3.5 h-3.5" /> Edit
                         </Link>
+                        <button onClick={() => {
+                          const newPos = prompt(`Enter new position (1 to ${apps.length}):`, '');
+                          if (newPos && !isNaN(parseInt(newPos, 10))) {
+                            fetch('/api/admin/apps', {
+                              method: 'PUT',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ action: 'reorder', id: app.id, newPosition: parseInt(newPos, 10) })
+                            }).then(r => r.json()).then(d => {
+                              if (d.success) loadApps();
+                              else alert('Failed to move: ' + d.error);
+                            });
+                          }
+                        }}
+                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-violet-500/10 text-violet-400 text-xs font-medium hover:bg-violet-500/20 border border-violet-500/20 transition" title="Change Position">
+                          Move
+                        </button>
                         <button onClick={() => setConfirmDelete({ show: true, id: app.id, name: app.name })}
                           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-rose-500/10 text-rose-400 text-xs font-medium hover:bg-rose-500/20 border border-rose-500/20 transition">
                           <Trash2 className="w-3.5 h-3.5" /> Delete
@@ -236,7 +252,7 @@ export default function AllApps() {
                   )}
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-white truncate">{app.name}</p>
-                    <p className="text-xs text-slate-500">{app.category || 'N/A'} · {app.bonus || '—'}</p>
+                    <p className="text-xs text-slate-500">{app.categories?.join(', ') || 'N/A'} · {app.bonus || '—'}</p>
                   </div>
                 </div>
                 <div className="flex gap-2">
@@ -244,6 +260,22 @@ export default function AllApps() {
                     className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-sky-500/10 text-sky-400 text-xs font-medium hover:bg-sky-500/20 border border-sky-500/20 transition">
                     <Pencil className="w-3.5 h-3.5" /> Edit
                   </Link>
+                  <button onClick={() => {
+                    const newPos = prompt(`Enter new position (1 to ${apps.length}):`, '');
+                    if (newPos && !isNaN(parseInt(newPos, 10))) {
+                      fetch('/api/admin/apps', {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ action: 'reorder', id: app.id, newPosition: parseInt(newPos, 10) })
+                      }).then(r => r.json()).then(d => {
+                        if (d.success) loadApps();
+                        else alert('Failed to move: ' + d.error);
+                      });
+                    }
+                  }}
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-violet-500/10 text-violet-400 text-xs font-medium hover:bg-violet-500/20 border border-violet-500/20 transition">
+                    Move
+                  </button>
                   <button onClick={() => setConfirmDelete({ show: true, id: app.id, name: app.name })}
                     className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-rose-500/10 text-rose-400 text-xs font-medium hover:bg-rose-500/20 border border-rose-500/20 transition">
                     <Trash2 className="w-3.5 h-3.5" /> Delete
