@@ -907,7 +907,7 @@ export default function YonoSlotsPage() {
                 {[
                   {
                     name: "All Yono Games",
-                    href: "/all-yono-games",
+                    href: "/",
                     icon: Trophy,
                     desc: `Complete directory — all ${allApps.length}+ Yono apps in one place`,
                     color: "text-primary",

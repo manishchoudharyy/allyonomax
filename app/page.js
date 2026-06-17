@@ -81,7 +81,7 @@ export default function HomePage() {
         <BrowseByCategory counts={categoryCounts} />
 
         {/* ── WHAT ARE YONO GAMES ── */}
-        <WhatAreYonoGames categoryCounts={categoryCounts} />
+        <WhatAreYonoGames categoryCounts={categoryCounts} newApps={newCount} />
 
         {/* ── BEST YONO APPS TABLE ── */}
         <BestAppsTable apps={allApps} />

@@ -983,7 +983,7 @@ export default function YonoRummyPage() {
                 {[
                   {
                     name: "All Yono Games",
-                    href: "/all-yono-games",
+                    href: "/",
                     icon: Trophy,
                     desc: `Complete directory — all ${allApps.length}+ Yono apps in one place`,
                     color: "text-primary",
@@ -1000,7 +1000,7 @@ export default function YonoRummyPage() {
                     border: "border-accent/20",
                   },
                   {
-                    name: "Yono Slots & 777",
+                    name: "Yono Slots",
                     href: "/yono-slots",
                     icon: Crown,
                     desc: "Slots, 777, and spin-to-win apps with jackpots",

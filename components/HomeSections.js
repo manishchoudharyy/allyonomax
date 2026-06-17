@@ -27,7 +27,7 @@ import {
 /* ─────────────────────────────────────────────
    WHAT ARE YONO GAMES? — "Earn money with yono games"
 ───────────────────────────────────────────── */
-export function WhatAreYonoGames({ categoryCounts }) {
+export function WhatAreYonoGames({ categoryCounts, newApps }) {
   const categories = [
     {
       Icon: Trophy,
@@ -50,28 +50,28 @@ export function WhatAreYonoGames({ categoryCounts }) {
     {
       Icon: TrendingUp,
       name: "New Yono Apps",
-      count: categoryCounts.new,
+      count: newApps,
       desc: "Freshly launched — highest sign-up bonuses",
-      href: "/#apps",
+      href: "/new-yono-games",
       color: "text-teal",
       bg: "bg-teal/10",
     },
-    {
-      Icon: Layers,
-      name: "Bingo & Casino",
-      count: categoryCounts.casino + categoryCounts.bingo,
-      desc: "Bingo, arcade, and casual earning games",
-      href: "/#apps",
-      color: "text-green-accent",
-      bg: "bg-green-accent/10",
-    },
+    // {
+    //   Icon: Layers,
+    //   name: "Bingo & Casino",
+    //   count: categoryCounts.casino + categoryCounts.bingo,
+    //   desc: "Bingo, arcade, and casual earning games",
+    //   href: "/#apps",
+    //   color: "text-green-accent",
+    //   bg: "bg-green-accent/10",
+    // },
   ];
 
   return (
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          What Are <span className="gradient-text">Yono Games?</span>
+          What Are <span className="gradient-text">Yono Games</span> & <span className="gradient-text">Yono Apps</span>?
         </h2>
         <p className="text-xs text-text-muted mb-5 font-medium">
           India's largest real-money mobile gaming platform — explained simply
@@ -80,24 +80,21 @@ export function WhatAreYonoGames({ categoryCounts }) {
         <div className="space-y-4 text-text-secondary text-sm leading-relaxed">
           <p>
             <strong className="text-text-primary">Yono Games</strong> is a
-            family of Android-based real-money gaming apps that lets you play
+            massive family of Android-based real-money gaming apps that lets you play
             card games, slots, and arcade titles and withdraw your winnings
             directly to your UPI account. Unlike Play Store games, all Yono apps
-            are distributed as APK files — which is why millions of Indian
-            players search for direct download links every single day.
+            are distributed as APK files — which is why millions of players search for a direct <strong className="text-text-primary">Yono games download APK</strong> link every single day.
           </p>
           <p>
             The platform runs{" "}
             <strong className="text-text-primary">60+ active apps</strong> under
-            a single shared backend, so the moment you learn one Yono app, you
-            can pick up any other in minutes. Every app in the ecosystem gives
+            a single shared backend. Every app in the ecosystem gives
             you a sign-up bonus the second you register — no deposit needed, no
             tricks. You play with the bonus, win real money, and withdraw from
             as low as ₹100.
           </p>
           <p>
-            <strong className="text-text-primary">AllYonoMax</strong> is India's
-            most up-to-date directory for all Yono Games and Yono apps. We track
+            If you want the <strong className="text-text-primary">all Yono games download</strong> link in one place, AllYonoMax tracks every launch. Use our <strong className="text-text-primary">Yono games app download</strong> links to ensure you are getting the official files. We track
             every launch, update every bonus amount the moment it changes, and
             give you a direct referral link so your sign-up bonus lands
             automatically — no manual code entry required.
@@ -244,28 +241,28 @@ export function HowToDownload() {
   const steps = [
     {
       num: "01",
-      title: "Pick a Yono Game",
-      desc: "Browse the list above or use the category tabs to find the Yono app you want. Check the sign-up bonus and minimum withdrawal before you decide — both are shown on every card.",
+      title: "Pick a Game",
+      desc: "Pick a game from our all Yono game library. Browse the list above or use the category tabs to find the app you want. Check the sign-up bonus and minimum withdrawal before you decide.",
     },
     {
       num: "02",
       title: "Open the App Page",
-      desc: "Tap the app card to land on its dedicated page. You'll see the full bonus breakdown, user ratings, APK size, and a direct download button.",
+      desc: "Tap the app card to land on its dedicated page. You'll see the full Yono games bonus breakdown, user ratings, APK size, and a direct download button.",
     },
     {
       num: "03",
-      title: "Download the Yono APK",
-      desc: 'Tap the Download button. The APK file starts downloading immediately. If your browser shows an "Unknown file" warning, tap Download Anyway — this is standard behaviour for APK files.',
+      title: "Download the Yono Games APK",
+      desc: 'Tap the Yono games download button to get the Yono games APK file. It starts downloading immediately. If your browser shows a warning, tap "Download Anyway".',
     },
     {
       num: "04",
-      title: "Enable Unknown Sources",
-      desc: "Go to Settings → Security → Install Unknown Apps, and allow installation from your browser. This is a one-time step and does not affect your other apps.",
+      title: "Install the APK",
+      desc: "Install the all Yono games APK on your Android device. Go to Settings → Security → Install Unknown Apps, and allow installation from your browser.",
     },
     {
       num: "05",
       title: "Register & Claim Your Bonus",
-      desc: "Open the app, register with your mobile number, and your sign-up bonus lands in your wallet immediately. When you're ready to cash out, request a UPI withdrawal — minimum ₹100.",
+      desc: "Open the app, register with your mobile number, and your sign-up bonus lands in your wallet immediately. Request a UPI withdrawal anytime.",
     },
   ];
 
@@ -273,7 +270,7 @@ export function HowToDownload() {
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          How to Download <span className="gradient-text">Yono Games</span>
+          <span className="gradient-text">Yono Games APK Download</span> Guide
         </h2>
         <p className="text-sm text-text-secondary mb-5">
           Five steps from zero to playing — works on any Android phone, no Play
@@ -323,14 +320,14 @@ export function WhyChooseYono() {
     {
       Icon: Gift,
       title: "Instant Sign-Up Bonus",
-      desc: "Every new Yono app puts ₹51 to ₹550 in your wallet the moment you register. No deposit required — the bonus is yours to play with from minute one.",
+      desc: "Every new Yono app puts ₹51 to ₹550 in your wallet the moment you register. Discover new Yono apps every week with the highest Yono games bonus.",
       color: "text-primary",
       bg: "bg-primary/10",
     },
     {
       Icon: Zap,
       title: "Fast UPI Withdrawals",
-      desc: "Most withdrawal requests clear within 5 to 15 minutes. The minimum cash-out is just ₹100, so you are never waiting around for a big sum to accumulate.",
+      desc: "Most withdrawal requests clear within minutes. Explore the top Yono games safely and securely without worrying about your cashouts.",
       color: "text-accent",
       bg: "bg-accent/10",
     },
@@ -368,7 +365,7 @@ export function WhyChooseYono() {
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
       <div className="content-section">
         <h2 className="text-xl sm:text-2xl font-extrabold text-text-primary mb-1">
-          Why Millions Choose <span className="gradient-text">Yono Games</span>
+          Why <span className="gradient-text">Yono Games India</span> is #1 for Real Cash
         </h2>
         <p className="text-sm text-text-secondary mb-5">
           Here is what keeps over 10 million Indian players coming back to Yono
@@ -413,7 +410,7 @@ export function BrowseByCategory({ counts }) {
     {
       Icon: Trophy,
       label: "Yono Rummy",
-      sub: `${counts.rummy} apps — Club INR, Love Rummy, Boss Rummy & more`,
+      sub: `${counts.rummy} apps — Yono Rummy, Love Rummy, Boss Rummy & more`,
       href: "/yono-rummy",
       color: "border-primary/30 hover:border-primary",
       badge: "Most Popular",
@@ -422,7 +419,7 @@ export function BrowseByCategory({ counts }) {
     {
       Icon: CircleDollarSign,
       label: "Yono Slots",
-      sub: `${counts.slots} apps — Goa Spin, Diwa 777, MWM Bet & more`,
+      sub: `${counts.slots} apps — Share Slots, Jaiho Slots, Yono Slots & more`,
       href: "/yono-slots",
       color: "border-accent/30 hover:border-accent",
       badge: "High Bonus",
@@ -495,48 +492,53 @@ export function LatestAppsStrip({ apps }) {
   return (
     <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-6">
       <div className="content-section">
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h2 className="text-xl font-extrabold text-text-primary">
-              New Yono Apps <span className="gradient-text">Just Added</span>
-            </h2>
-            <p className="text-xs text-text-muted mt-0.5">
-              Freshly launched Yono games — grab the highest sign-up bonuses
-              before they reset
-            </p>
-          </div>
-          <Link
-            href="/new-yono-games"
-            className="text-xs font-bold text-primary hover:underline flex items-center gap-1 whitespace-nowrap"
-          >
-            See All <ArrowRight className="w-3 h-3" />
-          </Link>
+        <div className="mb-4">
+          <h2 className="text-xl font-extrabold text-text-primary">
+            New Yono Apps <span className="gradient-text">Just Added</span>
+          </h2>
+          <p className="text-xs text-text-muted mt-0.5">
+            Freshly launched Yono games — grab the highest sign-up bonuses
+            before they reset
+          </p>
         </div>
 
-        <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1 snap-x">
+        <div className="flex gap-3 overflow-x-auto pb-4 -mx-1 px-1 snap-x scrollbar-hide">
           {latest.map((app) => (
             <Link
               key={app.slug}
               href={`/${app.slug}`}
-              className="flex-shrink-0 snap-start w-28 flex flex-col items-center gap-1.5 p-3 rounded-xl bg-bg border border-card-border hover:border-primary/40 hover:shadow-md transition-all text-center"
+              className="flex-shrink-0 snap-start w-[160px] h-[160px] flex flex-col items-center justify-center gap-2 p-3 rounded-2xl bg-bg border border-card-border hover:border-primary/40 hover:shadow-md transition-all text-center shadow-sm"
             >
-              <div className="w-14 h-14 rounded-xl overflow-hidden border border-card-border">
+              <div className="w-16 h-16 rounded-2xl overflow-hidden border border-card-border shadow-sm">
                 <Image
                   src={app.icon}
                   alt={`${app.name} yono app download`}
-                  width={56}
-                  height={56}
+                  width={64}
+                  height={64}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-xs font-bold text-text-primary leading-tight line-clamp-2">
+              <span className="text-sm font-extrabold text-text-primary leading-tight line-clamp-1 mt-1">
                 {app.name}
               </span>
-              <span className="text-[11px] text-primary font-semibold">
+              <span className="text-xs text-primary font-bold bg-primary/10 px-3 py-1 rounded-full">
                 {app.bonus}
               </span>
             </Link>
           ))}
+          
+          {/* See All Card */}
+          <Link
+            href="/new-yono-games"
+            className="flex-shrink-0 snap-start w-[160px] h-[160px] flex flex-col items-center justify-center gap-2 p-3 rounded-2xl bg-primary/5 border border-primary/20 hover:bg-primary/10 transition-all text-center group"
+          >
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <ArrowRight className="w-6 h-6 text-primary" />
+            </div>
+            <span className="text-sm font-extrabold text-primary leading-tight mt-1">
+              See All<br/>New Apps
+            </span>
+          </Link>
         </div>
       </div>
     </section>
