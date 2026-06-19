@@ -410,6 +410,66 @@ export default async function AppPage({ params }) {
           </div>
         </section>
       )}
+      {/* ── EXPLORE MORE YONO GAMES (INTERNAL LINKING) ── */}
+      <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+        <div className="card-elevated p-6 sm:p-8">
+          <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+            <div className="w-1 h-6 rounded-full bg-primary" />
+            Explore More Yono Games
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              {
+                label: "All Yono Games",
+                desc: "View the complete list of 60+ apps",
+                href: "/all-yono-games",
+                icon: <HardDrive className="w-5 h-5 text-primary" />,
+                bg: "bg-primary/10"
+              },
+              {
+                label: "New Yono Games",
+                desc: "Discover the latest launches",
+                href: "/new-yono-games",
+                icon: <Download className="w-5 h-5 text-green-accent" />,
+                bg: "bg-green-accent/10"
+              },
+              {
+                label: "Yono Rummy Apps",
+                desc: "Best 13-card rummy for real money",
+                href: "/yono-rummy",
+                icon: <Award className="w-5 h-5 text-teal" />,
+                bg: "bg-teal/10"
+              },
+              {
+                label: "Yono Slots & Yono 777",
+                desc: "Top-rated slots and spin games",
+                href: "/yono-slots",
+                icon: <Coins className="w-5 h-5 text-accent" />,
+                bg: "bg-accent/10"
+              }
+            ].map((link, i) => (
+              <Link 
+                key={i} 
+                href={link.href}
+                className="flex items-center gap-4 p-4 rounded-xl bg-bg border border-card-border hover:border-primary transition-all group"
+              >
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${link.bg}`}>
+                  {link.icon}
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-text-primary group-hover:text-primary transition-colors">
+                    {link.label}
+                  </div>
+                  <div className="text-xs text-text-secondary mt-0.5">
+                    {link.desc}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Important Notice */}
       <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
         <div className="card-elevated p-6 sm:p-8">

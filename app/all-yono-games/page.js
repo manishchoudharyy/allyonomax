@@ -158,36 +158,8 @@ export default function AllYonoGamesPage() {
               </div>
             </div>
 
-            <div className="space-y-3 text-sm text-text-secondary leading-relaxed">
-              <p>
-                This is the most complete directory of{" "}
-                <strong className="text-text-primary">
-                  all Yono Games apps
-                </strong>{" "}
-                available in 2026. Every active app on the Yono Games platform
-                is listed here — from Yono Rummy and Yono Slots to new Yono
-                games launched this week. Each listing shows the current
-                verified sign-up bonus, minimum withdrawal amount, and player
-                rating, along with a safe direct download link.
-              </p>
-              <p>
-                AllYonoMax monitors the Yono Games platform continuously. When a
-                new Yono app launches, it is added to this page the same day.
-                When an app goes offline, it is removed immediately so you never
-                hit a dead link. The result is the most reliable, up-to-date
-                list of all Yono apps you will find anywhere.
-              </p>
-              <p>
-                You can install multiple Yono apps on the same Android phone —
-                each is a separate lightweight APK (30–70 MB) with its own
-                wallet and sign-up bonus. Many players use three to five Yono
-                games simultaneously to maximise their total bonus earnings and
-                referral income.
-              </p>
-            </div>
-
             {/* Stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
               {[
                 {
                   label: "Total Apps",
@@ -220,22 +192,42 @@ export default function AllYonoGamesPage() {
               ].map(({ label, value, Icon, color, bg }) => (
                 <div
                   key={label}
-                  className="flex flex-col items-center gap-1.5 p-3 rounded-xl bg-bg border border-card-border text-center"
+                  className="flex items-center gap-2 p-2 rounded-lg bg-bg border border-card-border"
                 >
                   <div
-                    className={`w-8 h-8 rounded-lg ${bg} flex items-center justify-center`}
+                    className={`w-7 h-7 rounded-md ${bg} flex items-center justify-center flex-shrink-0`}
                   >
-                    <Icon className={`w-4 h-4 ${color}`} />
+                    <Icon className={`w-3.5 h-3.5 ${color}`} />
                   </div>
-                  <span className={`text-base font-extrabold ${color}`}>
-                    {value}
-                  </span>
-                  <span className="text-[10px] text-text-muted font-medium leading-tight">
-                    {label}
-                  </span>
+                  <div className="flex flex-col text-left">
+                    <span className={`text-sm font-extrabold leading-none ${color}`}>
+                      {value}
+                    </span>
+                    <span className="text-[9px] text-text-muted font-medium mt-0.5">
+                      {label}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* ALL APPS LIST */}
+        <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-lg font-extrabold text-text-primary">
+              Complete List of{" "}
+              <span className="gradient-text">All Yono Apps</span>
+            </h2>
+            <span className="text-xs text-text-muted bg-card border border-card-border px-2.5 py-1 rounded-full font-medium">
+              {allApps.length} Apps
+            </span>
+          </div>
+          <div className="space-y-2">
+            {sortedApps.map((app, i) => (
+              <AppCard key={app.slug} app={app} index={i} />
+            ))}
           </div>
         </section>
 
@@ -290,21 +282,39 @@ export default function AllYonoGamesPage() {
           </div>
         </section>
 
-        {/* ALL APPS LIST */}
+        {/* SEO CONTENT (MOVED DOWN) */}
         <section className="max-w-3xl mx-auto px-2 sm:px-6 pb-8">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-lg font-extrabold text-text-primary">
-              Complete List of{" "}
-              <span className="gradient-text">All Yono Apps</span>
+          <div className="content-section">
+            <h2 className="text-xl font-extrabold text-text-primary mb-3">
+              About <span className="gradient-text">All Yono Games</span> Directory
             </h2>
-            <span className="text-xs text-text-muted bg-card border border-card-border px-2.5 py-1 rounded-full font-medium">
-              {allApps.length} Apps
-            </span>
-          </div>
-          <div className="space-y-2">
-            {sortedApps.map((app, i) => (
-              <AppCard key={app.slug} app={app} index={i} />
-            ))}
+            <div className="space-y-3 text-sm text-text-secondary leading-relaxed">
+              <p>
+                This is the most complete directory of{" "}
+                <strong className="text-text-primary">
+                  all Yono Games apps
+                </strong>{" "}
+                available in 2026. Every active app on the Yono Games platform
+                is listed here — from Yono Rummy and Yono Slots to new Yono
+                games launched this week. Each listing shows the current
+                verified sign-up bonus, minimum withdrawal amount, and player
+                rating, along with a safe direct download link.
+              </p>
+              <p>
+                AllYonoMax monitors the Yono Games platform continuously. When a
+                new Yono app launches, it is added to this page the same day.
+                When an app goes offline, it is removed immediately so you never
+                hit a dead link. The result is the most reliable, up-to-date
+                list of all Yono apps you will find anywhere.
+              </p>
+              <p>
+                You can install multiple Yono apps on the same Android phone —
+                each is a separate lightweight APK (30–70 MB) with its own
+                wallet and sign-up bonus. Many players use three to five Yono
+                games simultaneously to maximise their total bonus earnings and
+                referral income.
+              </p>
+            </div>
           </div>
         </section>
 
