@@ -21,7 +21,13 @@ import {
   DownloadIcon,
   Package,
   AlertCircle,
-  Info
+  Info,
+  Gamepad2,
+  Gift,
+  Wallet,
+  Users,
+  ThumbsUp,
+  ThumbsDown
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -381,6 +387,161 @@ export default async function AppPage({ params }) {
           </div>
         </div>
       </section>
+
+      {/* ── GAMES AVAILABLE ── */}
+      {app.gamesAvailable && app.gamesAvailable.length > 0 && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-teal" />
+              Games Available in {app.name}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {app.gamesAvailable.map((game, i) => (
+                <div key={i} className="flex gap-3 p-4 rounded-xl bg-bg border border-card-border">
+                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Gamepad2 className="w-4 h-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-text-primary text-sm mb-1">{game.name}</p>
+                    <p className="text-text-secondary text-xs leading-relaxed">{game.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── BONUS DETAILS ── */}
+      {app.bonusDetails && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-accent" />
+              {app.name} Bonus — Full Breakdown
+            </h2>
+            <div className="text-text-secondary text-sm leading-relaxed space-y-3">
+              {app.bonusDetails.split("\n\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+            <a
+              href={app.referLink}
+              target="_blank"
+              rel="noopener noreferrer nofollow sponsored"
+              className="btn-primary text-sm mt-5"
+            >
+              <Gift className="w-4 h-4" />
+              Claim ₹{app.bonus} Bonus Now
+            </a>
+          </div>
+        </section>
+      )}
+
+      {/* ── WITHDRAWAL DETAILS ── */}
+      {app.withdrawalDetails && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-green-accent" />
+              {app.name} Withdrawal Process
+            </h2>
+            <div className="text-text-secondary text-sm leading-relaxed space-y-3">
+              {app.withdrawalDetails.split("\n\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── REFERRAL PROGRAM ── */}
+      {app.referralDetails && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-primary" />
+              {app.name} Referral Program
+            </h2>
+            <div className="text-text-secondary text-sm leading-relaxed space-y-3">
+              {app.referralDetails.split("\n\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── PROS & CONS ── */}
+      {app.prosAndCons && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-teal" />
+              {app.name} — Pros & Cons
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <p className="text-sm font-bold text-green-accent mb-2 flex items-center gap-1.5"><ThumbsUp className="w-4 h-4" /> Pros</p>
+                <div className="space-y-2">
+                  {app.prosAndCons.pros.map((pro, i) => (
+                    <div key={i} className="flex items-start gap-2 text-sm text-text-secondary">
+                      <CheckCircle2 className="w-4 h-4 text-green-accent flex-shrink-0 mt-0.5" />
+                      <span>{pro}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-bold text-red-400 mb-2 flex items-center gap-1.5"><ThumbsDown className="w-4 h-4" /> Cons</p>
+                <div className="space-y-2">
+                  {app.prosAndCons.cons.map((con, i) => (
+                    <div key={i} className="flex items-start gap-2 text-sm text-text-secondary">
+                      <AlertCircle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
+                      <span>{con}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── COMPARISON TABLE ── */}
+      {app.comparisonTable && app.comparisonTable.length > 0 && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-accent-dark" />
+              {app.name} vs Other Yono Apps
+            </h2>
+            <div className="overflow-x-auto rounded-xl border border-card-border">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-card-border bg-bg">
+                    <th className="py-3 px-4 text-left font-bold text-text-primary">Feature</th>
+                    <th className="py-3 px-4 text-center font-bold text-primary">{app.name}</th>
+                    <th className="py-3 px-4 text-center font-semibold text-text-secondary">Diwa VIP</th>
+                    <th className="py-3 px-4 text-center font-semibold text-text-secondary">Yono 777</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {app.comparisonTable.map((row, i) => (
+                    <tr key={i} className={i < app.comparisonTable.length - 1 ? "border-b border-card-border" : ""}>
+                      <td className="py-3 px-4 font-semibold text-text-primary">{row.feature}</td>
+                      <td className="py-3 px-4 text-center text-primary font-bold">{row.diwaGame}</td>
+                      <td className="py-3 px-4 text-center text-text-secondary">{row.diwaVip}</td>
+                      <td className="py-3 px-4 text-center text-text-secondary">{row.yono777}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── FAQ ── */}
       <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
