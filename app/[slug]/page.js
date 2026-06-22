@@ -343,25 +343,41 @@ export default async function AppPage({ params }) {
             Why Choose {app.name}?
           </h2>
           <div className="text-text-secondary text-sm leading-relaxed space-y-3">
-            <p>
-              {app.name} stands out as one of the most popular gaming apps in the Yono Games ecosystem.
-              With a generous sign-up bonus of <strong className="text-primary">{app.bonus}</strong> and
-              a low minimum withdrawal of just <strong>{app.minWithdrawal}</strong>, it is designed to give
-              players the best value from the moment they register.
-            </p>
-            <p>
-              The app is only <strong>{app.appSize}</strong> in size, making it lightweight enough to run
-              smoothly on most Android devices without taking up too much storage. With{" "}
-              <strong>{app.totalDownloads}</strong> downloads and a rating of{" "}
-              <strong>{app.rating}/5</strong>, {app.name} has earned the trust of lakhs of players across India.
-            </p>
-            <p>
-              Whether you enjoy {app.categories?.[0]?.toLowerCase() || "gaming"} or want to explore new game types,
-              {app.name} offers a secure platform with instant UPI withdrawals, 24/7 customer support,
-              and a generous refer-and-earn program. Download it today from{" "}
-              <Link href="/" className="text-primary font-semibold hover:underline">AllYonoMax</Link>{" "}
-              and start earning real money.
-            </p>
+            {app.whyChoose
+              ? app.whyChoose.split("\n\n").map((para, i) => (
+                  <p key={i}
+                    dangerouslySetInnerHTML={{
+                      __html: para
+                        .replace(/₹[\d,]+/g, (m) => `<strong class="text-primary">${m}</strong>`)
+                        .replace(/\b(AllYonoMax)\b/g, `<strong>$1</strong>`)
+                        .replace(/\b(Diwa Game|Diwa Vip|Jaiho|Yono Games|yono)\b/gi, (m) => `<strong class="text-text-primary">${m}</strong>`)
+                    }}
+                  />
+                ))
+              : (
+                <>
+                  <p>
+                    {app.name} stands out as one of the most popular gaming apps in the Yono Games ecosystem.
+                    With a generous sign-up bonus of <strong className="text-primary">{app.bonus}</strong> and
+                    a low minimum withdrawal of just <strong>{app.minWithdrawal}</strong>, it is designed to give
+                    players the best value from the moment they register.
+                  </p>
+                  <p>
+                    The app is only <strong>{app.appSize}</strong> in size, making it lightweight enough to run
+                    smoothly on most Android devices without taking up too much storage. With{" "}
+                    <strong>{app.totalDownloads}</strong> downloads and a rating of{" "}
+                    <strong>{app.rating}/5</strong>, {app.name} has earned the trust of lakhs of players across India.
+                  </p>
+                  <p>
+                    Whether you enjoy {app.categories?.[0]?.toLowerCase() || "gaming"} or want to explore new game types,
+                    {app.name} offers a secure platform with instant UPI withdrawals, 24/7 customer support,
+                    and a generous refer-and-earn program. Download it today from{" "}
+                    <Link href="/" className="text-primary font-semibold hover:underline">AllYonoMax</Link>{" "}
+                    and start earning real money.
+                  </p>
+                </>
+              )
+            }
           </div>
         </div>
       </section>
