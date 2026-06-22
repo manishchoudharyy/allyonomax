@@ -30,18 +30,12 @@ export default function HeroTextCard() {
             </li>
           </ul>
           <p className="text-[9px] text-justify text-white leading-snug">
-            Our platform covers the <strong className="font-bold">best Yono games</strong> across categories like Rummy, Slots, and Arcade. Browse the <strong className="font-bold">all Yono games list</strong> below, find your favorite, and click <strong className="font-bold">Yono game download</strong> to start winning real cash with the <strong className="font-bold">latest Yono games 2026</strong>. Apps include: Club INR, Goa Spin, Jaiho Rummy, MWM Bet, Yono 777, Yono Rummy, Yono Slots, Yono Arcade, and more.
+            Our platform covers the <strong className="font-bold">best Yono games</strong> across categories like Rummy, Slots, and Arcade. Browse the <strong className="font-bold">all Yono games list</strong> below, find your favorite, and click <strong className="font-bold">Yono game download</strong> to start winning real cash with the <strong className="font-bold">latest Yono games 2026</strong>. Apps include: Diwa Game, Goa Spin, Diwa 777, Jaiho Rummy, Yono 777, Yono Rummy, Yono Slots, Yono Arcade, and more.
           </p>
         </div>
       </div>
 
-      {/* Gradient overlay when collapsed */}
-      {!isExpanded && (
-        <div className="absolute bottom-8 left-0 right-0 h-12 bg-gradient-to-t from-teal-600 to-transparent pointer-events-none rounded-b-lg" />
-      )}
-
-      {/* Toggle button */}
-     
+      
     </div>
   );
 }
