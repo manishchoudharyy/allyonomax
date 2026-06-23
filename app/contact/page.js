@@ -28,7 +28,6 @@ export default function ContactPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 space-y-6">
-
         {/* ── Customer Support Notice ── */}
         <div className="disclaimer-card">
           <div className="flex items-center gap-3 mb-4">
@@ -40,7 +39,10 @@ export default function ContactPage() {
             </h2>
           </div>
           <p className="text-text-secondary text-sm leading-relaxed">
-            AllYonoMax does not provide Customer Support for Listed Apps/Games. If you encounter any problems, please contact the support option within those games. Because the Listed Games/Apps are not ours. We do not own those games.
+            AllYonoMax does not provide Customer Support for Listed Apps/Games.
+            If you encounter any problems, please contact the support option
+            within those games. Because the Listed Games/Apps are not ours. We
+            do not own those games.
           </p>
         </div>
 
@@ -53,7 +55,10 @@ export default function ContactPage() {
             <h2 className="!mb-0">Advertisement / Business Queries</h2>
           </div>
           <p>
-            If you are a game maker company, operator, or administrator, and you want to promote your application through our website, you can contact us through the contact details given below and discuss promotion and cooperation.
+            If you are a game maker company, operator, or administrator, and you
+            want to promote your application through our website, you can
+            contact us through the contact details given below and discuss
+            promotion and cooperation.
           </p>
         </div>
 
@@ -76,7 +81,9 @@ export default function ContactPage() {
               </thead>
               <tbody>
                 <tr className="border-b border-card-border">
-                  <td className="py-3 px-4 font-semibold text-text-primary">Email</td>
+                  <td className="py-3 px-4 font-semibold text-text-primary">
+                    Email
+                  </td>
                   <td className="py-3 px-4">
                     <a
                       href="mailto:contact@allyonomax.com"
@@ -87,10 +94,12 @@ export default function ContactPage() {
                   </td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 font-semibold text-text-primary">Telegram</td>
+                  <td className="py-3 px-4 font-semibold text-text-primary">
+                    Telegram
+                  </td>
                   <td className="py-3 px-4">
                     <a
-                      href="https://telegram.me/AllYonoMaxdotCom"
+                      href="https://telegram.dog/+AOimKWsTbRE2Mzk1"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-teal font-semibold hover:underline"
@@ -104,7 +113,8 @@ export default function ContactPage() {
           </div>
 
           <p className="mt-4">
-            You can directly contact us through Email as given in the Table above, and can deal with us.
+            You can directly contact us through Email as given in the Table
+            above, and can deal with us.
           </p>
         </div>
 
@@ -117,7 +127,7 @@ export default function ContactPage() {
             For the fastest response, reach out to us on Telegram.
           </p>
           <a
-            href="https://telegram.me/AllYonoMaxdotCom"
+            href="https://telegram.dog/+AOimKWsTbRE2Mzk1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-teal font-bold text-sm px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
@@ -126,7 +136,6 @@ export default function ContactPage() {
             Contact on Telegram
           </a>
         </div>
-
       </div>
 
       <Footer />

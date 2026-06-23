@@ -30,14 +30,26 @@ export default function HomePage() {
   const allApps = getAllApps();
 
   // Split apps into "new" and "other" categories
-  const newApps = allApps.filter((app) => app.isNew || app.isHot || app.isTrending);
-  const otherApps = allApps.filter((app) => !app.isNew && !app.isHot && !app.isTrending);
+  const newApps = allApps.filter(
+    (app) => app.isNew || app.isHot || app.isTrending,
+  );
+  const otherApps = allApps.filter(
+    (app) => !app.isNew && !app.isHot && !app.isTrending,
+  );
 
   // Compute category counts for BrowseByCategory & WhatAreYonoGames
-  const rummyCount = allApps.filter((app) => app.categories?.includes("rummy")).length;
-  const slotsCount = allApps.filter((app) => app.categories?.includes("slots")).length;
-  const casinoCount = allApps.filter((app) => app.categories?.includes("casino")).length;
-  const bingoCount = allApps.filter((app) => app.categories?.includes("bingo")).length;
+  const rummyCount = allApps.filter((app) =>
+    app.categories?.includes("rummy"),
+  ).length;
+  const slotsCount = allApps.filter((app) =>
+    app.categories?.includes("slots"),
+  ).length;
+  const casinoCount = allApps.filter((app) =>
+    app.categories?.includes("casino"),
+  ).length;
+  const bingoCount = allApps.filter((app) =>
+    app.categories?.includes("bingo"),
+  ).length;
   const newCount = newApps.length;
 
   const categoryCounts = {
@@ -100,13 +112,13 @@ export default function HomePage() {
           <div className="content-section">
             <h2>Contact Us</h2>
             <p>
-              Have questions about any app or need help? Reach out to us through our Telegram
-              channel for the fastest response. We are always happy to help Indian gamers find
-              the best gaming experience.
+              Have questions about any app or need help? Reach out to us through
+              our Telegram channel for the fastest response. We are always happy
+              to help Indian gamers find the best gaming experience.
             </p>
             <p>
               <a
-                href="https://telegram.me/AllYonoMaxdotCom"
+                href="https://telegram.dog/+AOimKWsTbRE2Mzk1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full text-sm"

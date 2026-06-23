@@ -2,10 +2,28 @@ export const revalidate = 86400;
 
 import Link from "next/link";
 import {
-  Gift, Wallet, Star, ShieldCheck, Zap, ArrowRight,
-  BadgeCheck, Flame, Trophy, Crown, Users, CheckCircle2,
-  AlertCircle, RefreshCw, Award, CreditCard,
-  Sparkles, Gamepad, Coins, Rocket, MessageCircle, Tag
+  Gift,
+  Wallet,
+  Star,
+  ShieldCheck,
+  Zap,
+  ArrowRight,
+  BadgeCheck,
+  Flame,
+  Trophy,
+  Crown,
+  Users,
+  CheckCircle2,
+  AlertCircle,
+  RefreshCw,
+  Award,
+  CreditCard,
+  Sparkles,
+  Gamepad,
+  Coins,
+  Rocket,
+  MessageCircle,
+  Tag,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,13 +31,17 @@ import FloatingTelegram from "@/components/FloatingTelegram";
 import AppCard from "@/components/AppCard";
 import { getAllApps } from "@/lib/helpers";
 import {
-  FAQSchema, BreadcrumbSchema, CollectionPageSchema, ItemListSchema
+  FAQSchema,
+  BreadcrumbSchema,
+  CollectionPageSchema,
+  ItemListSchema,
 } from "@/components/SchemaMarkup";
 
 const PAGE_URL = "https://allyonomax.com/yono-slots";
 
 export const metadata = {
-  title: "Yono Slots – Download Yono Slots APK, Jaiho Slots & All Yono Slot Games 2026 | AllYonoMax",
+  title:
+    "Yono Slots – Download Yono Slots APK, Jaiho Slots & All Yono Slot Games 2026 | AllYonoMax",
   description:
     "Download Yono Slots APK and Jaiho Slots with ₹51–₹550 sign-up bonus. Complete list of all Yono Slots apps 2026 including Yono 777 Slots, Yono Slot Game, Goa Spin, and more. Best Yono Slots app — verified, safe, instant UPI withdrawal. Updated daily.",
   keywords: [
@@ -54,7 +76,8 @@ export const metadata = {
   ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Yono Slots – Download Yono Slots APK, Jaiho Slots & All Yono Slot Games 2026 | AllYonoMax",
+    title:
+      "Yono Slots – Download Yono Slots APK, Jaiho Slots & All Yono Slot Games 2026 | AllYonoMax",
     description:
       "Download Yono Slots APK & Jaiho Slots with ₹51–₹550 bonus. All Yono Slots 2026 — verified, safe, instant UPI withdrawal.",
     url: PAGE_URL,
@@ -178,30 +201,33 @@ const faqData = [
 export default function YonoSlotsPage() {
   const allApps = getAllApps();
 
-  const slotsApps = allApps.filter(
-    (app) => app.categories?.some(c => c.toLowerCase() === "slots")
+  const slotsApps = allApps.filter((app) =>
+    app.categories?.some((c) => c.toLowerCase() === "slots"),
   );
 
   // Combined all slot-related apps (deduplicated)
-  const allSlotApps = [...new Map(
-    [...slotsApps].map((a) => [a.slug, a])
-  ).values()];
+  const allSlotApps = [
+    ...new Map([...slotsApps].map((a) => [a.slug, a])).values(),
+  ];
 
   const sortedApps = [...allSlotApps].sort((a, b) => {
-    const rA = typeof a.rating === "number" ? a.rating : parseFloat(a.rating) || 0;
-    const rB = typeof b.rating === "number" ? b.rating : parseFloat(b.rating) || 0;
+    const rA =
+      typeof a.rating === "number" ? a.rating : parseFloat(a.rating) || 0;
+    const rB =
+      typeof b.rating === "number" ? b.rating : parseFloat(b.rating) || 0;
     return rB - rA;
   });
 
   const maxBonus = Math.max(
     ...sortedApps.map((a) => parseInt(a.bonus?.replace(/[^0-9]/g, "")) || 0),
-    0
+    0,
   );
 
   const avgRating = sortedApps.length
     ? (
         sortedApps.reduce((sum, a) => {
-          const r = typeof a.rating === "number" ? a.rating : parseFloat(a.rating) || 0;
+          const r =
+            typeof a.rating === "number" ? a.rating : parseFloat(a.rating) || 0;
           return sum + r;
         }, 0) / sortedApps.length
       ).toFixed(1)
@@ -230,10 +256,16 @@ export default function YonoSlotsPage() {
         <Navbar />
 
         {/* ── BREADCRUMB ── */}
-        <nav className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-1" aria-label="Breadcrumb">
+        <nav
+          className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-1"
+          aria-label="Breadcrumb"
+        >
           <ol className="flex flex-wrap items-center gap-1.5 text-xs text-text-muted">
             <li>
-              <Link href="/" className="hover:text-primary transition-colors font-medium">
+              <Link
+                href="/"
+                className="hover:text-primary transition-colors font-medium"
+              >
                 Home
               </Link>
             </li>
@@ -247,7 +279,9 @@ export default function YonoSlotsPage() {
           <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-2 pb-4">
             <div
               className="content-section mb-5"
-              style={{ background: "linear-gradient(135deg, #fff 0%, #fff0e6 100%)" }}
+              style={{
+                background: "linear-gradient(135deg, #fff 0%, #fff0e6 100%)",
+              }}
             >
               {/* Trust badges */}
               <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -272,15 +306,16 @@ export default function YonoSlotsPage() {
               {/* H1 — Primary keywords: yono slots (500K) + yono slot game (50K) + jaiho slots (500K) */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-text-primary leading-tight mb-2">
                 Yono Slots &amp;{" "}
-                <span className="gradient-text">Jaiho Slots</span>
-                {" "}– Download All Yono Slot Games 2026
+                <span className="gradient-text">Jaiho Slots</span> – Download
+                All Yono Slot Games 2026
               </h1>
 
               {/* Smart keyword note — captures "slots yono", "yono slot apk" without being unprofessional */}
               <p className="text-xs text-text-muted mb-4 font-medium">
                 Also searched as:{" "}
                 <span className="text-text-secondary">
-                  Slots Yono, Yono Slot APK, Yono Slot Game, Yono 777 Slots, Jaiho Slots APK, Yono Arcade Slots
+                  Slots Yono, Yono Slot APK, Yono Slot Game, Yono 777 Slots,
+                  Jaiho Slots APK, Yono Arcade Slots
                 </span>
               </p>
 
@@ -288,12 +323,16 @@ export default function YonoSlotsPage() {
               <div className="space-y-3 text-sm text-text-secondary leading-relaxed mb-6">
                 <p>
                   <strong className="text-text-primary">Yono Slots</strong> and{" "}
-                  <strong className="text-text-primary">Jaiho Slots</strong> are India's most searched
-                  real money slot gaming apps — each with over 500,000 monthly searches. Every{" "}
-                  <strong className="text-text-primary">Yono slot game</strong> offers players the chance to
-                  spin reels, hit jackpots, and withdraw real cash via UPI. New players get a guaranteed{" "}
-                  <strong className="text-primary">₹51 to ₹{maxBonus} sign-up bonus</strong> just for
-                  registering — no deposit required.
+                  <strong className="text-text-primary">Jaiho Slots</strong> are
+                  India's most searched real money slot gaming apps — each with
+                  over 500,000 monthly searches. Every{" "}
+                  <strong className="text-text-primary">Yono slot game</strong>{" "}
+                  offers players the chance to spin reels, hit jackpots, and
+                  withdraw real cash via UPI. New players get a guaranteed{" "}
+                  <strong className="text-primary">
+                    ₹51 to ₹{maxBonus} sign-up bonus
+                  </strong>{" "}
+                  just for registering — no deposit required.
                 </p>
                 <p>
                   This page is the most complete{" "}
@@ -301,13 +340,17 @@ export default function YonoSlotsPage() {
                   directory available — and searches for{" "}
                   <strong className="text-text-primary">all Yono Slots</strong>{" "}
                   have grown{" "}
-                  <strong className="text-accent">+900% in 2026</strong>.
-                  Every <strong className="text-text-primary">Yono Slots APK</strong> listed here is verified
-                  directly from official Yono Games servers. You'll find{" "}
+                  <strong className="text-accent">+900% in 2026</strong>. Every{" "}
+                  <strong className="text-text-primary">Yono Slots APK</strong>{" "}
+                  listed here is verified directly from official Yono Games
+                  servers. You'll find{" "}
                   <strong className="text-text-primary">Yono 777 Slots</strong>,{" "}
                   <strong className="text-text-primary">Jaiho Slots</strong>,{" "}
-                  <strong className="text-text-primary">Yono Arcade Slots</strong>,
-                  Goa Spin, MWM Bet, and every working Yono Slots app in one place.
+                  <strong className="text-text-primary">
+                    Yono Arcade Slots
+                  </strong>
+                  , Goa Spin, MWM Bet, and every working Yono Slots app in one
+                  place.
                 </p>
               </div>
 
@@ -346,25 +389,39 @@ export default function YonoSlotsPage() {
                     gradient: "from-green-accent/10 to-green-accent/5",
                     border: "border-green-accent/20",
                   },
-                ].map(({ label, value, icon: Icon, color, gradient, border }) => (
-                  <div
-                    key={label}
-                    className={`flex flex-col items-center gap-1.5 p-3 rounded-2xl bg-gradient-to-br ${gradient} border ${border} text-center`}
-                  >
-                    <Icon className={`w-5 h-5 ${color}`} />
-                    <span className={`text-xl sm:text-2xl font-extrabold ${color}`}>{value}</span>
-                    <span className="text-[10px] text-text-muted font-semibold leading-tight">{label}</span>
-                  </div>
-                ))}
+                ].map(
+                  ({ label, value, icon: Icon, color, gradient, border }) => (
+                    <div
+                      key={label}
+                      className={`flex flex-col items-center gap-1.5 p-3 rounded-2xl bg-gradient-to-br ${gradient} border ${border} text-center`}
+                    >
+                      <Icon className={`w-5 h-5 ${color}`} />
+                      <span
+                        className={`text-xl sm:text-2xl font-extrabold ${color}`}
+                      >
+                        {value}
+                      </span>
+                      <span className="text-[10px] text-text-muted font-semibold leading-tight">
+                        {label}
+                      </span>
+                    </div>
+                  ),
+                )}
               </div>
             </div>
           </section>
 
           {/* ── ALL YONO SLOTS — "all yono slots" (50K, +900%), "yono slots list" (5K) ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="app-list-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="app-list-heading"
+          >
             <div className="flex items-center justify-between mb-4">
               <div>
-                <h2 id="app-list-heading" className="text-xl font-extrabold text-text-primary">
+                <h2
+                  id="app-list-heading"
+                  className="text-xl font-extrabold text-text-primary"
+                >
                   All Yono Slots –{" "}
                   <span className="gradient-text">Complete List 2026</span>
                 </h2>
@@ -386,59 +443,110 @@ export default function YonoSlotsPage() {
             {sortedApps.length === 0 && (
               <div className="text-center py-16 content-section">
                 <AlertCircle className="w-10 h-10 text-text-muted mx-auto mb-3" />
-                <p className="text-text-secondary font-semibold">No Yono Slots apps found.</p>
-                <p className="text-sm text-text-muted mt-1">Check back soon — new slot games added regularly.</p>
+                <p className="text-text-secondary font-semibold">
+                  No Yono Slots apps found.
+                </p>
+                <p className="text-sm text-text-muted mt-1">
+                  Check back soon — new slot games added regularly.
+                </p>
               </div>
             )}
           </section>
 
           {/* ── JAIHO SLOTS — "jaiho slots" (500K), "jaiho slots apk" (5K), "jaiho slots download" (5K) ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="jaiho-heading">
-            <div className="content-section" style={{ background: "linear-gradient(135deg, #fff 0%, #f0fff8 100%)" }}>
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="jaiho-heading"
+          >
+            <div
+              className="content-section"
+              style={{
+                background: "linear-gradient(135deg, #fff 0%, #f0fff8 100%)",
+              }}
+            >
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-xl bg-teal/10 flex items-center justify-center">
                   <Sparkles className="w-5 h-5 text-teal" />
                 </div>
                 <div>
-                  <h2 id="jaiho-heading" className="text-xl font-extrabold text-text-primary">
+                  <h2
+                    id="jaiho-heading"
+                    className="text-xl font-extrabold text-text-primary"
+                  >
                     Jaiho Slots –{" "}
                     <span className="gradient-text">APK Download & Review</span>
                   </h2>
                   <p className="text-xs text-text-muted">
-                    500,000+ monthly searches — India's most popular Yono Slots app
+                    500,000+ monthly searches — India's most popular Yono Slots
+                    app
                   </p>
                 </div>
               </div>
 
               <div className="space-y-3 text-sm text-text-secondary leading-relaxed">
                 <p>
-                  <strong className="text-text-primary">Jaiho Slots</strong> is one of the most searched{" "}
-                  <strong className="text-text-primary">Yono Slots</strong> apps in India — with over
-                  500,000 monthly searches for{" "}
-                  <strong className="text-text-primary">Jaiho Slots APK</strong> and{" "}
-                  <strong className="text-text-primary">Jaiho Slots download</strong> alone. It offers
-                  classic 777 jackpot slots, daily free spin rewards, and an instant sign-up bonus
-                  credited the moment you register.
+                  <strong className="text-text-primary">Jaiho Slots</strong> is
+                  one of the most searched{" "}
+                  <strong className="text-text-primary">Yono Slots</strong> apps
+                  in India — with over 500,000 monthly searches for{" "}
+                  <strong className="text-text-primary">Jaiho Slots APK</strong>{" "}
+                  and{" "}
+                  <strong className="text-text-primary">
+                    Jaiho Slots download
+                  </strong>{" "}
+                  alone. It offers classic 777 jackpot slots, daily free spin
+                  rewards, and an instant sign-up bonus credited the moment you
+                  register.
                 </p>
                 <p>
-                  The <strong className="text-text-primary">Jaiho Slots APK download</strong> link on
-                  AllYonoMax goes directly to the official Yono Games server — no third-party files,
-                  no redirects. Minimum withdrawal is ₹100 via UPI, processed in 5–15 minutes to
+                  The{" "}
+                  <strong className="text-text-primary">
+                    Jaiho Slots APK download
+                  </strong>{" "}
+                  link on AllYonoMax goes directly to the official Yono Games
+                  server — no third-party files, no redirects. Minimum
+                  withdrawal is ₹100 via UPI, processed in 5–15 minutes to
                   Google Pay, PhonePe, or Paytm. Find the{" "}
-                  <strong className="text-text-primary">Jaiho Slots</strong> card in the app list above
-                  to download and claim your bonus instantly.
+                  <strong className="text-text-primary">Jaiho Slots</strong>{" "}
+                  card in the app list above to download and claim your bonus
+                  instantly.
                 </p>
               </div>
 
               <div className="mt-4 grid grid-cols-3 gap-3">
                 {[
-                  { label: "Monthly Searches", value: "500K+", color: "text-teal", bg: "bg-teal/10", border: "border-teal/20" },
-                  { label: "Sign-Up Bonus", value: "Instant", color: "text-primary", bg: "bg-primary/10", border: "border-primary/20" },
-                  { label: "Min Withdrawal", value: "₹100", color: "text-accent", bg: "bg-accent/10", border: "border-accent/20" },
+                  {
+                    label: "Monthly Searches",
+                    value: "500K+",
+                    color: "text-teal",
+                    bg: "bg-teal/10",
+                    border: "border-teal/20",
+                  },
+                  {
+                    label: "Sign-Up Bonus",
+                    value: "Instant",
+                    color: "text-primary",
+                    bg: "bg-primary/10",
+                    border: "border-primary/20",
+                  },
+                  {
+                    label: "Min Withdrawal",
+                    value: "₹100",
+                    color: "text-accent",
+                    bg: "bg-accent/10",
+                    border: "border-accent/20",
+                  },
                 ].map(({ label, value, color, bg, border }) => (
-                  <div key={label} className={`p-3 rounded-xl ${bg} border ${border} text-center`}>
-                    <p className={`text-base font-extrabold ${color}`}>{value}</p>
-                    <p className="text-[10px] text-text-muted font-semibold mt-0.5">{label}</p>
+                  <div
+                    key={label}
+                    className={`p-3 rounded-xl ${bg} border ${border} text-center`}
+                  >
+                    <p className={`text-base font-extrabold ${color}`}>
+                      {value}
+                    </p>
+                    <p className="text-[10px] text-text-muted font-semibold mt-0.5">
+                      {label}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -446,80 +554,116 @@ export default function YonoSlotsPage() {
           </section>
 
           {/* ── YONO 777 SLOTS — "yono 777 slots" (5K, +900%), "yono slots 777" (5K, +900%) ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="yono777-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="yono777-heading"
+          >
             <div className="content-section">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400/20 to-amber-400/10 flex items-center justify-center">
-                  <span className="text-amber-500 font-extrabold text-sm">777</span>
+                  <span className="text-amber-500 font-extrabold text-sm">
+                    777
+                  </span>
                 </div>
                 <div>
-                  <h2 id="yono777-heading" className="text-xl font-extrabold text-text-primary">
+                  <h2
+                    id="yono777-heading"
+                    className="text-xl font-extrabold text-text-primary"
+                  >
                     Yono 777 Slots –{" "}
                     <span className="gradient-text">Lucky Jackpot Games</span>
                   </h2>
                   <p className="text-xs text-text-muted">
-                    🔥 +900% search growth in 2026 — fastest-growing Yono Slots segment
+                    🔥 +900% search growth in 2026 — fastest-growing Yono Slots
+                    segment
                   </p>
                 </div>
               </div>
 
               <div className="space-y-3 text-sm text-text-secondary leading-relaxed">
                 <p>
-                  <strong className="text-text-primary">Yono 777 Slots</strong> (also searched as{" "}
-                  <strong className="text-text-primary">Yono Slots 777</strong>) are the fastest-growing
-                  segment in the Yono Slots ecosystem in 2026, with +900% year-on-year search growth.
-                  The number 777 is considered the luckiest combination in Indian slot culture, and{" "}
-                  <strong className="text-text-primary">Yono 777</strong> apps deliver exactly that —
-                  higher jackpot probability, special 777 bonus rounds, and larger payout multipliers
+                  <strong className="text-text-primary">Yono 777 Slots</strong>{" "}
+                  (also searched as{" "}
+                  <strong className="text-text-primary">Yono Slots 777</strong>)
+                  are the fastest-growing segment in the Yono Slots ecosystem in
+                  2026, with +900% year-on-year search growth. The number 777 is
+                  considered the luckiest combination in Indian slot culture,
+                  and <strong className="text-text-primary">Yono 777</strong>{" "}
+                  apps deliver exactly that — higher jackpot probability,
+                  special 777 bonus rounds, and larger payout multipliers
                   compared to standard Yono Slots games.
                 </p>
                 <p>
                   You can find the{" "}
-                  <strong className="text-text-primary">Yono 777</strong> app in the complete{" "}
-                  <strong className="text-text-primary">all Yono Slots</strong> list above.
-                  Download the Yono 777 APK, register, and your sign-up bonus is credited instantly.
-                  Minimum withdrawal is ₹100 via UPI — no waiting, no hassle.
+                  <strong className="text-text-primary">Yono 777</strong> app in
+                  the complete{" "}
+                  <strong className="text-text-primary">all Yono Slots</strong>{" "}
+                  list above. Download the Yono 777 APK, register, and your
+                  sign-up bonus is credited instantly. Minimum withdrawal is
+                  ₹100 via UPI — no waiting, no hassle.
                 </p>
               </div>
 
               <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-xl">
                 <p className="text-xs text-amber-800 leading-relaxed">
-                  💡{" "}
-                  <strong>Why Yono 777 Slots are trending:</strong>{" "}
-                  777 is the luckiest number in Indian slot gaming. Yono 777 Slots consistently offer
-                  bigger jackpots, more free spin rounds, and higher multipliers — which is exactly
-                  why searches have grown +900% in 2026.
+                  💡 <strong>Why Yono 777 Slots are trending:</strong> 777 is
+                  the luckiest number in Indian slot gaming. Yono 777 Slots
+                  consistently offer bigger jackpots, more free spin rounds, and
+                  higher multipliers — which is exactly why searches have grown
+                  +900% in 2026.
                 </p>
               </div>
             </div>
           </section>
 
           {/* ── COMPARISON TABLE — "best yono slots app", "top yono slots apps", "yono slots real money" (5K) ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="comparison-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="comparison-heading"
+          >
             <div className="content-section">
-              <h2 id="comparison-heading" className="text-xl font-extrabold text-text-primary mb-1">
+              <h2
+                id="comparison-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
                 Best Yono Slots Apps –{" "}
                 <span className="gradient-text">Bonus Comparison</span>
               </h2>
               <p className="text-sm text-text-secondary mb-5">
-                Compare top Yono Slots apps by bonus, withdrawal speed, and rating — find the best one for you.
+                Compare top Yono Slots apps by bonus, withdrawal speed, and
+                rating — find the best one for you.
               </p>
 
               <div className="overflow-x-auto -mx-2 sm:mx-0">
                 <table className="w-full text-sm border-collapse min-w-[520px]">
                   <thead>
                     <tr className="bg-primary/5 border-b border-card-border">
-                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">#</th>
-                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">Yono Slots App</th>
-                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">Bonus</th>
-                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">Min Withdrawal</th>
-                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">Rating</th>
+                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">
+                        #
+                      </th>
+                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">
+                        Yono Slots App
+                      </th>
+                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">
+                        Bonus
+                      </th>
+                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">
+                        Min Withdrawal
+                      </th>
+                      <th className="text-left py-3 px-4 font-bold text-text-primary text-xs">
+                        Rating
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     {topSlots.map((app, i) => (
-                      <tr key={app.slug} className="border-b border-card-border hover:bg-primary/3 transition-colors">
-                        <td className="py-3 px-4 text-text-muted text-xs font-bold">{i + 1}</td>
+                      <tr
+                        key={app.slug}
+                        className="border-b border-card-border hover:bg-primary/3 transition-colors"
+                      >
+                        <td className="py-3 px-4 text-text-muted text-xs font-bold">
+                          {i + 1}
+                        </td>
                         <td className="py-3 px-4">
                           <Link
                             href={`/${app.slug}`}
@@ -529,9 +673,13 @@ export default function YonoSlotsPage() {
                           </Link>
                         </td>
                         <td className="py-3 px-4">
-                          <span className="text-primary font-bold text-xs">{app.bonus}</span>
+                          <span className="text-primary font-bold text-xs">
+                            {app.bonus}
+                          </span>
                         </td>
-                        <td className="py-3 px-4 text-text-secondary text-xs">{app.minWithdrawal}</td>
+                        <td className="py-3 px-4 text-text-secondary text-xs">
+                          {app.minWithdrawal}
+                        </td>
                         <td className="py-3 px-4">
                           <span className="inline-flex items-center gap-1 text-xs font-bold text-green-accent">
                             <Star className="w-3 h-3 fill-green-accent text-green-accent" />
@@ -547,14 +695,21 @@ export default function YonoSlotsPage() {
           </section>
 
           {/* ── WHY PLAY YONO SLOTS — "yono slots real money" (5K), "yono slots online" (500, +900%) ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="why-play-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="why-play-heading"
+          >
             <div className="content-section">
-              <h2 id="why-play-heading" className="text-xl font-extrabold text-text-primary mb-1">
-                Why Play{" "}
-                <span className="gradient-text">Yono Slots</span> for Real Money?
+              <h2
+                id="why-play-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
+                Why Play <span className="gradient-text">Yono Slots</span> for
+                Real Money?
               </h2>
               <p className="text-sm text-text-secondary mb-5">
-                Millions of players choose Yono Slots online for real cash winnings. Here's why they keep coming back.
+                Millions of players choose Yono Slots online for real cash
+                winnings. Here's why they keep coming back.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -606,12 +761,18 @@ export default function YonoSlotsPage() {
                     key={title}
                     className="flex gap-3 p-4 rounded-2xl bg-bg border border-card-border hover:border-primary/30 hover:shadow-sm transition-all"
                   >
-                    <div className={`w-10 h-10 min-w-10 rounded-xl ${bg} flex items-center justify-center`}>
+                    <div
+                      className={`w-10 h-10 min-w-10 rounded-xl ${bg} flex items-center justify-center`}
+                    >
                       <Icon className={`w-5 h-5 ${color}`} />
                     </div>
                     <div>
-                      <p className="font-bold text-text-primary text-sm mb-1">{title}</p>
-                      <p className="text-text-secondary text-xs leading-relaxed">{desc}</p>
+                      <p className="font-bold text-text-primary text-sm mb-1">
+                        {title}
+                      </p>
+                      <p className="text-text-secondary text-xs leading-relaxed">
+                        {desc}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -620,14 +781,21 @@ export default function YonoSlotsPage() {
           </section>
 
           {/* ── HOW TO DOWNLOAD — HowTo schema, "yono slots apk download" (5K), "yono slots app download" (5K) ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="download-guide-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="download-guide-heading"
+          >
             <div className="content-section">
-              <h2 id="download-guide-heading" className="text-xl font-extrabold text-text-primary mb-1">
+              <h2
+                id="download-guide-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
                 How to Download{" "}
                 <span className="gradient-text">Yono Slots APK</span>
               </h2>
               <p className="text-sm text-text-secondary mb-5">
-                Download, install, and start playing Yono Slots in under 3 minutes on any Android phone.
+                Download, install, and start playing Yono Slots in under 3
+                minutes on any Android phone.
               </p>
 
               <div className="relative">
@@ -643,10 +811,14 @@ export default function YonoSlotsPage() {
                       desc: (
                         <>
                           Browse the{" "}
-                          <strong className="text-text-primary">all Yono Slots</strong>{" "}
-                          list above — sorted by rating. Each card shows the sign-up bonus, jackpot potential,
-                          and rating. Pick the{" "}
-                          <strong className="text-text-primary">best Yono Slots app</strong>{" "}
+                          <strong className="text-text-primary">
+                            all Yono Slots
+                          </strong>{" "}
+                          list above — sorted by rating. Each card shows the
+                          sign-up bonus, jackpot potential, and rating. Pick the{" "}
+                          <strong className="text-text-primary">
+                            best Yono Slots app
+                          </strong>{" "}
                           — or try Jaiho Slots if you want the most popular one.
                         </>
                       ),
@@ -657,9 +829,14 @@ export default function YonoSlotsPage() {
                       desc: (
                         <>
                           Tap the card, then click "Download". The{" "}
-                          <strong className="text-text-primary">Yono Slots APK download</strong>{" "}
+                          <strong className="text-text-primary">
+                            Yono Slots APK download
+                          </strong>{" "}
                           comes directly from the official Yono Games server —{" "}
-                          <strong>no third-party hosting, completely safe</strong>.
+                          <strong>
+                            no third-party hosting, completely safe
+                          </strong>
+                          .
                         </>
                       ),
                     },
@@ -669,8 +846,11 @@ export default function YonoSlotsPage() {
                       desc: (
                         <>
                           Open the APK. Go to{" "}
-                          <strong>Settings → Security → Install Unknown Apps</strong>{" "}
-                          and allow from your browser. One-time step for all APK files outside the Play Store.
+                          <strong>
+                            Settings → Security → Install Unknown Apps
+                          </strong>{" "}
+                          and allow from your browser. One-time step for all APK
+                          files outside the Play Store.
                         </>
                       ),
                     },
@@ -679,9 +859,13 @@ export default function YonoSlotsPage() {
                       title: "Register & Get Your Bonus Instantly",
                       desc: (
                         <>
-                          Open the app, tap Register, enter your mobile number. Your{" "}
-                          <strong className="text-primary">Yono Slots sign-up bonus</strong>{" "}
-                          is credited <strong>instantly</strong> — no promo code needed. Start spinning immediately.
+                          Open the app, tap Register, enter your mobile number.
+                          Your{" "}
+                          <strong className="text-primary">
+                            Yono Slots sign-up bonus
+                          </strong>{" "}
+                          is credited <strong>instantly</strong> — no promo code
+                          needed. Start spinning immediately.
                         </>
                       ),
                     },
@@ -691,8 +875,12 @@ export default function YonoSlotsPage() {
                         {num}
                       </div>
                       <div className="flex-1 pb-2">
-                        <p className="font-bold text-text-primary text-sm mb-1">{title}</p>
-                        <p className="text-text-secondary text-xs leading-relaxed">{desc}</p>
+                        <p className="font-bold text-text-primary text-sm mb-1">
+                          {title}
+                        </p>
+                        <p className="text-text-secondary text-xs leading-relaxed">
+                          {desc}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -702,23 +890,33 @@ export default function YonoSlotsPage() {
               <div className="mt-5 p-4 bg-teal/5 border border-teal/20 rounded-2xl flex items-start gap-3">
                 <ShieldCheck className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" />
                 <p className="text-xs text-text-secondary leading-relaxed">
-                  <strong className="text-text-primary">Safe Download Guarantee:</strong>{" "}
-                  Every Yono Slots APK and Jaiho Slots APK on AllYonoMax links to official servers only.
-                  We never host, modify, or redirect APK files.
+                  <strong className="text-text-primary">
+                    Safe Download Guarantee:
+                  </strong>{" "}
+                  Every Yono Slots APK and Jaiho Slots APK on AllYonoMax links
+                  to official servers only. We never host, modify, or redirect
+                  APK files.
                 </p>
               </div>
             </div>
           </section>
 
           {/* ── PROMO CODE & TELEGRAM — "yono slots promo code" (+900%), "yono slots telegram" (+900%) ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="promo-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="promo-heading"
+          >
             <div className="content-section">
-              <h2 id="promo-heading" className="text-xl font-extrabold text-text-primary mb-1">
+              <h2
+                id="promo-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
                 Yono Slots{" "}
                 <span className="gradient-text">Promo Code & Telegram</span>
               </h2>
               <p className="text-sm text-text-secondary mb-5">
-                How to find the latest Yono Slots promo codes and where to get daily bonus updates.
+                How to find the latest Yono Slots promo codes and where to get
+                daily bonus updates.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -726,17 +924,22 @@ export default function YonoSlotsPage() {
                 <div className="p-4 rounded-2xl bg-accent/5 border border-accent/20 flex flex-col gap-3">
                   <div className="flex items-center gap-2">
                     <Tag className="w-5 h-5 text-accent" />
-                    <p className="font-bold text-text-primary text-sm">Yono Slots Promo Code</p>
+                    <p className="font-bold text-text-primary text-sm">
+                      Yono Slots Promo Code
+                    </p>
                   </div>
                   <p className="text-xs text-text-secondary leading-relaxed">
-                    Most Yono Slots apps do not require a promo code — the sign-up bonus is applied
-                    automatically when you register through AllYonoMax links. Occasionally, apps release
-                    limited-time promo codes for extra bonuses (₹50–₹200 additional). These are shared
-                    exclusively on the app's official Telegram channel.
+                    Most Yono Slots apps do not require a promo code — the
+                    sign-up bonus is applied automatically when you register
+                    through AllYonoMax links. Occasionally, apps release
+                    limited-time promo codes for extra bonuses (₹50–₹200
+                    additional). These are shared exclusively on the app's
+                    official Telegram channel.
                   </p>
                   <div className="text-xs text-text-muted bg-accent/5 p-2 rounded-lg">
-                    💡 <strong className="text-text-primary">Tip:</strong> Register through this page's
-                    links — the referral bonus is applied automatically, no code needed.
+                    💡 <strong className="text-text-primary">Tip:</strong>{" "}
+                    Register through this page's links — the referral bonus is
+                    applied automatically, no code needed.
                   </div>
                 </div>
 
@@ -744,16 +947,22 @@ export default function YonoSlotsPage() {
                 <div className="p-4 rounded-2xl bg-teal/5 border border-teal/20 flex flex-col gap-3">
                   <div className="flex items-center gap-2">
                     <MessageCircle className="w-5 h-5 text-teal" />
-                    <p className="font-bold text-text-primary text-sm">Yono Slots Telegram</p>
+                    <p className="font-bold text-text-primary text-sm">
+                      Yono Slots Telegram
+                    </p>
                   </div>
                   <p className="text-xs text-text-secondary leading-relaxed">
                     Searches for{" "}
-                    <strong className="text-text-primary">Yono Slots Telegram</strong> have grown +900%
-                    in 2026. AllYonoMax runs an official Telegram channel where we share new Yono Slots
-                    app launches, bonus updates, and working APK links — the moment they go live.
+                    <strong className="text-text-primary">
+                      Yono Slots Telegram
+                    </strong>{" "}
+                    have grown +900% in 2026. AllYonoMax runs an official
+                    Telegram channel where we share new Yono Slots app launches,
+                    bonus updates, and working APK links — the moment they go
+                    live.
                   </p>
                   <a
-                    href="https://telegram.me/AllYonoMaxdotCom"
+                    href="https://telegram.dog/+AOimKWsTbRE2Mzk1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-xs font-bold text-white bg-teal px-4 py-2 rounded-xl hover:opacity-90 transition-opacity w-fit"
@@ -762,8 +971,9 @@ export default function YonoSlotsPage() {
                     Join AllYonoMax Telegram
                   </a>
                   <div className="text-xs text-text-muted bg-teal/5 p-2 rounded-lg">
-                    💡 <strong className="text-text-primary">Tip:</strong> Turn on notifications so you
-                    never miss a new Yono Slots launch with a high bonus.
+                    💡 <strong className="text-text-primary">Tip:</strong> Turn
+                    on notifications so you never miss a new Yono Slots launch
+                    with a high bonus.
                   </div>
                 </div>
               </div>
@@ -771,14 +981,21 @@ export default function YonoSlotsPage() {
           </section>
 
           {/* ── WITHDRAWAL GUIDE — "yono slots withdrawal" ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="withdrawal-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="withdrawal-heading"
+          >
             <div className="content-section">
-              <h2 id="withdrawal-heading" className="text-xl font-extrabold text-text-primary mb-1">
+              <h2
+                id="withdrawal-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
                 Yono Slots{" "}
                 <span className="gradient-text">Withdrawal Guide</span>
               </h2>
               <p className="text-sm text-text-secondary mb-5">
-                How to withdraw your Yono Slots winnings — minimum amounts, time, and UPI options explained.
+                How to withdraw your Yono Slots winnings — minimum amounts,
+                time, and UPI options explained.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
@@ -810,16 +1027,27 @@ export default function YonoSlotsPage() {
                     bg: "bg-accent/10",
                     border: "border-accent/20",
                   },
-                ].map(({ icon: Icon, title, value, desc, color, bg, border }) => (
-                  <div key={title} className={`p-4 rounded-2xl border ${border} ${bg} flex flex-col gap-2`}>
-                    <div className="flex items-center gap-2">
-                      <Icon className={`w-5 h-5 ${color}`} />
-                      <span className="text-xs font-bold text-text-primary">{title}</span>
+                ].map(
+                  ({ icon: Icon, title, value, desc, color, bg, border }) => (
+                    <div
+                      key={title}
+                      className={`p-4 rounded-2xl border ${border} ${bg} flex flex-col gap-2`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <Icon className={`w-5 h-5 ${color}`} />
+                        <span className="text-xs font-bold text-text-primary">
+                          {title}
+                        </span>
+                      </div>
+                      <span className={`text-2xl font-extrabold ${color}`}>
+                        {value}
+                      </span>
+                      <p className="text-xs text-text-secondary leading-relaxed">
+                        {desc}
+                      </p>
                     </div>
-                    <span className={`text-2xl font-extrabold ${color}`}>{value}</span>
-                    <p className="text-xs text-text-secondary leading-relaxed">{desc}</p>
-                  </div>
-                ))}
+                  ),
+                )}
               </div>
 
               <div className="p-4 bg-primary/5 border border-primary/10 rounded-2xl">
@@ -830,22 +1058,30 @@ export default function YonoSlotsPage() {
                   <li>Open your Yono Slots app and go to the Wallet section</li>
                   <li>Tap "Withdraw" and enter the amount (minimum ₹100)</li>
                   <li>Select your UPI ID or bank account</li>
-                  <li>Confirm the withdrawal — funds arrive within 5–15 minutes</li>
+                  <li>
+                    Confirm the withdrawal — funds arrive within 5–15 minutes
+                  </li>
                   <li>Check your UPI app for the credit notification</li>
                 </ol>
                 <p className="text-xs text-text-muted mt-3">
-                  💡{" "}
-                  <strong className="text-text-primary">Pro tip:</strong>{" "}
-                  Withdraw a small amount first to verify your account before withdrawing larger jackpot winnings.
+                  💡 <strong className="text-text-primary">Pro tip:</strong>{" "}
+                  Withdraw a small amount first to verify your account before
+                  withdrawing larger jackpot winnings.
                 </p>
               </div>
             </div>
           </section>
 
           {/* ── SLOTS TIPS & TRICKS — "yono slots winning trick", "yono slots game tricks" ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="tips-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="tips-heading"
+          >
             <div className="content-section">
-              <h2 id="tips-heading" className="text-xl font-extrabold text-text-primary mb-1">
+              <h2
+                id="tips-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
                 Yono Slots{" "}
                 <span className="gradient-text">Tips & Winning Tricks</span>
               </h2>
@@ -855,7 +1091,9 @@ export default function YonoSlotsPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="space-y-3">
-                  <p className="font-bold text-text-primary text-sm">💰 Smart Slot Strategies:</p>
+                  <p className="font-bold text-text-primary text-sm">
+                    💰 Smart Slot Strategies:
+                  </p>
                   {[
                     "Always use your sign-up bonus first — play for free, withdraw real winnings",
                     "Start with lower stake spins (₹1–₹5) to extend your play time and learn the patterns",
@@ -865,13 +1103,17 @@ export default function YonoSlotsPage() {
                   ].map((tip) => (
                     <div key={tip} className="flex items-start gap-2">
                       <BadgeCheck className="w-3.5 h-3.5 text-green-accent flex-shrink-0 mt-0.5" />
-                      <p className="text-text-secondary text-xs leading-relaxed">{tip}</p>
+                      <p className="text-text-secondary text-xs leading-relaxed">
+                        {tip}
+                      </p>
                     </div>
                   ))}
                 </div>
 
                 <div className="p-4 rounded-2xl bg-accent/5 border border-accent/10">
-                  <p className="font-bold text-text-primary text-sm mb-3">🎰 Slot Features to Look For:</p>
+                  <p className="font-bold text-text-primary text-sm mb-3">
+                    🎰 Slot Features to Look For:
+                  </p>
                   <ul className="space-y-2 text-xs text-text-secondary">
                     {[
                       "Free spins rounds — play without using your balance",
@@ -893,14 +1135,21 @@ export default function YonoSlotsPage() {
           </section>
 
           {/* ── INTERNAL LINKS — only real existing pages ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8" aria-labelledby="explore-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-8"
+            aria-labelledby="explore-heading"
+          >
             <div className="content-section">
-              <h2 id="explore-heading" className="text-xl font-extrabold text-text-primary mb-1">
+              <h2
+                id="explore-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
                 Explore More{" "}
                 <span className="gradient-text">Yono Game Categories</span>
               </h2>
               <p className="text-sm text-text-secondary mb-5">
-                Looking for other Yono games beyond slots? Browse these dedicated pages.
+                Looking for other Yono games beyond slots? Browse these
+                dedicated pages.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -940,14 +1189,24 @@ export default function YonoSlotsPage() {
                       href={cat.href}
                       className={`group flex flex-col gap-3 p-4 rounded-2xl bg-bg border ${cat.border} hover:shadow-md transition-all`}
                     >
-                      <div className={`w-10 h-10 rounded-xl ${cat.bg} flex items-center justify-center`}>
+                      <div
+                        className={`w-10 h-10 rounded-xl ${cat.bg} flex items-center justify-center`}
+                      >
                         <Icon className={`w-5 h-5 ${cat.color}`} />
                       </div>
                       <div>
-                        <p className={`font-bold text-sm ${cat.color} group-hover:underline`}>{cat.name}</p>
-                        <p className="text-xs text-text-muted mt-0.5 leading-snug">{cat.desc}</p>
+                        <p
+                          className={`font-bold text-sm ${cat.color} group-hover:underline`}
+                        >
+                          {cat.name}
+                        </p>
+                        <p className="text-xs text-text-muted mt-0.5 leading-snug">
+                          {cat.desc}
+                        </p>
                       </div>
-                      <div className={`flex items-center gap-1 text-xs font-semibold ${cat.color}`}>
+                      <div
+                        className={`flex items-center gap-1 text-xs font-semibold ${cat.color}`}
+                      >
                         View all <ArrowRight className="w-3 h-3" />
                       </div>
                     </Link>
@@ -958,27 +1217,45 @@ export default function YonoSlotsPage() {
           </section>
 
           {/* ── FAQ ── */}
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12" aria-labelledby="faq-heading">
+          <section
+            className="max-w-4xl mx-auto px-4 sm:px-6 pb-12"
+            aria-labelledby="faq-heading"
+          >
             <div className="content-section">
-              <h2 id="faq-heading" className="text-xl font-extrabold text-text-primary mb-1">
+              <h2
+                id="faq-heading"
+                className="text-xl font-extrabold text-text-primary mb-1"
+              >
                 Yono Slots –{" "}
-                <span className="gradient-text">Frequently Asked Questions</span>
+                <span className="gradient-text">
+                  Frequently Asked Questions
+                </span>
               </h2>
               <p className="text-sm text-text-secondary mb-5">
                 Everything you need to know about{" "}
                 <strong className="text-text-primary">Yono Slots</strong>,{" "}
-                <strong className="text-text-primary">Jaiho Slots</strong>, bonuses, and withdrawals.
+                <strong className="text-text-primary">Jaiho Slots</strong>,
+                bonuses, and withdrawals.
               </p>
 
               <div className="space-y-2">
                 {faqData.map((faq, i) => (
-                  <details key={i} className="group rounded-xl border border-card-border overflow-hidden">
+                  <details
+                    key={i}
+                    className="group rounded-xl border border-card-border overflow-hidden"
+                  >
                     <summary className="flex items-center justify-between p-4 bg-bg cursor-pointer list-none gap-3 hover:bg-primary/5 transition-colors">
-                      <h3 className="text-sm font-semibold text-text-primary text-left">{faq.question}</h3>
-                      <span className="text-text-muted flex-shrink-0 group-open:rotate-180 transition-transform duration-200">▾</span>
+                      <h3 className="text-sm font-semibold text-text-primary text-left">
+                        {faq.question}
+                      </h3>
+                      <span className="text-text-muted flex-shrink-0 group-open:rotate-180 transition-transform duration-200">
+                        ▾
+                      </span>
                     </summary>
                     <div className="px-4 pb-4 pt-2 border-t border-card-border bg-white/70">
-                      <p className="text-sm text-text-secondary leading-relaxed">{faq.answer}</p>
+                      <p className="text-sm text-text-secondary leading-relaxed">
+                        {faq.answer}
+                      </p>
                     </div>
                   </details>
                 ))}
@@ -990,7 +1267,8 @@ export default function YonoSlotsPage() {
                   Ready to spin and win with Yono Slots?
                 </p>
                 <p className="text-xs text-text-secondary mb-3">
-                  Download any Yono Slots app above and claim up to ₹{maxBonus} bonus today. No deposit required.
+                  Download any Yono Slots app above and claim up to ₹{maxBonus}{" "}
+                  bonus today. No deposit required.
                 </p>
                 <Link
                   href="#app-list-heading"

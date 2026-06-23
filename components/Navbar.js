@@ -3,7 +3,17 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, MessageCircle, Info, Phone, FileText, Home, Send, Shield } from "lucide-react";
+import {
+  Menu,
+  X,
+  MessageCircle,
+  Info,
+  Phone,
+  FileText,
+  Home,
+  Send,
+  Shield,
+} from "lucide-react";
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -21,8 +31,19 @@ export default function Navbar() {
     { label: "About", href: "/about", icon: Info, active: false },
     { label: "Contact", href: "/contact", icon: Phone, active: false },
     { label: "Disclaimer", href: "/disclaimer", icon: FileText, active: false },
-    { label: "Privacy Policy", href: "/privacy-policy", icon: Shield, active: false },
-    { label: "TG Join", href: "https://telegram.me/AllYonoMaxdotCom", icon: Send, active: false, external: true },
+    {
+      label: "Privacy Policy",
+      href: "/privacy-policy",
+      icon: Shield,
+      active: false,
+    },
+    {
+      label: "TG Join",
+      href: "https://telegram.dog/+AOimKWsTbRE2Mzk1",
+      icon: Send,
+      active: false,
+      external: true,
+    },
   ];
 
   return (
@@ -90,7 +111,9 @@ export default function Navbar() {
           <div className="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl flex flex-col animate-slide-in">
             {/* Sidebar Header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-card-border">
-              <span className="text-text-primary font-bold text-base">Menu</span>
+              <span className="text-text-primary font-bold text-base">
+                Menu
+              </span>
               <button
                 onClick={() => setSidebarOpen(false)}
                 className="p-1.5 text-text-secondary hover:text-primary rounded-lg transition-colors"
@@ -118,7 +141,7 @@ export default function Navbar() {
             {/* Telegram CTA at Bottom */}
             <div className="p-4 border-t border-card-border">
               <a
-                href="https://telegram.me/AllYonoMaxdotCom"
+                href="https://telegram.dog/+AOimKWsTbRE2Mzk1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-[#0088cc] hover:bg-[#0077b5] text-white text-sm font-bold rounded-xl transition-colors shadow-md"

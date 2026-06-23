@@ -25,7 +25,7 @@ function parseDownloadCount(str) {
 function getRealisticRatingCount(str, salt = 0) {
   const downloads = parseDownloadCount(str);
   // Using a consistent fraction so the count looks organic
-  const fraction = 0.032 + (salt * 0.001); 
+  const fraction = 0.032 + salt * 0.001;
   return Math.floor(downloads * fraction) + 84 + salt;
 }
 
@@ -45,7 +45,9 @@ export function AppSchema({ app }) {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: String(app.rating),
-      ratingCount: String(getRealisticRatingCount(app.totalDownloads, app.name.length)),
+      ratingCount: String(
+        getRealisticRatingCount(app.totalDownloads, app.name.length),
+      ),
       bestRating: "5",
       worstRating: "1",
     },
@@ -108,9 +110,7 @@ export function WebsiteSchema() {
         contactType: "customer support",
         availableLanguage: ["English", "Hindi"],
       },
-      sameAs: [
-        "https://telegram.me/AllYonoMaxdotCom",
-      ],
+      sameAs: ["https://telegram.dog/+AOimKWsTbRE2Mzk1"],
     },
   ];
 
@@ -126,8 +126,6 @@ export function WebsiteSchema() {
     </>
   );
 }
-
-
 
 /**
  * ItemList Schema — Lists all apps on the homepage.
@@ -153,11 +151,15 @@ export function ItemListSchema({ apps, pageUrl }) {
         url: `https://allyonomax.com/${app.slug}`,
         operatingSystem: "ANDROID",
         applicationCategory: "GameApplication",
-        description: app.description?.substring(0, 160) || `Download ${app.name} and get sign-up bonus`,
+        description:
+          app.description?.substring(0, 160) ||
+          `Download ${app.name} and get sign-up bonus`,
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: String(app.rating),
-          ratingCount: String(getRealisticRatingCount(app.totalDownloads, app.name.length)),
+          ratingCount: String(
+            getRealisticRatingCount(app.totalDownloads, app.name.length),
+          ),
           bestRating: "5",
           worstRating: "1",
         },
@@ -190,19 +192,21 @@ export function CollectionPageSchema({ pageUrl, pageName, pageDescription }) {
     "@type": "CollectionPage",
     "@id": id,
     name: pageName || "AllYonoMax – All Yono Games Download",
-    description: pageDescription ||
+    description:
+      pageDescription ||
       "Download All New Yono Games, Rummy & Slots Apps. Get ₹51 to ₹550 Sign-Up Bonus with ₹100 Min Withdrawal.",
     url: url,
     isPartOf: {
-      "@id": "https://allyonomax.com/#website"
+      "@id": "https://allyonomax.com/#website",
     },
     about: {
       "@type": "Thing",
       name: "Yono Games Apps",
-      description: "Collection of Yono gaming apps including Rummy, Slots, Teen Patti, Bingo and more",
+      description:
+        "Collection of Yono gaming apps including Rummy, Slots, Teen Patti, Bingo and more",
     },
     publisher: {
-      "@id": "https://allyonomax.com/#organization"
+      "@id": "https://allyonomax.com/#organization",
     },
     inLanguage: "en-IN",
   };

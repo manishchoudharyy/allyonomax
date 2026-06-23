@@ -97,7 +97,7 @@ export default function Footer() {
           </Link>
           <span className="text-card-border">•</span>
           <a
-            href="https://telegram.me/AllYonoMaxdotCom"
+            href="https://telegram.dog/+AOimKWsTbRE2Mzk1"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-secondary hover:text-primary transition-colors text-sm font-medium inline-flex items-center gap-1.5"
@@ -114,7 +114,7 @@ export default function Footer() {
             exclusive offers.
           </p>
           <a
-            href="https://telegram.me/AllYonoMaxdotCom"
+            href="https://telegram.dog/+AOimKWsTbRE2Mzk1"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm"
