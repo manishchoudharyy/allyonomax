@@ -510,38 +510,55 @@ export default async function AppPage({ params }) {
       )}
 
       {/* ── COMPARISON TABLE ── */}
-      {app.comparisonTable && app.comparisonTable.length > 0 && (
-        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
-          <div className="card-elevated p-4 sm:p-8">
-            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
-              <div className="w-1 h-6 rounded-full bg-accent-dark" />
-              {app.name} vs Other Yono Apps
-            </h2>
-            <div className="overflow-x-auto rounded-xl border border-card-border">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-card-border bg-bg">
-                    <th className="py-3 px-4 text-left font-bold text-text-primary">Feature</th>
-                    <th className="py-3 px-4 text-center font-bold text-primary">{app.name}</th>
-                    <th className="py-3 px-4 text-center font-semibold text-text-secondary">Diwa VIP</th>
-                    <th className="py-3 px-4 text-center font-semibold text-text-secondary">Yono 777</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {app.comparisonTable.map((row, i) => (
-                    <tr key={i} className={i < app.comparisonTable.length - 1 ? "border-b border-card-border" : ""}>
-                      <td className="py-3 px-4 font-semibold text-text-primary">{row.feature}</td>
-                      <td className="py-3 px-4 text-center text-primary font-bold">{row.diwaGame}</td>
-                      <td className="py-3 px-4 text-center text-text-secondary">{row.diwaVip}</td>
-                      <td className="py-3 px-4 text-center text-text-secondary">{row.yono777}</td>
+      {app.comparisonTable && app.comparisonTable.length > 0 && (() => {
+        const colKeys = Object.keys(app.comparisonTable[0]).filter(k => k !== "feature");
+        const colLabels = colKeys.map(k => {
+          if (k === "diwaGame") return "Diwa Game";
+          if (k === "diwaVip") return "Diwa VIP";
+          if (k === "yono777") return "Yono 777";
+          if (k === "spinWinner") return app.name;
+          if (k === "spinWinner777") return "Spin Winner 777";
+          if (k === "jaiho91") return "Jaiho 91";
+          return k;
+        });
+        return (
+          <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+            <div className="card-elevated p-4 sm:p-8">
+              <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+                <div className="w-1 h-6 rounded-full bg-accent-dark" />
+                {app.name} vs Other Yono Apps
+              </h2>
+              <div className="overflow-x-auto rounded-xl border border-card-border">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-card-border bg-bg">
+                      <th className="py-3 px-4 text-left font-bold text-text-primary">Feature</th>
+                      {colLabels.map((label, i) => (
+                        <th key={i} className={`py-3 px-4 text-center font-${i === 0 ? "bold text-primary" : "semibold text-text-secondary"}`}>
+                          {label}
+                        </th>
+                      ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {app.comparisonTable.map((row, i) => (
+                      <tr key={i} className={i < app.comparisonTable.length - 1 ? "border-b border-card-border" : ""}>
+                        <td className="py-3 px-4 font-semibold text-text-primary">{row.feature}</td>
+                        {colKeys.map((k, j) => (
+                          <td key={j} className={`py-3 px-4 text-center ${j === 0 ? "text-primary font-bold" : "text-text-secondary"}`}>
+                            {row[k]}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        );
+      })()}
+
 
       {/* ── FAQ ── */}
       <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">

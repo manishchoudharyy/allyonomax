@@ -95,9 +95,9 @@ const faqData = [
 
 export default function AllYonoGamesPage() {
   const allApps = getAllApps();
-  const sortedApps = [...allApps].sort(
-    (a, b) => parseFloat(b.rating) - parseFloat(a.rating),
-  );
+  // const allApps = [...allApps].sort(
+    // (a, b) => parseFloat(b.rating) - parseFloat(a.rating),
+  // );
 
   const rummyApps = allApps.filter((a) => a.categories?.includes("rummy"));
   const slotsApps = allApps.filter(
@@ -121,7 +121,7 @@ export default function AllYonoGamesPage() {
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema faq={faqForSchema} />
       <CollectionPageSchema />
-      <ItemListSchema apps={sortedApps} />
+      <ItemListSchema apps={allApps} />
 
       <div className="bg-bg min-h-screen">
         <Navbar />
@@ -225,7 +225,7 @@ export default function AllYonoGamesPage() {
             </span>
           </div>
           <div className="space-y-2">
-            {sortedApps.map((app, i) => (
+            {allApps.map((app, i) => (
               <AppCard key={app.slug} app={app} index={i} />
             ))}
           </div>
