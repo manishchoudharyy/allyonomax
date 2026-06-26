@@ -62,6 +62,16 @@ const nextConfig = {
       },
     ];
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/uono-slots',
+        destination: '/yono-slots-apk',
+        permanent: true, // This triggers a 301 redirect
+      },
+    ];
+  },
 };
 
 export default nextConfig;
