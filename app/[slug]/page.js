@@ -350,16 +350,31 @@ export default async function AppPage({ params }) {
           </h2>
           <div className="text-text-secondary text-sm leading-relaxed space-y-3">
             {app.whyChoose
-              ? app.whyChoose.split("\n\n").map((para, i) => (
-                  <p key={i}
-                    dangerouslySetInnerHTML={{
-                      __html: para
-                        .replace(/₹[\d,]+/g, (m) => `<strong class="text-primary">${m}</strong>`)
-                        .replace(/\b(AllYonoMax)\b/g, `<strong>$1</strong>`)
-                        .replace(/\b(Diwa Game|Diwa Vip|Jaiho|Yono Games|yono)\b/gi, (m) => `<strong class="text-text-primary">${m}</strong>`)
-                    }}
-                  />
-                ))
+              ? Array.isArray(app.whyChoose)
+                ? app.whyChoose.map((item, i) => (
+                    <div key={i} className="mb-4 last:mb-0">
+                      {item.title && (
+                        <p className="font-bold text-text-primary mb-1">{item.title}</p>
+                      )}
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: (item.desc || item)
+                            .replace(/₹[\d,]+/g, (m) => `<strong class="text-primary">${m}</strong>`)
+                            .replace(/\b(AllYonoMax)\b/g, `<strong>$1</strong>`)
+                        }}
+                      />
+                    </div>
+                  ))
+                : app.whyChoose.split("\n\n").map((para, i) => (
+                    <p key={i}
+                      dangerouslySetInnerHTML={{
+                        __html: para
+                          .replace(/₹[\d,]+/g, (m) => `<strong class="text-primary">${m}</strong>`)
+                          .replace(/\b(AllYonoMax)\b/g, `<strong>$1</strong>`)
+                          .replace(/\b(Diwa Game|Diwa Vip|Jaiho|Yono Games|yono)\b/gi, (m) => `<strong class="text-text-primary">${m}</strong>`)
+                      }}
+                    />
+                  ))
               : (
                 <>
                   <p>
