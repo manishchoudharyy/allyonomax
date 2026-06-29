@@ -217,7 +217,7 @@ export default async function AppPage({ params }) {
             <a
                 href={app.referLink}
                 target="_blank"
-                rel="noopener noreferrer nofollow sponsored"
+                rel="noopener noreferrer nofollow"
                 className="btn-primary text-base sm:text-lg px-8 py-3.5 pulse-primary"
               >
                 <Download className="w-5 h-5" />
