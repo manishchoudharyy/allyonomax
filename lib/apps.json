@@ -12,45 +12,49 @@
     "totalDownloads": "100K+",
     "isNew": true,
     "isTrending": true,
-    "lastModified": "2026-06-22T12:34:00.000Z",
-    "categories": ["vip", "slots", "diwa"],
-    "description": "Diwa Game is a brand new Yono app that launched in June 2026. It is built on the same platform that runs many popular real-money gaming apps in India. If you are looking for the Diwa Game APK download, this is the official and safe link.\n\nWhen you sign up on Diwa Game using the AllYonoMax link, you get ₹649 bonus added to your wallet instantly. You do not need to deposit any money to get this bonus. Just register with your mobile number and the bonus is yours.\n\nThe app has rummy, slots, 777, and spin games. All games run smoothly because the app is only 43MB — very light on your phone. It works on any Android phone, even older ones with less storage.\n\nWithdrawal is simple. Once you have ₹100 in your wallet, you can send it to your UPI or bank account. Most withdrawals are done within 5 to 10 minutes. No hidden charges, no KYC needed for small amounts.\n\nDiwa Game also has a referral program. You get your own link when you register. Share it with friends. Every time a friend registers and plays, you earn extra money. Since the app just launched, very few people have joined yet — which means your referral earnings will be much higher right now than they will be later.",
+    "lastModified": "2026-06-30T08:28:47.197Z",
+    "categories": [
+      "vip",
+      "slots",
+      "diwa"
+    ],
+    "description": "Diwa Game launched in June 2026 as one of the newer apps on the Yono network. The Diwa Game APK download leads straight into Rummy, Slots, 777, and Spin & Win — four games on one home screen.\n\nThe signup bonus is ₹649 right now, credited the moment you register, no deposit needed — currently the highest launch bonus among the Diwa-family apps (Diwa VIP runs ₹139, Yono 777 runs ₹100). ₹100 minimum withdrawal, UPI payout in 5-30 minutes.\n\nBeing newly launched means the referral pool is still small — early sharers tend to see higher returns before the app fills up. Feels familiar if you've used Diwa VIP or Diwa 777, just its own wallet and its own bonus.",
     "gamesAvailable": [
       {
         "name": "Rummy",
-        "desc": "Classic 13-card Indian rummy. Play at low-entry tables starting from ₹1. Best for people who already know the game. Win cash every time you form valid sets and sequences."
+        "desc": "Classic 13-card rummy, tables starting from ₹1 entry. Win by forming valid sets and sequences."
       },
       {
         "name": "Slots",
-        "desc": "Spin the reels and win instant cash. Diwa Game has multiple slot machines with different themes. No skill needed — just spin and see if you win. Very popular with new users."
+        "desc": "Multiple slot machines with different themes. No skill required — spin and see the result."
       },
       {
         "name": "777",
-        "desc": "The classic lucky number game. Match the 777 symbols and win big. This is the fastest game in Diwa Game — one round takes less than 10 seconds."
+        "desc": "Match the 777 symbols to win. Fastest game in the app — one round takes under 10 seconds."
       },
       {
         "name": "Spin & Win",
-        "desc": "Spin the wheel and land on a prize. Daily free spins available for all users. The wheel has cash prizes ranging from ₹1 to ₹100 per spin."
+        "desc": "Daily free spins with cash prizes ranging from ₹1 to ₹100 per spin."
       }
     ],
-    "bonusDetails": "The ₹649 welcome bonus in Diwa Game is one of the biggest launch bonuses in the Yono Games network right now. Here is exactly how it works.\n\nWhen you register using the AllYonoMax download link, the bonus is added to your wallet automatically. You do not need to enter any code. You do not need to deposit money. The bonus appears in your wallet within 30 seconds of registration.\n\nThe bonus is split into two parts. Part one is a playing bonus — you can use it to join game tables. Part two is a cash bonus — you can withdraw it once you meet the wagering requirement, which is usually just playing 2 to 3 rounds of any game.\n\nThis is why downloading Diwa Game right now is smart — new Yono apps always give their highest bonus at launch. The same app gave ₹139 last week. Right now it is ₹649. It will likely go down again in the coming weeks as more users join.",
-    "withdrawalDetails": "Withdrawing money from Diwa Game is very simple. Here is everything you need to know.\n\nMinimum withdrawal amount is ₹100. So once your wallet has ₹100 or more, you can send it to your UPI or bank account.\n\nHow to withdraw: Open the Diwa Game app, go to the Wallet section, tap Withdraw, enter the amount, and choose UPI or Bank Transfer. Your money will reach your account in 5 to 30 minutes.\n\nFor amounts below ₹10,000, no KYC or documents are needed. Just your registered mobile number is enough. For larger amounts, you may need to submit a simple ID proof.\n\nDiwa Game does not charge any fee on withdrawals. Whatever amount you withdraw, the full amount reaches your account — zero deductions.",
-    "referralDetails": "Diwa Game has one of the best referral programs right now because the app just launched. Here is how it works.\n\nWhen you register, you get your own referral link inside the app. Go to the Invite or Refer section and copy your link. Share it on WhatsApp, Telegram, or any social media.\n\nEvery person who downloads Diwa Game using your link and registers earns you a commission. The commission amount depends on the current offer — right now it ranges from ₹50 to ₹500 per referral.\n\nYour referral earnings are added to your wallet instantly when the friend registers. You can withdraw the referral bonus along with your regular winnings — same process, same speed.\n\nThe best time to use the referral program is right now. Diwa Game is new, so your friends have not heard about it yet. First person to share it in a group always earns the most. Do not wait.",
+    "bonusDetails": "The ₹649 bonus is the current launch offer — it was ₹139 the week before, and like most new Yono apps, it will likely step down as more users register. It's added automatically when you sign up through the link on this page, no code required.\n\nThe bonus splits into two parts: a playing portion usable immediately on any game table, and a cash portion that becomes withdrawable after a wagering requirement (typically 2-3 rounds played on any game).",
+    "withdrawalDetails": "Minimum withdrawal is ₹100, no fees deducted. Open the Wallet section in the app, tap Withdraw, enter the amount, choose UPI or Bank Transfer. Standard processing is 5 to 30 minutes.\n\nNo KYC is required for withdrawals under ₹10,000 — your registered mobile number is enough. Larger amounts may require basic ID verification.",
+    "referralDetails": "Your referral link is in the Invite section of the app, generated the moment you register. Share it on WhatsApp or Telegram — current commission per successful referral ranges ₹50 to ₹500, credited to your wallet instantly when the friend registers.\n\nSince Diwa Game only launched in June 2026, the referral pool is smaller than on longer-running apps — commissions on freshly launched apps tend to be higher early on before the user base fills in.",
     "prosAndCons": {
       "pros": [
-        "₹649 free bonus — no deposit needed",
-        "Very low ₹100 minimum withdrawal",
-        "Brand new app — referral earnings at peak",
-        "Lightweight 43MB — works on any phone",
-        "Multiple games: Rummy, Slots, 777, Spin",
-        "Fast withdrawal — 5 to 30 minutes",
-        "No KYC for withdrawals under ₹10,000"
+        "₹649 signup bonus, no deposit required",
+        "₹100 minimum withdrawal, no maximum cap",
+        "Newly launched — referral commissions currently on the higher end",
+        "43MB APK, runs on low-RAM and older Android phones",
+        "Four game types in one app: Rummy, Slots, 777, Spin & Win",
+        "5-30 minute UPI withdrawals",
+        "No KYC needed for withdrawals under ₹10,000"
       ],
       "cons": [
-        "Android only — no iOS app",
-        "Must install as APK — not on Play Store",
-        "New app — less user reviews available yet",
-        "Wagering required before withdrawing bonus"
+        "Android only, not available on iOS or Play Store",
+        "Bonus amount will likely decrease as more users join",
+        "Newer app — fewer long-term user reviews to reference",
+        "Cash portion of the bonus requires a short wagering condition before withdrawal"
       ]
     },
     "comparisonTable": [
@@ -67,12 +71,6 @@
         "yono777": "₹100"
       },
       {
-        "feature": "App Size",
-        "diwaGame": "43MB",
-        "diwaVip": "60MB",
-        "yono777": "55MB"
-      },
-      {
         "feature": "Games",
         "diwaGame": "Rummy, Slots, 777, Spin",
         "diwaVip": "Rummy, Slots",
@@ -87,73 +85,94 @@
       {
         "feature": "Withdrawal Speed",
         "diwaGame": "5–30 min",
-        "diwaVip": "10–30 min",
+        "diwaVip": "5–30 min",
         "yono777": "10–60 min"
       }
     ],
-    "whyChoose": "Diwa Game is the newest Yono app of June 2026. New apps always give bigger bonuses, faster withdrawals, and higher referral earnings — and Diwa Game is doing all three right now.\n\nThe ₹649 welcome bonus is free. You do not pay anything to get it. Just register using the AllYonoMax link and it lands in your wallet in under 30 seconds. No other new Yono app is giving this high a bonus right now.\n\nThe app is only 43MB. That is smaller than most other Yono apps. It installs in under a minute and runs without lag on any Android phone — even phones with 2GB RAM or older Android versions.\n\nWithdrawal is completely free and takes 5 to 30 minutes. The minimum is just ₹100. There are no hidden charges. Your full withdrawal amount reaches your UPI or bank account every time.\n\nThe referral program is at its best right now because the app just launched. Most of your friends and contacts have not heard of Diwa Game yet. That means when you share your link, you are the first — and first always earns the most. Referral commissions are highest in the first few weeks of a new Yono app.\n\nDiwa Game has four types of games — Rummy, Slots, 777, and Spin. You can play what you enjoy most. If you are new to gaming apps, start with Spin or 777 — they are the simplest and fastest. If you already know rummy, the Rummy tables offer the best skill-based returns.\n\nDownload the Diwa Game APK from AllYonoMax today. This is the safest link — it goes directly to the official Diwa Game server. No fake files, no viruses, no redirects.",
+    "whyChoose": [
+      {
+        "title": "Highest Current Launch Bonus in the Diwa Lineup",
+        "desc": "₹649 right now, against ₹139 on Diwa VIP and ₹100 on Yono 777. Credited automatically on registration, no code needed — though like any new-app launch bonus, it's expected to taper as the user base grows."
+      },
+      {
+        "title": "Four Games, One Wallet",
+        "desc": "Rummy, Slots, 777, and Spin & Win are all in the same app rather than split across separate installs. If you already know rummy, the rummy tables tend to offer the more skill-based returns; Spin & Win and 777 are simpler if you're new."
+      },
+      {
+        "title": "Smaller Install",
+        "desc": "At 43MB, Diwa Game runs comfortably on older or low-RAM Android phones — useful if you're also running Diwa VIP or Diwa 777 alongside it and watching storage."
+      },
+      {
+        "title": "Referral Pool Still Small",
+        "desc": "Because the app only launched in June 2026, fewer people have shared their referral link yet — commissions tend to run higher in this early window than they will once the app is more established."
+      }
+    ],
     "features": [
-      "₹649 Free Welcome Bonus",
-      "Official Diwa Game Yono App",
-      "Instant UPI Withdrawal",
+      "₹649 Signup Bonus",
+      "₹100 Minimum Withdrawal",
+      "5-30 Minute UPI Withdrawals",
       "Rummy, Slots, 777 & Spin Games",
-      "Refer Friends & Earn ₹500 Per Friend",
-      "Small 43MB — Works on Any Phone",
+      "3-Level Referral Commission ₹50-₹500",
+      "43MB — Runs on Low-RAM Phones",
       "No KYC for Withdrawals Under ₹10,000"
     ],
     "howToDownload": [
-      "Click the 'Download Diwa Game' button on this page",
-      "Go to your phone Settings and allow 'Install from Unknown Sources'",
-      "Open the Diwa Game APK file from your downloads",
-      "Tap 'Install' — takes about 15 seconds",
-      "Open the app and tap 'Register'",
-      "Enter your mobile number and verify with OTP",
-      "Done! Your ₹649 bonus is added to your wallet instantly"
+      "Tap the \"Download Diwa Game\" button on this page — it links to the official APK, no third-party redirect",
+      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
+      "Open the downloaded file (around 43MB) from your Downloads folder",
+      "Tap Install and wait about 15 seconds",
+      "Open the app, tap Register, and enter your mobile number",
+      "Verify the OTP sent via SMS",
+      "Your ₹649 bonus lands in your wallet automatically — no deposit needed"
     ],
     "faq": [
       {
         "question": "What is Diwa Game?",
-        "answer": "Diwa Game is a new Yono app launched in June 2026. You can play games like rummy, slots, and 777 and win real money. New users get ₹649 free bonus when they sign up."
+        "answer": "Diwa Game is a real-money gaming app on the Yono network, launched in June 2026. It runs Rummy, Slots, 777, and Spin & Win, with a current signup bonus of ₹649 credited on registration."
       },
       {
         "question": "How do I download the Diwa Game APK?",
-        "answer": "Click the download button on this page. The Diwa Game APK will save to your phone. Open the file, allow install from unknown sources, tap Install, and you are done."
+        "answer": "Use the official download link on this page — it goes directly to the app's own server. Enable 'Install Unknown Apps' for your browser, install the file, and open it to register."
       },
       {
         "question": "Is Diwa Game real or fake?",
-        "answer": "Diwa Game is 100% real. It is a verified app on the Yono Games network. You can withdraw your money to UPI or bank anytime once you have ₹100 in your wallet."
+        "answer": "Diwa Game runs on the Yono Games network, the same backend behind Diwa VIP, Diwa 777, and dozens of other apps. Withdrawals process through standard UPI infrastructure. As a real-money gambling app, both wins and losses are real — it isn't a scam in the sense of stealing deposits, but the odds favor the platform over time, same as any casino-style game."
       },
       {
         "question": "How does the ₹649 bonus work in Diwa Game?",
-        "answer": "When you register using the AllYonoMax link, ₹649 is added to your wallet instantly. Part of it can be used to play games right away. The rest can be withdrawn after meeting a simple wagering condition."
+        "answer": "It's added to your wallet automatically on registration through the link on this page — no code, no deposit. Part of it is usable immediately on game tables; the rest becomes withdrawable after a short wagering requirement, typically 2-3 rounds played."
       },
       {
         "question": "What is the minimum withdrawal in Diwa Game?",
-        "answer": "The minimum withdrawal in Diwa Game is ₹100. Once your wallet has ₹100 or more, you can send it to your UPI or bank account. No charges, no delay."
+        "answer": "₹100, with no maximum limit. No fees are deducted — UPI transfers typically clear in 5 to 30 minutes."
       },
       {
         "question": "What games are available in Diwa Game?",
-        "answer": "Diwa Game has four main games: Rummy, Slots, 777, and Spin & Win. You can play any of them using your wallet balance. New games are added regularly."
+        "answer": "Four main games: Rummy, 777, Slots, and Spin & Win, all accessible from the same wallet balance."
       },
       {
         "question": "How does the Diwa Game referral program work?",
-        "answer": "After registering, go to the Invite section in the Diwa Game app. Copy your referral link and share it with friends. Every friend who registers earns you a commission of ₹50 to ₹500 depending on the current offer."
+        "answer": "Your referral link is in the Invite section of the app. Commission per successful referral currently ranges ₹50 to ₹500 and is credited to your wallet the moment the friend registers."
       },
       {
-        "question": "Is Diwa Game available on iOS or only Android?",
-        "answer": "Diwa Game is currently available for Android only. You need to download the APK file — it is not available on the Play Store. iOS users cannot use this app at the moment."
+        "question": "Is Diwa Game the same as Diwa VIP or Diwa 777?",
+        "answer": "Same network, same general layout style, but separate apps with their own wallets and bonuses. Diwa Game's current ₹649 bonus is higher than Diwa VIP's ₹139, since Diwa Game launched more recently."
+      },
+      {
+        "question": "Is Diwa Game available on iOS?",
+        "answer": "No — Android only, distributed as an APK file outside the Play Store."
       }
     ],
-    "metaTitle": "Diwa Game APK Download — Get ₹649 Bonus | New Diwa Game Yono App 2026",
-    "metaDescription": "Download Diwa Game APK free and get ₹649 instant bonus. Diwa Game is the new Yono app launched in 2026. Fast UPI withdrawal. Official Diwa Game yono download link.",
+    "metaTitle": "Diwa Game APK Download — ₹649 Bonus | Yono Game",
+    "metaDescription": "Diwa Game APK download: ₹649 signup bonus, ₹100 min withdrawal, 5-30 min payout. Diwagame app — Rummy, Slots, 777, Spin & Win. New Diwa Game Yono app 2026.",
     "keywords": [
       "diwa game",
       "diwa game apk",
-      "diwa game apk download",
+      "diwagame",
       "diwa game download",
+      "diwa game app",
+      "diwa game apk download",
       "diwa game yono",
-      "diwa game yono app",
-      "diwa game new yono app",
       "diwa game bonus",
       "diwa game real or fake",
       "diwa game withdrawal"
@@ -235,7 +254,9 @@
     "id": 63,
     "lastModified": "2026-06-14T07:55:44.377Z",
     "icon": "/icons/jaiho-91.webp",
-    "categories": ["jaiho"]
+    "categories": [
+      "jaiho"
+    ]
   },
   {
     "name": "Diwa Vip",
@@ -298,7 +319,10 @@
     "id": 62,
     "lastModified": "2026-06-19T22:25:00.000Z",
     "icon": "/icons/diwa-vip.webp",
-    "categories": ["vip", "diwa"]
+    "categories": [
+      "vip",
+      "diwa"
+    ]
   },
   {
     "id": 49,
@@ -375,7 +399,10 @@
       "jaiho rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:22:17.160Z",
-    "categories": ["rummy", "jaiho"]
+    "categories": [
+      "rummy",
+      "jaiho"
+    ]
   },
   {
     "id": 5,
@@ -484,7 +511,10 @@
       "aviator diwa 777"
     ],
     "lastModified": "2026-06-29T12:30:30.179Z",
-    "categories": ["777", "diwa"],
+    "categories": [
+      "777",
+      "diwa"
+    ],
     "gamesAvailable": [
       {
         "name": "Fortune Gems",
@@ -768,7 +798,10 @@
       "diwa slot apk 2026"
     ],
     "lastModified": "2026-06-16T16:00:17.364Z",
-    "categories": ["slots", "diwa"]
+    "categories": [
+      "slots",
+      "diwa"
+    ]
   },
   {
     "id": 6,
@@ -841,7 +874,9 @@
       "mqm bet apk 2026"
     ],
     "lastModified": "2026-06-16T16:01:26.092Z",
-    "categories": ["bet"]
+    "categories": [
+      "bet"
+    ]
   },
   {
     "id": 48,
@@ -857,7 +892,10 @@
     "isNew": true,
     "isTrending": true,
     "lastModified": "2026-06-25T12:00:00.000Z",
-    "categories": ["spin", "slots"],
+    "categories": [
+      "spin",
+      "slots"
+    ],
     "description": "Spin Winner is one of the most popular Yono gaming apps in India right now. It is a real money earning app where you can play games like Slots, Rummy, Teen Patti, Dragon vs Tiger, 777, and Spin Wheel — and withdraw your winnings directly to your UPI or bank account.\n\nIf you are searching for the Spin Winner APK download, you are in the right place. The official Spin Winner APK is only 42MB and works on any Android phone with Android 5.0 or above. Download takes under 1 minute and installation is simple.\n\nNew users who register on Spin Winner using the AllYonoMax link get an instant welcome bonus of up to ₹3000. This is one of the best signup bonuses available on any Yono game right now. The bonus is credited to your wallet automatically — no code to enter, no deposit needed.\n\nSpin Winner is part of the trusted Yono Games network, which operates dozens of verified real-money gaming apps across India. The app uses UPI for all payments — the same payment system used by crores of Indians every day. Every transaction is fast, secure, and transparent.\n\nThe minimum withdrawal on Spin Winner is just ₹100. Once you have ₹100 or more in your wallet, you can send it directly to your UPI ID, bank account, or Paytm. Most withdrawals are completed within 5 to 30 minutes with zero fees.",
     "gamesAvailable": [
       {
@@ -1123,7 +1161,9 @@
       "love rummy apk 2026"
     ],
     "lastModified": "2026-06-15T13:59:28.165Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 12,
@@ -1197,7 +1237,9 @@
       "boss rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:03:31.162Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 2,
@@ -1273,7 +1315,9 @@
       "rummy ludo apk 2026"
     ],
     "lastModified": "2026-06-15T13:59:53.870Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 24,
@@ -1349,7 +1393,10 @@
       "jaiho slots apk 2026"
     ],
     "lastModified": "2026-06-17T08:37:52.516Z",
-    "categories": ["slots", "jaiho"]
+    "categories": [
+      "slots",
+      "jaiho"
+    ]
   },
   {
     "id": 3,
@@ -1426,7 +1473,9 @@
       "top rummy apk 2026"
     ],
     "lastModified": "2026-06-15T14:01:10.365Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 7,
@@ -1504,7 +1553,9 @@
       "good slots apk 2026"
     ],
     "lastModified": "2026-06-17T16:03:50.140Z",
-    "categories": ["slots"]
+    "categories": [
+      "slots"
+    ]
   },
   {
     "id": 8,
@@ -1581,7 +1632,9 @@
       "yn 777 apk 2026"
     ],
     "lastModified": "2026-06-14T07:58:52.777Z",
-    "categories": ["777"]
+    "categories": [
+      "777"
+    ]
   },
   {
     "id": 9,
@@ -1655,7 +1708,9 @@
       "rumble rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:02:15.945Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 10,
@@ -1733,7 +1788,9 @@
       "joy rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:02:38.831Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 11,
@@ -1811,7 +1868,9 @@
       "inr rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:03:03.273Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 13,
@@ -1883,7 +1942,9 @@
       "rummy 888 apk 2026"
     ],
     "lastModified": "2026-06-16T16:03:56.419Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 14,
@@ -1957,7 +2018,9 @@
       "rummy 77 apk 2026"
     ],
     "lastModified": "2026-06-16T16:04:26.477Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 15,
@@ -2033,7 +2096,9 @@
       "bet 213 apk 2026"
     ],
     "lastModified": "2026-06-19T16:11:00.656Z",
-    "categories": ["bet"]
+    "categories": [
+      "bet"
+    ]
   },
   {
     "id": 16,
@@ -2109,7 +2174,9 @@
       "yono 777 apk 2026"
     ],
     "lastModified": "2026-06-16T16:04:54.967Z",
-    "categories": ["777"]
+    "categories": [
+      "777"
+    ]
   },
   {
     "id": 17,
@@ -2182,7 +2249,9 @@
       "101z apk 2026"
     ],
     "lastModified": "2026-06-16T16:05:33.965Z",
-    "categories": ["bingo"]
+    "categories": [
+      "bingo"
+    ]
   },
   {
     "id": 18,
@@ -2260,7 +2329,9 @@
       "bingo 101 apk 2026"
     ],
     "lastModified": "2026-06-16T16:06:10.186Z",
-    "categories": ["bingo"]
+    "categories": [
+      "bingo"
+    ]
   },
   {
     "id": 19,
@@ -2338,7 +2409,10 @@
       "spin 777 apk 2026"
     ],
     "lastModified": "2026-06-16T16:06:37.405Z",
-    "categories": ["777", "spin"]
+    "categories": [
+      "777",
+      "spin"
+    ]
   },
   {
     "id": 20,
@@ -2416,7 +2490,9 @@
       "slots winner apk 2026"
     ],
     "lastModified": "2026-06-16T16:07:09.795Z",
-    "categories": ["slots"]
+    "categories": [
+      "slots"
+    ]
   },
   {
     "id": 21,
@@ -2490,7 +2566,9 @@
       "spin gold apk 2026"
     ],
     "lastModified": "2026-06-16T16:07:45.177Z",
-    "categories": ["spin"]
+    "categories": [
+      "spin"
+    ]
   },
   {
     "id": 22,
@@ -2571,7 +2649,9 @@
       "567 slots 2026"
     ],
     "lastModified": "2026-06-30T04:05:10.207Z",
-    "categories": ["slots"],
+    "categories": [
+      "slots"
+    ],
     "gamesAvailable": [
       {
         "name": "777 Slots",
@@ -2698,7 +2778,9 @@
       "Yono Games apk 2026"
     ],
     "lastModified": "2026-06-19T16:10:07.673Z",
-    "categories": ["arcade"]
+    "categories": [
+      "arcade"
+    ]
   },
   {
     "id": 25,
@@ -2772,7 +2854,9 @@
       "spin 101 apk 2026"
     ],
     "lastModified": "2026-06-16T16:09:10.944Z",
-    "categories": ["spin"]
+    "categories": [
+      "spin"
+    ]
   },
   {
     "id": 26,
@@ -2844,7 +2928,9 @@
       "mbm bet apk 2026"
     ],
     "lastModified": "2026-06-16T16:09:28.531Z",
-    "categories": ["bet"]
+    "categories": [
+      "bet"
+    ]
   },
   {
     "id": 27,
@@ -2916,7 +3002,9 @@
       "ind slots apk 2026"
     ],
     "lastModified": "2026-06-16T16:09:49.897Z",
-    "categories": ["slots"]
+    "categories": [
+      "slots"
+    ]
   },
   {
     "id": 28,
@@ -2990,7 +3078,9 @@
       "789 jackpots apk 2026"
     ],
     "lastModified": "2026-06-16T16:10:15.474Z",
-    "categories": ["jackpot"]
+    "categories": [
+      "jackpot"
+    ]
   },
   {
     "id": 29,
@@ -3068,7 +3158,9 @@
       "yono rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:10:38.402Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 30,
@@ -3145,7 +3237,10 @@
       "jaiho spin apk 2026"
     ],
     "lastModified": "2026-06-16T16:10:57.679Z",
-    "categories": ["jaiho", "spin"]
+    "categories": [
+      "jaiho",
+      "spin"
+    ]
   },
   {
     "id": 31,
@@ -3219,7 +3314,9 @@
       "abc rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:11:17.951Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 32,
@@ -3296,7 +3393,9 @@
       "club inr apk 2026"
     ],
     "lastModified": "2026-06-16T16:11:36.333Z",
-    "categories": ["jackpot"]
+    "categories": [
+      "jackpot"
+    ]
   },
   {
     "id": 33,
@@ -3373,7 +3472,9 @@
       "game rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:11:55.920Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 34,
@@ -3447,7 +3548,9 @@
       "yes spin apk 2026"
     ],
     "lastModified": "2026-06-16T16:12:15.243Z",
-    "categories": ["spin"]
+    "categories": [
+      "spin"
+    ]
   },
   {
     "id": 35,
@@ -3519,7 +3622,9 @@
       "share slots apk 2026"
     ],
     "lastModified": "2026-06-16T16:12:59.869Z",
-    "categories": ["slots"]
+    "categories": [
+      "slots"
+    ]
   },
   {
     "id": 36,
@@ -3593,7 +3698,9 @@
       "jaiho win apk 2026"
     ],
     "lastModified": "2026-06-16T16:13:25.519Z",
-    "categories": ["jaiho"]
+    "categories": [
+      "jaiho"
+    ]
   },
   {
     "id": 37,
@@ -3667,7 +3774,9 @@
       "ind club apk 2026"
     ],
     "lastModified": "2026-06-16T16:13:49.709Z",
-    "categories": ["vip"]
+    "categories": [
+      "vip"
+    ]
   },
   {
     "id": 38,
@@ -3743,7 +3852,9 @@
       "maha games apk 2026"
     ],
     "lastModified": "2026-06-19T16:10:32.904Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 61,
@@ -3815,7 +3926,9 @@
       "all yono games apk 2026"
     ],
     "lastModified": "2026-06-17T08:37:05.396Z",
-    "categories": ["all"]
+    "categories": [
+      "all"
+    ]
   },
   {
     "id": 39,
@@ -3889,7 +4002,9 @@
       "spin crush apk 2026"
     ],
     "lastModified": "2026-06-16T16:14:14.782Z",
-    "categories": ["spin"]
+    "categories": [
+      "spin"
+    ]
   },
   {
     "id": 40,
@@ -3961,7 +4076,9 @@
       "hi rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:14:48.799Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 41,
@@ -4034,7 +4151,9 @@
       "gogo rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:15:11.085Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 42,
@@ -4111,7 +4230,9 @@
       "ind rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:15:55.044Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 43,
@@ -4183,7 +4304,10 @@
       "jaiho 777 apk 2026"
     ],
     "lastModified": "2026-06-16T16:16:36.291Z",
-    "categories": ["777", "jaiho"]
+    "categories": [
+      "777",
+      "jaiho"
+    ]
   },
   {
     "id": 44,
@@ -4256,7 +4380,10 @@
       "jaiho arcade apk 2026"
     ],
     "lastModified": "2026-06-16T16:17:08.476Z",
-    "categories": ["arcade", "jaiho"]
+    "categories": [
+      "arcade",
+      "jaiho"
+    ]
   },
   {
     "id": 45,
@@ -4329,7 +4456,9 @@
       "rummy 91 apk 2026"
     ],
     "lastModified": "2026-06-16T16:17:47.473Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 46,
@@ -4407,7 +4536,9 @@
       "saga slots apk 2026"
     ],
     "lastModified": "2026-06-16T16:20:40.997Z",
-    "categories": ["slots"]
+    "categories": [
+      "slots"
+    ]
   },
   {
     "id": 47,
@@ -4484,7 +4615,9 @@
       "neta vip apk 2026"
     ],
     "lastModified": "2026-06-16T16:21:26.104Z",
-    "categories": ["vip"]
+    "categories": [
+      "vip"
+    ]
   },
   {
     "id": 50,
@@ -4556,7 +4689,9 @@
       "Yono Slots apk 2026"
     ],
     "lastModified": "2026-06-16T16:22:38.265Z",
-    "categories": ["slots"]
+    "categories": [
+      "slots"
+    ]
   },
   {
     "id": 51,
@@ -4628,7 +4763,10 @@
       "Slots Spin apk 2026"
     ],
     "lastModified": "2026-06-16T16:23:11.115Z",
-    "categories": ["slots", "spin"]
+    "categories": [
+      "slots",
+      "spin"
+    ]
   },
   {
     "id": 52,
@@ -4705,7 +4843,9 @@
       "777 game apk 2026"
     ],
     "lastModified": "2026-06-16T16:23:43.140Z",
-    "categories": ["777"]
+    "categories": [
+      "777"
+    ]
   },
   {
     "id": 53,
@@ -4781,7 +4921,9 @@
       "ok rummy apk 2026"
     ],
     "lastModified": "2026-06-16T16:24:20.595Z",
-    "categories": ["rummy"]
+    "categories": [
+      "rummy"
+    ]
   },
   {
     "id": 54,
@@ -4859,7 +5001,9 @@
       "hindi 777 apk 2026"
     ],
     "lastModified": "2026-06-16T16:25:49.012Z",
-    "categories": ["777"]
+    "categories": [
+      "777"
+    ]
   },
   {
     "id": 55,
@@ -4935,7 +5079,9 @@
       "mwm bet apk 2026"
     ],
     "lastModified": "2026-06-19T16:16:01.396Z",
-    "categories": ["bet"]
+    "categories": [
+      "bet"
+    ]
   },
   {
     "id": 56,
@@ -5007,7 +5153,9 @@
       "yono arcade apk 2026"
     ],
     "lastModified": "2026-06-16T16:26:22.141Z",
-    "categories": ["arcade"]
+    "categories": [
+      "arcade"
+    ]
   },
   {
     "id": 57,
@@ -5081,7 +5229,9 @@
       "yono vip apk 2026"
     ],
     "lastModified": "2026-06-16T16:26:52.916Z",
-    "categories": ["vip"]
+    "categories": [
+      "vip"
+    ]
   },
   {
     "id": 58,
@@ -5159,7 +5309,9 @@
       "ever 777 apk 2026"
     ],
     "lastModified": "2026-06-17T15:52:20.191Z",
-    "categories": ["777"]
+    "categories": [
+      "777"
+    ]
   },
   {
     "id": 59,
@@ -5231,7 +5383,10 @@
       "svip 777 apk 2026"
     ],
     "lastModified": "2026-06-16T05:51:22.765Z",
-    "categories": ["vip", "777"]
+    "categories": [
+      "vip",
+      "777"
+    ]
   },
   {
     "id": 60,
@@ -5308,6 +5463,8 @@
       "goa-spin apk 2026"
     ],
     "lastModified": "2026-06-19T16:14:38.110Z",
-    "categories": ["spin"]
+    "categories": [
+      "spin"
+    ]
   }
 ]
