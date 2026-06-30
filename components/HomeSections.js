@@ -79,25 +79,13 @@ export function WhatAreYonoGames({ categoryCounts, newApps }) {
 
         <div className="space-y-4 text-text-secondary text-sm leading-relaxed">
           <p>
-            <strong className="text-text-primary">Yono Games</strong> is a
-            massive family of Android-based real-money gaming apps that lets you play
-            card games, slots, and arcade titles and withdraw your winnings
-            directly to your UPI account. Unlike Play Store games, all Yono apps
-            are distributed as APK files — which is why millions of players search for a direct <strong className="text-text-primary">Yono games download APK</strong> link every single day.
+            <strong className="text-text-primary">Yono Games</strong> has become India's leading platform for real-money gaming. It offers a massive collection of Android-based apps where you can play classic card games, slots, and arcade titles. Because these are real-money applications, you won't find them on the Google Play Store. Instead, players need a verified and secure <strong className="text-text-primary">Yono games download APK</strong> link to get started, which is exactly what we provide.
           </p>
           <p>
-            The platform runs{" "}
-            <strong className="text-text-primary">60+ active apps</strong> under
-            a single shared backend. Every app in the ecosystem gives
-            you a sign-up bonus the second you register — no deposit needed, no
-            tricks. You play with the bonus, win real money, and withdraw from
-            as low as ₹100.
+            The entire network consists of <strong className="text-text-primary">60+ active apps</strong> running on a highly secure, shared backend. What makes this ecosystem so popular is the instant sign-up bonus. The moment you register on any new app, a bonus ranging from ₹51 to ₹550 is credited to your wallet — absolutely no initial deposit required. You can use this bonus to play, win real money, and instantly withdraw your earnings directly to your bank via UPI, with minimum withdrawals starting at just ₹100.
           </p>
           <p>
-            If you want the <strong className="text-text-primary">all Yono games download</strong> link in one place, AllYonoMax tracks every launch. Use our <strong className="text-text-primary">Yono games app download</strong> links to ensure you are getting the official files. We track
-            every launch, update every bonus amount the moment it changes, and
-            give you a direct referral link so your sign-up bonus lands
-            automatically — no manual code entry required.
+            If you are looking for the definitive <strong className="text-text-primary">all Yono games download</strong> hub, AllYonoMax is your trusted source. We personally verify every single <strong className="text-text-primary">Yono games app download</strong> link to ensure it points to the official servers, protecting you from fake or modified APKs. We monitor the network 24/7 to update sign-up bonus amounts in real-time, add new apps the day they launch, and provide clean referral links so your welcome bonus lands in your account instantly and automatically.
           </p>
         </div>
 
