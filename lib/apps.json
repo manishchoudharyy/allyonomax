@@ -2178,112 +2178,115 @@
       "777"
     ]
   },
- {
-  "id": 17,
-  "name": "101z",
-  "slug": "101z",
-  "icon": "/icons/101z.webp",
-  "referLink": "https://101z5.com/?code=3986HEMQ7PP&t=1781502354",
-  "bonus": "₹177",
-  "minWithdrawal": "₹100",
-  "appSize": "43MB",
-  "rating": 4.4,
-  "totalDownloads": "697K+",
-  "description": "101z is one of the longer-running games on the Yono Games network — 697,000+ downloads so far. The 101z game opens into rummy and Teen Patti tables on the home screen, with slots one tab over.\n\nNew users get a ₹177 signup bonus on registration, no deposit needed, plus daily login rewards. ₹100 minimum withdrawal, UPI or bank transfer, typically clearing within minutes.\n\nA Telegram support channel is linked inside the app for account or withdrawal questions, alongside the standard 3-level referral program shared across Yono Games network apps.",
-  "isNew": false,
-  "isTrending": false,
-  "features": [
-    "Rummy & Teen Patti Home Screen",
-    "₹177 Signup Bonus",
-    "₹100 Minimum Withdrawal, No Max Limit",
-    "Daily Login Rewards",
-    "Telegram Support Channel",
-    "3-Level Referral Commission",
-    "UPI / Paytm / Bank Transfer",
-    "43MB APK"
-  ],
-  "howToDownload": [
-    "Tap the \"Download 101z\" button on this page — links directly to the official APK",
-    "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-    "Open the downloaded file (around 43MB) from your Downloads folder",
-    "Tap Install and wait about 10-15 seconds",
-    "Open the app, tap Register, and enter your mobile number",
-    "Enter the OTP sent via SMS — check Spam/Blocked folder if it doesn't arrive in 60 seconds",
-    "Your ₹177 signup bonus lands in your wallet automatically — no deposit needed"
-  ],
-  "whyChoose": [
-    {
-      "title": "Established Player Base",
-      "desc": "101z has been live longer than several newer Yono Games network launches, with 697,000+ downloads behind it — its rummy and Teen Patti tables tend to be more active than apps that just launched."
-    },
-    {
-      "title": "Rummy, Teen Patti & Slots in One App",
-      "desc": "The home screen leads with card games, but the full slots library is one tab over, so you're not switching apps to get both game types."
-    },
-    {
-      "title": "Telegram Support Channel",
-      "desc": "Account or withdrawal questions go through a linked Telegram channel inside the app, in addition to in-app Live Chat — useful if you prefer messaging over waiting on chat support."
-    },
-    {
-      "title": "Fits the Multi-App Strategy",
-      "desc": "Like other Yono Games network apps, 101z has its own wallet and its own ₹177 signup bonus, separate from any other app you're running — most experienced players keep 101z installed alongside 2-3 others."
-    }
-  ],
-  "faq": [
-    {
-      "question": "Is 101z real or fake?",
-      "answer": "101z runs on the Yono Games network, the same backend behind Diwa 777, Goa Spin, and 58+ other apps in this directory. Withdrawals process and games pay out on RNG odds. It's a real-money gambling app, so wins and losses are both real — the odds favor the platform over time, same as any casino-style game. Always use the official download link, not a forwarded APK file."
-    },
-    {
-      "question": "How do I download the 101z APK?",
-      "answer": "Use the official link on this page — it goes straight to the app's own server, not a third-party file host. Enable 'Install Unknown Apps' for your browser, install, and disable that setting afterward if you prefer."
-    },
-    {
-      "question": "What is the 101z login process?",
-      "answer": "Open the app and tap Login (not Sign Up if you already have an account). Enter your registered mobile number, verify the OTP, and your account loads with your existing wallet balance — tied to your number, not the installation."
-    },
-    {
-      "question": "Is 101z a rummy app or a slots app?",
-      "answer": "Both. The home screen leads with rummy and Teen Patti, but the full game catalog includes slots and the rest of the standard Yono Games network library in a separate tab."
-    },
-    {
-      "question": "What is the minimum withdrawal in 101z?",
-      "answer": "₹100, no maximum limit. Withdrawals go through UPI, Paytm, or bank transfer with no fee deducted."
-    },
-    {
-      "question": "Does 101z have customer care?",
-      "answer": "Support is handled through the Telegram channel linked inside the app, plus in-app Live Chat for withdrawal or account issues. There's no separate phone support line."
-    },
-    {
-      "question": "Does 101z have a referral program?",
-      "answer": "Yes — the standard 3-level referral system used across the Yono Games network. Your referral link is in the app's Invite section; commission is credited to your wallet when someone registers through your link."
-    }
-  ],
-  "metaTitle": "101z Game APK Download — ₹177 Bonus | Yono Game",
-  "metaDescription": "101z APK download: ₹177 signup bonus, ₹100 min withdrawal. 101z game — rummy, Teen Patti & slots. Login, official link & Telegram support explained.",
-  "keywords": [
-    "101z",
-    "101z game",
-    "101z apk",
-    "101z apk download",
-    "101z download",
-    "101z game download",
-    "101z rummy",
-    "101z yono",
-    "101z yono game",
-    "101z app",
-    "101z com",
-    "101z slots",
-    "101z telegram",
-    "101z login",
-    "101z official",
-    "101z real or fake",
-    "101z customer care",
-    "101z bonus"
-  ],
-  "lastModified": "2026-06-30T00:00:00.000Z",
-  "categories": ["rummy", "slots"]
-},
+  {
+    "id": 17,
+    "name": "101z",
+    "slug": "101z",
+    "icon": "/icons/101z.webp",
+    "referLink": "https://101z5.com/?code=3986HEMQ7PP&t=1781502354",
+    "bonus": "₹177",
+    "minWithdrawal": "₹100",
+    "appSize": "43MB",
+    "rating": 4.4,
+    "totalDownloads": "697K+",
+    "description": "101z is one of the longer-running games on the Yono Games network — 697,000+ downloads so far. The 101z game opens into rummy and Teen Patti tables on the home screen, with slots one tab over.\n\nNew users get a ₹177 signup bonus on registration, no deposit needed, plus daily login rewards. ₹100 minimum withdrawal, UPI or bank transfer, typically clearing within minutes.\n\nA Telegram support channel is linked inside the app for account or withdrawal questions, alongside the standard 3-level referral program shared across Yono Games network apps.",
+    "isNew": false,
+    "isTrending": false,
+    "features": [
+      "Rummy & Teen Patti Home Screen",
+      "₹177 Signup Bonus",
+      "₹100 Minimum Withdrawal, No Max Limit",
+      "Daily Login Rewards",
+      "Telegram Support Channel",
+      "3-Level Referral Commission",
+      "UPI / Paytm / Bank Transfer",
+      "43MB APK"
+    ],
+    "howToDownload": [
+      "Tap the \"Download 101z\" button on this page — links directly to the official APK",
+      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
+      "Open the downloaded file (around 43MB) from your Downloads folder",
+      "Tap Install and wait about 10-15 seconds",
+      "Open the app, tap Register, and enter your mobile number",
+      "Enter the OTP sent via SMS — check Spam/Blocked folder if it doesn't arrive in 60 seconds",
+      "Your ₹177 signup bonus lands in your wallet automatically — no deposit needed"
+    ],
+    "whyChoose": [
+      {
+        "title": "Established Player Base",
+        "desc": "101z has been live longer than several newer Yono Games network launches, with 697,000+ downloads behind it — its rummy and Teen Patti tables tend to be more active than apps that just launched."
+      },
+      {
+        "title": "Rummy, Teen Patti & Slots in One App",
+        "desc": "The home screen leads with card games, but the full slots library is one tab over, so you're not switching apps to get both game types."
+      },
+      {
+        "title": "Telegram Support Channel",
+        "desc": "Account or withdrawal questions go through a linked Telegram channel inside the app, in addition to in-app Live Chat — useful if you prefer messaging over waiting on chat support."
+      },
+      {
+        "title": "Fits the Multi-App Strategy",
+        "desc": "Like other Yono Games network apps, 101z has its own wallet and its own ₹177 signup bonus, separate from any other app you're running — most experienced players keep 101z installed alongside 2-3 others."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is 101z real or fake?",
+        "answer": "101z runs on the Yono Games network, the same backend behind Diwa 777, Goa Spin, and 58+ other apps in this directory. Withdrawals process and games pay out on RNG odds. It's a real-money gambling app, so wins and losses are both real — the odds favor the platform over time, same as any casino-style game. Always use the official download link, not a forwarded APK file."
+      },
+      {
+        "question": "How do I download the 101z APK?",
+        "answer": "Use the official link on this page — it goes straight to the app's own server, not a third-party file host. Enable 'Install Unknown Apps' for your browser, install, and disable that setting afterward if you prefer."
+      },
+      {
+        "question": "What is the 101z login process?",
+        "answer": "Open the app and tap Login (not Sign Up if you already have an account). Enter your registered mobile number, verify the OTP, and your account loads with your existing wallet balance — tied to your number, not the installation."
+      },
+      {
+        "question": "Is 101z a rummy app or a slots app?",
+        "answer": "Both. The home screen leads with rummy and Teen Patti, but the full game catalog includes slots and the rest of the standard Yono Games network library in a separate tab."
+      },
+      {
+        "question": "What is the minimum withdrawal in 101z?",
+        "answer": "₹100, no maximum limit. Withdrawals go through UPI, Paytm, or bank transfer with no fee deducted."
+      },
+      {
+        "question": "Does 101z have customer care?",
+        "answer": "Support is handled through the Telegram channel linked inside the app, plus in-app Live Chat for withdrawal or account issues. There's no separate phone support line."
+      },
+      {
+        "question": "Does 101z have a referral program?",
+        "answer": "Yes — the standard 3-level referral system used across the Yono Games network. Your referral link is in the app's Invite section; commission is credited to your wallet when someone registers through your link."
+      }
+    ],
+    "metaTitle": "101z Game APK Download — ₹177 Bonus | Yono Game",
+    "metaDescription": "101z APK download: ₹177 signup bonus, ₹100 min withdrawal. 101z game — rummy, Teen Patti & slots. Login, official link & Telegram support explained.",
+    "keywords": [
+      "101z",
+      "101z game",
+      "101z apk",
+      "101z apk download",
+      "101z download",
+      "101z game download",
+      "101z rummy",
+      "101z yono",
+      "101z yono game",
+      "101z app",
+      "101z com",
+      "101z slots",
+      "101z telegram",
+      "101z login",
+      "101z official",
+      "101z real or fake",
+      "101z customer care",
+      "101z bonus"
+    ],
+    "lastModified": "2026-06-30T00:00:00.000Z",
+    "categories": [
+      "rummy",
+      "slots"
+    ]
+  },
   {
     "id": 18,
     "name": "Bingo 101",
@@ -5042,76 +5045,127 @@
     "slug": "mwm-bet",
     "icon": "/icons/mwm-bet.webp",
     "referLink": "https://mqmshare1.vip?pid=343972379&channel=2010001&pkg=com.mqm.bet",
-    "bonus": "₹58",
+    "bonus": "₹89",
     "minWithdrawal": "₹100",
     "appSize": "44MB",
     "rating": 4.7,
     "totalDownloads": "910K+",
-    "description": "If you're looking for a trusted slots earning app, MWM Bet is currently trending among Indian players.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹58, along with daily login rewards and deposit offers.\n\nMWM Bet uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nMWM Bet continues to attract new users daily due to its fast withdrawals and rewarding system.",
+    "description": "MWM Bet hands out a ₹89 bonus the moment you register — no deposit, straight into your wallet. Worth opening the Aviator tab first; the home screen leads with crash games rather than slots, which is a bit different from most apps in this directory where slots usually come first.\n\nIf you haven't played a crash game before, Aviator is the easy one to start with — watch the multiplier climb, cash out before the plane flies off, simple to understand within a round or two. Jet X is the faster, higher-risk version if Aviator feels too slow once you've got the hang of it.\n\nSlots and the rest of the catalog sit one tab over whenever you want them. ₹100 minimum withdrawal, standard UPI processing, same referral setup as the rest of the network.",
     "isNew": false,
     "isTrending": false,
     "features": [
-      "Email Support Available",
-      "Secure Payments",
-      "24/7 Withdrawal Available",
-      "Low Data Usage",
-      "Tournament Entry",
-      "VIP Exclusive Bonuses"
+      "4.7/5 Rating, 910K+ Downloads",
+      "₹89 Signup Bonus",
+      "Slots & Crash Games on Home Screen",
+      "₹100 Minimum Withdrawal, No Max Limit",
+      "Daily Login Rewards",
+      "3-Level Referral Commission",
+      "44MB APK"
     ],
     "howToDownload": [
-      "Click the \"MWM Bet Download\" button to get the APK",
-      "Enable \"Unknown Sources\" in Settings > Security",
-      "Find the downloaded APK in your notification panel",
-      "Tap the file and press \"Install\" to begin",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" to launch MWM Bet on your device",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your phone to get ₹58 welcome bonus"
+      "Tap the \"Download MWM Bet\" button on this page — links directly to the official APK",
+      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
+      "Open the downloaded file (around 44MB) from your Downloads folder",
+      "Tap Install and wait about 10-15 seconds",
+      "Open the app, tap Register, and enter your mobile number",
+      "Enter the OTP sent via SMS — check Spam/Blocked folder if it doesn't arrive in 60 seconds",
+      "Your ₹89 signup bonus lands in your wallet automatically — no deposit needed"
+    ],
+    "whyChoose": [
+      {
+        "title": "Highest-Rated App on This List",
+        "desc": "4.7/5 puts MWM Bet ahead of most other apps in this directory on user rating, alongside the highest download count among the apps covered so far at 910,000+."
+      },
+      {
+        "title": "Crash Games Lead the Catalog",
+        "desc": "Aviator, Jet X, and the rest of the crash-game lineup are front and center on the home screen, ahead of slots and cards — worth knowing if crash games are specifically what you're after."
+      },
+      {
+        "title": "Verify the Package Before Installing",
+        "desc": "The app installs as com.mqm.bet, not a name matching 'MWM Bet' directly — this is normal for the network, but check it against the link on this page rather than a forwarded file to make sure you're getting the right install."
+      }
+    ],
+    "bonusDetails": "The ₹89 signup bonus credits automatically the moment OTP verification completes — no deposit, no code entry needed. It can be used directly on any game, including the crash titles and slots on the home screen.\n\nDaily login rewards stack on top of the signup bonus for users who return regularly, shown in the app's Rewards tab.",
+    "withdrawalDetails": "Minimum withdrawal is ₹100 with no maximum limit, through UPI, Paytm, or bank transfer. Go to Wallet, tap Withdraw, enter the amount, and confirm. No fees are deducted from the amount requested.",
+    "referralDetails": "MWM Bet runs the standard 3-level referral program used across the Yono Games network. Your referral link is in the app's Invite section — commission is credited to your wallet when someone registers through it, and again at each of the two levels below them.",
+    "prosAndCons": {
+      "pros": [
+        "4.7/5 rating, one of the higher-rated apps in this directory",
+        "910,000+ downloads, an established user base",
+        "₹89 signup bonus, no deposit required",
+        "Crash games (Aviator, Jet X) prominent on the home screen",
+        "₹100 minimum withdrawal, no maximum cap"
+      ],
+      "cons": [
+        "Android only, not available on iOS or Play Store",
+        "Install package name (com.mqm.bet) differs from the app's display name",
+        "Bonus amount has changed before and may change again"
+      ]
+    },
+    "gamesAvailable": [
+      {
+        "name": "Crash Games (Aviator, Jet X)",
+        "desc": "Front and center on the home screen. Fast multipliers, high risk/reward, very popular right now."
+      },
+      {
+        "name": "Slots",
+        "desc": "Dozens of slot variants available one tab over, including classic 777."
+      },
+      {
+        "name": "Card Games",
+        "desc": "Standard Rummy, Teen Patti, and Andar Bahar available in the full catalog."
+      }
     ],
     "faq": [
       {
+        "question": "Is MWM Bet real or fake?",
+        "answer": "MWM Bet runs on the Yono Games network, the same backend behind Diwa 777, Goa Spin, and 58+ other apps in this directory. Withdrawals process and games pay out on RNG odds — wins and losses are both real, and the odds favor the platform over time, same as any casino-style game. Always use the official link on this page rather than a forwarded APK."
+      },
+      {
+        "question": "How do I download the MWM Bet APK?",
+        "answer": "Use the official link on this page — it goes straight to the app's own server. Enable 'Install Unknown Apps' for your browser, install, and disable that setting afterward if you prefer."
+      },
+      {
+        "question": "Why does the MWM Bet install package say com.mqm.bet?",
+        "answer": "The internal package name doesn't always match the app's display branding on Yono Games network apps — this is normal and not a sign of a modified file, as long as you're installing from the official link rather than a forwarded copy."
+      },
+      {
         "question": "What is the minimum withdrawal in MWM Bet?",
-        "answer": "The minimum withdrawal amount in MWM Bet is ₹100. Users can withdraw their earnings instantly through UPI, Paytm, or bank transfer."
+        "answer": "₹100, no maximum limit. Withdrawals go through UPI, Paytm, or bank transfer with no fee deducted."
       },
       {
         "question": "Can I play MWM Bet without depositing money?",
-        "answer": "Yes, you can use the welcome bonus and daily login rewards to play games without making an initial deposit."
+        "answer": "Yes — the ₹89 signup bonus and daily login rewards cover initial play without any deposit."
       },
       {
-        "question": "Is MWM Bet available for iOS?",
-        "answer": "Currently MWM Bet is optimized for Android devices. iOS users can access via web browser."
-      },
-      {
-        "question": "How do I contact MWM Bet customer support?",
-        "answer": "You can contact support via in-app live chat 24/7 or email support@mwmbet.com."
-      },
-      {
-        "question": "Does MWM Bet have daily bonuses?",
-        "answer": "Yes, daily login bonuses, streak rewards, and free spins are available for active players."
+        "question": "Is MWM Bet available on iOS?",
+        "answer": "No — Android only, distributed as an APK file outside the Play Store."
       },
       {
         "question": "Does MWM Bet have a referral program?",
-        "answer": "Yes, you can earn up to 25% commission on your friends' deposits. Referral rewards are credited instantly to your wallet."
+        "answer": "Yes, the standard 3-level system used across the network. Your link is in the app's Invite section, and commission credits to your wallet as referrals register."
       }
     ],
-    "metaTitle": "MWM Bet APK Download - ₹58 Signup Bonus | All Yono Max - Real Cash",
-    "metaDescription": "Download MWM Bet APK and get ₹58 signup bonus. Play skill based games, instant withdrawal, real earning app 2026.",
+    "metaTitle": "MWM Bet APK Download — ₹89 Bonus | Yono Game",
+    "metaDescription": "MWMBet app download: ₹89 signup bonus, 4.7 rating, ₹100 min withdrawal. MWM Bet APK — crash games, slots & cards. Official link explained.",
     "keywords": [
-      "mwm bet apk download",
+      "mwm bet",
+      "mwmbet",
+      "mwm bet apk",
       "mwm bet app download",
+      "mwm bet apk download",
+      "mwm bet download",
+      "mwm bet yono",
+      "mwm bet login",
+      "mwm bet official",
       "mwm bet real or fake",
-      "mwm bet earning app",
-      "mwm bet withdrawal proof",
-      "mwm bet referral code",
-      "mwm bet latest version",
       "mwm bet bonus",
-      "mwm bet review",
-      "mwm bet real money app",
-      "mwm bet apk 2026"
+      "mwm bet withdrawal"
     ],
-    "lastModified": "2026-06-19T16:16:01.396Z",
+    "lastModified": "2026-06-30T12:16:28.091Z",
     "categories": [
-      "bet"
+      "bet",
+      "slots"
     ]
   },
   {
