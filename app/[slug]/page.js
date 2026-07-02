@@ -121,7 +121,7 @@ export default async function AppPage({ params }) {
     <>
       <WebPageSchema app={app} />
       <AppSchema app={app} />
-      <FAQSchema faq={app.faq} />
+      {app.faq && app.faq.length > 0 && <FAQSchema faq={app.faq} />}
       <BreadcrumbSchema
         items={[
           { name: "Home", url: "https://allyonomax.com" },
@@ -434,12 +434,12 @@ export default async function AppPage({ params }) {
           <div className="card-elevated p-4 sm:p-8">
             <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
               <div className="w-1 h-6 rounded-full bg-accent" />
-              {app.name} Bonus — Full Breakdown
+             How to Claim Bonus in {app.name}
             </h2>
             <div className="text-text-secondary text-sm leading-relaxed space-y-3">
-              {app.bonusDetails.split("\n\n").map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
+              {Array.isArray(app.bonusDetails)
+                ? app.bonusDetails.map((para, i) => <p key={i}>{para}</p>)
+                : app.bonusDetails.split("\n\n").map((para, i) => <p key={i}>{para}</p>)}
             </div>
             <a
               href={app.referLink}
@@ -463,9 +463,9 @@ export default async function AppPage({ params }) {
               {app.name} Withdrawal Process
             </h2>
             <div className="text-text-secondary text-sm leading-relaxed space-y-3">
-              {app.withdrawalDetails.split("\n\n").map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
+              {Array.isArray(app.withdrawalDetails)
+                ? app.withdrawalDetails.map((para, i) => <p key={i}>{para}</p>)
+                : app.withdrawalDetails.split("\n\n").map((para, i) => <p key={i}>{para}</p>)}
             </div>
           </div>
         </section>
@@ -480,9 +480,9 @@ export default async function AppPage({ params }) {
               {app.name} Referral Program
             </h2>
             <div className="text-text-secondary text-sm leading-relaxed space-y-3">
-              {app.referralDetails.split("\n\n").map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
+              {Array.isArray(app.referralDetails)
+                ? app.referralDetails.map((para, i) => <p key={i}>{para}</p>)
+                : app.referralDetails.split("\n\n").map((para, i) => <p key={i}>{para}</p>)}
             </div>
           </div>
         </section>
@@ -576,29 +576,31 @@ export default async function AppPage({ params }) {
 
 
       {/* ── FAQ ── */}
-      <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
-        <div className="card-elevated p-6 sm:p-8">
-          <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
-            <div className="w-1 h-6 rounded-full bg-accent-dark" />
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-3">
-            {app.faq.map((item, i) => (
-              <details key={i} className="faq-item group">
-                <summary className="flex items-center justify-between p-4 rounded-xl bg-bg border border-card-border/50 hover:border-primary/30 transition-colors">
-                  <span className="text-text-primary text-sm font-medium pr-4">
-                    {item.question}
-                  </span>
-                  <ChevronDown className="w-4 h-4 text-text-muted group-open:rotate-180 transition-transform flex-shrink-0" />
-                </summary>
-                <div className="px-4 pb-4 pt-2">
-                  <p className="text-text-secondary text-sm leading-relaxed">{item.answer}</p>
-                </div>
-              </details>
-            ))}
+      {app.faq && app.faq.length > 0 && (
+        <section className=" max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-6 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-6 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-accent-dark" />
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-3">
+              {app.faq.map((item, i) => (
+                <details key={i} className="faq-item group">
+                  <summary className="flex items-center justify-between p-4 rounded-xl bg-bg border border-card-border/50 hover:border-primary/30 transition-colors">
+                    <span className="text-text-primary text-sm font-medium pr-4">
+                      {item.question}
+                    </span>
+                    <ChevronDown className="w-4 h-4 text-text-muted group-open:rotate-180 transition-transform flex-shrink-0" />
+                  </summary>
+                  <div className="px-4 pb-4 pt-2">
+                    <p className="text-text-secondary text-sm leading-relaxed">{item.answer}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
 
       {/* ── App Tags ── */}
