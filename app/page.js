@@ -1,5 +1,6 @@
 // ISR: Home page regenerates every hour; on-demand revalidation fires when admin adds/edits an app
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 import { Send } from "lucide-react";
 import Navbar from "@/components/Navbar";

@@ -1,7 +1,8 @@
 // ISR: Regenerate pages on-demand (via revalidatePath from admin API).
 // dynamicParams=true means slugs NOT in the build are SSR-rendered on first hit, then cached.
+export const dynamic = "force-dynamic";
 export const dynamicParams = true;
-export const revalidate = 86400; // 24h fallback — on-demand revalidation fires before this
+export const revalidate = 0; // 24h fallback — on-demand revalidation fires before this
 
 import Image from "next/image";
 import Link from "next/link";
@@ -176,7 +177,7 @@ export default async function AppPage({ params }) {
               {/* Quick Stats */}
               <div className="flex text-nowrap items-center justify-start sm:justify-start gap-3 text-xs">
                 <span className="px-3 py-1 bg-primary/5 border border-primary/15 rounded-full text-primary font-bold">
-                  Bonus Upto {app.bonus}
+                  Last Updated: Today
                 </span>
                 {/* <span className="px-3 py-1 bg-white border border-card-border rounded-full text-text-secondary shadow-sm">
                   Size: {app.appSize}
@@ -235,7 +236,10 @@ export default async function AppPage({ params }) {
             <div className="w-1 h-6 rounded-full bg-primary-light" />
             About {app.name}
           </h2>
-          <p className="text-text-secondary text-sm leading-relaxed">{app.description}</p>
+          <div 
+            className="text-text-secondary text-sm leading-relaxed [&>p]:mb-4 last:[&>p]:mb-0 [&_strong]:text-text-primary [&_strong]:font-semibold [&_a]:text-primary [&_a]:underline break-words w-full overflow-hidden"
+            dangerouslySetInnerHTML={{ __html: app.description }}
+          />
         </div>
       </section>
 
@@ -259,7 +263,7 @@ export default async function AppPage({ params }) {
         </section>
       )}
       {/* ── APP DETAILS TABLE ── */}
-      <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+      {/* <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
         <div className="card-elevated p-4 sm:p-8">
           <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
             <div className="w-1 h-6 rounded-full bg-teal" />
@@ -286,7 +290,7 @@ export default async function AppPage({ params }) {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── FEATURES ── */}
       {app.features && app.features.length > 0 && (
@@ -342,15 +346,15 @@ export default async function AppPage({ params }) {
       )}
 
       {/* ── WHY CHOOSE ── */}
-      <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
-        <div className="card-elevated p-4 sm:p-8">
-          <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
-            <div className="w-1 h-6 rounded-full bg-primary" />
-            Why Choose {app.name}?
-          </h2>
-          <div className="text-text-secondary text-sm leading-relaxed space-y-3">
-            {app.whyChoose
-              ? Array.isArray(app.whyChoose)
+      {app.whyChoose && app.whyChoose.length > 0 && (
+        <section className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pb-8">
+          <div className="card-elevated p-4 sm:p-8">
+            <h2 className="text-xl font-extrabold text-text-primary mb-4 flex items-center gap-2">
+              <div className="w-1 h-6 rounded-full bg-primary" />
+              Why Choose {app.name}?
+            </h2>
+            <div className="text-text-secondary text-sm leading-relaxed space-y-3">
+              {Array.isArray(app.whyChoose)
                 ? app.whyChoose.map((item, i) => (
                     <div key={i} className="mb-4 last:mb-0">
                       {item.title && (
@@ -374,34 +378,11 @@ export default async function AppPage({ params }) {
                           .replace(/\b(Diwa Game|Diwa Vip|Jaiho|Yono Games|yono)\b/gi, (m) => `<strong class="text-text-primary">${m}</strong>`)
                       }}
                     />
-                  ))
-              : (
-                <>
-                  <p>
-                    {app.name} stands out as one of the most popular gaming apps in the Yono Games ecosystem.
-                    With a generous sign-up bonus of <strong className="text-primary">{app.bonus}</strong> and
-                    a low minimum withdrawal of just <strong>{app.minWithdrawal}</strong>, it is designed to give
-                    players the best value from the moment they register.
-                  </p>
-                  <p>
-                    The app is only <strong>{app.appSize}</strong> in size, making it lightweight enough to run
-                    smoothly on most Android devices without taking up too much storage. With{" "}
-                    <strong>{app.totalDownloads}</strong> downloads and a rating of{" "}
-                    <strong>{app.rating}/5</strong>, {app.name} has earned the trust of lakhs of players across India.
-                  </p>
-                  <p>
-                    Whether you enjoy {app.categories?.[0]?.toLowerCase() || "gaming"} or want to explore new game types,
-                    {app.name} offers a secure platform with instant UPI withdrawals, 24/7 customer support,
-                    and a generous refer-and-earn program. Download it today from{" "}
-                    <Link href="/" className="text-primary font-semibold hover:underline">AllYonoMax</Link>{" "}
-                    and start earning real money.
-                  </p>
-                </>
-              )
-            }
+                  ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ── GAMES AVAILABLE ── */}
       {app.gamesAvailable && app.gamesAvailable.length > 0 && (

@@ -4,9 +4,13 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   Plus, X, CheckCircle2, AlertTriangle, Link2, Sparkles,
-  ChevronUp, ChevronDown, ListPlus, Download, HelpCircle,
+  ChevronUp, ChevronDown,
   Search as SearchIcon, Star, FileText, Tag, Layers
 } from 'lucide-react';
+import dynamic from "next/dynamic";
+import "react-quill-new/dist/quill.snow.css";
+
+const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
  /* ── Alert Modal ── */
 function AlertModal({ show, type, title, message, onClose }) {
   if (!show) return null;
@@ -193,180 +197,11 @@ const getDefaultFaqs = (name, bonus, minWithdrawal) => {
   const count = Math.floor(Math.random() * 2) + 5; // 5 or 6
   return shuffled.slice(0, count).map(f => ({ question: f.q, answer: f.a }));
 };
-/* ── FEATURES GENERATOR (NO DUPLICATE) ── */
-const getDefaultFeatures = () => {
-  const pool = [
-    // Payment & Withdrawal (8)
-    "Instant UPI Withdrawal",
-    "Fast Bank Transfer",
-    "Zero Fee Transactions",
-    "24/7 Withdrawal Available",
-    "Multiple Payment Options",
-    "Auto Cashout Feature",
-    "Same Day Payouts",
-    "No Hidden Charges",
-
-    // Bonuses & Rewards (8)
-    "Daily Login Rewards",
-    "Refer & Earn Commission",
-    "Welcome Bonus Available",
-    "Weekly Cashback Offers",
-    "Festival Bonus Events",
-    "Lucky Spin Rewards",
-    "VIP Exclusive Bonuses",
-    "Streak Bonus Rewards",
-
-    // Game Features (8)
-    "Low Entry Tables",
-    "High Reward Matches",
-    "Multiple Game Variants",
-    "Private Tables for Friends",
-    "Practice Mode Available",
-    "Tournament Entry",
-    "Live Dealer Games",
-    "Quick Match Making",
-
-    // Technical & Security (8)
-    "Smooth Gameplay",
-    "Secure Payments",
-    "Anti-Cheat System",
-    "Data Encryption",
-    "Low Data Usage",
-    "Lightweight App",
-    "Regular Updates",
-    "Fast Loading Time",
-
-    // Support & Community (8)
-    "24/7 Customer Support",
-    "Hindi Language Support",
-    "Multi Language UI",
-    "Player Community Chat",
-    "Dedicated VIP Manager",
-    "Email Support Available",
-    "Live Chat Support",
-    "FAQ & Help Center"
-  ];
-
-  // Shuffle function
-  const shuffled = [...pool];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-
-  // Return random 6-8 features
-  const count = Math.floor(Math.random() * 3) + 6; // 6, 7, or 8
-  return shuffled.slice(0, count);
-};
+/* ── FEATURES GENERATOR ── */
+// Removed as features section is deleted
 
 /* ── HOW TO DOWNLOAD (DYNAMIC) ── */
-const getDefaultHowToDownload = (appName, bonus) => {
-  const stepsSet = [
-    [
-      `Click the "Download ${appName}" button to get the APK file`,
-      `Enable "Install from Unknown Sources" in your phone's Security settings`,
-      `Open the downloaded APK file from your notification panel`,
-      `Tap "Install" and wait for the installation to complete`,
-      `Open ${appName} from your home screen after installation`,
-      `Tap "Register" and enter your mobile number to create an account`,
-      `Enter the OTP sent to your phone to verify your number`,
-      `Your ${bonus} welcome bonus will be credited to your wallet instantly`
-    ],
-    [
-      `Tap the green "Download ${appName}" button to start downloading`,
-      `Go to Settings > Security and enable "Unknown Sources"`,
-      `Swipe down and tap on the downloaded ${appName} APK file`,
-      `Press "Install" and wait a few seconds for the process to finish`,
-      `Tap "Open" to launch ${appName} on your device`,
-      `Click "Sign Up" and type your mobile number`,
-      `Enter the OTP received via SMS to verify your account`,
-      `${bonus} welcome bonus will be added to your wallet automatically`
-    ],
-    [
-      `Click the "Get ${appName}" button to download the official APK`,
-      `Enable "Unknown Sources" in Settings > Security > Unknown Sources`,
-      `Locate the downloaded file in your file manager`,
-      `Tap on the file and select "Install" to begin`,
-      `Wait a few seconds for installation to complete`,
-      `Open ${appName} by tapping "Open" on the installation screen`,
-      `Click "Register" and enter your mobile number`,
-      `Enter OTP to verify and get ${bonus} welcome bonus instantly`
-    ],
-    [
-      `Click the "Install ${appName}" button to get the APK file`,
-      `Go to Settings > Security and enable "Install from Unknown Sources"`,
-      `Find the downloaded ${appName.toLowerCase().replace(/ /g, '-')}.apk in your Downloads folder`,
-      `Tap the file and press "Install" to start`,
-      `After installation, tap "Open" to launch ${appName}`,
-      `Tap "Sign Up" and enter your mobile number`,
-      `Enter the OTP code sent via SMS to verify`,
-      `Your ${bonus} welcome bonus will be credited automatically`
-    ],
-    [
-      `Click the "${appName} Download" button to save the APK file`,
-      `Enable "Unknown Sources" in your device's Security settings`,
-      `Open the downloaded APK file and tap "Install"`,
-      `Wait for installation to complete (10-15 seconds)`,
-      `Tap "Open" once installation is complete to launch ${appName}`,
-      `Click "Register" and enter your mobile number`,
-      `Enter the OTP sent to your mobile number for verification`,
-      `${bonus} welcome bonus will be added to your main wallet instantly`
-    ],
-    [
-      `Click the "Download ${appName}" button to get the APK file`,
-      `Allow installation from unknown sources in Settings > Security`,
-      `Open the downloaded APK file from your notification bar`,
-      `Tap "Install" and wait for the installation to complete`,
-      `Launch ${appName} from your app drawer or home screen`,
-      `Tap "New User? Register" and enter your mobile number`,
-      `Enter the OTP code sent via SMS to verify your account`,
-      `Your ${bonus} welcome bonus will be credited automatically`
-    ],
-    [
-      `Click the "${appName} APK Download" button to start`,
-      `Enable "Unknown Sources" in your phone's security settings`,
-      `Tap on the downloaded APK file to begin installation`,
-      `Press "Install" and wait for the process to finish`,
-      `Open ${appName} by tapping "Open" after installation`,
-      `Register using your mobile number (OTP verification required)`,
-      `Enter the OTP sent to your phone to verify your identity`,
-      `${bonus} welcome bonus will be added to your wallet instantly`
-    ],
-    [
-      `Click the "${appName} Install" button to download APK`,
-      `Go to Settings > Security > Enable "Unknown Sources"`,
-      `Locate the APK in your Downloads folder or notification panel`,
-      `Tap the file and select "Install" to proceed`,
-      `After installation, tap "Open" to launch ${appName}`,
-      `Click "Sign Up" and enter your active mobile number`,
-      `Request OTP and enter the code received via SMS`,
-      `Your ${bonus} welcome bonus will be credited automatically`
-    ],
-    [
-      `Click the "Get ${appName}" button to download the APK file`,
-      `Enable installation from unknown sources in your device settings`,
-      `Open the downloaded APK file from your file manager`,
-      `Tap "Install" and wait a few seconds for completion`,
-      `Launch ${appName} by tapping "Open" on the installation screen`,
-      `Register with your mobile number (OTP verification required)`,
-      `Enter the verification code sent to your phone via SMS`,
-      `${bonus} welcome bonus will be instantly credited to your wallet`
-    ],
-    [
-      `Click the "${appName} Download" button to get the APK`,
-      `Enable "Unknown Sources" in Settings > Security`,
-      `Find the downloaded APK in your notification panel`,
-      `Tap the file and press "Install" to begin`,
-      `Wait for installation to complete (10-15 seconds)`,
-      `Tap "Open" to launch ${appName} on your device`,
-      `Click "Register" and enter your mobile number`,
-      `Enter the OTP sent to your phone to get ${bonus} welcome bonus`
-    ]
-  ];
-
-  const randomIndex = Math.floor(Math.random() * stepsSet.length);
-  return stepsSet[randomIndex];
-};
+// Removed as howToDownload section is deleted
 
 /* ── SEO GENERATOR (LONG-TAIL HEAVY) ── */
 const getDefaultSeo = (name, bonus, category) => {
@@ -397,8 +232,8 @@ const getDefaultSeo = (name, bonus, category) => {
 const initialFormData = {
   name: '', categories: ['rummy'], referLink: '', bonus: `₹${getRandomNumber(51, 201)}`, minWithdrawal: '₹100',
   appSize: `${getRandomNumber(40, 70)}MB`, rating: `4.${getRandomNumber(0, 7)}`, totalDownloads: `${getRandomNumber(200, 990)}K+`, description: '',
-  isNew: true, isTrending: false, features: [], howToDownload: [],
-  faq: [{ question: '', answer: '' }], metaTitle: '', metaDescription: '', keywords: [],
+  isNew: true, isTrending: false,
+  metaTitle: '', metaDescription: '', keywords: [],
 };
 
 /* ── Section Header ── */
@@ -424,7 +259,7 @@ export default function AddApp() {
   const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState({ show: false, type: '', title: '', message: '' });
-  const [collapsed, setCollapsed] = useState({ features: false, howToDownload: false, faq: false, seo: false });
+  const [collapsed, setCollapsed] = useState({ seo: false });
 
   const toggle = (key) => setCollapsed(p => ({ ...p, [key]: !p[key] }));
 
@@ -436,9 +271,6 @@ export default function AddApp() {
       ...prev,
       name: value,
       description: getDefaultDescription(value, primaryCat, prev.bonus),
-      faq: getDefaultFaqs(value, prev.bonus, prev.minWithdrawal),
-      features: getDefaultFeatures(primaryCat),
-      howToDownload: getDefaultHowToDownload(value, prev.bonus),
       ...seo,
     }));
   };
@@ -456,7 +288,6 @@ export default function AddApp() {
       return {
         ...prev,
         categories: newCats,
-        features: getDefaultFeatures(primaryCat),
         description: getDefaultDescription(prev.name, primaryCat, prev.bonus),
         ...seo,
       };
@@ -474,17 +305,9 @@ export default function AddApp() {
     setFormData(prev => ({ ...prev, [name]: type === 'checkbox' ? checked : value }));
   };
 
-  const handleFaqChange = (i, field, val) => { const faq = [...formData.faq]; faq[i][field] = val; setFormData(prev => ({ ...prev, faq })); };
-  const addFaq = () => setFormData(prev => ({ ...prev, faq: [...prev.faq, { question: '', answer: '' }] }));
-  const removeFaq = (i) => setFormData(prev => ({ ...prev, faq: prev.faq.filter((_, idx) => idx !== i) }));
-
-  const handleFeatureChange = (i, val) => { const f = [...formData.features]; f[i] = val; setFormData(prev => ({ ...prev, features: f })); };
-  const addFeature = () => setFormData(prev => ({ ...prev, features: [...prev.features, ''] }));
-  const removeFeature = (i) => setFormData(prev => ({ ...prev, features: prev.features.filter((_, idx) => idx !== i) }));
-
-  const handleStepChange = (i, val) => { const s = [...formData.howToDownload]; s[i] = val; setFormData(prev => ({ ...prev, howToDownload: s })); };
-  const addStep = () => setFormData(prev => ({ ...prev, howToDownload: [...prev.howToDownload, ''] }));
-  const removeStep = (i) => setFormData(prev => ({ ...prev, howToDownload: prev.howToDownload.filter((_, idx) => idx !== i) }));
+  const handleDescriptionChange = (val) => {
+    setFormData(prev => ({ ...prev, description: val }));
+  };
 
   const handleKeywords = (e) => setFormData(prev => ({ ...prev, keywords: e.target.value.split(',').map(k => k.trim()).filter(k => k) }));
 
@@ -553,13 +376,8 @@ export default function AddApp() {
               <input type="number" name="position" value={formData.position || ""} onChange={handleChange} placeholder="Leave blank to add at the bottom. E.g., 1 for top." className={inputCls} />
               <p className="text-[11px] text-slate-500 mt-1">1-based index (1 = first app, 2 = second app, etc.)</p>
             </div>
-          </div>
-        </div>
-
-        {/* Game Details */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader icon={Star} color="sky-500" title="Game Details" />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
+            {/* Merged Game Details */}
             {[
               { label: 'Bonus', name: 'bonus', placeholder: '₹550' },
               { label: 'Min Withdrawal', name: 'minWithdrawal', placeholder: '₹100' },
@@ -571,8 +389,6 @@ export default function AddApp() {
                 <input type={f.type || 'text'} name={f.name} value={formData[f.name] || ""} onChange={handleChange} placeholder={f.placeholder} step={f.step} min={f.min} max={f.max} className={inputCls} />
               </div>
             ))}
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <div>
               <label className="block text-xs font-medium text-slate-400 mb-1.5">Total Downloads</label>
               <input type="text" name="totalDownloads" value={formData.totalDownloads || ""} onChange={handleChange} placeholder="250K+" className={inputCls} />
@@ -604,76 +420,21 @@ export default function AddApp() {
         {/* Description */}
         <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
           <SectionHeader icon={FileText} color="emerald-500" title="Description" />
-          <textarea name="description" value={formData.description || ""} onChange={handleChange} rows="5" placeholder="Auto-generated when you type app name…" className={inputCls + " resize-y"} />
-          {formData.description && <p className="text-[11px] text-slate-500 mt-1">{formData.description.length} characters</p>}
-        </div>
-
-        {/* Features */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader icon={ListPlus} color="pink-500" title="Features" count={formData.features.length} isOpen={!collapsed.features} onToggle={() => toggle('features')} />
-          {!collapsed.features && (
-            <>
-              <div className="space-y-2">
-                {formData.features.map((feat, i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-lg bg-white/5 flex items-center justify-center text-[10px] font-bold text-slate-500 shrink-0">{i + 1}</span>
-                    <input type="text" value={feat || ""} onChange={(e) => handleFeatureChange(i, e.target.value)} placeholder="Feature name" className={inputCls} />
-                    <button type="button" onClick={() => removeFeature(i)} className="text-rose-400 hover:text-rose-300 transition shrink-0 p-1"><X className="w-3.5 h-3.5" /></button>
-                  </div>
-                ))}
-              </div>
-              <button type="button" onClick={addFeature} className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-white/[0.04] border border-white/10 text-slate-300 rounded-lg hover:bg-white/[0.08] hover:text-white transition font-medium">
-                <Plus className="w-3.5 h-3.5" /> Add Feature
-              </button>
-            </>
-          )}
-        </div>
-
-        {/* How To Download */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader icon={Download} color="orange-500" title="How To Download Steps" count={formData.howToDownload.length} isOpen={!collapsed.howToDownload} onToggle={() => toggle('howToDownload')} />
-          {!collapsed.howToDownload && (
-            <>
-              <div className="space-y-2">
-                {formData.howToDownload.map((step, i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-gradient-to-br from-red-600 to-orange-600 flex items-center justify-center text-[10px] font-bold text-white shrink-0">{i + 1}</span>
-                    <input type="text" value={step || ""} onChange={(e) => handleStepChange(i, e.target.value)} placeholder={`Step ${i + 1}`} className={inputCls} />
-                    {formData.howToDownload.length > 1 && <button type="button" onClick={() => removeStep(i)} className="text-rose-400 hover:text-rose-300 transition shrink-0 p-1"><X className="w-3.5 h-3.5" /></button>}
-                  </div>
-                ))}
-              </div>
-              <button type="button" onClick={addStep} className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-white/[0.04] border border-white/10 text-slate-300 rounded-lg hover:bg-white/[0.08] hover:text-white transition font-medium">
-                <Plus className="w-3.5 h-3.5" /> Add Step
-              </button>
-            </>
-          )}
-        </div>
-
-        {/* FAQs */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader icon={HelpCircle} color="violet-500" title="FAQs" count={formData.faq.length} isOpen={!collapsed.faq} onToggle={() => toggle('faq')} />
-          {!collapsed.faq && (
-            <>
-              <div className="space-y-3">
-                {formData.faq.map((faq, i) => (
-                  <div key={i} className="border border-white/5 rounded-xl p-4 bg-white/[0.02]">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs font-medium text-slate-500">FAQ #{i + 1}</span>
-                      {formData.faq.length > 1 && (
-                        <button type="button" onClick={() => removeFaq(i)} className="inline-flex items-center gap-1 text-rose-400 text-xs hover:text-rose-300 transition"><X className="w-3 h-3" /> Remove</button>
-                      )}
-                    </div>
-                    <input type="text" placeholder="Question" value={faq.question || ""} onChange={(e) => handleFaqChange(i, 'question', e.target.value)} className={inputCls + " mb-2"} />
-                    <textarea placeholder="Answer" value={faq.answer || ""} onChange={(e) => handleFaqChange(i, 'answer', e.target.value)} rows="2" className={inputCls + " resize-y"} />
-                  </div>
-                ))}
-              </div>
-              <button type="button" onClick={addFaq} className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-white/[0.04] border border-white/10 text-slate-300 rounded-lg hover:bg-white/[0.08] hover:text-white transition font-medium">
-                <Plus className="w-3.5 h-3.5" /> Add FAQ
-              </button>
-            </>
-          )}
+          <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden [&_.ql-toolbar]:border-none [&_.ql-toolbar]:bg-white/5 [&_.ql-container]:border-none [&_.ql-editor]:min-h-[150px] [&_.ql-editor]:text-sm [&_.ql-editor]:text-slate-300 [&_.ql-editor]:leading-relaxed [&_.ql-toolbar_button]:text-slate-400 [&_.ql-stroke]:stroke-slate-400 [&_.ql-fill]:fill-slate-400 [&_.ql-picker]:text-slate-400">
+            <ReactQuill
+              theme="snow"
+              value={formData.description || ""}
+              onChange={handleDescriptionChange}
+              modules={{
+                toolbar: [
+                  [{ 'header': [1, 2, 3, false] }],
+                  ['bold', 'italic', 'underline', 'strike'],
+                  [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                  ['link', 'clean']
+                ],
+              }}
+            />
+          </div>
         </div>
 
         {/* SEO */}

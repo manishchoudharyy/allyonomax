@@ -11,9 +11,6 @@ import {
   ExternalLink,
   ChevronUp,
   ChevronDown,
-  ListPlus,
-  Download,
-  HelpCircle,
   Search as SearchIcon,
   Star,
   FileText,
@@ -22,6 +19,10 @@ import {
   BookmarkPlus,
   Link2,
 } from "lucide-react";
+import dynamic from "next/dynamic";
+import "react-quill-new/dist/quill.snow.css";
+
+const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
 
 /* ── Alert Modal ── */
 function AlertModal({ show, type, title, message, onClose }) {
@@ -124,9 +125,6 @@ export default function EditApp({ params }) {
     message: "",
   });
   const [collapsed, setCollapsed] = useState({
-    features: false,
-    howToDownload: false,
-    faq: false,
     seo: false,
   });
 
@@ -139,14 +137,8 @@ export default function EditApp({ params }) {
         if (data.success) {
           const app = data.apps.find((a) => a.id === Number(id));
           if (app) {
-            if (!app.faq || !Array.isArray(app.faq))
-              app.faq = [{ question: "", answer: "" }];
             if (!app.keywords || !Array.isArray(app.keywords))
               app.keywords = [];
-            if (!app.features || !Array.isArray(app.features))
-              app.features = [];
-            if (!app.howToDownload || !Array.isArray(app.howToDownload))
-              app.howToDownload = [];
             if (!app.categories || !Array.isArray(app.categories))
               app.categories = app.category ? [app.category] : ['rummy'];
             setFormData(app);
@@ -189,50 +181,9 @@ export default function EditApp({ params }) {
     });
   };
 
-  const handleFaqChange = (i, field, val) => {
-    const faq = [...formData.faq];
-    faq[i][field] = val;
-    setFormData((prev) => ({ ...prev, faq }));
+  const handleDescriptionChange = (val) => {
+    setFormData((prev) => ({ ...prev, description: val }));
   };
-  const addFaq = () =>
-    setFormData((prev) => ({
-      ...prev,
-      faq: [...prev.faq, { question: "", answer: "" }],
-    }));
-  const removeFaq = (i) =>
-    setFormData((prev) => ({
-      ...prev,
-      faq: prev.faq.filter((_, idx) => idx !== i),
-    }));
-
-  const handleFeatureChange = (i, val) => {
-    const f = [...formData.features];
-    f[i] = val;
-    setFormData((prev) => ({ ...prev, features: f }));
-  };
-  const addFeature = () =>
-    setFormData((prev) => ({ ...prev, features: [...prev.features, ""] }));
-  const removeFeature = (i) =>
-    setFormData((prev) => ({
-      ...prev,
-      features: prev.features.filter((_, idx) => idx !== i),
-    }));
-
-  const handleStepChange = (i, val) => {
-    const s = [...formData.howToDownload];
-    s[i] = val;
-    setFormData((prev) => ({ ...prev, howToDownload: s }));
-  };
-  const addStep = () =>
-    setFormData((prev) => ({
-      ...prev,
-      howToDownload: [...prev.howToDownload, ""],
-    }));
-  const removeStep = (i) =>
-    setFormData((prev) => ({
-      ...prev,
-      howToDownload: prev.howToDownload.filter((_, idx) => idx !== i),
-    }));
 
   const handleKeywords = (e) =>
     setFormData((prev) => ({
@@ -458,13 +409,8 @@ export default function EditApp({ params }) {
                 className={inputCls}
               />
             </div>
-          </div>
-        </div>
-
-        {/* Game Details */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader icon={Star} color="sky-500" title="Game Details" />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
+            {/* Merged Game Details Fields */}
             {[
               { label: "Bonus", name: "bonus" },
               { label: "Min Withdrawal", name: "minWithdrawal" },
@@ -494,8 +440,6 @@ export default function EditApp({ params }) {
                 />
               </div>
             ))}
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <div>
               <label className="block text-xs font-medium text-slate-400 mb-1.5">
                 Total Downloads
@@ -570,184 +514,21 @@ export default function EditApp({ params }) {
             color="emerald-500"
             title="Description"
           />
-          <textarea
-            name="description"
-            value={formData.description || ""}
-            onChange={handleChange}
-            rows="5"
-            className={inputCls + " resize-y"}
-          />
-          {formData.description && (
-            <p className="text-[11px] text-slate-500 mt-1">
-              {formData.description.length} characters
-            </p>
-          )}
-        </div>
-
-        {/* Features */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader
-            icon={ListPlus}
-            color="pink-500"
-            title="Features"
-            count={formData.features.length}
-            isOpen={!collapsed.features}
-            onToggle={() => toggle("features")}
-          />
-          {!collapsed.features && (
-            <>
-              <div className="space-y-2">
-                {formData.features.map((feat, i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-lg bg-white/5 flex items-center justify-center text-[10px] font-bold text-slate-500 shrink-0">
-                      {i + 1}
-                    </span>
-                    <input
-                      type="text"
-                      value={feat}
-                      onChange={(e) => handleFeatureChange(i, e.target.value)}
-                      placeholder="Feature"
-                      className={inputCls}
-                    />
-                    <button
-                      type="button"
-                      onClick={() => removeFeature(i)}
-                      className="text-rose-400 hover:text-rose-300 transition shrink-0 p-1"
-                    >
-                      <X className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                ))}
-                {formData.features.length === 0 && (
-                  <p className="text-xs text-slate-500 py-2">
-                    No features added.
-                  </p>
-                )}
-              </div>
-              <button
-                type="button"
-                onClick={addFeature}
-                className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-white/[0.04] border border-white/10 text-slate-300 rounded-lg hover:bg-white/[0.08] hover:text-white transition font-medium"
-              >
-                <Plus className="w-3.5 h-3.5" /> Add Feature
-              </button>
-            </>
-          )}
-        </div>
-
-        {/* How To Download */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader
-            icon={Download}
-            color="orange-500"
-            title="How To Download"
-            count={formData.howToDownload.length}
-            isOpen={!collapsed.howToDownload}
-            onToggle={() => toggle("howToDownload")}
-          />
-          {!collapsed.howToDownload && (
-            <>
-              <div className="space-y-2">
-                {formData.howToDownload.map((step, i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-gradient-to-br from-red-600 to-orange-600 flex items-center justify-center text-[10px] font-bold text-white shrink-0">
-                      {i + 1}
-                    </span>
-                    <input
-                      type="text"
-                      value={step}
-                      onChange={(e) => handleStepChange(i, e.target.value)}
-                      placeholder={`Step ${i + 1}`}
-                      className={inputCls}
-                    />
-                    {formData.howToDownload.length > 1 && (
-                      <button
-                        type="button"
-                        onClick={() => removeStep(i)}
-                        className="text-rose-400 hover:text-rose-300 transition shrink-0 p-1"
-                      >
-                        <X className="w-3.5 h-3.5" />
-                      </button>
-                    )}
-                  </div>
-                ))}
-                {formData.howToDownload.length === 0 && (
-                  <p className="text-xs text-slate-500 py-2">No steps added.</p>
-                )}
-              </div>
-              <button
-                type="button"
-                onClick={addStep}
-                className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-white/[0.04] border border-white/10 text-slate-300 rounded-lg hover:bg-white/[0.08] hover:text-white transition font-medium"
-              >
-                <Plus className="w-3.5 h-3.5" /> Add Step
-              </button>
-            </>
-          )}
-        </div>
-
-        {/* FAQs */}
-        <div className="rounded-2xl border border-white/5 bg-[#12121a] p-6">
-          <SectionHeader
-            icon={HelpCircle}
-            color="violet-500"
-            title="FAQs"
-            count={formData.faq.length}
-            isOpen={!collapsed.faq}
-            onToggle={() => toggle("faq")}
-          />
-          {!collapsed.faq && (
-            <>
-              <div className="space-y-3">
-                {formData.faq.map((faq, i) => (
-                  <div
-                    key={i}
-                    className="border border-white/5 rounded-xl p-4 bg-white/[0.02]"
-                  >
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs font-medium text-slate-500">
-                        FAQ #{i + 1}
-                      </span>
-                      {formData.faq.length > 1 && (
-                        <button
-                          type="button"
-                          onClick={() => removeFaq(i)}
-                          className="inline-flex items-center gap-1 text-rose-400 text-xs hover:text-rose-300 transition"
-                        >
-                          <X className="w-3 h-3" /> Remove
-                        </button>
-                      )}
-                    </div>
-                    <input
-                      type="text"
-                      placeholder="Question"
-                      value={faq.question}
-                      onChange={(e) =>
-                        handleFaqChange(i, "question", e.target.value)
-                      }
-                      className={inputCls + " mb-2"}
-                    />
-                    <textarea
-                      placeholder="Answer"
-                      value={faq.answer}
-                      onChange={(e) =>
-                        handleFaqChange(i, "answer", e.target.value)
-                      }
-                      rows="2"
-                      className={inputCls + " resize-y"}
-                    />
-                  </div>
-                ))}
-              </div>
-              <button
-                type="button"
-                onClick={addFaq}
-                className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-white/[0.04] border border-white/10 text-slate-300 rounded-lg hover:bg-white/[0.08] hover:text-white transition font-medium"
-              >
-                <Plus className="w-3.5 h-3.5" /> Add FAQ
-              </button>
-            </>
-          )}
+          <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden [&_.ql-toolbar]:border-none [&_.ql-toolbar]:bg-white/5 [&_.ql-container]:border-none [&_.ql-editor]:min-h-[150px] [&_.ql-editor]:text-sm [&_.ql-editor]:text-slate-300 [&_.ql-editor]:leading-relaxed [&_.ql-toolbar_button]:text-slate-400 [&_.ql-stroke]:stroke-slate-400 [&_.ql-fill]:fill-slate-400 [&_.ql-picker]:text-slate-400">
+            <ReactQuill
+              theme="snow"
+              value={formData.description || ""}
+              onChange={handleDescriptionChange}
+              modules={{
+                toolbar: [
+                  [{ 'header': [1, 2, 3, false] }],
+                  ['bold', 'italic', 'underline', 'strike'],
+                  [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                  ['link', 'clean']
+                ],
+              }}
+            />
+          </div>
         </div>
 
         {/* SEO */}

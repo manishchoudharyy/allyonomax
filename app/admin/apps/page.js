@@ -146,9 +146,14 @@ export default function AllApps() {
             </div>
             <select value={filterCat} onChange={(e) => setFilterCat(e.target.value)}
               className="px-3 py-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-300 text-sm outline-none focus:ring-2 focus:ring-red-500/30 focus:border-red-500/30 transition">
-              {categories.map(c => (
-                <option key={c} value={c} className="bg-[#12121a] text-white">{c === 'all' ? 'All Categories' : c.charAt(0).toUpperCase() + c.slice(1)}</option>
-              ))}
+              {categories.map((c, i) => {
+                const catStr = String(c);
+                return (
+                  <option key={`${catStr}-${i}`} value={catStr} className="bg-[#12121a] text-white">
+                    {catStr === 'all' ? 'All Categories' : catStr.charAt(0).toUpperCase() + catStr.slice(1)}
+                  </option>
+                );
+              })}
             </select>
           </div>
           <Link href="/admin/add-app"
@@ -208,10 +213,10 @@ export default function AllApps() {
                           className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-white/[0.04] text-slate-400 text-xs font-medium hover:bg-white/[0.08] hover:text-white border border-white/5 transition" title="View live">
                           <ExternalLink className="w-3 h-3" />
                         </a>
-                        <Link href={`/admin/edit-app/${app.id}`}
-                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-sky-500/10 text-sky-400 text-xs font-medium hover:bg-sky-500/20 border border-sky-500/20 transition">
+                        <a href={`/admin/edit-app/${app.id}`}
+                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold transition border border-white/5 hover:border-white/10">
                           <Pencil className="w-3.5 h-3.5" /> Edit
-                        </Link>
+                        </a>
                         <button onClick={() => {
                           const newPos = prompt(`Enter new position (1 to ${apps.length}):`, '');
                           if (newPos && !isNaN(parseInt(newPos, 10))) {
@@ -256,10 +261,10 @@ export default function AllApps() {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <Link href={`/admin/edit-app/${app.id}`}
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-sky-500/10 text-sky-400 text-xs font-medium hover:bg-sky-500/20 border border-sky-500/20 transition">
+                  <a href={`/admin/edit-app/${app.id}`}
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold transition border border-white/5 hover:border-white/10">
                     <Pencil className="w-3.5 h-3.5" /> Edit
-                  </Link>
+                  </a>
                   <button onClick={() => {
                     const newPos = prompt(`Enter new position (1 to ${apps.length}):`, '');
                     if (newPos && !isNaN(parseInt(newPos, 10))) {

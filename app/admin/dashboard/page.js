@@ -113,9 +113,10 @@ export default function AdminDashboard() {
         <div className="flex flex-wrap gap-2">
           {categories.map(cat => {
             const count = apps.filter(a => a.categories?.some(c => (c || '').toLowerCase() === cat)).length;
+            const catStr = String(cat);
             return (
-              <span key={cat} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-slate-300 text-xs font-semibold">
-                {cat.charAt(0).toUpperCase() + cat.slice(1)}
+              <span key={catStr} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-slate-300 text-xs font-semibold">
+                {catStr.charAt(0).toUpperCase() + catStr.slice(1)}
                 <span className="px-1.5 py-0.5 rounded-md bg-white/10 text-slate-400 text-[10px] font-bold">{count}</span>
               </span>
             );

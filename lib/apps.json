@@ -19,112 +19,6 @@
       "diwa"
     ],
     "description": "Diwa Game launched in June 2026 as one of the newer apps on the Yono network. The Diwa Game APK download leads straight into Rummy, Slots, 777, and Spin & Win — four games on one home screen.\n\nThe signup bonus is ₹649 right now, credited the moment you register, no deposit needed — currently the highest launch bonus among the Diwa-family apps (Diwa VIP runs ₹139, Yono 777 runs ₹100). ₹100 minimum withdrawal, UPI payout in 5-30 minutes.\n\nBeing newly launched means the referral pool is still small — early sharers tend to see higher returns before the app fills up. Feels familiar if you've used Diwa VIP or Diwa 777, just its own wallet and its own bonus.",
-    "gamesAvailable": [
-      {
-        "name": "Rummy",
-        "desc": "Classic 13-card rummy, tables starting from ₹1 entry. Win by forming valid sets and sequences."
-      },
-      {
-        "name": "Slots",
-        "desc": "Multiple slot machines with different themes. No skill required — spin and see the result."
-      },
-      {
-        "name": "777",
-        "desc": "Match the 777 symbols to win. Fastest game in the app — one round takes under 10 seconds."
-      },
-      {
-        "name": "Spin & Win",
-        "desc": "Daily free spins with cash prizes ranging from ₹1 to ₹100 per spin."
-      }
-    ],
-    "bonusDetails": "The ₹649 bonus is the current launch offer — it was ₹139 the week before, and like most new Yono apps, it will likely step down as more users register. It's added automatically when you sign up through the link on this page, no code required.\n\nThe bonus splits into two parts: a playing portion usable immediately on any game table, and a cash portion that becomes withdrawable after a wagering requirement (typically 2-3 rounds played on any game).",
-    "withdrawalDetails": "Minimum withdrawal is ₹100, no fees deducted. Open the Wallet section in the app, tap Withdraw, enter the amount, choose UPI or Bank Transfer. Standard processing is 5 to 30 minutes.\n\nNo KYC is required for withdrawals under ₹10,000 — your registered mobile number is enough. Larger amounts may require basic ID verification.",
-    "referralDetails": "Your referral link is in the Invite section of the app, generated the moment you register. Share it on WhatsApp or Telegram — current commission per successful referral ranges ₹50 to ₹500, credited to your wallet instantly when the friend registers.\n\nSince Diwa Game only launched in June 2026, the referral pool is smaller than on longer-running apps — commissions on freshly launched apps tend to be higher early on before the user base fills in.",
-    "prosAndCons": {
-      "pros": [
-        "₹649 signup bonus, no deposit required",
-        "₹100 minimum withdrawal, no maximum cap",
-        "Newly launched — referral commissions currently on the higher end",
-        "43MB APK, runs on low-RAM and older Android phones",
-        "Four game types in one app: Rummy, Slots, 777, Spin & Win",
-        "5-30 minute UPI withdrawals",
-        "No KYC needed for withdrawals under ₹10,000"
-      ],
-      "cons": [
-        "Android only, not available on iOS or Play Store",
-        "Bonus amount will likely decrease as more users join",
-        "Newer app — fewer long-term user reviews to reference",
-        "Cash portion of the bonus requires a short wagering condition before withdrawal"
-      ]
-    },
-    "comparisonTable": [
-      {
-        "feature": "Welcome Bonus",
-        "diwaGame": "₹649",
-        "diwaVip": "₹139",
-        "yono777": "₹100"
-      },
-      {
-        "feature": "Min Withdrawal",
-        "diwaGame": "₹100",
-        "diwaVip": "₹100",
-        "yono777": "₹100"
-      },
-      {
-        "feature": "Games",
-        "diwaGame": "Rummy, Slots, 777, Spin",
-        "diwaVip": "Rummy, Slots",
-        "yono777": "777, Slots"
-      },
-      {
-        "feature": "Referral Earn",
-        "diwaGame": "₹50–₹500",
-        "diwaVip": "₹50–₹200",
-        "yono777": "₹30–₹150"
-      },
-      {
-        "feature": "Withdrawal Speed",
-        "diwaGame": "5–30 min",
-        "diwaVip": "5–30 min",
-        "yono777": "10–60 min"
-      }
-    ],
-    "whyChoose": [
-      {
-        "title": "Highest Current Launch Bonus in the Diwa Lineup",
-        "desc": "₹649 right now, against ₹139 on Diwa VIP and ₹100 on Yono 777. Credited automatically on registration, no code needed — though like any new-app launch bonus, it's expected to taper as the user base grows."
-      },
-      {
-        "title": "Four Games, One Wallet",
-        "desc": "Rummy, Slots, 777, and Spin & Win are all in the same app rather than split across separate installs. If you already know rummy, the rummy tables tend to offer the more skill-based returns; Spin & Win and 777 are simpler if you're new."
-      },
-      {
-        "title": "Smaller Install",
-        "desc": "At 43MB, Diwa Game runs comfortably on older or low-RAM Android phones — useful if you're also running Diwa VIP or Diwa 777 alongside it and watching storage."
-      },
-      {
-        "title": "Referral Pool Still Small",
-        "desc": "Because the app only launched in June 2026, fewer people have shared their referral link yet — commissions tend to run higher in this early window than they will once the app is more established."
-      }
-    ],
-    "features": [
-      "₹649 Signup Bonus",
-      "₹100 Minimum Withdrawal",
-      "5-30 Minute UPI Withdrawals",
-      "Rummy, Slots, 777 & Spin Games",
-      "3-Level Referral Commission ₹50-₹500",
-      "43MB — Runs on Low-RAM Phones",
-      "No KYC for Withdrawals Under ₹10,000"
-    ],
-    "howToDownload": [
-      "Tap the \"Download Diwa Game\" button on this page — it links to the official APK, no third-party redirect",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file (around 43MB) from your Downloads folder",
-      "Tap Install and wait about 15 seconds",
-      "Open the app, tap Register, and enter your mobile number",
-      "Verify the OTP sent via SMS",
-      "Your ₹649 bonus lands in your wallet automatically — no deposit needed"
-    ],
     "faq": [
       {
         "question": "What is Diwa Game?",
@@ -187,29 +81,9 @@
     "appSize": "52MB",
     "rating": 4.6,
     "totalDownloads": "310K+",
-    "description": "Jaiho 91 is a real money gaming app built for Indian players who want quick gameplay, simple registration, and reliable cash rewards in one place. The app focuses on smooth mobile performance, beginner-friendly game modes, and fast access to popular earning games.\n\nNew users can claim a welcome bonus of ₹101 after signing up, along with regular login rewards, referral income, and promotional offers. This makes Jaiho 91 a good option for users who want to start playing with a low entry amount.\n\nThe platform supports secure account access and convenient payment options for deposits and withdrawals. Players can withdraw their winnings through popular Indian payment methods, and the minimum withdrawal amount starts from ₹100.\n\nJaiho 91 is suitable for users looking for a lightweight earning app with simple navigation, quick loading, and real cash gaming features. Always play responsibly and check the latest bonus terms inside the app before making any deposit.",
+    "description": "<p><strong>Jaiho&nbsp;91</strong>&nbsp;is&nbsp;a&nbsp;real&nbsp;money&nbsp;gaming&nbsp;app&nbsp;built&nbsp;for&nbsp;Indian&nbsp;players&nbsp;who&nbsp;want&nbsp;quick&nbsp;gameplay,&nbsp;simple&nbsp;registration,&nbsp;and&nbsp;reliable&nbsp;cash&nbsp;rewards&nbsp;in&nbsp;one&nbsp;place.&nbsp;</p><p>The&nbsp;app&nbsp;focuses&nbsp;on&nbsp;smooth&nbsp;mobile&nbsp;performance,&nbsp;beginner-friendly&nbsp;game&nbsp;modes,&nbsp;and&nbsp;fast&nbsp;access&nbsp;to&nbsp;popular&nbsp;earning&nbsp;games.&nbsp;New&nbsp;users&nbsp;can&nbsp;claim&nbsp;a&nbsp;welcome&nbsp;bonus&nbsp;of&nbsp;₹101&nbsp;after&nbsp;signing&nbsp;up,&nbsp;along&nbsp;with&nbsp;regular&nbsp;login&nbsp;rewards,&nbsp;referral&nbsp;income,&nbsp;and&nbsp;promotional&nbsp;offers.&nbsp;</p><p>This&nbsp;makes&nbsp;Jaiho&nbsp;91&nbsp;a&nbsp;good&nbsp;option&nbsp;for&nbsp;users&nbsp;who&nbsp;want&nbsp;to&nbsp;start&nbsp;playing&nbsp;with&nbsp;a&nbsp;low&nbsp;entry&nbsp;amount.&nbsp;The&nbsp;platform&nbsp;supports&nbsp;secure&nbsp;account&nbsp;access&nbsp;and&nbsp;convenient&nbsp;payment&nbsp;options&nbsp;for&nbsp;deposits&nbsp;and&nbsp;withdrawals.&nbsp;</p><p>Players&nbsp;can&nbsp;withdraw&nbsp;their&nbsp;winnings&nbsp;through&nbsp;popular&nbsp;Indian&nbsp;payment&nbsp;methods,&nbsp;and&nbsp;the&nbsp;minimum&nbsp;withdrawal&nbsp;amount&nbsp;starts&nbsp;from&nbsp;₹100.&nbsp;Jaiho&nbsp;91&nbsp;is&nbsp;suitable&nbsp;for&nbsp;users&nbsp;looking&nbsp;for&nbsp;a&nbsp;lightweight&nbsp;earning&nbsp;app&nbsp;with&nbsp;simple&nbsp;navigation,&nbsp;quick&nbsp;loading,&nbsp;and&nbsp;real&nbsp;cash&nbsp;gaming&nbsp;features.&nbsp;</p><p>Always&nbsp;play&nbsp;responsibly&nbsp;and&nbsp;check&nbsp;the&nbsp;latest&nbsp;bonus&nbsp;terms&nbsp;inside&nbsp;the&nbsp;app&nbsp;before&nbsp;making&nbsp;any&nbsp;deposit.</p>",
     "isNew": true,
     "isTrending": true,
-    "features": [
-      "₹101 Welcome Bonus",
-      "Minimum ₹100 Withdrawal",
-      "Fast UPI Withdrawal",
-      "Refer and Earn Rewards",
-      "Lightweight App Size",
-      "Smooth Gameplay",
-      "Secure Payment Options",
-      "Daily Login Rewards"
-    ],
-    "howToDownload": [
-      "Click the \"Download Jaiho 91\" button to open the official download page",
-      "Download the latest Jaiho 91 APK file on your Android phone",
-      "Enable \"Install from Unknown Sources\" in your device security settings",
-      "Open the downloaded APK file from your browser or file manager",
-      "Tap \"Install\" and wait for the installation process to finish",
-      "Launch Jaiho 91 and register with your mobile number",
-      "Enter the OTP to verify your account securely",
-      "Claim the ₹101 signup bonus and start playing eligible games"
-    ],
     "faq": [
       {
         "question": "What is Jaiho 91?",
@@ -252,7 +126,7 @@
       "jaiho 91 real money app"
     ],
     "id": 63,
-    "lastModified": "2026-06-14T07:55:44.377Z",
+    "lastModified": "2026-07-05T10:49:50.321Z",
     "icon": "/icons/jaiho-91.webp",
     "categories": [
       "jaiho"
@@ -269,23 +143,6 @@
     "description": "Diwa Vip is the latest and most rewarding application on the Yono network. If you are looking for the official Diwa Vip apk, you have found the right place to get started.\n\nThe Diwa Vip yono game provides an unparalleled gaming experience with multiple categories including rummy, slots, and casual games. Every new user who completes the Diwa Vip apk download gets an instant sign-up bonus of ₹680.\n\nWhy should you choose this Diwa Vip game? Because it offers instant UPI withdrawals, a certified RNG system for fair play, and massive daily bonuses. The Diwa Vip download process is incredibly fast, taking less than two minutes to install and register.\n\nDon't fall for fake links—make sure you get the verified Diwa Vip yono version from AllYonoMax to secure your welcome bonus and start winning real cash today.",
     "isNew": true,
     "isTrending": true,
-    "features": [
-      "Instant UPI Withdrawal",
-      "₹680 Welcome Bonus",
-      "Official Diwa Vip Yono Game",
-      "Zero Fee Transactions",
-      "Anti-Cheat System",
-      "Fast Diwa Vip Download",
-      "24/7 Customer Support"
-    ],
-    "howToDownload": [
-      "Click the 'Diwa Vip APK Download' button above to get the official file",
-      "Enable 'Unknown Sources' in your Android security settings",
-      "Tap the downloaded Diwa Vip apk to begin the installation",
-      "Press 'Install' and wait for the Diwa Vip game to set up",
-      "Open the app and register using your active mobile number",
-      "Verify via OTP to instantly receive your ₹680 welcome bonus"
-    ],
     "faq": [
       {
         "question": "What is the official Diwa Vip game?",
@@ -338,25 +195,6 @@
     "description": "Jaiho Rummy has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹184, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Lucky Spin Rewards",
-      "Live Dealer Games",
-      "Auto Cashout Feature",
-      "Weekly Cashback Offers",
-      "Refer & Earn Commission",
-      "Email Support Available",
-      "Secure Payments"
-    ],
-    "howToDownload": [
-      "Click the \"Get Jaiho Rummy\" button to download the official APK",
-      "Enable \"Unknown Sources\" in Settings > Security > Unknown Sources",
-      "Locate the downloaded file in your file manager",
-      "Tap on the file and select \"Install\" to begin",
-      "Wait a few seconds for installation to complete",
-      "Open Jaiho Rummy by tapping \"Open\" on the installation screen",
-      "Click \"Register\" and enter your mobile number",
-      "Enter OTP to verify and get ₹184 welcome bonus instantly"
-    ],
     "faq": [
       {
         "question": "How can I earn money from Jaiho Rummy?",
@@ -738,24 +576,6 @@
     "description": "Diwa Slot is one of the fastest-growing slots gaming platforms in India that allows users to earn real cash while playing.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹117, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": true,
     "isTrending": true,
-    "features": [
-      "Live Dealer Games",
-      "Email Support Available",
-      "Live Chat Support",
-      "High Reward Matches",
-      "Smooth Gameplay",
-      "Auto Cashout Feature"
-    ],
-    "howToDownload": [
-      "Click the \"Diwa Slot Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch Diwa Slot",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹117 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "What is the maximum withdrawal limit in Diwa Slot?",
@@ -817,25 +637,6 @@
     "description": "MQM Bet is one of the fastest-growing slots gaming platforms in India that allows users to earn real cash while playing.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹82, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Streak Bonus Rewards",
-      "Smooth Gameplay",
-      "Welcome Bonus Available",
-      "Instant UPI Withdrawal",
-      "Multiple Payment Options",
-      "Anti-Cheat System",
-      "Secure Payments"
-    ],
-    "howToDownload": [
-      "Click the \"MQM Bet Install\" button to download APK",
-      "Go to Settings > Security > Enable \"Unknown Sources\"",
-      "Locate the APK in your Downloads folder or notification panel",
-      "Tap the file and select \"Install\" to proceed",
-      "After installation, tap \"Open\" to launch MQM Bet",
-      "Click \"Sign Up\" and enter your active mobile number",
-      "Request OTP and enter the code received via SMS",
-      "Your ₹82 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "What is the minimum withdrawal in MQM Bet?",
@@ -897,119 +698,6 @@
       "slots"
     ],
     "description": "Spin Winner is one of the most popular Yono gaming apps in India right now. It is a real money earning app where you can play games like Slots, Rummy, Teen Patti, Dragon vs Tiger, 777, and Spin Wheel — and withdraw your winnings directly to your UPI or bank account.\n\nIf you are searching for the Spin Winner APK download, you are in the right place. The official Spin Winner APK is only 42MB and works on any Android phone with Android 5.0 or above. Download takes under 1 minute and installation is simple.\n\nNew users who register on Spin Winner using the AllYonoMax link get an instant welcome bonus of up to ₹3000. This is one of the best signup bonuses available on any Yono game right now. The bonus is credited to your wallet automatically — no code to enter, no deposit needed.\n\nSpin Winner is part of the trusted Yono Games network, which operates dozens of verified real-money gaming apps across India. The app uses UPI for all payments — the same payment system used by crores of Indians every day. Every transaction is fast, secure, and transparent.\n\nThe minimum withdrawal on Spin Winner is just ₹100. Once you have ₹100 or more in your wallet, you can send it directly to your UPI ID, bank account, or Paytm. Most withdrawals are completed within 5 to 30 minutes with zero fees.",
-    "gamesAvailable": [
-      {
-        "name": "Spin Winner Slot Game",
-        "desc": "The most played game on Spin Winner. Spin the reels and match symbols to win cash instantly. Multiple slot machines available with jackpots up to ₹10,000. No skill needed — just spin and win."
-      },
-      {
-        "name": "Spin Wheel (Lucky Spin)",
-        "desc": "Spin the wheel daily and land on a cash prize. Free spins are available every day for all registered users. Prizes range from ₹1 to ₹500 per spin. The best way to earn without spending anything."
-      },
-      {
-        "name": "Spin Winner Rummy",
-        "desc": "Classic 13-card Indian rummy with real cash tables starting from ₹1. Perfect for players who know the game. Win cash every hand you form valid sets and sequences faster than your opponent."
-      },
-      {
-        "name": "Teen Patti",
-        "desc": "The most loved Indian card game — now with real money. Join public or private tables, go blind or seen, and win the pot. Fast rounds, low entry, big payouts."
-      },
-      {
-        "name": "Dragon vs Tiger",
-        "desc": "Simple and fast — pick Dragon or Tiger, and if your card is higher, you win. One of the quickest games on Spin Winner. One round takes under 10 seconds."
-      },
-      {
-        "name": "777 Slot",
-        "desc": "The classic lucky number game. Match three 7s and win big. This Spin Winner 777 game is the most popular among users who want fast rounds and instant payouts."
-      }
-    ],
-    "bonusDetails": "The Spin Winner signup bonus of up to ₹3000 is one of the highest welcome offers available on any Yono gaming app in India right now. Here is exactly how the Spin Winner bonus works.\n\nWhen you download the Spin Winner APK from AllYonoMax and register with your mobile number, the bonus is credited to your wallet automatically within 30 seconds. You do not need to enter any referral code or promo code — the AllYonoMax link handles it.\n\nThe Spin Winner signup bonus is split into two parts. The first part is a play bonus — you can use it immediately to join any game table on the app. The second part is a withdrawable cash bonus — once you have completed a small wagering requirement (just 2 to 3 rounds of any game), this amount can be withdrawn to your UPI or bank account.\n\nBeyond the welcome bonus, Spin Winner has daily login rewards. Log in every day and collect your daily bonus — the streak reward grows bigger the more consecutive days you log in. There are also weekly cashback offers, deposit match bonuses, and special event bonuses.\n\nThis is why downloading Spin Winner now is the right time. Bonus offers on Yono apps are always highest when the app runs a promotional period — and that is exactly what Spin Winner is doing right now.",
-    "withdrawalDetails": "Withdrawing your winnings from Spin Winner is very simple and fast. Here is the complete Spin Winner withdrawal process step by step.\n\nStep 1 — Open the Spin Winner app and go to the Wallet section at the bottom of the screen.\n\nStep 2 — Tap on the 'Withdraw' button. You will see your available balance.\n\nStep 3 — Enter the amount you want to withdraw. The minimum Spin Winner withdrawal amount is ₹100 and the maximum is ₹50,000 per day for standard users.\n\nStep 4 — Choose your withdrawal method: UPI (Google Pay, PhonePe, Paytm), Bank Account, or Paytm Wallet. Enter your UPI ID or bank details.\n\nStep 5 — Confirm the withdrawal. Your money will arrive in your account within 5 to 30 minutes.\n\nFor withdrawals below ₹10,000, no KYC or documents are needed. For larger amounts, you may need to submit a simple PAN card or Aadhaar for verification. Spin Winner does not charge any withdrawal fee — the full amount you withdraw reaches your account.",
-    "referralDetails": "The Spin Winner referral program lets you earn real money just by sharing your link with friends. Here is how the Spin Winner referral works.\n\nAfter registering on Spin Winner, go to the 'Invite' or 'Refer & Earn' section inside the app. You will see your personal Spin Winner referral code and share link.\n\nShare this link with your friends on WhatsApp, Telegram, or any social media. When your friend clicks your link, downloads the Spin Winner APK, and registers — you earn a commission instantly. The Spin Winner referral commission currently ranges from ₹50 to ₹500 per successful referral, depending on the active promotion.\n\nThe commission is added to your wallet automatically as soon as your friend completes registration. You can withdraw referral earnings just like regular winnings — no separate process needed.\n\nSpin Winner also has a multi-level referral program. If the person you referred also refers someone else, you earn a percentage of that too. This is how users build passive income on Spin Winner over time.\n\nThe best strategy: share your Spin Winner referral link in Telegram groups and WhatsApp groups related to gaming, earning apps, and Yono games. These groups have thousands of active users who are always looking for new apps.",
-    "prosAndCons": {
-      "pros": [
-        "Up to ₹3000 free signup bonus — no deposit needed",
-        "Very low ₹100 minimum withdrawal",
-        "6+ games: Slots, Rummy, Teen Patti, Dragon vs Tiger, 777, Spin",
-        "Fast withdrawal — 5 to 30 minutes to UPI or bank",
-        "No KYC needed for withdrawals below ₹10,000",
-        "Lightweight 42MB — works on any Android phone",
-        "Daily free spins — earn without spending",
-        "Spin Winner referral program — earn ₹50 to ₹500 per referral",
-        "Part of trusted Yono Games network — verified real money app"
-      ],
-      "cons": [
-        "Android only — no iOS version available",
-        "Must install as APK — not available on Google Play Store",
-        "Bonus has a small wagering requirement before full withdrawal",
-        "Requires stable internet connection for smooth gameplay"
-      ]
-    },
-    "comparisonTable": [
-      {
-        "feature": "Signup Bonus",
-        "spinWinner": "₹3000",
-        "spinWinner777": "₹100",
-        "jaiho91": "₹100"
-      },
-      {
-        "feature": "Min Withdrawal",
-        "spinWinner": "₹100",
-        "spinWinner777": "₹100",
-        "jaiho91": "₹100"
-      },
-      {
-        "feature": "App Size",
-        "spinWinner": "42MB",
-        "spinWinner777": "55MB",
-        "jaiho91": "48MB"
-      },
-      {
-        "feature": "Games",
-        "spinWinner": "Slots, Rummy, Teen Patti, 777, Spin, Dragon-Tiger",
-        "spinWinner777": "777, Slots only",
-        "jaiho91": "Rummy, Slots, Ludo"
-      },
-      {
-        "feature": "Daily Free Spins",
-        "spinWinner": "Yes",
-        "spinWinner777": "No",
-        "jaiho91": "No"
-      },
-      {
-        "feature": "Referral Earn",
-        "spinWinner": "₹50–₹500",
-        "spinWinner777": "₹30–₹150",
-        "jaiho91": "₹50–₹200"
-      },
-      {
-        "feature": "Withdrawal Speed",
-        "spinWinner": "5–30 min",
-        "spinWinner777": "15–60 min",
-        "jaiho91": "10–30 min"
-      }
-    ],
-    "whyChoose": "Spin Winner is the best choice among all Yono gaming apps right now — and here is exactly why.\n\nFirst, the bonus. No other Yono game is offering up to ₹3000 as a signup bonus right now. This is completely free — you do not deposit anything. Just register using the AllYonoMax link and the bonus lands in your wallet. The Spin Winner bonus claim process takes under 30 seconds.\n\nSecond, the games. Most Yono apps have 2 to 3 games. Spin Winner has 6 — Slots, Lucky Spin, Rummy, Teen Patti, Dragon vs Tiger, and 777. Whether you like skill games like rummy or luck games like slots, there is something for you. The Spin Winner slot game and Spin Winner 777 are especially popular because they give fast results.\n\nThird, daily free spins. Every day, Spin Winner gives you free spins on the Spin Wheel. These free spins can earn you anywhere from ₹1 to ₹500 without spending any money. Over a week, these free spins can add up to a solid amount in your wallet.\n\nFourth, the withdrawal. The Spin Winner minimum withdrawal is ₹100 — one of the lowest in the Yono gaming space. And once you hit ₹100, you can withdraw to UPI, bank, or Paytm in 5 to 30 minutes. No delays, no hidden charges.\n\nFifth, safety. People often ask: is Spin Winner real or fake? Is Spin Winner safe? Is Spin Winner legit? The answer is yes. Spin Winner is a verified app on the Yono Games network. Thousands of users withdraw money from Spin Winner every day. AllYonoMax only lists apps with confirmed withdrawal records — Spin Winner has passed that check.\n\nSixth, the referral program. The Spin Winner referral program lets you earn ₹50 to ₹500 per friend you invite. If you have a WhatsApp or Telegram group, sharing the Spin Winner APK download link is the fastest way to earn passive income from this app.\n\nDownload the official Spin Winner APK from AllYonoMax today — the only source with a 100% verified link directly from the Spin Winner Yono game server.",
-    "features": [
-      "Up to ₹3000 Free Signup Bonus",
-      "6 Real Money Games in One App",
-      "Daily Free Spins — Earn Without Spending",
-      "Instant UPI Withdrawal in 5–30 Minutes",
-      "₹100 Minimum Withdrawal",
-      "Spin Winner Referral: Earn ₹50–₹500 Per Friend",
-      "42MB Lightweight APK for Any Android Phone",
-      "No KYC Needed Below ₹10,000 Withdrawal"
-    ],
-    "howToDownload": [
-      "Click the 'Spin Winner APK Download' button on this page",
-      "The official 42MB Spin Winner APK file will start downloading",
-      "Open your phone Settings → Security → Enable 'Install from Unknown Sources'",
-      "Open the downloaded Spin Winner APK file from your notification bar",
-      "Tap 'Install' and wait 10–15 seconds for Spin Winner to install",
-      "Open Spin Winner and tap 'Register' on the welcome screen",
-      "Enter your mobile number and verify with the OTP sent via SMS",
-      "Your Spin Winner signup bonus (up to ₹3000) is added to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "What is Spin Winner?",
@@ -1105,40 +793,6 @@
     "description": "Love Rummy is built around one game — rummy. Open the Love Rummy app and the home screen goes straight into 13-card rummy tables, no digging through menus. If rummy is specifically what you're after rather than slots or crash games, this one puts it front and center.\n\nThe Love Rummy APK download gets you a ₹680 signup bonus on registration — one of the higher amounts currently running on the Yono Games network. No deposit needed, the bonus hits your wallet the moment OTP verification clears. From there, Love Rummy game tables start from low entry amounts so you can test a few rounds before playing bigger.",
     "isNew": false,
     "isTrending": false,
-    "howToDownload": [
-      "Tap the \"Download Love Rummy\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹680 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open the Love Rummy app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹680 bonus is credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Join any rummy table directly using your bonus amount"
-    ],
-    "whyChoose": [
-      {
-        "title": "Made for Players Who Actually Love Rummy",
-        "desc": "Most Yono Games network apps put slots on the home screen and rummy in a side tab. Love Rummy flips that — rummy tables load first, which means less tapping around if the card game is why you downloaded it in the first place. Classic 13-card rummy, low entry tables, same game you already know."
-      },
-      {
-        "title": "₹680 Bonus, No Deposit Required",
-        "desc": "Register through the official Love Rummy app download link on this page and ₹680 lands in your wallet automatically. Use it straight on the rummy tables — no conditions to clear before you can start playing."
-      },
-      {
-        "title": "Withdraw from ₹100, No Waiting",
-        "desc": "Minimum withdrawal is ₹100, no maximum cap. UPI transfers clear in 5-10 minutes, bank transfer takes a little longer. No fees deducted from whatever amount you withdraw."
-      },
-      {
-        "title": "3-Level Referral — ₹100 Per Valid Refer",
-        "desc": "Share your referral link from the Invite section. Every valid registration through your link earns you ₹100, credited instantly. Works across 3 levels, so your referrals' referrals also earn you commission."
-      }
-    ],
     "faq": [
       {
         "question": "Is Love Rummy a real app or fake?",
@@ -1197,26 +851,6 @@
     "description": "Boss Rummy is one of the fastest-growing rummy gaming platforms in India that allows users to earn real cash while playing.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹125, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Lightweight App",
-      "Quick Match Making",
-      "Low Entry Tables",
-      "Auto Cashout Feature",
-      "No Hidden Charges",
-      "Player Community Chat",
-      "Data Encryption",
-      "Private Tables for Friends"
-    ],
-    "howToDownload": [
-      "Click the \"Download Boss Rummy\" button to get the APK file",
-      "Allow installation from unknown sources in Settings > Security",
-      "Open the downloaded APK file from your notification bar",
-      "Tap \"Install\" and wait for the installation to complete",
-      "Launch Boss Rummy from your app drawer or home screen",
-      "Tap \"New User? Register\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify your account",
-      "Your ₹125 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "Is KYC required for withdrawal in Boss Rummy?",
@@ -1273,24 +907,6 @@
     "description": "Rummy Ludo is one of the fastest-growing rummy gaming platforms in India that allows users to earn real cash while playing.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹97, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": true,
     "isTrending": true,
-    "features": [
-      "Player Community Chat",
-      "Live Dealer Games",
-      "VIP Exclusive Bonuses",
-      "Fast Bank Transfer",
-      "Smooth Gameplay",
-      "Email Support Available"
-    ],
-    "howToDownload": [
-      "Click the \"Rummy Ludo Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch Rummy Ludo",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹97 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "Can I play Rummy Ludo without depositing money?",
@@ -1351,24 +967,6 @@
     "description": "Jaiho Slots is designed for players who want both entertainment and real cash winnings in one place.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹94, along with daily login rewards and deposit offers.\n\nJaiho Slots uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": true,
-    "features": [
-      "Multiple Game Variants",
-      "Smooth Gameplay",
-      "Player Community Chat",
-      "Live Dealer Games",
-      "Weekly Cashback Offers",
-      "24/7 Customer Support"
-    ],
-    "howToDownload": [
-      "Tap the green \"Download Jaiho Slots\" button to start downloading",
-      "Go to Settings > Security and enable \"Unknown Sources\"",
-      "Swipe down and tap on the downloaded Jaiho Slots APK file",
-      "Press \"Install\" and wait a few seconds for the process to finish",
-      "Tap \"Open\" to launch Jaiho Slots on your device",
-      "Click \"Sign Up\" and type your mobile number",
-      "Enter the OTP received via SMS to verify your account",
-      "₹94 welcome bonus will be added to your wallet automatically"
-    ],
     "faq": [
       {
         "question": "What is the minimum withdrawal in Jaiho Slots?",
@@ -1430,25 +1028,6 @@
     "description": "Top Rummy has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹68, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": true,
     "isTrending": true,
-    "features": [
-      "Data Encryption",
-      "Tournament Entry",
-      "Fast Loading Time",
-      "FAQ & Help Center",
-      "Welcome Bonus Available",
-      "Refer & Earn Commission",
-      "High Reward Matches"
-    ],
-    "howToDownload": [
-      "Tap the green \"Download Top Rummy\" button to start downloading",
-      "Go to Settings > Security and enable \"Unknown Sources\"",
-      "Swipe down and tap on the downloaded Top Rummy APK file",
-      "Press \"Install\" and wait a few seconds for the process to finish",
-      "Tap \"Open\" to launch Top Rummy on your device",
-      "Click \"Sign Up\" and type your mobile number",
-      "Enter the OTP received via SMS to verify your account",
-      "₹68 welcome bonus will be added to your wallet automatically"
-    ],
     "faq": [
       {
         "question": "Can I play Top Rummy without depositing money?",
@@ -1509,40 +1088,6 @@
     "isNew": false,
     "isTrending": false,
     "description": "Download GoodSlots APK and get ₹130 signup bonus to start playing instantly. GoodSlots is a casino slots app where the home screen loads lucky draw games, instant win rounds, and classic casino slots — the kind of games where the result lands in under 10 seconds per round.\n\nThe GoodSlots game sits in the Diwa family on the Yono Games network, which means Fortune Gems, Golden Empire, and the full slots catalog are inside alongside Aviator crash game. But what makes goodslots.com stand out is the lucky draw and instant win game format — spin fast, see the result fast, withdraw from ₹100 straight to UPI.",
-    "howToDownload": [
-      "Tap the \"Download GoodSlots\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the GoodSlots app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹130 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open GoodSlots app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹130 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Start on any casino slot or lucky draw game using your bonus"
-    ],
-    "whyChoose": [
-      {
-        "title": "Casino Slots & Lucky Draw Games in One App",
-        "desc": "GoodSlots game isn't just a standard Yono slots app — the lucky draw games and instant win rounds are what the home screen leads with. If you're looking for casino slots where each round wraps up fast rather than slow card game sessions, the GoodSlots APK download gets you straight into that format. Fortune Gems, Golden Empire, scratch-style instant wins, and Aviator crash game all run under one wallet."
-      },
-      {
-        "title": "Earn Money Online — Withdraw from ₹100",
-        "desc": "Whatever you win on the casino slots or lucky draw games inside GoodSlots withdraws from ₹100 minimum with no maximum cap. UPI transfers clear in 5-10 minutes to Google Pay, PhonePe, or Paytm — zero fees on the amount you request."
-      },
-      {
-        "title": "Instant Win Games, Instant Withdrawals",
-        "desc": "The instant win game format inside GoodSlots means you're not waiting through long card game rounds to see if you won. One spin, one result, move on — and when your wallet hits ₹100, the withdrawal goes out just as fast."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is inside the GoodSlots app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100, credited instantly. Runs 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "What is GoodSlots game?",
@@ -1601,79 +1146,6 @@
     "description": "Ready for the ultimate yn 777 yono game experience? When you install the yn 777 app, you get access to fast-paced rummy and slot tables in one single place. Completing a quick yn 777 apk download gives you an instant ₹144 signup bonus—zero deposit needed.\n\nThe yn777 platform is highly optimized. If you love card games, yn 777 rummy is one of the smoothest running modes right now. Doing the yn 777 app download takes less than a minute, and you can withdraw your cash via UPI starting at just ₹100.",
     "isNew": false,
     "isTrending": true,
-    "features": [
-      "₹144 Signup Bonus",
-      "Best yn 777 rummy tables",
-      "₹100 Minimum Withdrawal",
-      "Fast UPI & Bank Payouts",
-      "Daily Login Rewards",
-      "Smooth yn 777 yono game UI"
-    ],
-    "howToDownload": [
-      "Click the official \"yn 777 download\" link provided on this page",
-      "Allow 'Install Unknown Apps' in your Android security settings",
-      "Open the yn 777 apk from your Downloads folder",
-      "Tap Install and launch the yn 777 game",
-      "Register using your mobile number and verify via OTP",
-      "Your ₹144 bonus is credited instantly"
-    ],
-    "whyChoose": [
-      {
-        "title": "Instant ₹144 Bonus",
-        "desc": "Complete your yn 777 download and register to claim ₹144 immediately. You don't have to deposit a single rupee to start playing the yn 777 game."
-      },
-      {
-        "title": "Perfect for Rummy Lovers",
-        "desc": "Fans of yn 777 rummy love the lag-free tables. If you search for yn 777 com, you'll see why it's a top-rated yn 777 yono platform."
-      },
-      {
-        "title": "Fast UPI Payouts",
-        "desc": "Win on the yn 777 app and withdraw directly to your bank account or UPI in 10-30 minutes with a minimum limit of just ₹100."
-      }
-    ],
-    "bonusDetails": "The ₹144 welcome bonus is added automatically to your yn 777 wallet after OTP verification. You can use it right away to play yn 777 rummy or slots. Plus, daily login rewards keep giving you extra bonuses for free just for opening the app.",
-    "withdrawalDetails": "The minimum withdrawal in the yn 777 app is ₹100 via UPI or Bank Transfer. Standard users can withdraw up to ₹50,000 per day, and payouts usually hit your account in 10-30 minutes.",
-    "referralDetails": "The yn777 app features a solid 3-level referral program. You can share your invite link on WhatsApp or Telegram, and you'll earn passive commission every time your friends deposit or play.",
-    "gamesAvailable": [
-      {
-        "name": "yn 777 rummy",
-        "desc": "The main attraction. Fast-paced, lag-free 13-card rummy tables for skill-based players."
-      },
-      {
-        "name": "Teen Patti & Cards",
-        "desc": "Classic card games with low-entry tables starting at just ₹1."
-      },
-      {
-        "name": "Slots & Arcade",
-        "desc": "Classic 777 slots and crash games for fast multipliers."
-      }
-    ],
-    "comparisonTable": [
-      {
-        "feature": "Welcome Bonus",
-        "yn777": "₹144",
-        "game777": "₹177",
-        "ever777": "₹79"
-      },
-      {
-        "feature": "Min Withdrawal",
-        "yn777": "₹100",
-        "game777": "₹100",
-        "ever777": "₹100"
-      },
-      {
-        "feature": "App Size",
-        "yn777": "44MB",
-        "game777": "36MB",
-        "ever777": "42MB"
-      },
-      {
-        "feature": "Key Game",
-        "yn777": "yn 777 rummy",
-        "game777": "777 Slots",
-        "ever777": "Ever Rummy"
-      }
-    ],
     "faq": [
       {
         "question": "Is the yn 777 game real or fake?",
@@ -1729,40 +1201,6 @@
     "isNew": false,
     "isTrending": true,
     "description": "Download Rumble Rummy APK and get ₹580 signup bonus instantly — no deposit needed. Rumble Rummy is the competitive rummy app where the name tells you exactly what's inside: fast-paced 13-card rummy tables where every round feels like a real contest.\n\nThe Rumble Rummy app opens straight into rummy — no slots lobby in the way, no crash games on the first screen. Weekly leaderboards and referral competitions run inside the Rumble Rummy game alongside regular tables, so there's always something to play for beyond just the individual hand. Slots and Aviator are in a separate tab under the same wallet whenever you want them.",
-    "howToDownload": [
-      "Tap the \"Download Rumble Rummy\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the Rumble Rummy app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹580 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open Rumble Rummy app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹580 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Jump straight into any rummy table using your bonus amount"
-    ],
-    "whyChoose": [
-      {
-        "title": "Rumble Rummy Game — Competitive Rummy, Not Casual",
-        "desc": "The Rumble Rummy download isn't just another rummy app with a different name — the competitive format shows up in how the tables are structured. Head-to-head matches, weekly bet leaderboards, and referral competitions run alongside standard rummy tables. If you're a rummy player who finds regular apps too slow or too casual, Rumble Rummy game keeps the stakes feeling real every session."
-      },
-      {
-        "title": "₹580 Bonus on Rumble Rummy APK Download",
-        "desc": "Register through the official Rumble Rummy app download link on this page and ₹580 hits your wallet the moment OTP clears. No deposit required — use it directly on any rummy table from your first session."
-      },
-      {
-        "title": "Withdraw from ₹100, UPI in Minutes",
-        "desc": "Minimum withdrawal is ₹100 with no maximum cap. UPI transfers to Google Pay, PhonePe, or Paytm clear in 5-10 minutes — zero fees on whatever amount you withdraw."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is inside the Rumble Rummy app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100, credited instantly. Runs 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "Is Rumble Rummy real or fake?",
@@ -1819,26 +1257,6 @@
     "description": "If you're looking for a trusted rummy earning app, Joy Rummy is currently trending among Indian players.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹77, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Welcome Bonus Available",
-      "Festival Bonus Events",
-      "No Hidden Charges",
-      "Practice Mode Available",
-      "Fast Bank Transfer",
-      "Same Day Payouts",
-      "Dedicated VIP Manager",
-      "Weekly Cashback Offers"
-    ],
-    "howToDownload": [
-      "Click the \"Get Joy Rummy\" button to download the official APK",
-      "Enable \"Unknown Sources\" in Settings > Security > Unknown Sources",
-      "Locate the downloaded file in your file manager",
-      "Tap on the file and select \"Install\" to begin",
-      "Wait a few seconds for installation to complete",
-      "Open Joy Rummy by tapping \"Open\" on the installation screen",
-      "Click \"Register\" and enter your mobile number",
-      "Enter OTP to verify and get ₹77 welcome bonus instantly"
-    ],
     "faq": [
       {
         "question": "What is Joy Rummy and how does it work?",
@@ -1899,26 +1317,6 @@
     "description": "INR Rummy is designed for players who want both entertainment and real cash winnings in one place.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹93, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Multi Language UI",
-      "Welcome Bonus Available",
-      "Hindi Language Support",
-      "24/7 Customer Support",
-      "Lucky Spin Rewards",
-      "Player Community Chat",
-      "High Reward Matches",
-      "Data Encryption"
-    ],
-    "howToDownload": [
-      "Click the \"INR Rummy Download\" button to get the APK",
-      "Enable \"Unknown Sources\" in Settings > Security",
-      "Find the downloaded APK in your notification panel",
-      "Tap the file and press \"Install\" to begin",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" to launch INR Rummy on your device",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your phone to get ₹93 welcome bonus"
-    ],
     "faq": [
       {
         "question": "Can I play INR Rummy without depositing money?",
@@ -1979,40 +1377,6 @@
     "isNew": false,
     "isTrending": false,
     "description": "Download Rummy 888 APK and get ₹290 signup bonus credited to your wallet instantly — no deposit needed. Rummy888 is built around 13-card rummy with tables running at multiple entry levels, from ₹1 practice tables up to higher stake rooms for players who already know the game.\n\nThe Rummy 888 app name isn't random — 888 is considered the luckiest number in Indian card game culture, and the app leans into that with a rummy-forward lobby where the tables load first. Slots, Aviator, and Dragon vs Tiger sit in a separate tab under the same wallet whenever you want them.",
-    "howToDownload": [
-      "Tap the \"Download Rummy 888\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the Rummy 888 app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹290 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open Rummy 888 app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹290 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Join any rummy table directly using your bonus amount"
-    ],
-    "whyChoose": [
-      {
-        "title": "Rummy 888 — Tables for Every Level, From ₹1 Entry",
-        "desc": "Rummy888 runs tables at multiple entry points — ₹1 practice tables for players still learning the game, mid-stake rooms for regular players, and higher rooms once you're confident. The 13-card rummy format is classic Indian rummy, same rules, same sequences and sets. Whether you're new to rummy or have been playing for years, there's a table in Rummy 888 that fits your level."
-      },
-      {
-        "title": "₹290 Bonus on Rummy 888 APK Download",
-        "desc": "Register through the official Rummy 888 app download link on this page and ₹290 hits your wallet on OTP verification — no deposit required to claim it. Use it directly on any rummy table to start playing."
-      },
-      {
-        "title": "Withdraw from ₹100, UPI in Minutes",
-        "desc": "Minimum withdrawal is ₹100 with no maximum cap. UPI transfers clear in 5-10 minutes to Google Pay, PhonePe, or Paytm — zero fees on whatever amount you withdraw."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is in the Rummy 888 app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100, credited instantly. Works 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "Is Rummy 888 real or fake?",
@@ -2073,26 +1437,6 @@
     "description": "Rummy 77 is one of the fastest-growing rummy gaming platforms in India that allows users to earn real cash while playing.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹38, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Hindi Language Support",
-      "Festival Bonus Events",
-      "Anti-Cheat System",
-      "Live Chat Support",
-      "Multi Language UI",
-      "Practice Mode Available",
-      "FAQ & Help Center",
-      "24/7 Withdrawal Available"
-    ],
-    "howToDownload": [
-      "Click the \"Rummy 77 APK Download\" button to start",
-      "Enable \"Unknown Sources\" in your phone's security settings",
-      "Tap on the downloaded APK file to begin installation",
-      "Press \"Install\" and wait for the process to finish",
-      "Open Rummy 77 by tapping \"Open\" after installation",
-      "Register using your mobile number (OTP verification required)",
-      "Enter the OTP sent to your phone to verify your identity",
-      "₹38 welcome bonus will be added to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "Is KYC required for withdrawal in Rummy 77?",
@@ -2149,24 +1493,6 @@
     "description": "Bet 213 is designed for players who want both entertainment and real cash winnings in one place.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹94, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nBet 213 continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Multiple Payment Options",
-      "Data Encryption",
-      "Weekly Cashback Offers",
-      "Daily Login Rewards",
-      "VIP Exclusive Bonuses",
-      "Email Support Available"
-    ],
-    "howToDownload": [
-      "Click the \"Download Bet 213\" button to get the APK file",
-      "Allow installation from unknown sources in Settings > Security",
-      "Open the downloaded APK file from your notification bar",
-      "Tap \"Install\" and wait for the installation to complete",
-      "Launch Bet 213 from your app drawer or home screen",
-      "Tap \"New User? Register\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify your account",
-      "Your ₹94 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "What is the maximum withdrawal limit in Bet 213?",
@@ -2227,24 +1553,6 @@
     "description": "Yono 777 is one of the fastest-growing slots gaming platforms in India that allows users to earn real cash while playing.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹179, along with daily login rewards and deposit offers.\n\nYono 777 uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Zero Fee Transactions",
-      "Auto Cashout Feature",
-      "VIP Exclusive Bonuses",
-      "Instant UPI Withdrawal",
-      "Anti-Cheat System",
-      "Fast Bank Transfer"
-    ],
-    "howToDownload": [
-      "Click the \"Download Yono 777\" button to get the APK file",
-      "Enable \"Install from Unknown Sources\" in your phone's Security settings",
-      "Open the downloaded APK file from your notification panel",
-      "Tap \"Install\" and wait for the installation to complete",
-      "Open Yono 777 from your home screen after installation",
-      "Tap \"Register\" and enter your mobile number to create an account",
-      "Enter the OTP sent to your phone to verify your number",
-      "Your ₹179 welcome bonus will be credited to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "Is Yono 777 safe to use?",
@@ -2305,43 +1613,6 @@
     "description": "101z is one of the longer-running games on the Yono Games network — 697,000+ downloads so far. The 101z game opens into rummy and Teen Patti tables on the home screen, with slots one tab over.\n\nNew users get a ₹177 signup bonus on registration, no deposit needed, plus daily login rewards. ₹100 minimum withdrawal, UPI or bank transfer, typically clearing within minutes.\n\nA Telegram support channel is linked inside the app for account or withdrawal questions, alongside the standard 3-level referral program shared across Yono Games network apps.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Rummy & Teen Patti Home Screen",
-      "₹177 Signup Bonus",
-      "₹100 Minimum Withdrawal, No Max Limit",
-      "Daily Login Rewards",
-      "Telegram Support Channel",
-      "3-Level Referral Commission",
-      "UPI / Paytm / Bank Transfer",
-      "43MB APK"
-    ],
-    "howToDownload": [
-      "Tap the \"Download 101z\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file (around 43MB) from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the app, tap Register, and enter your mobile number",
-      "Enter the OTP sent via SMS — check Spam/Blocked folder if it doesn't arrive in 60 seconds",
-      "Your ₹177 signup bonus lands in your wallet automatically — no deposit needed"
-    ],
-    "whyChoose": [
-      {
-        "title": "Established Player Base",
-        "desc": "101z has been live longer than several newer Yono Games network launches, with 697,000+ downloads behind it — its rummy and Teen Patti tables tend to be more active than apps that just launched."
-      },
-      {
-        "title": "Rummy, Teen Patti & Slots in One App",
-        "desc": "The home screen leads with card games, but the full slots library is one tab over, so you're not switching apps to get both game types."
-      },
-      {
-        "title": "Telegram Support Channel",
-        "desc": "Account or withdrawal questions go through a linked Telegram channel inside the app, in addition to in-app Live Chat — useful if you prefer messaging over waiting on chat support."
-      },
-      {
-        "title": "Fits the Multi-App Strategy",
-        "desc": "Like other Yono Games network apps, 101z has its own wallet and its own ₹177 signup bonus, separate from any other app you're running — most experienced players keep 101z installed alongside 2-3 others."
-      }
-    ],
     "faq": [
       {
         "question": "Is 101z real or fake?",
@@ -2414,26 +1685,6 @@
     "description": "Bingo 101 is designed for players who want both entertainment and real cash winnings in one place.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹133, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Anti-Cheat System",
-      "Quick Match Making",
-      "Fast Loading Time",
-      "Smooth Gameplay",
-      "Secure Payments",
-      "Hindi Language Support",
-      "Lucky Spin Rewards",
-      "Low Entry Tables"
-    ],
-    "howToDownload": [
-      "Click the \"Get Bingo 101\" button to download the official APK",
-      "Enable \"Unknown Sources\" in Settings > Security > Unknown Sources",
-      "Locate the downloaded file in your file manager",
-      "Tap on the file and select \"Install\" to begin",
-      "Wait a few seconds for installation to complete",
-      "Open Bingo 101 by tapping \"Open\" on the installation screen",
-      "Click \"Register\" and enter your mobile number",
-      "Enter OTP to verify and get ₹133 welcome bonus instantly"
-    ],
     "faq": [
       {
         "question": "How long do withdrawals take in Bingo 101?",
@@ -2494,26 +1745,6 @@
     "description": "If you're looking for a trusted slots earning app, Spin 777 is currently trending among Indian players.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹105, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Live Chat Support",
-      "Data Encryption",
-      "Lightweight App",
-      "Zero Fee Transactions",
-      "VIP Exclusive Bonuses",
-      "Multiple Game Variants",
-      "Daily Login Rewards",
-      "24/7 Customer Support"
-    ],
-    "howToDownload": [
-      "Click the \"Spin 777 Download\" button to get the APK",
-      "Enable \"Unknown Sources\" in Settings > Security",
-      "Find the downloaded APK in your notification panel",
-      "Tap the file and press \"Install\" to begin",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" to launch Spin 777 on your device",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your phone to get ₹105 welcome bonus"
-    ],
     "faq": [
       {
         "question": "Is Spin 777 available for iOS?",
@@ -2575,26 +1806,6 @@
     "description": "Slots Winner has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹137, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nSlots Winner continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "24/7 Withdrawal Available",
-      "Streak Bonus Rewards",
-      "Multi Language UI",
-      "Live Dealer Games",
-      "High Reward Matches",
-      "Same Day Payouts",
-      "No Hidden Charges",
-      "Data Encryption"
-    ],
-    "howToDownload": [
-      "Click the \"Slots Winner APK Download\" button to start",
-      "Enable \"Unknown Sources\" in your phone's security settings",
-      "Tap on the downloaded APK file to begin installation",
-      "Press \"Install\" and wait for the process to finish",
-      "Open Slots Winner by tapping \"Open\" after installation",
-      "Register using your mobile number (OTP verification required)",
-      "Enter the OTP sent to your phone to verify your identity",
-      "₹137 welcome bonus will be added to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "Can I play Slots Winner on multiple devices?",
@@ -2655,26 +1866,6 @@
     "description": "Spin Gold is designed for players who want both entertainment and real cash winnings in one place.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹199, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Live Chat Support",
-      "Multiple Game Variants",
-      "Lucky Spin Rewards",
-      "Regular Updates",
-      "Auto Cashout Feature",
-      "Low Entry Tables",
-      "Secure Payments",
-      "Streak Bonus Rewards"
-    ],
-    "howToDownload": [
-      "Click the \"Spin Gold Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch Spin Gold",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹199 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "Does Spin Gold have a referral program?",
@@ -2731,25 +1922,6 @@
     "description": "567 Slots opens straight into its slots and crash game lobby — Fortune Gems, Aviator, and Dragon vs Tiger sit on the first tab you see. Rummy and Teen Patti are one tab over, not the headline feature despite being fully available.\n\nThe ₹567 signup bonus lands in your wallet the moment OTP verification completes, no deposit needed to start playing. At 45MB, the APK installs in under 15 seconds on most phones — one of the lighter downloads if you're already running a few other gaming apps and watching storage.\n\n626,000+ downloads in, withdrawals clear in 5 to 30 minutes through UPI for regular accounts, under 5 minutes if you're VIP-tier or a high-level referrer. The app has a 4.5/5 rating from its user base.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Slots & Crash Games on Home Screen",
-      "45MB Lightweight APK",
-      "₹567 Signup Bonus",
-      "₹100 Minimum Withdrawal, No Max Limit",
-      "5-30 Min Standard Withdrawal, Under 5 Min VIP",
-      "Certified RNG on Slot Games",
-      "3-Level Referral Commission",
-      "Daily Login Rewards"
-    ],
-    "howToDownload": [
-      "Tap the \"Download 567 Slots\" button on this page — it links directly to the official APK, no third-party redirect",
-      "Your phone will warn you since this isn't from the Play Store — go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file (around 45MB) from your Downloads folder or notification panel",
-      "Tap Install and wait roughly 10-15 seconds",
-      "Open the app, tap Register, and enter your active mobile number",
-      "Enter the OTP sent via SMS — if it doesn't arrive in 60 seconds, check your Spam/Blocked folder before requesting again",
-      "Your ₹567 signup bonus lands in your wallet automatically — no deposit needed to claim it"
-    ],
     "faq": [
       {
         "question": "Is 567 Slots a genuine app?",
@@ -2798,61 +1970,7 @@
     "lastModified": "2026-06-30T04:05:10.207Z",
     "categories": [
       "slots"
-    ],
-    "gamesAvailable": [
-      {
-        "name": "777 Slots",
-        "desc": "Fortune Gems, Golden Empire, Power of Kraken, 500 Lucky Gem"
-      },
-      {
-        "name": "Aviator & Crash",
-        "desc": "Aviator, Jet X, Rocket X, Space X, Limbo, Go Rush"
-      },
-      {
-        "name": "Cards & Rummy",
-        "desc": "Dragon vs Tiger, 13 Card Rummy, Teen Patti, Andar Bahar, Lucky 7, 7 Up Down"
-      },
-      {
-        "name": "Roulette & Table",
-        "desc": "Roulette, Plinko, Keno, Dice, Bonanza Wheel, Penalty Shooter"
-      },
-      {
-        "name": "Fishing",
-        "desc": "Fishing Frenzy, Fishing King"
-      }
-    ],
-    "whyChoose": [
-      {
-        "title": "₹567 Signup Bonus",
-        "desc": "567 Slots currently runs one of the higher signup bonuses on the network at ₹567, credited instantly after OTP verification, no deposit needed."
-      },
-      {
-        "title": "Smaller, Lighter APK",
-        "desc": "At 45MB, 567 Slots is one of the more compact installs on the Yono network — useful if you're running multiple apps on a phone with limited storage."
-      },
-      {
-        "title": "Fits the Multi-App Strategy",
-        "desc": "Most experienced Yono players don't pick one app — they run 567 Slots alongside 2-3 others because each app has its own ₹100 minimum withdrawal threshold and separate wallet, so bonuses stack independently."
-      }
-    ],
-    "bonusDetails": "The ₹567 signup bonus credits automatically to your wallet right after OTP verification — no deposit required to claim it. This bonus can be used directly on any game in the app, including slots, crash games, and rummy tables.\n\nBeyond the signup bonus, 567 Slots also runs daily login rewards and deposit-based bonuses for users who choose to add funds. The exact deposit bonus percentage is shown inside the app's Promotions tab and can change periodically.",
-    "withdrawalDetails": "Minimum withdrawal is ₹100 with no maximum limit. Choose UPI or Bank Transfer from the Wallet section, enter your details, and confirm. Standard accounts see withdrawals clear in 5 to 30 minutes; VIP-tier accounts and high-level referrers typically see it under 5 minutes.\n\nNo withdrawal fees are charged — the amount you request is the amount that reaches your account. If a withdrawal sits pending past 2 hours, contact in-app Live Chat with your transaction ID.",
-    "referralDetails": "567 Slots runs a 3-level referral program shared across the Yono network. Your referral link is in the Refer & Earn section of your profile. Level 1: earn commission when someone registers through your link. Level 2: earn when their referrals register. Level 3: one more level down.\n\nReferral earnings go straight to your wallet and can be withdrawn the same way as game winnings, subject to the same ₹100 minimum.",
-    "prosAndCons": {
-      "pros": [
-        "₹567 signup bonus, no deposit required to claim",
-        "Compact 45MB APK, lighter than several other Yono apps",
-        "5-30 minute standard withdrawals, under 5 minutes for VIP",
-        "Full game catalog despite 'Slots' branding — rummy and Teen Patti included",
-        "3-level referral system for passive earning"
-      ],
-      "cons": [
-        "Real-money app — losses are possible, same as any gambling platform",
-        "Not available on Google Play Store, requires sideloading the APK",
-        "Bonus amounts can change over time without prior notice",
-        "Rummy is unavailable in 8 Indian states due to local regulations"
-      ]
-    }
+    ]
   },
   {
     "id": 23,
@@ -2868,25 +1986,6 @@
     "description": "If you're looking for a trusted rummy earning app, Yono Games is currently trending among Indian players.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹101, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nYono Games continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Private Tables for Friends",
-      "Smooth Gameplay",
-      "Auto Cashout Feature",
-      "Data Encryption",
-      "Fast Bank Transfer",
-      "Instant UPI Withdrawal",
-      "Daily Login Rewards"
-    ],
-    "howToDownload": [
-      "Click the \"Install Yono Games\" button to get the APK file",
-      "Go to Settings > Security and enable \"Install from Unknown Sources\"",
-      "Find the downloaded uono-refer.apk in your Downloads folder",
-      "Tap the file and press \"Install\" to start",
-      "After installation, tap \"Open\" to launch Yono Games",
-      "Tap \"Sign Up\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify",
-      "Your ₹101 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "Is KYC required for withdrawal in Yono Games?",
@@ -2943,73 +2042,6 @@
     "description": "Spin 101's ₹101 signup bonus is small enough that it's a reasonable way to test the app before deciding whether to deposit anything — try a few rounds on the daily Lucky Wheel first, since that one's free regardless of balance and pays ₹1 to ₹100.\n\nBefore playing for real, check two things: the app only keeps one device logged in at a time, so don't expect to switch phones mid-session, and withdrawal limits here run higher than most apps in this directory — ₹50,000 a day standard, up to ₹5,00,000 for VIP — which matters more if you're playing at higher stakes than if you're just exploring.\n\nLike any real-money game, set a limit before you start rather than after. This is for users 18 and above.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Daily Free Lucky Wheel Spin",
-      "₹101 Signup Bonus",
-      "₹50,000/Day Withdrawal Limit (₹5,00,000 VIP)",
-      "Single Active Device Login",
-      "Rummy, 777 & Slots Available",
-      "3-Level Referral Commission",
-      "44MB APK"
-    ],
-    "howToDownload": [
-      "Tap the \"Download Spin 101\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file (around 44MB) from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the app, tap Register, and enter your mobile number",
-      "Enter the OTP sent via SMS — check Spam/Blocked folder if it doesn't arrive in 60 seconds",
-      "Your ₹101 signup bonus lands in your wallet automatically — no deposit needed"
-    ],
-    "whyChoose": [
-      {
-        "title": "Higher Withdrawal Ceiling",
-        "desc": "₹50,000 per day for standard accounts and up to ₹5,00,000 per day for VIP — both noticeably higher than the typical cap across this directory, useful if you play at higher stakes."
-      },
-      {
-        "title": "Free Daily Lucky Wheel",
-        "desc": "One free spin every day on the Lucky Wheel, paying ₹1 to ₹100, doesn't require a deposit and stacks separately from your regular game winnings."
-      },
-      {
-        "title": "777, Rummy & Slots Together",
-        "desc": "All three game types share one wallet, so you're not juggling separate apps depending on what you feel like playing."
-      },
-      {
-        "title": "One Device, One Active Session",
-        "desc": "Logging in on a new phone ends the session on the old one — keeps the account tied to a single device at a time rather than running open on multiple phones."
-      }
-    ],
-    "bonusDetails": "The ₹101 signup bonus credits automatically after OTP verification, no deposit required. It can be used directly on 777, slots, or rummy tables. The Lucky Wheel runs separately — one free spin daily, paying ₹1 to ₹100, available whether or not you've deposited.",
-    "withdrawalDetails": "Minimum withdrawal is ₹100. Daily caps are ₹50,000 for standard accounts and up to ₹5,00,000 for VIP accounts — both higher than most apps on this network. Choose UPI or bank transfer from the Wallet section; no fees are deducted from the amount requested.",
-    "referralDetails": "Spin 101 runs the standard 3-level referral program. Your link is in the app's Invite section — commission credits to your wallet when someone registers through it, and again across the two levels below them.",
-    "prosAndCons": {
-      "pros": [
-        "₹101 signup bonus, no deposit required",
-        "Daily free Lucky Wheel spin, ₹1-₹100 payout",
-        "Higher withdrawal limits than most apps in this directory",
-        "Rummy, 777, and slots all under one wallet",
-        "₹100 minimum withdrawal"
-      ],
-      "cons": [
-        "Android only, not available on iOS or Play Store",
-        "Only one device can stay logged in at a time",
-        "VIP-tier withdrawal limit requires reaching VIP status first"
-      ]
-    },
-    "gamesAvailable": [
-      {
-        "name": "Daily Lucky Wheel",
-        "desc": "One free spin per day with cash prizes ranging from ₹1 to ₹100, zero deposit required."
-      },
-      {
-        "name": "777 & Slots",
-        "desc": "Classic slots and matching games are fully featured and load quickly."
-      },
-      {
-        "name": "Rummy",
-        "desc": "Traditional 13-card rummy for those looking for skill-based card games."
-      }
-    ],
     "faq": [
       {
         "question": "Is Spin 101 real or fake?",
@@ -3081,40 +2113,6 @@
     "isNew": false,
     "isTrending": false,
     "description": "Download MBMbet APK and get ₹150 signup bonus to your wallet instantly — no deposit needed. MBMbet is a casino betting app where lucky number jackpot games and fast betting rounds are the main draw, sitting alongside the standard slots and crash game catalog inside the same wallet.\n\nThe mbmbet.com app is built for players who want to earn money online gaming without sitting through long card game sessions — jackpot rounds, lucky number picks, and Aviator betting all run under one account. Open MBMbet game and the casino betting lobby loads first, with rummy and traditional card tables one tab over for whenever you want them.",
-    "howToDownload": [
-      "Tap the \"Download MBMbet\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the MBMbet app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹150 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open MBMbet app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹150 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Start on any casino betting game or jackpot round using your bonus"
-    ],
-    "whyChoose": [
-      {
-        "title": "MBMbet Game — Casino Betting App with Jackpot Rounds",
-        "desc": "MBMbet isn't structured like a rummy-first or slots-first app — the casino betting lobby opens first, where lucky number jackpot games sit alongside Aviator and the crash game catalog. If you're looking for a casino betting app where each round is fast and the jackpot is always one pick away, mbmbet.com is where that format lives on the Yono Games network. Slots and rummy are inside too, but the betting games are what MBMbet game is known for."
-      },
-      {
-        "title": "Earn Money Online Gaming from ₹100 Withdrawal",
-        "desc": "Whatever you win on the casino betting rounds or jackpot games inside MBMbet withdraws from just ₹100 minimum — no maximum cap. UPI transfers to Google Pay, PhonePe, or Paytm clear in 5-10 minutes with zero fees deducted from the amount you request."
-      },
-      {
-        "title": "Quick Login, Same Account Everywhere",
-        "desc": "MBM bet login ties your account to your mobile number, not the installation — if you switch phones or reinstall, tap Login, enter your number, verify OTP, and your wallet balance loads exactly as you left it."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is inside the MBMbet app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100, credited instantly. Runs 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "What is MBMbet game?",
@@ -3175,40 +2173,6 @@
     "isNew": false,
     "isTrending": true,
     "description": "Download IND Slots APK and get ₹480 signup bonus instantly — no deposit needed. INDSlots is one of the bigger online casino India apps on the Yono Games network, running its own branded slot machine games alongside the standard catalog — SpinGold, SpinCrush, and INDBingo are exclusive to the indslots.com platform and won't be found on other Yono apps.\n\nOpen the IND Slots app and the casino lobby loads with 60+ games across slot machines, crash games, and card tables. SpinGold and SpinCrush sit in the slots section, INDBingo runs separately as its own game mode. Withdrawals go through PhonePe, Paytm, Google Pay, or direct bank transfer — ₹100 minimum, no fees.",
-    "howToDownload": [
-      "Tap the \"Download IND Slots\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the IND Slots app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹480 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open IND Slots app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹480 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Start on SpinGold, SpinCrush, or any slot machine game using your bonus"
-    ],
-    "whyChoose": [
-      {
-        "title": "SpinGold, SpinCrush & INDBingo — Games You Won't Find Elsewhere",
-        "desc": "INDSlots runs three branded games that are specific to this platform — SpinGold for progressive jackpot-style spins, SpinCrush for fast crash-style slot rounds, and INDBingo as a standalone bingo game mode. These aren't in the standard Yono Games network catalog you'd find on other apps. If you're searching for indslots.com specifically because someone mentioned SpinGold or SpinCrush, this is the only place they run."
-      },
-      {
-        "title": "Online Casino India — 60+ Games Under One Wallet",
-        "desc": "IND Slots app is built as a full online casino India experience — slot machine games, progressive jackpots, crash games including Aviator, card games, and INDBingo all under one account. The 60 games catalog is wider than most individual Yono apps, which typically run 30-35 games."
-      },
-      {
-        "title": "PhonePe, Paytm & UPI Withdrawals from ₹100",
-        "desc": "Withdraw winnings directly to PhonePe, Paytm, Google Pay, or bank account — minimum ₹100, no maximum cap, no fees. UPI transfers typically clear in 5-10 minutes."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is inside the IND Slots app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100, credited instantly. Runs 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "What is INDSlots?",
@@ -3271,40 +2235,6 @@
     "isNew": false,
     "isTrending": true,
     "description": "Download 789 Jackpots APK and get ₹789 signup bonus — the number matches the app name on purpose. 789 Jackpot is built entirely around jackpot-style games where every spin is a shot at a multiplied payout, not a fixed reward.\n\nOpen the 789 Jackpots app and the jackpot lobby loads first — progressive jackpot slots, lucky number rounds, and Aviator crash game all sitting in one place. The ₹789 bonus hits your wallet the moment OTP clears, no deposit needed. Standard card games and rummy are one tab over under the same wallet for whenever you want them. Withdraw from ₹100 straight to UPI, PhonePe, or Paytm.",
-    "howToDownload": [
-      "Tap the \"Download 789 Jackpots\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the 789 Jackpots app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹789 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open 789 Jackpots app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹789 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Start on any jackpot game directly using your bonus amount"
-    ],
-    "whyChoose": [
-      {
-        "title": "789 Jackpot — Every Round is a Jackpot Round",
-        "desc": "Most Yono Games network apps have jackpot slots as one section among many. 789 Jackpots builds the entire home screen around jackpot games — progressive jackpot slots, lucky number picks, and crash multipliers all sit on the first screen you see. The 789 jackpot format means higher variance, bigger swings, and a shot at a multiplied payout every single round rather than flat wins. If jackpot-style games are specifically why you're here, this app is structured around exactly that."
-      },
-      {
-        "title": "₹789 Bonus — Same Number as the App, Real Money in Your Wallet",
-        "desc": "The ₹789 signup bonus matching the app name isn't a coincidence — register through the official 789 Jackpot download link on this page and exactly ₹789 lands in your wallet on OTP verification. No deposit needed, ready to use on any jackpot game from the first session."
-      },
-      {
-        "title": "Withdraw from ₹100, UPI in Minutes",
-        "desc": "Minimum withdrawal is ₹100 with no maximum cap. UPI transfers to Google Pay, PhonePe, or Paytm clear in 5-10 minutes — zero fees on whatever amount you withdraw."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is inside the 789 Jackpots app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100, credited instantly. Runs 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "Is 789 Jackpot real or fake?",
@@ -3362,26 +2292,6 @@
     "description": "If you're looking for a trusted rummy earning app, Yono Rummy is currently trending among Indian players.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹136, along with daily login rewards and deposit offers.\n\nYono Rummy uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Secure Payments",
-      "Quick Match Making",
-      "Multi Language UI",
-      "Streak Bonus Rewards",
-      "Welcome Bonus Available",
-      "Zero Fee Transactions",
-      "Fast Loading Time",
-      "FAQ & Help Center"
-    ],
-    "howToDownload": [
-      "Click the \"Download Yono Rummy\" button to get the APK file",
-      "Enable \"Install from Unknown Sources\" in your phone's Security settings",
-      "Open the downloaded APK file from your notification panel",
-      "Tap \"Install\" and wait for the installation to complete",
-      "Open Yono Rummy from your home screen after installation",
-      "Tap \"Register\" and enter your mobile number to create an account",
-      "Enter the OTP sent to your phone to verify your number",
-      "Your ₹136 welcome bonus will be credited to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "Does Yono Rummy provide a welcome bonus?",
@@ -3442,25 +2352,6 @@
     "description": "Jaiho Spin has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹77, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nJaiho Spin continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Live Chat Support",
-      "Auto Cashout Feature",
-      "Email Support Available",
-      "Low Entry Tables",
-      "Weekly Cashback Offers",
-      "VIP Exclusive Bonuses",
-      "Multiple Payment Options"
-    ],
-    "howToDownload": [
-      "Click the \"Install Jaiho Spin\" button to get the APK file",
-      "Go to Settings > Security and enable \"Install from Unknown Sources\"",
-      "Find the downloaded jaiho-spin.apk in your Downloads folder",
-      "Tap the file and press \"Install\" to start",
-      "After installation, tap \"Open\" to launch Jaiho Spin",
-      "Tap \"Sign Up\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify",
-      "Your ₹77 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "What is the minimum withdrawal in Jaiho Spin?",
@@ -3522,26 +2413,6 @@
     "description": "If you're looking for a trusted rummy earning app, Abc Rummy is currently trending among Indian players.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹176, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nAbc Rummy continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Low Data Usage",
-      "Weekly Cashback Offers",
-      "Data Encryption",
-      "Streak Bonus Rewards",
-      "Low Entry Tables",
-      "Lightweight App",
-      "Lucky Spin Rewards",
-      "VIP Exclusive Bonuses"
-    ],
-    "howToDownload": [
-      "Click the \"Get Abc Rummy\" button to download the APK file",
-      "Enable installation from unknown sources in your device settings",
-      "Open the downloaded APK file from your file manager",
-      "Tap \"Install\" and wait a few seconds for completion",
-      "Launch Abc Rummy by tapping \"Open\" on the installation screen",
-      "Register with your mobile number (OTP verification required)",
-      "Enter the verification code sent to your phone via SMS",
-      "₹176 welcome bonus will be instantly credited to your wallet"
-    ],
     "faq": [
       {
         "question": "Is KYC required for withdrawal in Abc Rummy?",
@@ -3598,25 +2469,6 @@
     "description": "If you're looking for a trusted rummy earning app, Club INR is currently trending among Indian players.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹128, along with daily login rewards and deposit offers.\n\nClub INR uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Low Data Usage",
-      "Dedicated VIP Manager",
-      "Practice Mode Available",
-      "Live Dealer Games",
-      "Streak Bonus Rewards",
-      "24/7 Withdrawal Available",
-      "Live Chat Support"
-    ],
-    "howToDownload": [
-      "Click the \"Club INR Install\" button to download APK",
-      "Go to Settings > Security > Enable \"Unknown Sources\"",
-      "Locate the APK in your Downloads folder or notification panel",
-      "Tap the file and select \"Install\" to proceed",
-      "After installation, tap \"Open\" to launch Club INR",
-      "Click \"Sign Up\" and enter your active mobile number",
-      "Request OTP and enter the code received via SMS",
-      "Your ₹128 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "Does Club INR provide a welcome bonus?",
@@ -3677,40 +2529,6 @@
     "isNew": true,
     "isTrending": true,
     "description": "Download Game Rummy app and get ₹890 signup bonus credited instantly — one of the highest bonuses running on a rummy app right now. Game Rummy game is built as a dedicated online rummy cash game platform where 13-card rummy is the entire focus, not one tab among five other game types.\n\nOpen gamerummy.com and the first thing you see is a live rummy lobby — cash tables at multiple entry points, tournament rooms, and a daily lucky draw running alongside regular play. The ₹890 joins your wallet the moment OTP clears, ready to use on any 13-card rummy table without depositing anything first.",
-    "howToDownload": [
-      "Tap the \"Download Game Rummy\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the Game Rummy app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹890 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open Game Rummy app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹890 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Join any 13-card rummy cash table directly using your bonus"
-    ],
-    "whyChoose": [
-      {
-        "title": "Game Rummy Game — Pure Online Rummy Cash Game, Nothing Else",
-        "desc": "Most Yono Games network apps treat rummy as one option among slots, crash, and betting games. Game Rummy game is built the other way — the entire app is structured around 13-card rummy as the main event. Cash tables at different entry levels, rummy tournaments, and a daily lucky draw all sit in the same lobby. If you came here to play online rummy cash game and nothing else, gamerummy.com gives you that without digging through other game categories to find it."
-      },
-      {
-        "title": "₹890 Bonus — Earn Money Playing Rummy from Day One",
-        "desc": "Register through the official Game Rummy app download link on this page and ₹890 hits your wallet the moment OTP clears. No deposit needed — that's enough to sit at a real cash rummy table and earn money playing rummy from your very first session."
-      },
-      {
-        "title": "Withdraw from ₹100, UPI in Minutes",
-        "desc": "Minimum withdrawal is ₹100 with no maximum cap. UPI transfers to Google Pay, PhonePe, or Paytm clear in 5-10 minutes — zero fees on whatever amount you withdraw."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is inside the Game Rummy app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100, credited instantly. Runs 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "Is Game Rummy real or fake?",
@@ -3771,26 +2589,6 @@
     "description": "If you're looking for a trusted slots earning app, Yes Spin is currently trending among Indian players.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹158, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nYes Spin continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Welcome Bonus Available",
-      "Low Data Usage",
-      "24/7 Customer Support",
-      "Weekly Cashback Offers",
-      "Data Encryption",
-      "Practice Mode Available",
-      "No Hidden Charges",
-      "Instant UPI Withdrawal"
-    ],
-    "howToDownload": [
-      "Click the \"Yes Spin Install\" button to download APK",
-      "Go to Settings > Security > Enable \"Unknown Sources\"",
-      "Locate the APK in your Downloads folder or notification panel",
-      "Tap the file and select \"Install\" to proceed",
-      "After installation, tap \"Open\" to launch Yes Spin",
-      "Click \"Sign Up\" and enter your active mobile number",
-      "Request OTP and enter the code received via SMS",
-      "Your ₹158 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "Is Yes Spin real or fake?",
@@ -3847,24 +2645,6 @@
     "description": "Share Slots has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹49, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Quick Match Making",
-      "Regular Updates",
-      "No Hidden Charges",
-      "High Reward Matches",
-      "Dedicated VIP Manager",
-      "Smooth Gameplay"
-    ],
-    "howToDownload": [
-      "Click the \"Install Share Slots\" button to get the APK file",
-      "Go to Settings > Security and enable \"Install from Unknown Sources\"",
-      "Find the downloaded share-slots.apk in your Downloads folder",
-      "Tap the file and press \"Install\" to start",
-      "After installation, tap \"Open\" to launch Share Slots",
-      "Tap \"Sign Up\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify",
-      "Your ₹49 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "What is Share Slots and how does it work?",
@@ -3921,26 +2701,6 @@
     "description": "Jaiho Win is one of the fastest-growing slots gaming platforms in India that allows users to earn real cash while playing.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹91, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nJaiho Win continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "24/7 Withdrawal Available",
-      "Hindi Language Support",
-      "Refer & Earn Commission",
-      "Multiple Payment Options",
-      "Smooth Gameplay",
-      "Fast Loading Time",
-      "24/7 Customer Support",
-      "Daily Login Rewards"
-    ],
-    "howToDownload": [
-      "Click the \"Download Jaiho Win\" button to get the APK file",
-      "Enable \"Install from Unknown Sources\" in your phone's Security settings",
-      "Open the downloaded APK file from your notification panel",
-      "Tap \"Install\" and wait for the installation to complete",
-      "Open Jaiho Win from your home screen after installation",
-      "Tap \"Register\" and enter your mobile number to create an account",
-      "Enter the OTP sent to your phone to verify your number",
-      "Your ₹91 welcome bonus will be credited to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "How can I earn money from Jaiho Win?",
@@ -3997,26 +2757,6 @@
     "description": "Ind Club has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹139, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Daily Login Rewards",
-      "VIP Exclusive Bonuses",
-      "Live Chat Support",
-      "Player Community Chat",
-      "Practice Mode Available",
-      "Secure Payments",
-      "Regular Updates",
-      "Multiple Game Variants"
-    ],
-    "howToDownload": [
-      "Click the \"Ind Club Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch Ind Club",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹139 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "Is Ind Club real or fake?",
@@ -4073,24 +2813,6 @@
     "description": "Maha Games is one of the fastest-growing slots gaming platforms in India that allows users to earn real cash while playing.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹75, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "FAQ & Help Center",
-      "Hindi Language Support",
-      "Regular Updates",
-      "24/7 Withdrawal Available",
-      "Low Data Usage",
-      "Quick Match Making"
-    ],
-    "howToDownload": [
-      "Click the \"Download Maha Games\" button to get the APK file",
-      "Allow installation from unknown sources in Settings > Security",
-      "Open the downloaded APK file from your notification bar",
-      "Tap \"Install\" and wait for the installation to complete",
-      "Launch Maha Games from your app drawer or home screen",
-      "Tap \"New User? Register\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify your account",
-      "Your ₹75 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "Is Maha Games real or fake?",
@@ -4151,24 +2873,6 @@
     "description": "All Yono Games is a dedicated platform where users can discover the newest Yono earning applications and trending real money gaming apps in one place. By joining All Yono Games, players can easily explore and download the latest Yono apps and claim a signup bonus ranging from ₹300 to ₹1200 after registration. These platforms include well",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Multiple Payment Options",
-      "Multiple Game Variants",
-      "Email Support Available",
-      "Lightweight App",
-      "Low Data Usage",
-      "Fast Loading Time"
-    ],
-    "howToDownload": [
-      "Click the \"All Yono Games Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch All Yono Games",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹72 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "How to download All Yono Games APK safely?",
@@ -4225,26 +2929,6 @@
     "description": "Spin Crush has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹157, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nSpin Crush continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Tournament Entry",
-      "Zero Fee Transactions",
-      "Refer & Earn Commission",
-      "Private Tables for Friends",
-      "Auto Cashout Feature",
-      "24/7 Customer Support",
-      "Multi Language UI",
-      "Live Dealer Games"
-    ],
-    "howToDownload": [
-      "Click the \"Spin Crush Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch Spin Crush",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹157 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "Does Spin Crush have daily bonuses?",
@@ -4301,24 +2985,6 @@
     "description": "Hi Rummy is one of the fastest-growing rummy gaming platforms in India that allows users to earn real cash while playing.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹44, along with daily login rewards and deposit offers.\n\nHi Rummy uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Auto Cashout Feature",
-      "Live Chat Support",
-      "Multi Language UI",
-      "High Reward Matches",
-      "Email Support Available",
-      "Hindi Language Support"
-    ],
-    "howToDownload": [
-      "Click the \"Hi Rummy Install\" button to download APK",
-      "Go to Settings > Security > Enable \"Unknown Sources\"",
-      "Locate the APK in your Downloads folder or notification panel",
-      "Tap the file and select \"Install\" to proceed",
-      "After installation, tap \"Open\" to launch Hi Rummy",
-      "Click \"Sign Up\" and enter your active mobile number",
-      "Request OTP and enter the code received via SMS",
-      "Your ₹44 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "What is the minimum withdrawal in Hi Rummy?",
@@ -4375,25 +3041,6 @@
     "description": "Gogo Rummy is designed for players who want both entertainment and real cash winnings in one place.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹105, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Same Day Payouts",
-      "Live Dealer Games",
-      "Low Data Usage",
-      "Festival Bonus Events",
-      "Streak Bonus Rewards",
-      "Weekly Cashback Offers",
-      "Player Community Chat"
-    ],
-    "howToDownload": [
-      "Click the \"Gogo Rummy Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch Gogo Rummy",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹105 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "Does Gogo Rummy have daily bonuses?",
@@ -4450,25 +3097,6 @@
     "description": "Ind Rummy is one of the fastest-growing rummy gaming platforms in India that allows users to earn real cash while playing.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹68, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Dedicated VIP Manager",
-      "Private Tables for Friends",
-      "Tournament Entry",
-      "Auto Cashout Feature",
-      "Daily Login Rewards",
-      "Secure Payments",
-      "Multiple Payment Options"
-    ],
-    "howToDownload": [
-      "Click the \"Ind Rummy APK Download\" button to start",
-      "Enable \"Unknown Sources\" in your phone's security settings",
-      "Tap on the downloaded APK file to begin installation",
-      "Press \"Install\" and wait for the process to finish",
-      "Open Ind Rummy by tapping \"Open\" after installation",
-      "Register using your mobile number (OTP verification required)",
-      "Enter the OTP sent to your phone to verify your identity",
-      "₹68 welcome bonus will be added to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "What games are available in Ind Rummy?",
@@ -4529,24 +3157,6 @@
     "description": "Jaiho 777 is one of the fastest-growing slots gaming platforms in India that allows users to earn real cash while playing.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹136, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nJaiho 777 continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Tournament Entry",
-      "Weekly Cashback Offers",
-      "Dedicated VIP Manager",
-      "Live Dealer Games",
-      "24/7 Customer Support",
-      "Multiple Payment Options"
-    ],
-    "howToDownload": [
-      "Click the \"Get Jaiho 777\" button to download the APK file",
-      "Enable installation from unknown sources in your device settings",
-      "Open the downloaded APK file from your file manager",
-      "Tap \"Install\" and wait a few seconds for completion",
-      "Launch Jaiho 777 by tapping \"Open\" on the installation screen",
-      "Register with your mobile number (OTP verification required)",
-      "Enter the verification code sent to your phone via SMS",
-      "₹136 welcome bonus will be instantly credited to your wallet"
-    ],
     "faq": [
       {
         "question": "Does Jaiho 777 have a referral program?",
@@ -4604,25 +3214,6 @@
     "description": "Jaiho Arcade is one of the fastest-growing slots gaming platforms in India that allows users to earn real cash while playing.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹122, along with daily login rewards and deposit offers.\n\nJaiho Arcade uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nJaiho Arcade continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Live Dealer Games",
-      "Weekly Cashback Offers",
-      "No Hidden Charges",
-      "Data Encryption",
-      "Zero Fee Transactions",
-      "High Reward Matches",
-      "Email Support Available"
-    ],
-    "howToDownload": [
-      "Click the \"Get Jaiho Arcade\" button to download the APK file",
-      "Enable installation from unknown sources in your device settings",
-      "Open the downloaded APK file from your file manager",
-      "Tap \"Install\" and wait a few seconds for completion",
-      "Launch Jaiho Arcade by tapping \"Open\" on the installation screen",
-      "Register with your mobile number (OTP verification required)",
-      "Enter the verification code sent to your phone via SMS",
-      "₹122 welcome bonus will be instantly credited to your wallet"
-    ],
     "faq": [
       {
         "question": "Does Jaiho Arcade have a referral program?",
@@ -4680,25 +3271,6 @@
     "description": "Rummy 91 is designed for players who want both entertainment and real cash winnings in one place.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹178, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Multiple Game Variants",
-      "Zero Fee Transactions",
-      "Live Dealer Games",
-      "Data Encryption",
-      "Secure Payments",
-      "Practice Mode Available",
-      "Welcome Bonus Available"
-    ],
-    "howToDownload": [
-      "Click the \"Get Rummy 91\" button to download the official APK",
-      "Enable \"Unknown Sources\" in Settings > Security > Unknown Sources",
-      "Locate the downloaded file in your file manager",
-      "Tap on the file and select \"Install\" to begin",
-      "Wait a few seconds for installation to complete",
-      "Open Rummy 91 by tapping \"Open\" on the installation screen",
-      "Click \"Register\" and enter your mobile number",
-      "Enter OTP to verify and get ₹178 welcome bonus instantly"
-    ],
     "faq": [
       {
         "question": "Does Rummy 91 have a referral program?",
@@ -4755,26 +3327,6 @@
     "description": "If you're looking for a trusted slots earning app, Saga Slots is currently trending among Indian players.\n\nWith fast servers and smooth UI, the experience remains lag-free during gameplay sessions.\n\nNew users get a welcome bonus of ₹167, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nSaga Slots continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Streak Bonus Rewards",
-      "Live Dealer Games",
-      "Lucky Spin Rewards",
-      "Private Tables for Friends",
-      "Practice Mode Available",
-      "Smooth Gameplay",
-      "Refer & Earn Commission",
-      "Multiple Payment Options"
-    ],
-    "howToDownload": [
-      "Click the \"Download Saga Slots\" button to get the APK file",
-      "Enable \"Install from Unknown Sources\" in your phone's Security settings",
-      "Open the downloaded APK file from your notification panel",
-      "Tap \"Install\" and wait for the installation to complete",
-      "Open Saga Slots from your home screen after installation",
-      "Tap \"Register\" and enter your mobile number to create an account",
-      "Enter the OTP sent to your phone to verify your number",
-      "Your ₹167 welcome bonus will be credited to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "Is Saga Slots safe to use?",
@@ -4835,25 +3387,6 @@
     "description": "Neta VIP is designed for players who want both entertainment and real cash winnings in one place.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹53, along with daily login rewards and deposit offers.\n\nNeta VIP uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nNeta VIP continues to attract new users daily due to its fast withdrawals and rewarding system.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Live Chat Support",
-      "Tournament Entry",
-      "Daily Login Rewards",
-      "Hindi Language Support",
-      "24/7 Customer Support",
-      "Festival Bonus Events",
-      "VIP Exclusive Bonuses"
-    ],
-    "howToDownload": [
-      "Click the \"Neta VIP APK Download\" button to start",
-      "Enable \"Unknown Sources\" in your phone's security settings",
-      "Tap on the downloaded APK file to begin installation",
-      "Press \"Install\" and wait for the process to finish",
-      "Open Neta VIP by tapping \"Open\" after installation",
-      "Register using your mobile number (OTP verification required)",
-      "Enter the OTP sent to your phone to verify your identity",
-      "₹53 welcome bonus will be added to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "Is Neta VIP real or fake?",
@@ -4914,24 +3447,6 @@
     "description": "If you're looking for a trusted slots earning app, Yono Slots is currently trending among Indian players.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹94, along with daily login rewards and deposit offers.\n\nYono Slots uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Instant UPI Withdrawal",
-      "Live Chat Support",
-      "Dedicated VIP Manager",
-      "Low Data Usage",
-      "Smooth Gameplay",
-      "Low Entry Tables"
-    ],
-    "howToDownload": [
-      "Click the \"Get Yono Slots\" button to download the official APK",
-      "Enable \"Unknown Sources\" in Settings > Security > Unknown Sources",
-      "Locate the downloaded file in your file manager",
-      "Tap on the file and select \"Install\" to begin",
-      "Wait a few seconds for installation to complete",
-      "Open Yono Slots by tapping \"Open\" on the installation screen",
-      "Click \"Register\" and enter your mobile number",
-      "Enter OTP to verify and get ₹94 welcome bonus instantly"
-    ],
     "faq": [
       {
         "question": "What is the minimum withdrawal in Yono Slots?",
@@ -4988,93 +3503,6 @@
     "description": "Want to play slots and spin games? Slots Spin is a fast, straightforward app on the Yono network. When you download the Slots Spin APK, you can jump straight into the popular Spin Slots 777 mode or sit at standard Rummy and Teen Patti tables.\n\nNew users opening the Slots Spin app get a flat ₹196 signup bonus—no deposit needed. It's a quick 38MB download, withdrawals start at ₹100 via UPI, and the Spin Slots Yono backend keeps everything running smoothly. If you're looking for a simple Slots Spin game that just works, this is a solid pick.",
     "isNew": false,
     "isTrending": true,
-    "features": [
-      "₹196 Signup Bonus (No Deposit)",
-      "Play Spin Slots 777",
-      "₹100 Minimum Withdrawal",
-      "Fast UPI & Bank Payouts",
-      "3-Level Referral Commission",
-      "Small 38MB Install"
-    ],
-    "howToDownload": [
-      "Tap the official \"Slots Spin Download\" link on this page",
-      "Allow 'Install Unknown Apps' in your Android security settings",
-      "Open the 38MB Slots Spin APK from your Downloads folder",
-      "Tap Install and launch the Slots Spin game",
-      "Register using your mobile number and verify via OTP",
-      "Your ₹196 bonus is credited instantly"
-    ],
-    "whyChoose": [
-      {
-        "title": "Massive ₹196 Signup Bonus",
-        "desc": "Register on the Slots Spin app and your ₹196 bonus lands immediately after OTP verification. You can play spinslots without spending your own money first."
-      },
-      {
-        "title": "Spin Slots 777 & More",
-        "desc": "If you want to play slots and spin games, this app has dedicated Spin Slots 777 rooms along with traditional card games, all sharing one wallet."
-      },
-      {
-        "title": "Fast UPI Withdrawals",
-        "desc": "Winning on the Spin Slots app is real, and so are the payouts. The minimum withdrawal is just ₹100, normally clearing in under 30 minutes."
-      }
-    ],
-    "bonusDetails": "The ₹196 bonus is instantly added to your wallet right after you verify your mobile number. You can use it immediately to try out Spin Slots 777 or rummy. Daily login rewards also stack up, giving you extra cash for free just for opening the app.",
-    "withdrawalDetails": "The minimum withdrawal amount is ₹100 via UPI or Bank Transfer. The Slots Spin app processes standard payouts in 10-30 minutes, and VIP users often see their money in under 5 minutes with no hidden fees.",
-    "referralDetails": "The app runs the standard Yono 3-level referral program. You can share your invite link on WhatsApp or Telegram, and you'll earn a commission every time your friends deposit or play.",
-    "prosAndCons": {
-      "pros": [
-        "Generous ₹196 no-deposit signup bonus",
-        "Lightweight 38MB Slots Spin APK",
-        "Fast 10-30 minute UPI withdrawals",
-        "Includes Spin Slots 777 and Rummy",
-        "Daily rewards for active players"
-      ],
-      "cons": [
-        "Not available on the Google Play Store (APK only)",
-        "Only one active device session allowed at a time",
-        "Bonus funds require some gameplay wagering before withdrawal"
-      ]
-    },
-    "gamesAvailable": [
-      {
-        "name": "Spin Slots 777",
-        "desc": "The main attraction. Fast spins, simple layout, and high multipliers."
-      },
-      {
-        "name": "Rummy & Teen Patti",
-        "desc": "Classic card games with low-entry tables starting at ₹1."
-      },
-      {
-        "name": "Live Dealer & Arcade",
-        "desc": "Crash games and interactive bingo options available 24/7."
-      }
-    ],
-    "comparisonTable": [
-      {
-        "feature": "Welcome Bonus",
-        "slotsSpin": "₹196",
-        "spin101": "₹101",
-        "yono777": "₹100"
-      },
-      {
-        "feature": "Min Withdrawal",
-        "slotsSpin": "₹100",
-        "spin101": "₹100",
-        "yono777": "₹100"
-      },
-      {
-        "feature": "App Size",
-        "slotsSpin": "38MB",
-        "spin101": "44MB",
-        "yono777": "45MB"
-      },
-      {
-        "feature": "Key Game",
-        "slotsSpin": "Spin Slots 777",
-        "spin101": "Lucky Wheel",
-        "yono777": "777 Slots"
-      }
-    ],
     "faq": [
       {
         "question": "Is the Slots Spin app real or fake?",
@@ -5134,25 +3562,6 @@
     "description": "If you're looking for a trusted slots earning app, 777 Game is currently trending among Indian players.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹177, along with daily login rewards and deposit offers.\n\nThe app ensures fair results using certified RNG systems and transparent gameplay.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "VIP Exclusive Bonuses",
-      "No Hidden Charges",
-      "Refer & Earn Commission",
-      "24/7 Customer Support",
-      "Multiple Payment Options",
-      "FAQ & Help Center",
-      "Low Data Usage"
-    ],
-    "howToDownload": [
-      "Click the \"Install 777 Game\" button to get the APK file",
-      "Go to Settings > Security and enable \"Install from Unknown Sources\"",
-      "Find the downloaded 777-game.apk in your Downloads folder",
-      "Tap the file and press \"Install\" to start",
-      "After installation, tap \"Open\" to launch 777 Game",
-      "Tap \"Sign Up\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify",
-      "Your ₹177 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "What is the minimum withdrawal in 777 Game?",
@@ -5213,24 +3622,6 @@
     "description": "If you're looking for a trusted rummy earning app, Ok Rummy is currently trending among Indian players.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹152, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nWith regular bonuses, login rewards, and cashback offers, users always have earning opportunities.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Private Tables for Friends",
-      "24/7 Withdrawal Available",
-      "Tournament Entry",
-      "Smooth Gameplay",
-      "Live Chat Support",
-      "High Reward Matches"
-    ],
-    "howToDownload": [
-      "Click the \"Ok Rummy Download\" button to save the APK file",
-      "Enable \"Unknown Sources\" in your device's Security settings",
-      "Open the downloaded APK file and tap \"Install\"",
-      "Wait for installation to complete (10-15 seconds)",
-      "Tap \"Open\" once installation is complete to launch Ok Rummy",
-      "Click \"Register\" and enter your mobile number",
-      "Enter the OTP sent to your mobile number for verification",
-      "₹152 welcome bonus will be added to your main wallet instantly"
-    ],
     "faq": [
       {
         "question": "What is Ok Rummy and how does it work?",
@@ -5291,26 +3682,6 @@
     "description": "Hindi 777 has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹67, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nPlayers can withdraw their earnings instantly using UPI, Paytm, or bank transfer.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Streak Bonus Rewards",
-      "VIP Exclusive Bonuses",
-      "Multi Language UI",
-      "High Reward Matches",
-      "No Hidden Charges",
-      "Tournament Entry",
-      "Low Entry Tables",
-      "Low Data Usage"
-    ],
-    "howToDownload": [
-      "Click the \"Install Hindi 777\" button to get the APK file",
-      "Go to Settings > Security and enable \"Install from Unknown Sources\"",
-      "Find the downloaded hindi-777.apk in your Downloads folder",
-      "Tap the file and press \"Install\" to start",
-      "After installation, tap \"Open\" to launch Hindi 777",
-      "Tap \"Sign Up\" and enter your mobile number",
-      "Enter the OTP code sent via SMS to verify",
-      "Your ₹67 welcome bonus will be credited automatically"
-    ],
     "faq": [
       {
         "question": "What is the maximum withdrawal limit in Hindi 777?",
@@ -5371,69 +3742,6 @@
     "description": "MWM Bet hands out a ₹89 bonus the moment you register — no deposit, straight into your wallet. Worth opening the Aviator tab first; the home screen leads with crash games rather than slots, which is a bit different from most apps in this directory where slots usually come first.\n\nIf you haven't played a crash game before, Aviator is the easy one to start with — watch the multiplier climb, cash out before the plane flies off, simple to understand within a round or two. Jet X is the faster, higher-risk version if Aviator feels too slow once you've got the hang of it.\n\nSlots and the rest of the catalog sit one tab over whenever you want them. ₹100 minimum withdrawal, standard UPI processing, same referral setup as the rest of the network.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "4.7/5 Rating, 910K+ Downloads",
-      "₹89 Signup Bonus",
-      "Slots & Crash Games on Home Screen",
-      "₹100 Minimum Withdrawal, No Max Limit",
-      "Daily Login Rewards",
-      "3-Level Referral Commission",
-      "44MB APK"
-    ],
-    "howToDownload": [
-      "Tap the \"Download MWM Bet\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file (around 44MB) from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the app, tap Register, and enter your mobile number",
-      "Enter the OTP sent via SMS — check Spam/Blocked folder if it doesn't arrive in 60 seconds",
-      "Your ₹89 signup bonus lands in your wallet automatically — no deposit needed"
-    ],
-    "whyChoose": [
-      {
-        "title": "Highest-Rated App on This List",
-        "desc": "4.7/5 puts MWM Bet ahead of most other apps in this directory on user rating, alongside the highest download count among the apps covered so far at 910,000+."
-      },
-      {
-        "title": "Crash Games Lead the Catalog",
-        "desc": "Aviator, Jet X, and the rest of the crash-game lineup are front and center on the home screen, ahead of slots and cards — worth knowing if crash games are specifically what you're after."
-      },
-      {
-        "title": "Verify the Package Before Installing",
-        "desc": "The app installs as com.mqm.bet, not a name matching 'MWM Bet' directly — this is normal for the network, but check it against the link on this page rather than a forwarded file to make sure you're getting the right install."
-      }
-    ],
-    "bonusDetails": "The ₹89 signup bonus credits automatically the moment OTP verification completes — no deposit, no code entry needed. It can be used directly on any game, including the crash titles and slots on the home screen.\n\nDaily login rewards stack on top of the signup bonus for users who return regularly, shown in the app's Rewards tab.",
-    "withdrawalDetails": "Minimum withdrawal is ₹100 with no maximum limit, through UPI, Paytm, or bank transfer. Go to Wallet, tap Withdraw, enter the amount, and confirm. No fees are deducted from the amount requested.",
-    "referralDetails": "MWM Bet runs the standard 3-level referral program used across the Yono Games network. Your referral link is in the app's Invite section — commission is credited to your wallet when someone registers through it, and again at each of the two levels below them.",
-    "prosAndCons": {
-      "pros": [
-        "4.7/5 rating, one of the higher-rated apps in this directory",
-        "910,000+ downloads, an established user base",
-        "₹89 signup bonus, no deposit required",
-        "Crash games (Aviator, Jet X) prominent on the home screen",
-        "₹100 minimum withdrawal, no maximum cap"
-      ],
-      "cons": [
-        "Android only, not available on iOS or Play Store",
-        "Install package name (com.mqm.bet) differs from the app's display name",
-        "Bonus amount has changed before and may change again"
-      ]
-    },
-    "gamesAvailable": [
-      {
-        "name": "Crash Games (Aviator, Jet X)",
-        "desc": "Front and center on the home screen. Fast multipliers, high risk/reward, very popular right now."
-      },
-      {
-        "name": "Slots",
-        "desc": "Dozens of slot variants available one tab over, including classic 777."
-      },
-      {
-        "name": "Card Games",
-        "desc": "Standard Rummy, Teen Patti, and Andar Bahar available in the full catalog."
-      }
-    ],
     "faq": [
       {
         "question": "Is MWM Bet real or fake?",
@@ -5500,24 +3808,6 @@
     "description": "If you're looking for a trusted slots earning app, Yono Arcade is currently trending among Indian players.\n\nThe platform offers multiple game modes, low entry tables, and high-reward competitions for both beginners and pro users.\n\nNew users get a welcome bonus of ₹167, along with daily login rewards and deposit offers.\n\nYono Arcade uses secure payment systems with SSL encryption and fair gameplay algorithms.\n\nWithdrawal requests are processed quickly, usually within minutes.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "FAQ & Help Center",
-      "High Reward Matches",
-      "Email Support Available",
-      "Daily Login Rewards",
-      "Live Chat Support",
-      "Multiple Game Variants"
-    ],
-    "howToDownload": [
-      "Click the \"Yono Arcade APK Download\" button to start",
-      "Enable \"Unknown Sources\" in your phone's security settings",
-      "Tap on the downloaded APK file to begin installation",
-      "Press \"Install\" and wait for the process to finish",
-      "Open Yono Arcade by tapping \"Open\" after installation",
-      "Register using your mobile number (OTP verification required)",
-      "Enter the OTP sent to your phone to verify your identity",
-      "₹167 welcome bonus will be added to your wallet instantly"
-    ],
     "faq": [
       {
         "question": "What games are available in Yono Arcade?",
@@ -5574,26 +3864,6 @@
     "description": "Yono VIP has quickly gained popularity as a reliable real money gaming app with smooth gameplay and instant rewards.\n\nUsers can enjoy seamless gameplay with optimized performance even on low-end devices and slow networks.\n\nNew users get a welcome bonus of ₹166, along with daily login rewards and deposit offers.\n\nAll transactions are protected with advanced security layers and verified payment gateways.\n\nThe minimum withdrawal is low, making it easy for users to cash out anytime.\n\nAdditionally, the referral program allows users to earn passive income by inviting friends.",
     "isNew": false,
     "isTrending": false,
-    "features": [
-      "Zero Fee Transactions",
-      "Multiple Payment Options",
-      "VIP Exclusive Bonuses",
-      "Private Tables for Friends",
-      "Secure Payments",
-      "Auto Cashout Feature",
-      "High Reward Matches",
-      "Dedicated VIP Manager"
-    ],
-    "howToDownload": [
-      "Click the \"Get Yono VIP\" button to download the official APK",
-      "Enable \"Unknown Sources\" in Settings > Security > Unknown Sources",
-      "Locate the downloaded file in your file manager",
-      "Tap on the file and select \"Install\" to begin",
-      "Wait a few seconds for installation to complete",
-      "Open Yono VIP by tapping \"Open\" on the installation screen",
-      "Click \"Register\" and enter your mobile number",
-      "Enter OTP to verify and get ₹166 welcome bonus instantly"
-    ],
     "faq": [
       {
         "question": "How do I contact Yono VIP customer support?",
@@ -5730,40 +4000,6 @@
     "isNew": false,
     "isTrending": false,
     "description": "Download SVIP777 APK and get ₹500 signup bonus instantly — one of the higher launch bonuses in the Diwa family right now. SVIP777 is the Super VIP tier of the 777 lineup, where the 777 lucky slots game loads on the home screen the moment you open the app.\n\nFortune Gems, Golden Empire, and the full 777 slots catalog sit front and center on the SVIP777 game home screen. Aviator crash game is right alongside them. Rummy and card games load in a separate tab under the same wallet — so whether you're here for the 777 slots or want to switch to something else mid-session, everything runs from one account.",
-    "howToDownload": [
-      "Tap the \"Download SVIP777\" button on this page — links directly to the official APK",
-      "Go to Settings > Security > Install Unknown Apps and allow it for your browser",
-      "Open the downloaded file from your Downloads folder",
-      "Tap Install and wait about 10-15 seconds",
-      "Open the SVIP777 app and tap Register",
-      "Enter your mobile number and verify the OTP sent via SMS",
-      "Your ₹500 bonus lands in your wallet automatically"
-    ],
-    "bonusDetails": [
-      "Open SVIP777 app after installing",
-      "Tap Register and enter your mobile number",
-      "Verify the OTP — ₹500 bonus credited instantly, no deposit needed",
-      "Go to Wallet to confirm your bonus balance",
-      "Start on any 777 slot game directly using your bonus amount"
-    ],
-    "whyChoose": [
-      {
-        "title": "SVIP777 — Super VIP Access to 777 Slots",
-        "desc": "SVIP stands for Super VIP — the highest tier in the Diwa 777 family. The SVIP777 game opens straight into the 777 slots lobby: Fortune Gems, Golden Empire, Power of Kraken, 500 Lucky Gem all on the first screen. No digging around. If 777 lucky number games are specifically what you're after, SVIP777 APK download puts you directly inside the Super VIP slots experience."
-      },
-      {
-        "title": "₹500 Bonus — Highest in the 777 Lineup",
-        "desc": "The SVIP777 download gets you ₹500 on registration, higher than most other 777-branded apps currently running on the network. Credited the moment OTP clears — no deposit needed, no waiting."
-      },
-      {
-        "title": "Withdraw from ₹100, UPI in Minutes",
-        "desc": "Minimum withdrawal is ₹100 with no maximum cap. UPI transfers clear in 5-10 minutes to Google Pay, PhonePe, or Paytm — zero fees deducted from the amount you request."
-      },
-      {
-        "title": "3-Level Referral, ₹100 Per Valid Refer",
-        "desc": "Your referral link is inside the SVIP777 app's Invite section. Every friend who registers and makes their first minimum deposit earns you ₹100 instantly. Runs 3 levels deep."
-      }
-    ],
     "faq": [
       {
         "question": "How do I download SVIP777 APK?",
