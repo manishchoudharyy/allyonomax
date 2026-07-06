@@ -135,7 +135,7 @@ export default function EditApp({ params }) {
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
-          const app = data.apps.find((a) => a.id === Number(id));
+          const app = data.apps.find((a) => String(a.id) === decodeURIComponent(id));
           if (app) {
             if (!app.keywords || !Array.isArray(app.keywords))
               app.keywords = [];
